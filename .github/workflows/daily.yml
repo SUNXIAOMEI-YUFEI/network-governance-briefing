@@ -23,7 +23,7 @@ on:
         required: false
         default: false
       rescore_all:
-        description: "重新评分全部文章（升级 prompt 后补 title_cn 等）"
+        description: "⚠️ 重新评分全部文章（会覆盖已有评分，LLM 波动可能让高分跌分。仅 prompt 升级时使用）"
         type: boolean
         required: false
         default: false

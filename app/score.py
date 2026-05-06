@@ -517,6 +517,41 @@ def run(scorer: ArticleScorer, *, rescore_all: bool = False, concurrency: int = 
                 else result.score_a + result.score_b + score_c + score_d + result.score_e + result.score_f
             )
 
+            # === v1.2 保护：rescore 模式下防"LLM 波动降分"覆盖 ===
+            # 问题背景：LLM 对同一文章两次评分可能差 10-40 分（尤其 KtN newsletter 这类
+            # 通用标题邮件），rescore_all 会把原本高分的好选题推下来，用户体验崩坏。
+            # 策略：只在 rescore_all 模式下，若新分数比旧分数低 ≥ SCORE_DROP_GUARD，
+            # 保留旧的 6 维分数/veto/content_type/reason，只更新 title_cn（补中文标题）。
+            SCORE_DROP_GUARD = 15
+            old_row = conn.execute(
+                "SELECT total_score, score_a, score_b, score_e, score_f, fingerprint, "
+                "veto, anxiety_hits, maturity_stage, reason, content_type, content_type_reason "
+                "FROM articles WHERE id = ?",
+                (article.id,),
+            ).fetchone()
+            protected = False
+            if rescore_all and old_row and old_row["total_score"] is not None:
+                old_total = old_row["total_score"]
+                if old_total > 0 and total > 0 and (old_total - total) >= SCORE_DROP_GUARD:
+                    protected = True
+                # 新评分把原来的非 veto 文章打成 veto/0 分，也视为可疑波动
+                if old_total >= 50 and total == 0:
+                    protected = True
+
+            if protected:
+                # 仅更新 title_cn，其余评分维度保持旧值
+                print(f"[score] 🛡️ 保留旧评分 id={article.id} 旧 total={old_row['total_score']} 新 total={total}（差距过大，疑似 LLM 波动）: {article.title[:50]}")
+                conn.execute(
+                    "UPDATE articles SET title_cn = ? WHERE id = ?",
+                    (result.title_cn or "", article.id),
+                )
+                scored += 1
+                if old_row["veto"]:
+                    veto_count += 1
+                ctype = old_row["content_type"] or result.content_type
+                type_dist[ctype] = type_dist.get(ctype, 0) + 1
+                continue
+
             conn.execute(
                 """
                 UPDATE articles SET
