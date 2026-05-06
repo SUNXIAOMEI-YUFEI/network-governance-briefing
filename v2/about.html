@@ -147,6 +147,33 @@
     </ul>
   </section>
 
+  <!-- ========== 3.5 信源健康度（实时） ========== -->
+  <section class="about-section" id="feed-health-section">
+    <h1>信源健康度</h1>
+    <p class="lead" id="fh-summary">正在加载…</p>
+    <p class="muted small">
+      每次 fetch 后自动更新。🔴 连续失败 ≥ 3 次（建议去 <code>app/config.py</code> 换 URL 或删掉）；
+      🟡 偶发失败或近 7 天成功率 &lt; 70%（观察几天）；🟢 正常；❔ 新加的源尚无历史。
+    </p>
+    <div class="feed-health-table-wrap">
+      <table class="about-table feed-health-table" id="fh-table">
+        <thead>
+          <tr>
+            <th style="width:28px"></th>
+            <th>信源</th>
+            <th class="num">档</th>
+            <th>最后成功</th>
+            <th class="num">近 7 天</th>
+            <th>最近错误</th>
+          </tr>
+        </thead>
+        <tbody id="fh-tbody">
+          <tr><td colspan="6" class="muted">加载中…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
   <!-- ========== 4. 技术架构 ========== -->
   <section class="about-section">
     <h1>技术架构</h1>
@@ -244,6 +271,83 @@
   <span class="footer-sep">·</span>
   <a href="favorites.html" class="footer-link">⭐ 我的收藏</a>
 </footer>
+
+<script>
+// ========== 信源健康度渲染 ==========
+(async function renderFeedHealth() {
+  const tbody = document.getElementById('fh-tbody');
+  const summary = document.getElementById('fh-summary');
+  try {
+    const res = await fetch('../data/today.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    const feeds = data.feed_health || [];
+
+    if (feeds.length === 0) {
+      summary.textContent = '暂无健康度数据（需等下一次 fetch 运行后才有记录）';
+      tbody.innerHTML = '<tr><td colspan="6" class="muted">—</td></tr>';
+      return;
+    }
+
+    // 汇总
+    const count = { ok: 0, warn: 0, dead: 0, unknown: 0 };
+    feeds.forEach(f => { count[f.status] = (count[f.status] || 0) + 1; });
+    summary.innerHTML = `共 <strong>${feeds.length}</strong> 个信源：
+      🟢 正常 <strong>${count.ok}</strong>
+      · 🟡 警告 <strong>${count.warn}</strong>
+      · 🔴 故障 <strong>${count.dead}</strong>
+      · ❔ 未知 <strong>${count.unknown}</strong>`;
+
+    // 渲染表格
+    const statusIcon = { ok: '🟢', warn: '🟡', dead: '🔴', unknown: '❔' };
+    const html = feeds.map(f => {
+      const icon = statusIcon[f.status] || '❔';
+      const lastOk = f.last_success_at ? fmtRelative(f.last_success_at) : '—';
+      const recent = f.recent_7d_total > 0
+        ? `${f.recent_7d_success}/${f.recent_7d_total}`
+        : '—';
+      const err = f.last_error
+        ? `<span class="fh-err">${escapeHtml(f.last_error)}</span>`
+        : (f.consecutive_fails === 0 ? '<span class="muted">—</span>' : '');
+      const tier = f.source_tier ? `<span class="tier-badge ${f.source_tier}">${f.source_tier}</span>` : '';
+      const name = escapeHtml(f.source_name || '?');
+      const url = f.feed_url ? `<a href="${escapeAttr(f.feed_url)}" target="_blank" rel="noopener" class="fh-feed-link" title="${escapeAttr(f.feed_url)}">📡</a>` : '';
+      return `<tr class="fh-row fh-${f.status}">
+        <td class="fh-status">${icon}</td>
+        <td class="fh-name">${name} ${url}</td>
+        <td class="num">${tier}</td>
+        <td class="fh-lastok">${lastOk}</td>
+        <td class="num">${recent}</td>
+        <td class="fh-error-cell">${err}</td>
+      </tr>`;
+    }).join('');
+    tbody.innerHTML = html;
+  } catch (e) {
+    summary.textContent = '加载健康度失败：' + e.message;
+    tbody.innerHTML = '<tr><td colspan="6" class="muted">读取 today.json 失败</td></tr>';
+  }
+
+  function fmtRelative(iso) {
+    const t = Date.parse(iso);
+    if (!t) return iso;
+    const diffMin = Math.floor((Date.now() - t) / 60000);
+    if (diffMin < 1) return '刚刚';
+    if (diffMin < 60) return diffMin + ' 分钟前';
+    const diffH = Math.floor(diffMin / 60);
+    if (diffH < 24) return diffH + ' 小时前';
+    const diffD = Math.floor(diffH / 24);
+    if (diffD < 30) return diffD + ' 天前';
+    return iso.slice(0, 10);
+  }
+
+  function escapeHtml(s) {
+    return String(s || '').replace(/[&<>"']/g, c => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    }[c]));
+  }
+  function escapeAttr(s) { return escapeHtml(s).replace(/\s/g, '%20'); }
+})();
+</script>
 
 </body>
 </html>

@@ -294,6 +294,82 @@ def fetch_one_feed(source_name: str, feed_url: str, source_tier: str) -> tuple[l
 # 主流程
 # ============================================================
 
+def _record_feed_health(
+    conn: sqlite3.Connection,
+    results: list[FeedResult],
+    feeds: list[tuple[str, str, str]],
+) -> None:
+    """把这轮 fetch 的成败写入 feed_health（upsert）和 feed_health_log（append）。
+
+    - feed_health：每个 feed 一行，只存"当前状态"（最近一次）
+    - feed_health_log：每次 fetch 的结果 append 一条，用于算近 7 天成功率
+    """
+    now_iso = datetime.now(timezone.utc).isoformat()
+    # feed 基础信息（url/tier）从入参 feeds 里拿，避免每次都查 RSS_FEEDS
+    feed_meta = {name: (url, tier) for (name, url, tier) in feeds}
+
+    for r in results:
+        feed_url, tier = feed_meta.get(r.source_name, (r.feed_url, None))
+
+        # 1) 写日志
+        conn.execute(
+            """
+            INSERT INTO feed_health_log
+                (source_name, attempted_at, success, article_count, error)
+            VALUES (?, ?, ?, ?, ?)
+            """,
+            (r.source_name, now_iso, 1 if r.success else 0, r.article_count, r.error),
+        )
+
+        # 2) upsert 当前状态
+        row = conn.execute(
+            "SELECT consecutive_fails FROM feed_health WHERE source_name = ?",
+            (r.source_name,),
+        ).fetchone()
+        prev_fails = row[0] if row else 0
+
+        if r.success:
+            new_fails = 0
+            conn.execute(
+                """
+                INSERT INTO feed_health
+                    (source_name, feed_url, source_tier, last_attempt_at,
+                     last_success_at, last_error, last_article_count, consecutive_fails)
+                VALUES (?, ?, ?, ?, ?, NULL, ?, 0)
+                ON CONFLICT(source_name) DO UPDATE SET
+                    feed_url = excluded.feed_url,
+                    source_tier = excluded.source_tier,
+                    last_attempt_at = excluded.last_attempt_at,
+                    last_success_at = excluded.last_success_at,
+                    last_error = NULL,
+                    last_article_count = excluded.last_article_count,
+                    consecutive_fails = 0
+                """,
+                (r.source_name, feed_url, tier, now_iso, now_iso, r.article_count),
+            )
+        else:
+            new_fails = prev_fails + 1
+            conn.execute(
+                """
+                INSERT INTO feed_health
+                    (source_name, feed_url, source_tier, last_attempt_at,
+                     last_success_at, last_error, last_article_count, consecutive_fails)
+                VALUES (?, ?, ?, ?, NULL, ?, 0, ?)
+                ON CONFLICT(source_name) DO UPDATE SET
+                    feed_url = excluded.feed_url,
+                    source_tier = excluded.source_tier,
+                    last_attempt_at = excluded.last_attempt_at,
+                    last_error = excluded.last_error,
+                    consecutive_fails = feed_health.consecutive_fails + 1
+                """,
+                (r.source_name, feed_url, tier, now_iso, r.error, new_fails),
+            )
+
+    # 清理 14 天前的日志，避免表无限增长
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=14)).isoformat()
+    conn.execute("DELETE FROM feed_health_log WHERE attempted_at < ?", (cutoff,))
+
+
 def _filter_feeds(only: list[str] | None) -> list[tuple[str, str, str]]:
     if not only:
         return list(RSS_FEEDS)
@@ -367,6 +443,10 @@ def fetch_all(
                 inserted += 1
             except sqlite3.IntegrityError:
                 skipped += 1
+
+        # ---- 写入信源健康度（每个 feed 一条 upsert + 一条日志）----
+        _record_feed_health(conn, results, feeds)
+
         conn.commit()
 
     # ---- 报告 ----

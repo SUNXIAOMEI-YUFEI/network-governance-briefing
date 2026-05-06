@@ -146,6 +146,83 @@ def _stats(conn: sqlite3.Connection) -> dict:
     return {"total": total, "by_type": by_type, "veto": veto_n}
 
 
+def _feed_health(conn: sqlite3.Connection) -> list[dict]:
+    """信源健康度：每个 feed 当前状态 + 近 7 天成功率。
+
+    返回按状态排序（🔴 红的排最上面，方便一眼看到故障源）：
+        [
+          {"source_name","feed_url","source_tier",
+           "last_attempt_at","last_success_at","last_error",
+           "last_article_count","consecutive_fails",
+           "recent_7d_success","recent_7d_total","status"}
+        ]
+    status ∈ "ok" | "warn" | "dead" | "unknown"
+        dead     : 连续失败 >= 3 次
+        warn     : 连续失败 1-2 次 或 近 7 天成功率 < 70%
+        ok       : 其余有成功记录
+        unknown  : 没有任何历史（新加的 feed，还没被跑过）
+    """
+    # feed_health 主表不存在的话（老数据库），直接返回空
+    exists = conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='feed_health'"
+    ).fetchone()
+    if not exists:
+        return []
+
+    from datetime import datetime as _dt, timedelta as _td, timezone as _tz
+    cutoff_7d = (_dt.now(_tz.utc) - _td(days=7)).isoformat()
+
+    rows = conn.execute(
+        """
+        SELECT source_name, feed_url, source_tier,
+               last_attempt_at, last_success_at, last_error,
+               last_article_count, consecutive_fails
+        FROM feed_health
+        """
+    ).fetchall()
+
+    out: list[dict] = []
+    for r in rows:
+        d = dict(r)
+        # 近 7 天成功次数 / 总次数
+        agg = conn.execute(
+            """
+            SELECT
+              SUM(CASE WHEN success=1 THEN 1 ELSE 0 END) AS succ,
+              COUNT(*) AS total
+            FROM feed_health_log
+            WHERE source_name = ? AND attempted_at >= ?
+            """,
+            (d["source_name"], cutoff_7d),
+        ).fetchone()
+        succ_7d = int(agg["succ"] or 0)
+        total_7d = int(agg["total"] or 0)
+        d["recent_7d_success"] = succ_7d
+        d["recent_7d_total"] = total_7d
+
+        # 状态判定
+        fails = d.get("consecutive_fails") or 0
+        has_success_ever = bool(d.get("last_success_at"))
+        if fails >= 3:
+            status = "dead"
+        elif fails >= 1:
+            status = "warn"
+        elif total_7d > 0 and succ_7d / total_7d < 0.7:
+            status = "warn"
+        elif has_success_ever:
+            status = "ok"
+        else:
+            status = "unknown"
+        d["status"] = status
+        out.append(d)
+
+    # 排序：dead > warn > unknown > ok；每组内按 last_attempt_at 倒序
+    status_order = {"dead": 0, "warn": 1, "unknown": 2, "ok": 3}
+    out.sort(key=lambda x: x.get("last_attempt_at") or "", reverse=True)
+    out.sort(key=lambda x: status_order.get(x["status"], 9))
+    return out
+
+
 def build(*, snapshot_now: datetime | None = None) -> dict:
     now = snapshot_now or datetime.now(timezone.utc)
 
@@ -174,13 +251,15 @@ def build(*, snapshot_now: datetime | None = None) -> dict:
 
         clusters = _build_clusters(conn)
         stats = _stats(conn)
+        feed_health = _feed_health(conn)
 
     payload = {
         "snapshot_at": now.isoformat(),
-        "schema_version": "v1.1",
+        "schema_version": "v1.2",
         "tabs": tabs,
         "clusters": clusters,
         "stats": stats,
+        "feed_health": feed_health,
     }
     return payload
 
@@ -210,6 +289,13 @@ def _print_summary(payload: dict) -> None:
         o_pool = len(data["opinions"]["pool"])
         print(f"  {tab}: facts top={f_top} pool={f_pool} | opinions top={o_top} pool={o_pool}")
     print(f"[build_today] multi-article clusters: {len(payload['clusters'])}")
+    fh = payload.get("feed_health") or []
+    if fh:
+        counts = {"ok": 0, "warn": 0, "dead": 0, "unknown": 0}
+        for f in fh:
+            counts[f.get("status", "unknown")] = counts.get(f.get("status", "unknown"), 0) + 1
+        print(f"[build_today] feed_health: 🟢 ok={counts['ok']} "
+              f"🟡 warn={counts['warn']} 🔴 dead={counts['dead']} ❔ unknown={counts['unknown']}")
 
 
 if __name__ == "__main__":

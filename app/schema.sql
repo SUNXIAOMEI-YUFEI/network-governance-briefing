@@ -92,6 +92,36 @@ CREATE TABLE IF NOT EXISTS fingerprint_history (
 );
 
 -- ============================================================
+-- feed_health：信源健康度（每个 feed 的最新一次抓取结果 + 近 7 天历史）
+-- ============================================================
+-- 设计：
+--   feed_health          存"每个 feed 当前状态"（upsert by source_name）
+--   feed_health_log      存"每次 fetch 的成功/失败记录"，用于算近 7 天成功率
+-- 这样 about 页一次查询能算出：最后成功时间 / 连续失败天数 / 近 7 天 N/7
+CREATE TABLE IF NOT EXISTS feed_health (
+    source_name         TEXT PRIMARY KEY,
+    feed_url            TEXT NOT NULL,
+    source_tier         TEXT,
+    last_attempt_at     TEXT NOT NULL,      -- ISO 8601 UTC：最近一次 fetch 时刻（不论成败）
+    last_success_at     TEXT,               -- ISO 8601 UTC：最近一次成功时刻，可为 NULL
+    last_error          TEXT,               -- 最近一次失败的错误描述；成功时清空
+    last_article_count  INTEGER DEFAULT 0,  -- 最近一次成功时该 feed 里的文章条数
+    consecutive_fails   INTEGER DEFAULT 0   -- 连续失败次数；一次成功即归 0
+);
+
+CREATE TABLE IF NOT EXISTS feed_health_log (
+    id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_name         TEXT NOT NULL,
+    attempted_at        TEXT NOT NULL,      -- ISO 8601 UTC
+    success             INTEGER NOT NULL CHECK (success IN (0,1)),
+    article_count       INTEGER DEFAULT 0,
+    error               TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_feed_log_source_time
+    ON feed_health_log(source_name, attempted_at DESC);
+
+-- ============================================================
 -- feedback：人工 👍/👎 反馈（MVP 只记录不自动调权重）
 -- ============================================================
 CREATE TABLE IF NOT EXISTS feedback (
