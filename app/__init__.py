@@ -1,6 +1,6 @@
-"""网络治理动态速递 · 选题情报工作台
+"""选题情报工作台 · 内部简报辅助工具
 
-Step 2：mock 流水线（无外部 API 依赖）
+v1.2：真数据流水线（GitHub Actions + DeepSeek V3 + Vercel）
 """
 
-__version__ = "0.2.0"
+__version__ = "1.2.0"

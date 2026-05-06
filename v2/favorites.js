@@ -13,6 +13,30 @@ const TYPE_LABEL = {
 };
 const FACT_TYPES = new Set(["fact_legislative", "fact_enforcement", "fact_official_doc"]);
 
+// 对外展示脱敏：与 app.js 保持一致
+const SANITIZE_MAP = [
+  [/中央网信办关切/g,   "政策关切议题"],
+  [/网信办关切/g,       "政策关切议题"],
+  [/网信办核心关切/g,   "核心关切议题"],
+  [/网信办自身执法/g,   "国内主管部门自身执法"],
+  [/网信办/g,           "监管者"],
+  [/8\s*大焦虑点/g,     "关切议题清单"],
+  [/八大焦虑点/g,       "关切议题清单"],
+  [/高焦虑点/g,         "高关切议题"],
+  [/焦虑点/g,           "关切议题"],
+  [/涉企黑嘴/g,         "涉企舆论风险"],
+  [/《网络治理动态速递》/g, "内部情报简报"],
+  [/网络治理动态速递/g,  "内部情报简报"],
+  [/写速递/g,           "写简报"],
+  [/速递/g,             "简报"],
+];
+function sanitize(text) {
+  if (!text) return text;
+  let s = String(text);
+  for (const [re, rep] of SANITIZE_MAP) s = s.replace(re, rep);
+  return s;
+}
+
 const $  = (sel, root = document) => root.querySelector(sel);
 
 function loadFavs() {
@@ -85,10 +109,10 @@ function renderFavCard(fav, onRemove) {
     badges.appendChild(el("span", { class: "badge badge-stage" }, a.maturity_stage));
   }
   for (const ax of (a.anxiety_hits || []).slice(0, 2)) {
-    badges.appendChild(el("span", { class: "badge badge-anxiety" }, ax));
+    badges.appendChild(el("span", { class: "badge badge-anxiety" }, sanitize(ax)));
   }
 
-  const reason = a.reason ? el("div", { class: "card-reason" }, a.reason) : null;
+  const reason = a.reason ? el("div", { class: "card-reason" }, sanitize(a.reason)) : null;
 
   const meta = el("div", { class: "card-meta" },
     el("span", {}, a.source_name),

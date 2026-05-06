@@ -11,7 +11,7 @@
 
 ```
 你每天早上：
-    打开 https://xxx.vercel.app → 看到 Top 3 → 写速递。完。
+    打开 https://xxx.vercel.app → 看到 Top 3 → 写简报。完。
 
 幕后（自动）：
     GitHub Actions cron（UTC 06:00 = 北京 14:00）
@@ -171,7 +171,7 @@ https://network-governance-briefing-xxx-你的用户名.vercel.app
 - 你的 `.env` 文件（已 gitignore）
 - KtN 邮箱地址（.env 里，未进仓库）
 - 你点的 👍/👎（存 localStorage，不进仓库）
-- 你写成的速递正文（不在这项目里）
+- 你写成的简报正文（不在这项目里）
 
 ### Q2: 想切私有怎么办？
 

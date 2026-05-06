@@ -1,32 +1,30 @@
-# 网络治理动态速递 · 选题情报工作台
+# 选题情报工作台
 
-> 给互联网大厂法律研究团队的内部工具：每天打开一个网页，看到已评分的域外网络治理选题（Top 3 + 情报池），辅助起草《网络治理动态速递》。
+> 法律研究团队的内部工具：每天打开一个网页，看到已评分的域外网络治理选题（Top 3 + 情报池），辅助起草内部情报简报。
 
 ## 当前状态
 
-**Step 2 进行中**：Mock 数据跑通流水线（无需 Inoreader / Anthropic API key）
+**v1.2 已上线**：真数据流水线每天自动跑（GitHub Actions · DeepSeek V3 评分 · Vercel 托管）
 
 ```
-fetch_mock.py → score.py（mock 桩） → cluster.py → build_today.py → data/today.json
+fetch.py → score.py → cluster.py → build_today.py → data/today.json → Vercel
 ```
-
-跑通后再接真 API（Step 3-4）。
 
 ## 快速开始
 
 ```bash
-# 1. 装依赖（最小化，目前只需 stdlib + 一两个）
+# 1. 装依赖（最小化，目前只需 stdlib）
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements.txt  # 目前为空，留给未来扩展
 
 # 2. 初始化数据库
 python3 -m app.init_db
 
-# 3. 灌 mock 数据
-python3 -m app.fetch_mock
+# 3. 抓取真 RSS（过去 24 小时）
+python3 -m app.fetch --hours 24
 
-# 4. 评分（mock 桩，不调真 LLM）
+# 4. 评分（需 .env 配好 LLM_API_KEY）
 python3 -m app.score
 
 # 5. 聚类 + 出今日 JSON
@@ -41,51 +39,57 @@ cat data/today.json | python3 -m json.tool | head -80
 ```
 app/
   __init__.py
-  init_db.py        # 建表（articles / clusters / daily_picks / feedback）
-  fetch_mock.py     # 写 mock 文章入库（无网络）
-  fetch.py          # 真 Inoreader 拉取（Step 4）
-  score.py          # 评分（含 mock 桩 + 真 Claude 调用 两种模式）
+  init_db.py        # 建表（articles / clusters / daily_picks / feedback / feed_health）
+  fetch.py          # 真 RSS 拉取（并发、去重、健康度记录）
+  fetch_mock.py     # 本地冒烟测试用的 mock 数据
+  score.py          # LLM 评分（OpenAI 兼容协议，DeepSeek/Claude 可切换）
   cluster.py        # 议题聚类，fact 提主 opinion 折叠
-  build_today.py    # 出 data/today.json
+  build_today.py    # 出 data/today.json（v1.2 增加 feed_health 字段）
   config.py         # 信源映射 / 黑名单 / 关键词
   schema.sql        # SQLite 建表 SQL
+  llm_client.py     # 纯 stdlib 的 OpenAI 兼容 HTTP 客户端
   prompts/
-    score_article.md  # LLM 评分 prompt（v1.1，含 content_type 判定）
+    score_article.md  # LLM 评分 prompt（v1.2）
   data/
-    mock_articles.json     # mock 数据集（12-16 条）
+    mock_articles.json     # mock 数据集
     industry_blacklist.txt # 产业政策黑名单
+scripts/
+  ci_run.py         # CI 入口：init_db + fetch + score + cluster + build
+  purge_mock.py     # 清理 mock 数据
 data/
   briefing.db       # SQLite（运行时生成）
   today.json        # 今日产物（运行时生成）
   archive/          # 历史快照
-requirements.txt
-README.md
+v2/
+  index.html        # 主界面（双栏 Top 3 + 议题聚类 + 情报池）
+  app.js            # 渲染逻辑 + 收藏夹
+  style.css         # 主样式
+  favorites.html/js # 我的收藏（localStorage）
+  about.html        # 关于本站 + 信源健康度
+  pages.css         # 收藏夹 + 关于页样式
+.github/workflows/
+  daily.yml         # 每日流水线（北京 14:00 自动跑）
 ```
 
-## 关键设计文档（在 brain 目录）
+## v1.2 关键特性
 
-- `scoring_spec_v1.md` —— 评分标准 v1.0 + v1.1 patch（必读）
-- `research_cac_profile.md` —— 网信办 8 大焦虑点
-- `research_intel_sources.md` —— 38 个 RSS 信源
-- `source_credentials.md` —— DataGuidance 等付费源接入凭证
+- **内容类型二分**：每篇文章打 `fact_legislative` / `fact_enforcement` / `fact_official_doc` / `opinion_analysis` 之一
+- **左右双栏 + 双 Top 3**：左事实（简报的"骨"）、右观点（简报的"肉"），名额完全独立
+- **4 档时间窗**：过去 24h / 72h / 5 天 / 15 天各自计算 Top
+- **中文标题归纳**：LLM 为每篇英文文章输出 15-30 字的简洁中文标题（`title_cn`）
+- **议题聚类**：同议题被多个信源报道时，按 `fingerprint` 合并并排序
+- **收藏夹**：👍 即存，localStorage 方案，支持 JSON 导出/导入跨设备同步
+- **信源健康度**：about 页展示每个 feed 的最后成功时间、近 7 天成功率、错误详情
+- **脱敏文案**：对外展示层通过 `sanitize()` 过滤历史 LLM 输出中的内部口径词
 
-## v1.1 关键点（content_type 二分）
+## 关键设计文档
 
-每篇文章打 4 类标签之一：
-- `fact_legislative` 立法事实 / `fact_enforcement` 执法事实 / `fact_official_doc` 官方文件 / `opinion_analysis` 观点分析
+- `scoring_spec_v1.md` —— 评分标准完整规范（本地）
+- `research_intel_sources.md` —— 信源金字塔与订阅策略（本地）
+- `DEPLOY.md` —— GitHub Actions + Vercel 部署指南
 
-输出端**左右双栏 + 双 Top 3**：左边 fact_*（写速递的"骨"）、右边 opinion（写速递的"肉"），名额完全独立、互不挤占。
+## 在线访问
 
-## ⚠️ Mock 桩的已知误差（Step 4 接真 LLM 后失效）
+Vercel 部署：https://network-governance-briefing.vercel.app/v2/index.html
 
-`MockScorer` 用关键词启发式做 content_type 判定，存在 ~15% 误判率，已知模式：
-
-- **Op-ed 文章引用了"X 国发布报告"** → 命中 fact_official_doc 词，被误判为 fact（如 Tech Policy Press "The Myth of..."）
-- **比较分析类长文含 "consultation papers"** → 同上（如 IAPP "Comparative Analysis"）
-- 真 LLM 阶段这些都不是问题——Claude 看到 "Myth of European AI Leadership" 一眼就归 opinion
-
-**Step 4 接真 LLM 时要做的清理**：
-
-- 删除 `app/score.py` 中 `MockScorer._detect_content_type` 内的"律所/监管者兜底"代码块（真 LLM 不需要）
-- 删除 `app/config.py` 中的 `CONTENT_TYPE_SIGNALS`（真 LLM 不需要这套关键词）
-- 用 `prompts/score_article.md` 的 prompt 直接调 Claude，把 LLM 返回的 `content_type` 字段写进 DB 即可
+每天北京时间 14:00-14:30 自动刷新一次。

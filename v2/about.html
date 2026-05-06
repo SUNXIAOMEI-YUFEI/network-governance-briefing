@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>关于本站 · 速递工作台</title>
+  <title>关于本站 · 选题工作台</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="pages.css">
 </head>
@@ -30,16 +30,16 @@
   <section class="about-section">
     <h1>这是什么</h1>
     <p class="lead">
-      一个为互联网大厂法律研究团队做的选题情报工作台，每天自动从 37 个境外信源抓取
+      一个为法律研究团队搭建的选题情报工作台，每天自动从 37 个境外信源抓取
       网络治理、AI 监管、隐私、平台反垄断相关动态，用 LLM 按 6 维度评分，
-      挑出最值得写进《网络治理动态速递》（递交中央网信办的内部简报）的选题。
+      挑出最值得写进内部情报简报的选题。
     </p>
     <p>
       打开网页就能看 3 层抽象的筛选结果：
     </p>
     <ul>
       <li><strong>4 档时间窗</strong>：过去 24h / 72h / 5 天 / 15 天，各算各的 Top 3</li>
-      <li><strong>双栏分流</strong>：左边"事实"（写速递的骨——立法 / 执法 / 官方文件），右边"观点"（写速递的肉——评论 / 分析 / 智库解读）</li>
+      <li><strong>双栏分流</strong>：左边"事实"（写简报的骨——立法 / 执法 / 官方文件），右边"观点"（写简报的肉——评论 / 分析 / 智库解读）</li>
       <li><strong>议题聚类</strong>：同一议题被多个信源报道时，自动合并，给你完整素材</li>
     </ul>
   </section>
@@ -55,29 +55,12 @@
         <tr><th>维度</th><th class="num">权重</th><th>含义</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>A. 网信办关切度</strong></td><td class="num">30</td><td>命中 8 大焦虑点（政治内容 / 算法极化 / 未成年人 / 数据跨境 / 标识 / Agent / 平台垄断 / 涉企黑嘴）</td></tr>
+        <tr><td><strong>A. 政策关切度</strong></td><td class="num">30</td><td>命中若干内部关切议题（按预设标签体系自动识别）</td></tr>
         <tr><td><strong>B. 议题成熟度</strong></td><td class="num">20</td><td>风险冒头期(20) / 讨论立法期(15) / 规则成形期(8) / 落地执行期(3)</td></tr>
         <tr><td><strong>C. 信源权威度</strong></td><td class="num">15</td><td>S 官方(15) / A 顶律所+顶刊(12) / B 主流(8) / C 行业(5) / D 社媒(2)</td></tr>
         <tr><td><strong>D. 议题热度</strong></td><td class="num">15</td><td>多源验证：被 N 个独立信源覆盖 → <code>min(N × 3, 15)</code></td></tr>
-        <tr><td><strong>E. 产业可借鉴性</strong></td><td class="num">10</td><td>海外做法值得抄 / 反衬中国做得好：利好(10) / 中性(5) / 不利(0)</td></tr>
+        <tr><td><strong>E. 产业可借鉴性</strong></td><td class="num">10</td><td>海外做法是否值得参考：利好(10) / 中性(5) / 不利(0)</td></tr>
         <tr><td><strong>F. 稀缺性</strong></td><td class="num">10</td><td>中文世界报道越少分越高（S/A 级英文官方源常得高分）</td></tr>
-      </tbody>
-    </table>
-
-    <h2>8 大焦虑点（A 维度明细）</h2>
-    <table class="about-table">
-      <thead>
-        <tr><th>焦虑点</th><th class="num">权重档</th><th>触发关键词示例</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>政治内容失控</td><td class="num">高 30</td><td>deepfake / election interference / disinfo / 选举干预</td></tr>
-        <tr><td>算法极化</td><td class="num">高 30</td><td>algorithmic amplification / filter bubble / 算法推荐</td></tr>
-        <tr><td>未成年人极端事件</td><td class="num">高 30</td><td>minor self-harm / AI companion suicide / child safety</td></tr>
-        <tr><td>训练数据跨境</td><td class="num">高 30</td><td>training data transfer / cross-border data / 数据出境</td></tr>
-        <tr><td>Agent 等新形态</td><td class="num">高 30</td><td>AI agent governance / autonomous agent / agentic AI</td></tr>
-        <tr><td>平台垄断</td><td class="num">高 30</td><td>DMA enforcement / gatekeeper / 数字市场法</td></tr>
-        <tr><td>标识失效</td><td class="num">中 20</td><td>watermark / C2PA / AI labeling / 标识办法</td></tr>
-        <tr><td>涉企黑嘴</td><td class="num">中 20</td><td>China tech criticism / Chinese platform abuse / 抹黑</td></tr>
       </tbody>
     </table>
 
@@ -85,9 +68,9 @@
     <ol class="about-list">
       <li>纯商业新闻（融资 / 收购 / 财报），无监管角度</li>
       <li>学术论文（非监管动态）</li>
-      <li>他国政治选举 / 地缘冲突（除非是网络治理）</li>
+      <li>他国政治选举 / 地缘冲突（除非涉及网络治理）</li>
       <li>30 天内已写过同议题（系统按议题指纹判断）</li>
-      <li>国内网信办自身执法动态（网信办自己更清楚，不必转报）</li>
+      <li>国内主管部门自身执法动态（主管部门一手信息充足，不必转报）</li>
       <li><strong>产业政策</strong>（芯片 / 制裁 / 贸易 / 出口管制）—— 硬黑名单 + LLM 双重过滤</li>
     </ol>
 
@@ -100,8 +83,8 @@
       <li><span class="tag-inline opinion_analysis">💭 观点分析</span>：评论 / 社论 / 学术分析 / 智库报告解读</li>
     </ul>
     <p>
-      这个标签驱动<strong>左右双栏布局</strong>：左栏 Top 3 事实（写速递"X 月 X 日，Y 国发布 Z 法"那段），
-      右栏 Top 3 观点（写速递"国际反应"或"学界质疑"那段）。名额完全独立，互不挤占。
+      这个标签驱动<strong>左右双栏布局</strong>：左栏 Top 3 事实（写简报"X 月 X 日，Y 国发布 Z 法"那段），
+      右栏 Top 3 观点（写简报"国际反应"或"学界质疑"那段）。名额完全独立，互不挤占。
     </p>
   </section>
 
@@ -228,7 +211,7 @@
     <h2>日常工作流（每天 5-10 分钟）</h2>
     <ol class="about-list">
       <li>早上打开 URL，切到你要写的时间窗 Tab（日报用 24h，周报用 120h）</li>
-      <li>左栏 Top 3 事实 → 挑 1 条作为速递第一、二段的骨架</li>
+      <li>左栏 Top 3 事实 → 挑 1 条作为简报第一、二段的骨架</li>
       <li>右栏 Top 3 观点 → 挑 1-2 条作为"国际 / 学界反应"那段的引用素材</li>
       <li>议题聚类区 → 如果你挑的事实有对应聚类，点开看相关观点，全套素材一次性拿</li>
       <li>认可的选题点 👍 → 存进"我的收藏"，后续复盘用</li>
@@ -245,7 +228,7 @@
     <h2>不建议的使用方式</h2>
     <ul>
       <li>不要把这个 URL 直接当真相 —— 它是<strong>选题助手</strong>，最终判断权在你</li>
-      <li>不要迷信评分 —— 分数只反映"符合网信办关切的程度"，不反映新闻本身的重要性</li>
+      <li>不要迷信评分 —— 分数只反映"符合内部关切议题的程度"，不反映新闻本身的重要性</li>
       <li>不要把 URL 公开分享 —— 虽然页面本身是公开的，但你点的 👍 反映你的价值判断</li>
     </ul>
   </section>
@@ -256,7 +239,6 @@
     <ul>
       <li>源代码：<a href="https://github.com/SUNXIAOMEI-YUFEI/network-governance-briefing" target="_blank" rel="noopener">GitHub 仓库</a></li>
       <li>评分标准完整规范：见仓库 <code>scoring_spec_v1.md</code>（含 v1.0 + v1.1 patch）</li>
-      <li>网信办画像：见仓库 <code>research_cac_profile.md</code>（8 大焦虑点推演）</li>
       <li>信源体系：见仓库 <code>research_intel_sources.md</code></li>
       <li>部署文档：见仓库 <code>DEPLOY.md</code></li>
     </ul>

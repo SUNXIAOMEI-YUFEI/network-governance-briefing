@@ -1,4 +1,4 @@
-/* 速递工作台 · v1.1
+/* 选题情报工作台 · v1.2
  * 读 ../data/today.json 渲染：双栏 Top 3 + 议题聚类 + 情报池 + 反馈按钮
  */
 
@@ -11,6 +11,35 @@ const TODAY_JSON_CANDIDATES = [
 ];
 const FEEDBACK_KEY   = "briefing.feedback.v1";
 const FAV_KEY        = "briefing.favorites.v1";  // v1.2：收藏夹（点赞 = 加收藏）
+
+// ---------- 对外文案脱敏 ----------
+// 目的：历史 LLM 输出（reason / anxiety_hits）里含有只用于内部口径的词
+// （例如"网信办"、"8 大焦虑点"、"涉企黑嘴"等）。前端展示前统一替换为中性词，
+// 底层数据不动，不影响评分逻辑。未来 prompt 升级后新数据自然就是中性文案。
+const SANITIZE_MAP = [
+  // 先长后短，避免"网信办"替完后 "网信办关切" 再二次替换
+  [/中央网信办关切/g,   "政策关切议题"],
+  [/网信办关切/g,       "政策关切议题"],
+  [/网信办核心关切/g,   "核心关切议题"],
+  [/网信办自身执法/g,   "国内主管部门自身执法"],
+  [/网信办/g,           "监管者"],
+  [/8\s*大焦虑点/g,     "关切议题清单"],
+  [/八大焦虑点/g,       "关切议题清单"],
+  [/高焦虑点/g,         "高关切议题"],
+  [/焦虑点/g,           "关切议题"],
+  [/涉企黑嘴/g,         "涉企舆论风险"],
+  [/《网络治理动态速递》/g, "内部情报简报"],
+  [/网络治理动态速递/g,  "内部情报简报"],
+  [/写速递/g,           "写简报"],
+  [/速递/g,             "简报"],
+];
+
+function sanitize(text) {
+  if (!text) return text;
+  let s = String(text);
+  for (const [re, rep] of SANITIZE_MAP) s = s.replace(re, rep);
+  return s;
+}
 
 // content_type → 中文 + 徽标
 const TYPE_LABEL = {
@@ -156,11 +185,11 @@ function renderCard(article, { compact = false } = {}) {
     badges.appendChild(el("span", { class: "badge badge-stage" }, article.maturity_stage));
   }
   for (const ax of (article.anxiety_hits || []).slice(0, 2)) {
-    badges.appendChild(el("span", { class: "badge badge-anxiety" }, ax));
+    badges.appendChild(el("span", { class: "badge badge-anxiety" }, sanitize(ax)));
   }
 
-  // reason
-  const reason = el("div", { class: "card-reason" }, article.reason || "");
+  // reason（对外展示脱敏）
+  const reason = el("div", { class: "card-reason" }, sanitize(article.reason || ""));
 
   // meta
   const meta = el("div", { class: "card-meta" },
@@ -239,7 +268,7 @@ function renderCluster(cluster) {
       `${main.source_name} · ${main.source_tier} 级 · 总分 ${main.total_score}` +
       (main.maturity_stage ? ` · ${main.maturity_stage}` : "")
     ),
-    main.reason ? el("div", { class: "card-reason", style: "border-top: none; padding-top: 4px;" }, main.reason) : null,
+    main.reason ? el("div", { class: "card-reason", style: "border-top: none; padding-top: 4px;" }, sanitize(main.reason)) : null,
   );
 
   // related
