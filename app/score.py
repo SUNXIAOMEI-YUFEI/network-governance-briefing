@@ -281,8 +281,8 @@ class MockScorer(ArticleScorer):
         veto: str | None,
     ) -> str:
         if veto:
-            return f"命中一票否决 #{veto}（产业政策/国内执法/商业新闻），不进选题。"
-        ax = "+".join(anxiety_hits) if anxiety_hits else "无焦虑点命中"
+            return f"命中一票否决 #{veto}（产业政策/国内执法/商业新闻/主题不相关），不进选题。"
+        ax = "+".join(anxiety_hits) if anxiety_hits else "无关切议题命中"
         type_short = {
             "fact_legislative": "立法事实",
             "fact_enforcement": "执法事实",
@@ -357,13 +357,18 @@ class OpenAICompatScorer(ArticleScorer):
     - chr1 等中转站
     - OpenAI 官方
     - Anthropic 的 OpenAI 兼容层（如果开了）
+
+    v1.2 升级：
+    - 双评取高（self-consistency）：同一文章调用 LLM 2 次，合并策略见 score()。
+    - temperature 两次分别用 0.0 / 0.3，增加第二次的探索性。
     """
 
-    def __init__(self, cfg: LLMConfig | None = None) -> None:
+    def __init__(self, cfg: LLMConfig | None = None, *, double_pass: bool = True) -> None:
         self.cfg = cfg or LLMConfig.from_env()
         self._system, self._user_tpl = _load_prompt_template()
+        self.double_pass = double_pass  # 可通过 env LLM_DOUBLE_PASS=0 关掉
 
-    def score(self, article: Article) -> ScoreResult:
+    def _single_call(self, article: Article, *, temperature: float) -> ScoreResult:
         user_msg = self._user_tpl.format(
             title=article.title,
             source_name=article.source_name,
@@ -376,8 +381,8 @@ class OpenAICompatScorer(ArticleScorer):
             self.cfg,
             system=self._system,
             user=user_msg,
-            temperature=0.0,
-            max_tokens=800,
+            temperature=temperature,
+            max_tokens=1200,  # v1.2 从 800 → 1200，支持更长 reason
             response_format_json=True,
         )
         try:
@@ -429,6 +434,54 @@ class OpenAICompatScorer(ArticleScorer):
             content_type=content_type,
             content_type_reason=content_type_reason,
             title_cn=title_cn,
+        )
+
+    def score(self, article: Article) -> ScoreResult:
+        # 第一次调用（确定性，temperature=0）
+        r1 = self._single_call(article, temperature=0.0)
+
+        if not self.double_pass:
+            return r1
+
+        # 第二次调用（小扰动，temperature=0.3）
+        try:
+            r2 = self._single_call(article, temperature=0.3)
+        except LLMError as e:
+            print(f"[score] ⚠️ 第二次评分失败（仍用第一次）id={article.id}: {e}")
+            return r1
+
+        # 合并策略：
+        # 1) 两次都不 veto → 取 total 更高的（高分更可能捕捉到治理价值）
+        # 2) 只有一次 veto → 信任非 veto 的那次（避免 LLM 误杀）
+        # 3) 两次都 veto → 用第一次
+        t1 = (r1.score_a + r1.score_b + r1.score_e + r1.score_f) if not r1.veto else -1
+        t2 = (r2.score_a + r2.score_b + r2.score_e + r2.score_f) if not r2.veto else -1
+
+        if t1 == -1 and t2 == -1:
+            chosen = r1
+        elif t1 == -1:
+            chosen = r2
+        elif t2 == -1:
+            chosen = r1
+        else:
+            chosen = r1 if t1 >= t2 else r2
+
+        ax_union = list({*(r1.anxiety_hits or []), *(r2.anxiety_hits or [])})
+        tcn = chosen.title_cn or (r2.title_cn if chosen is r1 else r1.title_cn) or article.title
+
+        return ScoreResult(
+            score_a=chosen.score_a,
+            score_b=chosen.score_b,
+            score_e=chosen.score_e,
+            score_f=chosen.score_f,
+            fingerprint=chosen.fingerprint,
+            veto=chosen.veto,
+            anxiety_hits=ax_union,
+            maturity_stage=chosen.maturity_stage,
+            reason=chosen.reason,
+            content_type=chosen.content_type,
+            content_type_reason=chosen.content_type_reason,
+            title_cn=tcn,
         )
 
 
@@ -600,9 +653,12 @@ def main() -> int:
     args = parser.parse_args()
 
     if args.real_llm:
-        scorer: ArticleScorer = OpenAICompatScorer()
+        import os as _os
+        double_pass = _os.getenv("LLM_DOUBLE_PASS", "1") != "0"
+        scorer: ArticleScorer = OpenAICompatScorer(double_pass=double_pass)
         concurrency = args.concurrency or scorer.cfg.concurrency  # type: ignore[attr-defined]
-        print(f"[score] 真 LLM 模式 · model={scorer.cfg.model} · concurrency={concurrency}")  # type: ignore[attr-defined]
+        dp_flag = "双评取高" if double_pass else "单评"
+        print(f"[score] 真 LLM 模式 · model={scorer.cfg.model} · {dp_flag} · concurrency={concurrency}")  # type: ignore[attr-defined]
     else:
         scorer = MockScorer()
         concurrency = 1
