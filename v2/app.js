@@ -83,12 +83,29 @@ function renderCard(article, { compact = false } = {}) {
     el("span", { class: "label" }, "TOTAL")
   );
 
-  const title = el("a", {
-    class: "card-title",
-    href: article.url,
-    target: "_blank",
-    rel: "noopener noreferrer",
-  }, article.title || "(无标题)");
+  // 中文归纳标题 + 英文原题
+  const titleCn = (article.title_cn && article.title_cn.trim()) || article.title || "(无标题)";
+  const titleEn = article.title || "";
+  const showEnglishLine = titleEn && titleEn !== titleCn;
+
+  const isKtnEntry = (article.url || "").includes("kill-the-newsletter.com/feeds/");
+  const ktnHint = isKtnEntry
+    ? el("span", { class: "ktn-hint", title: "邮件源：直链是邮件页面，内容在下方摘要" }, "📧 邮件源")
+    : null;
+
+  const titleBlock = el("div", { class: "card-title-block" },
+    el("a", {
+      class: "card-title-cn",
+      href: article.url,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      title: titleEn || titleCn,
+    }, titleCn),
+    showEnglishLine
+      ? el("div", { class: "card-title-en" }, titleEn)
+      : null,
+    ktnHint,
+  );
 
   // badges
   const badges = el("div", { class: "card-badges" });
@@ -145,7 +162,7 @@ function renderCard(article, { compact = false } = {}) {
   const feedback = el("div", { class: "feedback" }, upBtn, downBtn);
 
   return el("article", { class: `card${compact ? " compact" : ""}` },
-    score, title, badges, reason, meta, feedback
+    score, titleBlock, badges, reason, meta, feedback
   );
 }
 
@@ -164,12 +181,17 @@ function renderCluster(cluster) {
     noFact ? el("span", { class: "warn-no-fact" }, "⚠️ 该议题暂无事实源（仅观点）") : null,
   );
 
+  const mainTitleCn = (main.title_cn && main.title_cn.trim()) || main.title;
+  const mainTitleEn = main.title || "";
+  const showMainEn = mainTitleEn && mainTitleEn !== mainTitleCn;
+
   const mainBlock = el("div", { class: "cluster-main" },
     el("div", { class: `label${noFact ? " no-fact" : ""}` },
       noFact ? "💭 暂代主条（观点）" : "📋 主条（事实）"),
     el("div", { class: "title" },
-      el("a", { href: main.url, target: "_blank", rel: "noopener noreferrer" }, main.title)
+      el("a", { href: main.url, target: "_blank", rel: "noopener noreferrer" }, mainTitleCn)
     ),
+    showMainEn ? el("div", { class: "cluster-main-en" }, mainTitleEn) : null,
     el("div", { class: "sub" },
       `${main.source_name} · ${main.source_tier} 级 · 总分 ${main.total_score}` +
       (main.maturity_stage ? ` · ${main.maturity_stage}` : "")
@@ -184,9 +206,10 @@ function renderCluster(cluster) {
     const items = all.map(r => {
       const tlabel = TYPE_LABEL[r.content_type] || {};
       const cls = FACT_TYPES.has(r.content_type) ? "fact" : "opinion";
+      const rTitleCn = (r.title_cn && r.title_cn.trim()) || r.title;
       return el("li", { class: cls },
         el("span", { class: "ct" }, `${tlabel.icon || "•"} ${tlabel.text || r.content_type}`),
-        el("a", { href: r.url, target: "_blank", rel: "noopener noreferrer" }, r.title),
+        el("a", { href: r.url, target: "_blank", rel: "noopener noreferrer", title: r.title }, rTitleCn),
         el("span", { class: "muted" }, ` · ${r.source_name} · ${r.total_score}`),
       );
     });

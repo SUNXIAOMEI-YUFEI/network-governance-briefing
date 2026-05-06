@@ -56,6 +56,12 @@ def main() -> int:
     _step("Step 1 · 初始化数据库")
     init_db.init()
 
+    # ---- 1.5 清掉可能残留的 mock 数据（首次部署后的一次性清理）----
+    if not args.use_mock:
+        _step("Step 1.5 · 清除 mock 残留")
+        from scripts import purge_mock
+        purge_mock.purge()
+
     # ---- 2. 抓取 ----
     if args.skip_fetch:
         print("\n[ci] 跳过 fetch 阶段")

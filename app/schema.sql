@@ -38,7 +38,10 @@ CREATE TABLE IF NOT EXISTS articles (
     content_type    TEXT NOT NULL DEFAULT 'opinion_analysis'
                     CHECK (content_type IN
                         ('fact_legislative','fact_enforcement','fact_official_doc','opinion_analysis')),
-    content_type_reason TEXT
+    content_type_reason TEXT,
+
+    -- v1.2 patch：LLM 生成的中文标题（原 title 仍保留）
+    title_cn        TEXT
 );
 
 CREATE INDEX IF NOT EXISTS idx_articles_published    ON articles(published_at);

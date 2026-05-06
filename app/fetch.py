@@ -230,6 +230,36 @@ def _is_ktn_noise(source_name: str, title: str) -> bool:
     return any(p in t for p in KTN_NOISE_PATTERNS)
 
 
+# KtN 转发 newsletter 的通用标题模式（这些不是废邮件，但标题信息量太少，需要从 summary 里提取议题）
+_KTN_GENERIC_TITLES = [
+    "new from dataguidance",
+    "dataguidance collections",
+    "daily briefing",
+    "daily digest",
+    "newsletter",
+    "weekly roundup",
+]
+
+
+def _needs_title_augmentation(source_name: str, title: str) -> bool:
+    """判断是否要用 summary 补 title（KtN 专属情况）。"""
+    if "(KtN)" not in source_name:
+        return False
+    t = title.lower().strip()
+    return any(p in t for p in _KTN_GENERIC_TITLES) or len(t) < 12
+
+
+def _augment_title_from_summary(title: str, summary: str) -> str:
+    """把 summary 的前若干字拼到 title 前，让 LLM 能看到真议题。"""
+    if not summary:
+        return title
+    # 取前 180 字符
+    hint = summary.strip()[:180].replace("\n", " ")
+    if len(summary) > 180:
+        hint += "…"
+    return f"{title} | {hint}"
+
+
 # ============================================================
 # 单 feed 抓取
 # ============================================================
@@ -252,6 +282,10 @@ def fetch_one_feed(source_name: str, feed_url: str, source_tier: str) -> tuple[l
     # KtN 噪声过滤
     if "(KtN)" in source_name:
         articles = [a for a in articles if not _is_ktn_noise(source_name, a.title)]
+        # KtN 通用标题（如 "New from DataGuidance collections"）→ 从 summary 拼真议题
+        for a in articles:
+            if _needs_title_augmentation(source_name, a.title):
+                a.title = _augment_title_from_summary(a.title, a.summary)
 
     return articles, FeedResult(source_name, feed_url, True, len(articles))
 

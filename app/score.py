@@ -69,6 +69,7 @@ class ScoreResult:
     reason: str
     content_type: str
     content_type_reason: str
+    title_cn: str = ""
 
 
 # ============================================================
@@ -131,6 +132,7 @@ class MockScorer(ArticleScorer):
             reason=reason,
             content_type=content_type,
             content_type_reason=content_type_reason,
+            title_cn=article.title,  # mock 桩不翻译，用原英文
         )
 
     # -------- 私有 helper --------
@@ -409,6 +411,11 @@ class OpenAICompatScorer(ArticleScorer):
 
         fingerprint = obj.get("fingerprint") or f"misc-{article.id}"
 
+        # v1.1+：中文归纳标题（LLM 做归纳；没给就 fallback 用英文原题）
+        title_cn = (obj.get("title_cn") or "").strip()
+        if not title_cn:
+            title_cn = article.title
+
         return ScoreResult(
             score_a=score_a,
             score_b=score_b,
@@ -421,6 +428,7 @@ class OpenAICompatScorer(ArticleScorer):
             reason=reason,
             content_type=content_type,
             content_type_reason=content_type_reason,
+            title_cn=title_cn,
         )
 
 
@@ -516,7 +524,8 @@ def run(scorer: ArticleScorer, *, rescore_all: bool = False, concurrency: int = 
                     score_e = ?, score_f = ?, total_score = ?,
                     fingerprint = ?, veto = ?, anxiety_hits = ?,
                     maturity_stage = ?, reason = ?,
-                    content_type = ?, content_type_reason = ?
+                    content_type = ?, content_type_reason = ?,
+                    title_cn = ?
                 WHERE id = ?
                 """,
                 (
@@ -525,6 +534,7 @@ def run(scorer: ArticleScorer, *, rescore_all: bool = False, concurrency: int = 
                     result.fingerprint, result.veto, json.dumps(result.anxiety_hits, ensure_ascii=False),
                     result.maturity_stage, result.reason,
                     result.content_type, result.content_type_reason,
+                    result.title_cn,
                     article.id,
                 ),
             )

@@ -125,7 +125,8 @@
   "maturity_stage": "规则成形期",
   "reason": "EU GPAI 行为准则最终版发布，命中训练数据跨境+Agent 监管，但已进入规则成形期所以 B 不满分。",
   "content_type": "fact_legislative",
-  "content_type_reason": "文章主体是欧委会发布行为准则的事实陈述，含发布日期与具体条文要求"
+  "content_type_reason": "文章主体是欧委会发布行为准则的事实陈述，含发布日期与具体条文要求",
+  "title_cn": "欧委会发布最终版 GPAI 行为准则"
 }
 ```
 
@@ -137,6 +138,11 @@
 - `anxiety_hits` ∈ 焦虑点中文名子集，可空数组
 - `maturity_stage` ∈ {"风险冒头期", "讨论立法期", "规则成形期", "落地执行期"}
 - `content_type` ∈ {"fact_legislative", "fact_enforcement", "fact_official_doc", "opinion_analysis"}（v1.1 新增，必填）
+- **`title_cn`（v1.1 新增，必填）**：把英文标题归纳为**简洁中文标题**，15-30 字为佳。
+  - 好例子：`欧委会发布最终版 GPAI 行为准则`、`意大利 Garante 以 GDPR 违规罚 OpenAI 1500 万欧元`、`ICO 发布在线服务年龄验证最终指南`
+  - 若原标题是 DataGuidance 这类 newsletter 的通用标题（如 "New from DataGuidance collections"），请从**摘要 summary 里提取最重要的一两条议题**当标题，例如：`[DG 日报] ICO 指南生效 · 荷兰 AI 法案推进`
+  - 严禁直译，严禁废话开头（别写 "该文章讨论了..."、"本文报道了..."）
+  - 主语和动宾要清楚：`谁 + 做了什么`
 
 只输出这一个 JSON 对象，不要加任何前后说明文字、markdown 代码块标记。
 

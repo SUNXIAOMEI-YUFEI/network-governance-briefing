@@ -64,7 +64,7 @@ def _query_window(
         params = ["opinion_analysis"]
 
     sql = f"""
-        SELECT id, url, title, summary, source_name, source_tier, published_at,
+        SELECT id, url, title, title_cn, summary, source_name, source_tier, published_at,
                score_a, score_b, score_c, score_d, score_e, score_f, total_score,
                fingerprint, anxiety_hits, maturity_stage, content_type, reason
         FROM articles
@@ -96,7 +96,7 @@ def _build_clusters(conn: sqlite3.Connection) -> list[dict]:
         fp = cr["fingerprint"]
         main_row = conn.execute(
             """
-            SELECT id, url, title, summary, source_name, source_tier, published_at,
+            SELECT id, url, title, title_cn, summary, source_name, source_tier, published_at,
                    total_score, anxiety_hits, maturity_stage, content_type, reason
             FROM articles WHERE id = ?
             """,
@@ -107,7 +107,7 @@ def _build_clusters(conn: sqlite3.Connection) -> list[dict]:
 
         related_rows = conn.execute(
             """
-            SELECT id, url, title, source_name, source_tier, published_at,
+            SELECT id, url, title, title_cn, source_name, source_tier, published_at,
                    total_score, content_type
             FROM articles
             WHERE fingerprint = ? AND id != ? AND veto IS NULL

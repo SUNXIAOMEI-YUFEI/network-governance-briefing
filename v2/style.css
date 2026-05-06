@@ -186,6 +186,46 @@ a:hover { text-decoration: underline; }
 .card-title:hover { text-decoration: underline; text-decoration-color: var(--c-fact-accent); }
 .column-opinions .card-title:hover { text-decoration-color: var(--c-op-accent); }
 
+/* 新：中文归纳标题（主）+ 英文原题（辅） */
+.card-title-block {
+  grid-area: title;
+  display: flex; flex-direction: column; gap: 2px;
+  min-width: 0;
+}
+.card-title-cn {
+  font-size: 15px; font-weight: 600;
+  line-height: 1.4;
+  color: var(--c-fg);
+  text-decoration: none;
+  word-break: break-word;
+}
+.card-title-cn:hover { text-decoration: underline; text-decoration-color: var(--c-fact-accent); }
+.column-opinions .card-title-cn:hover { text-decoration-color: var(--c-op-accent); }
+.card-title-en {
+  font-size: 12px;
+  color: var(--c-muted);
+  line-height: 1.4;
+  word-break: break-word;
+  font-style: italic;
+}
+.ktn-hint {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--c-warn);
+  background: #fef3c7;
+  padding: 1px 7px;
+  border-radius: 999px;
+  margin-top: 2px;
+  width: max-content;
+  cursor: help;
+}
+.cluster-main-en {
+  font-size: 12px;
+  color: var(--c-muted);
+  font-style: italic;
+  margin: -2px 0 4px;
+}
+
 .card-badges { grid-area: badges; display: flex; flex-wrap: wrap; gap: 6px; }
 .badge {
   display: inline-flex; align-items: center; gap: 4px;
