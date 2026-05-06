@@ -45,6 +45,8 @@ def main() -> int:
                         help="调试用：跳过抓取，只重跑 score+cluster+build")
     parser.add_argument("--use-mock", action="store_true",
                         help="用 mock 数据（CI 冒烟测试用）")
+    parser.add_argument("--rescore-all", action="store_true",
+                        help="重新评分全部文章（升级 prompt / 修 bug 时用）")
     args = parser.parse_args()
 
     # ---- 校验环境变量 ----
@@ -95,7 +97,7 @@ def main() -> int:
     concurrency_n = int(os.environ.get("LLM_CONCURRENCY", "4")) if not args.use_mock else 1
 
     try:
-        score_run(scorer, rescore_all=False, concurrency=concurrency_n)
+        score_run(scorer, rescore_all=args.rescore_all, concurrency=concurrency_n)
     except Exception:
         print("[ci] ⚠️ 评分遇到异常，但流水线继续")
         traceback.print_exc()

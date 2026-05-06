@@ -22,6 +22,11 @@ on:
         type: boolean
         required: false
         default: false
+      rescore_all:
+        description: "重新评分全部文章（升级 prompt 后补 title_cn 等）"
+        type: boolean
+        required: false
+        default: false
   push:
     branches: [main, master]
     paths:
@@ -70,12 +75,16 @@ jobs:
           set -e
           # 定时触发 & 手动触发无 mock 时走真数据
           HOURS="${{ github.event.inputs.hours || '24' }}"
+          RESCORE_FLAG=""
+          if [ "${{ github.event.inputs.rescore_all }}" = "true" ]; then
+            RESCORE_FLAG="--rescore-all"
+          fi
           if [ "${{ github.event.inputs.use_mock }}" = "true" ] || [ "${{ github.event_name }}" = "push" ]; then
             echo "[ci] 运行 mock 流水线（冒烟测试）"
-            python -m scripts.ci_run --use-mock
+            python -m scripts.ci_run --use-mock $RESCORE_FLAG
           else
-            echo "[ci] 运行真数据流水线（hours=$HOURS）"
-            python -m scripts.ci_run --hours "$HOURS"
+            echo "[ci] 运行真数据流水线（hours=$HOURS, rescore=$RESCORE_FLAG）"
+            python -m scripts.ci_run --hours "$HOURS" $RESCORE_FLAG
           fi
 
       - name: Commit today.json + archive
