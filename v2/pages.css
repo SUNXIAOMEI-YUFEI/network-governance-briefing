@@ -1,0 +1,221 @@
+/* 收藏夹 + 关于本站 的独立样式（叠加在 style.css 之上） */
+
+/* 顶栏导航链接 */
+.nav-link {
+  color: var(--c-fg-soft);
+  text-decoration: none;
+  font-size: 12.5px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  transition: background 0.12s ease;
+}
+.nav-link:hover {
+  background: #eef0f3;
+  color: var(--c-fg);
+  text-decoration: none;
+}
+
+/* 返回按钮 */
+.back-link {
+  font-size: 20px;
+  color: var(--c-fg-soft);
+  text-decoration: none;
+  padding: 0 6px;
+  border-radius: 6px;
+  transition: background 0.12s ease;
+}
+.back-link:hover {
+  background: #eef0f3;
+  color: var(--c-fg);
+}
+
+/* 顶栏徽章（收藏数） */
+.fav-badge {
+  display: inline-block;
+  min-width: 18px; padding: 0 6px;
+  background: var(--c-good);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 10.5px; font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 16px;
+  margin-left: 2px;
+}
+.fav-badge.zero {
+  background: #cbd1da;
+  color: var(--c-fg-soft);
+}
+
+/* 页尾链接 */
+.footer-link {
+  color: var(--c-fg-soft);
+  text-decoration: none;
+}
+.footer-link:hover { color: var(--c-fact-accent); text-decoration: underline; }
+.footer-sep { color: var(--c-muted); margin: 0 8px; }
+
+/* 收藏页：卡片强制双栏配色（复用事实/观点的颜色） */
+.card.column-facts    { background: var(--c-fact-bg); border-color: #d6e4f8; }
+.card.column-opinions { background: var(--c-op-bg);   border-color: #f5dac0; }
+
+.fb-btn.remove {
+  font-size: 14px; color: var(--c-veto);
+}
+.fb-btn.remove:hover {
+  background: var(--c-veto); color: #fff; border-color: var(--c-veto);
+}
+
+.about-intro {
+  margin: 18px 0 8px;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-md);
+}
+
+/* ========== 关于页面 ========== */
+.about-page {
+  max-width: 880px;   /* 文档阅读宽度，比工作台窄 */
+}
+
+.about-section {
+  background: #fff;
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  padding: 28px 32px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow-card);
+}
+
+.about-page h1 {
+  margin: 0 0 14px;
+  font-size: 22px; font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--c-fact-accent);
+  display: inline-block;
+}
+
+.about-page h2 {
+  margin: 24px 0 10px;
+  font-size: 16px; font-weight: 600;
+  color: var(--c-fact-deep);
+}
+
+.about-page p {
+  margin: 10px 0;
+  line-height: 1.75;
+  color: var(--c-fg);
+}
+.about-page p.lead {
+  font-size: 15.5px; color: var(--c-fg);
+  margin-bottom: 16px;
+}
+.about-page p.small { font-size: 12.5px; }
+
+.about-page ul,
+.about-page ol,
+.about-list {
+  margin: 10px 0;
+  padding-left: 24px;
+  line-height: 1.9;
+}
+.about-page li { margin: 4px 0; }
+
+.about-page code {
+  background: #f1f3f5;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12.5px;
+  color: var(--c-fact-deep);
+}
+
+.about-page pre.arch {
+  background: #1f2328;
+  color: #d0d7de;
+  padding: 18px;
+  border-radius: var(--r-md);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12.5px;
+  line-height: 1.55;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.about-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 13.5px;
+}
+.about-table th,
+.about-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--c-border);
+}
+.about-table th {
+  background: var(--c-fact-bg);
+  font-weight: 600;
+  color: var(--c-fact-deep);
+  border-bottom: 2px solid #c6d6f1;
+}
+.about-table td.num, .about-table th.num {
+  text-align: center;
+  width: 90px;
+  white-space: nowrap;
+}
+.about-table tbody tr:hover {
+  background: #fafbfc;
+}
+
+.tag-inline {
+  display: inline-block;
+  padding: 1px 10px;
+  border-radius: 999px;
+  font-size: 12px; font-weight: 500;
+  margin: 0 2px;
+}
+.tag-inline.fact_legislative  { background: #dbe9fb; color: #1e40af; }
+.tag-inline.fact_enforcement  { background: #fde2e2; color: #991b1b; }
+.tag-inline.fact_official_doc { background: #e0e7ff; color: #3730a3; }
+.tag-inline.opinion_analysis  { background: var(--c-op-soft); color: var(--c-op-deep); }
+
+.tier-badge {
+  display: inline-block;
+  min-width: 22px; padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px; font-weight: 700;
+  text-align: center;
+  margin-right: 4px;
+}
+.tier-badge.S { background: #1f2937; color: #fff; }
+.tier-badge.A { background: #4338ca; color: #fff; }
+.tier-badge.B { background: #6b7280; color: #fff; }
+.tier-badge.C { background: #9ca3af; color: #fff; }
+.tier-badge.D { background: #d1d5db; color: #374151; }
+
+.source-list li {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+.about-page a {
+  color: var(--c-fact-accent);
+  text-decoration: none;
+}
+.about-page a:hover {
+  text-decoration: underline;
+}
+
+.muted.small { font-size: 12.5px; }
+
+/* 窄屏响应 */
+@media (max-width: 880px) {
+  .about-section { padding: 20px 16px; }
+  .about-page h1 { font-size: 18px; }
+  .about-page h2 { font-size: 15px; }
+  .about-table { font-size: 12.5px; }
+  .about-table th, .about-table td { padding: 7px 8px; }
+}

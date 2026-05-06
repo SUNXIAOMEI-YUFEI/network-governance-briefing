@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的收藏 · 速递工作台</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <a href="index.html" class="back-link">←</a>
+      <span class="brand-mark">⭐</span>
+      <span class="brand-name">我的收藏 · 认可的选题存档</span>
+    </div>
+    <div class="meta">
+      <span id="fav-count-meta" class="muted">—</span>
+      <span class="dot">·</span>
+      <a href="#" id="export-btn" class="nav-link" title="把收藏导出为 JSON 备份">📥 导出</a>
+      <span class="dot">·</span>
+      <a href="#" id="import-btn" class="nav-link" title="从 JSON 文件恢复收藏（跨设备同步）">📤 导入</a>
+      <input type="file" id="import-file" accept=".json" style="display:none">
+    </div>
+  </div>
+</header>
+
+<main class="workspace">
+  <section class="about-intro">
+    <p class="muted">
+      这里存着你点过 👍 的选题。数据**仅存在本浏览器**（localStorage），不会上传任何服务器。
+      换电脑 / 换浏览器要同步，用右上角"导出"保存 JSON，在新设备"导入"即可。
+    </p>
+  </section>
+
+  <section>
+    <header class="section-header">
+      <h2>📋 收藏列表</h2>
+      <small>按收藏时间倒序（最近加的在最前）</small>
+    </header>
+    <div id="fav-list" class="card-list"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="muted">v1.2 · 收藏仅存本地，清缓存会丢，请定期"导出"</span>
+  <span class="footer-sep">·</span>
+  <a href="index.html" class="footer-link">← 返回工作台</a>
+  <span class="footer-sep">·</span>
+  <a href="about.html" class="footer-link">关于本站</a>
+</footer>
+
+<script src="favorites.js"></script>
+</body>
+</html>

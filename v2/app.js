@@ -10,6 +10,7 @@ const TODAY_JSON_CANDIDATES = [
   "./data/today.json",      // 兜底
 ];
 const FEEDBACK_KEY   = "briefing.feedback.v1";
+const FAV_KEY        = "briefing.favorites.v1";  // v1.2：收藏夹（点赞 = 加收藏）
 
 // content_type → 中文 + 徽标
 const TYPE_LABEL = {
@@ -74,6 +75,40 @@ function setVote(articleId, vote) {
   return map[articleId] || null;
 }
 
+// ---------- 收藏夹（v1.2：👍 = 加收藏夹） ----------
+function loadFavs() {
+  try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); }
+  catch { return []; }
+}
+function saveFavs(arr) {
+  localStorage.setItem(FAV_KEY, JSON.stringify(arr));
+  updateFavBadge();
+}
+/** 加入收藏（如果已在就不重复） */
+function addToFav(article) {
+  const cur = loadFavs();
+  if (cur.some(f => f.id === article.id)) return;
+  // 把整条文章内容做快照存下来（原始内容可能过期/删除，要永久留底）
+  const snapshot = {
+    ...article,
+    savedAt: new Date().toISOString(),
+  };
+  saveFavs([snapshot, ...cur]);
+}
+/** 从收藏移除 */
+function removeFromFav(articleId) {
+  saveFavs(loadFavs().filter(f => f.id !== articleId));
+}
+/** 更新顶栏收藏数徽章 */
+function updateFavBadge() {
+  const badge = document.getElementById("fav-count");
+  if (badge) {
+    const n = loadFavs().length;
+    badge.textContent = String(n);
+    badge.classList.toggle("zero", n === 0);
+  }
+}
+
 // ---------- 卡片渲染 ----------
 function renderCard(article, { compact = false } = {}) {
   const typeMeta = TYPE_LABEL[article.content_type] || { icon: "•", text: article.content_type };
@@ -136,28 +171,36 @@ function renderCard(article, { compact = false } = {}) {
     el("a", { href: article.url, target: "_blank", rel: "noopener noreferrer" }, "原文 ↗"),
   );
 
-  // 反馈
+  // 反馈 + 收藏
   const fbMap = loadFeedback();
   const cur = fbMap[article.id];
   const upBtn = el("button", {
     class: `fb-btn up${cur === 1 ? " active" : ""}`,
-    title: "选题质量好",
+    title: "认可这个选题（加入我的收藏）",
     "aria-label": "👍",
   }, "👍");
   const downBtn = el("button", {
     class: `fb-btn down${cur === -1 ? " active" : ""}`,
-    title: "选题质量差",
+    title: "选题质量差（记下来改进评分）",
     "aria-label": "👎",
   }, "👎");
   upBtn.addEventListener("click", () => {
     const v = setVote(article.id, 1);
     upBtn.classList.toggle("active", v === 1);
     downBtn.classList.toggle("active", v === -1);
+    // v1.2: 点 👍 → 加收藏；再点取消 → 从收藏移除
+    if (v === 1) {
+      addToFav(article);
+    } else {
+      removeFromFav(article.id);
+    }
   });
   downBtn.addEventListener("click", () => {
     const v = setVote(article.id, -1);
     upBtn.classList.toggle("active", v === 1);
     downBtn.classList.toggle("active", v === -1);
+    // 点 👎 时如果之前在收藏夹，也一并移除
+    removeFromFav(article.id);
   });
   const feedback = el("div", { class: "feedback" }, upBtn, downBtn);
 
@@ -335,6 +378,7 @@ python3 -m http.server 8765
   const initialTab = "120h";
   renderTab(data, initialTab);
   bindTabs(data);
+  updateFavBadge();   // v1.2: 初始化顶栏收藏数
   console.log("[briefing] 已加载", data);
 }
 
