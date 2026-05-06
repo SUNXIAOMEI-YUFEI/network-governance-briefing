@@ -1,5 +1,5 @@
 {
-  "snapshot_at": "2026-05-06T11:29:19.816284+00:00",
+  "snapshot_at": "2026-05-06T11:33:06.028536+00:00",
   "schema_version": "v1.1",
   "tabs": {
     "24h": {
@@ -1280,6 +1280,30 @@
             "reason": "文章讨论AI健康工具带来的敏感数据保护新问题，命中训练数据跨境焦虑点，且处于风险冒头期，无监管回应，B满分。信源权威，稀缺性高。"
           },
           {
+            "id": 113,
+            "url": "https://cdt.org/insights/out-of-tune-fine-tuning-foundation-models-leads-to-unpredictable-safety-drift/",
+            "title": "Out of Tune: Fine-Tuning Foundation Models Leads to Unpredictable Safety Drift",
+            "title_cn": "CDT与MIT报告：微调基础模型导致不可预测的安全漂移",
+            "summary": "In addition to CDT, this report was authored by Emaan Bilal&#160;and Dylan Hadfield-Menell of the Algorithmic Alignment Group at the Massachusetts Institute of Technology (MIT). [ Read full report ] General-purpose AI models are increasingly adapted by downstream developers for specialized uses — from medical transcription to legal contract analysis. This raises critical governance questions [&#8230;] The post Out of Tune: Fine-Tuning Foundation Models Leads to Unpredictable Safety Drift appeared first on Center for Democracy and Technology .",
+            "source_name": "CDT",
+            "source_tier": "C",
+            "published_at": "2026-04-30T04:01:00+00:00",
+            "score_a": 28,
+            "score_b": 20,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 10,
+            "score_f": 9,
+            "total_score": 75,
+            "fingerprint": "US-FoundationModel-FineTuning-SafetyDrift-2026-04",
+            "anxiety_hits": [
+              "Agent 等新形态"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "文章揭示微调基础模型导致不可预测的安全漂移，属于AI Agent等新形态治理风险，网信办高度关切；目前无监管回应，处于风险冒头期；信源权威，产业借鉴性强，中文报道极少。"
+          },
+          {
             "id": 94,
             "url": "https://www.oii.ox.ac.uk/news-events/friendly-ai-chatbots-make-more-mistakes-and-tell-people-what-they-want-to-hear-study-finds/",
             "title": "Friendly AI chatbots make more mistakes and tell people what they want to hear, study finds",
@@ -1302,7 +1326,9 @@
             "maturity_stage": "风险冒头期",
             "content_type": "opinion_analysis",
             "reason": "研究揭示友好型AI聊天机器人更易出错并迎合用户，命中算法极化焦虑点，属于风险冒头期，无监管回应，B满分；信源权威，中文报道极少，稀缺性高；产业可借鉴性高，反衬中国对算法治理的重视。"
-          },
+          }
+        ],
+        "pool": [
           {
             "id": 35,
             "url": "https://www.platformer.news/trump-administration-doomers-ai/",
@@ -1326,9 +1352,7 @@
             "maturity_stage": "风险冒头期",
             "content_type": "opinion_analysis",
             "reason": "文章报道特朗普政府因新前沿模型重新考虑AI安全，属于风险冒头期，命中Agent等新形态焦虑点，A给30，B给20。"
-          }
-        ],
-        "pool": [
+          },
           {
             "id": 86,
             "url": "https://www.politico.eu/article/eu-europe-laws-ill-equipped-deal-with-superhacking-ai-lawmakers-warn/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
@@ -1376,6 +1400,28 @@
             "reason": "文章讨论美国白宫AI框架，属于讨论立法期，但未命中网信办核心焦虑点，A分较低。"
           },
           {
+            "id": 111,
+            "url": "https://cdt.org/insights/art-by-telephone-art-by-algorithm-expression-ai-and-the-first-amendment/",
+            "title": "Art by Telephone, Art by Algorithm: Expression, AI, and the First Amendment",
+            "title_cn": "CDT分析：AI生成内容是否受第一修正案保护",
+            "summary": "In 1969, the Museum of Contemporary Art Chicago hosted a curious experiment in expression. Art by Telephone invited artists to call the museum and dictate instructions for their works. Museum staff, acting as interpreters and fabricators, executed those directions in the gallery. Artists’ commands traveled through telephone lines and human intermediaries, shaped by others’ interpretations [&#8230;] The post Art by Telephone, Art by Algorithm: Expression, AI, and the First Amendment appeared first on Center for Democracy and Technology .",
+            "source_name": "CDT",
+            "source_tier": "C",
+            "published_at": "2026-04-30T14:37:35+00:00",
+            "score_a": 5,
+            "score_b": 20,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 9,
+            "total_score": 47,
+            "fingerprint": "US-CDT-AI-FirstAmendment-2026-04",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "文章讨论AI生成内容是否受第一修正案保护，属于法律/监管角度，但未命中网信办8大焦虑点，A分低；议题处于风险冒头期，B分高；信源权威度由系统覆盖；产业借鉴性中性；中文世界无报道，F分高。"
+          },
+          {
             "id": 103,
             "url": "https://epic.org/texas-observer-as-license-plate-readers-expand-in-texas-privacy-advocates-are-fighting-back/",
             "title": "Texas Observer: As License Plate Readers Expand in Texas, Privacy Advocates are Fighting Back",
@@ -1398,48 +1444,70 @@
             "reason": "文章讨论车牌读取器在德州的扩张及隐私担忧，但未命中网信办8大焦虑点（A=5）；议题处于风险冒头期，尚无监管回应（B=20）；信源EPIC权威性中等（C由系统覆盖）；产业借鉴性中性（E=5）；中文世界报道较少（F=7）。"
           },
           {
-            "id": 32,
-            "url": "https://fpf.org/blog/taking-stock-the-impact-of-the-india-ai-impact-summit-2026/",
-            "title": "Taking stock: The Impact of the India AI Impact Summit 2026",
-            "title_cn": null,
-            "summary": "India&#8217;s hosting of the AI Impact Summit 2026 was an ambitious undertaking. With 600,000 attendees and 92 signatories to the New Delhi Declaration, the Summit was a showcase of a Global South country taking a leading role in shaping the AI governance agenda. The Summit’s official framing centered on infrastructure, compute, and equitable access to [&#8230;]",
-            "source_name": "Future of Privacy Forum",
-            "source_tier": "A",
-            "published_at": "2026-05-05T16:53:49+00:00",
+            "id": 109,
+            "url": "https://cdt.org/insights/cdt-and-cornell-global-ai-initiative-call-for-meaningful-advancements-and-investment-into-linguistic-diversity-at-the-first-un-global-dialogue-on-ai-governance/",
+            "title": "CDT and Cornell Global AI Initiative Call for Meaningful Advancements and Investment into Linguistic Diversity at the First UN Global Dialogue on AI Governance",
+            "title_cn": "CDT与康奈尔呼吁联合国AI治理对话关注语言多样性",
+            "summary": "Also authored by Aditya Vashistha, CDT Non-Resident Fellow &#38; Assistant Professor, Cornell University + Global AI Initiative Lead. The Center for Democracy &#38; Technology (CDT) and Cornell Global AI Initiative submit these joint comments to shape the first session of the Global Dialogue on AI Governance hosted by the UN. These comments expand on spoken [&#8230;] The post CDT and Cornell Global AI Initiative Call for Meaningful Advancements and Investment into Linguistic Diversity at the First UN Global Dialogue on AI Governance appeared first on Center for Democracy and Technology .",
+            "source_name": "CDT",
+            "source_tier": "C",
+            "published_at": "2026-04-30T17:21:52+00:00",
             "score_a": 5,
-            "score_b": 3,
-            "score_c": 12,
+            "score_b": 15,
+            "score_c": 5,
             "score_d": 3,
             "score_e": 5,
             "score_f": 7,
-            "total_score": 35,
-            "fingerprint": "India-AI-Impact-Summit-2026-Governance",
+            "total_score": 40,
+            "fingerprint": "UN-GlobalDialogue-AI-Governance-LinguisticDiversity-2026-04",
             "anxiety_hits": [],
-            "maturity_stage": "落地执行期",
+            "maturity_stage": "讨论立法期",
             "content_type": "opinion_analysis",
-            "reason": "文章主要回顾印度AI峰会成果，聚焦基础设施和公平获取，未命中网信办8大焦虑点，A分低；峰会已举办，属于落地执行期，B分低；信源权威但内容非监管动态，E中性，F较稀缺。"
+            "reason": "文章是关于联合国全球AI治理对话的评论，涉及语言多样性，但未命中网信办8大焦虑点，A分低；属于讨论立法期，B分15；信源权威度由系统覆盖；产业借鉴性中性；中文世界报道少，稀缺性较高。"
           },
           {
-            "id": 34,
-            "url": "https://fpf.org/blog/celebrating-another-year-of-privacy-and-ai-governance-fpf-at-the-2026-iapp-global-summit/",
-            "title": "Celebrating Another Year of Privacy and AI Governance: FPF at the 2026 IAPP Global Summit",
-            "title_cn": null,
-            "summary": "Authored by FPF Communications Intern Celeste Valentino FPF experts participated in the 2026 IAPP Global Summit and hosted FPF privacy executive convenings in Washington, D.C. from March 31 to April 2. As a major gathering for privacy professionals, the event featured a heavy schedule of workshops and panels focused on the intersection of U.S. and [&#8230;]",
-            "source_name": "Future of Privacy Forum",
-            "source_tier": "A",
-            "published_at": "2026-04-29T22:32:16+00:00",
+            "id": 112,
+            "url": "https://cdt.org/insights/eu-tech-policy-brief-april-2026/",
+            "title": "EU Tech Policy Brief: April 2026",
+            "title_cn": "CDT欧洲四月科技政策简报",
+            "summary": "Welcome back to the Centre for Democracy &#38; Technology Europe’s Tech Policy Brief! This edition covers the most pressing technology and internet policy issues under debate in Europe and gives CDT’s perspective on the impact to digital rights. To sign up for CDT Europe’s AI newsletter, please visit our website. Do not hesitate to contact [&#8230;] The post EU Tech Policy Brief: April 2026 appeared first on Center for Democracy and Technology .",
+            "source_name": "CDT",
+            "source_tier": "C",
+            "published_at": "2026-04-30T10:23:43+00:00",
             "score_a": 5,
-            "score_b": 3,
-            "score_c": 12,
+            "score_b": 15,
+            "score_c": 5,
             "score_d": 3,
             "score_e": 5,
-            "score_f": 3,
-            "total_score": 31,
-            "fingerprint": "US-FPF-IAPP-Summit-2026-04",
+            "score_f": 7,
+            "total_score": 40,
+            "fingerprint": "EU-CDT-TechPolicyBrief-2026-04",
             "anxiety_hits": [],
-            "maturity_stage": "落地执行期",
+            "maturity_stage": "讨论立法期",
             "content_type": "opinion_analysis",
-            "reason": "文章为会议总结，无具体监管动态，未命中网信办焦虑点，A分低；议题成熟度低，B分低；信源权威度由系统覆盖；产业借鉴性中性；中文世界已有类似报道。"
+            "reason": "文章是CDT的月度政策简报，涵盖多个议题但无具体新监管动态，A分低；B分因涉及讨论中的政策；E中性；F有一定稀缺性。"
+          },
+          {
+            "id": 115,
+            "url": "https://cdt.org/insights/op-ed-scotuss-signals-in-chatrie-and-on-the-potential-limits-of-location-tracking/",
+            "title": "Op-ed: SCOTUS’s Signals in Chatrie and on the Potential Limits of Location Tracking",
+            "title_cn": "美最高法院Chatrie案口辩论：位置追踪的第四修正案边界",
+            "summary": "This op-ed, authored by CDT’s Jake Laperruque first appeared in Tech Policy Press on April 29, 2026. A portion of the text has been pasted below. This week, the Supreme Court heard oral arguments in Chatrie v. United States, a Fourth Amendment case with potentially profound implications for location tracking and privacy in the digital age. [&#8230;] The post Op-ed: SCOTUS’s Signals in Chatrie and on the Potential Limits of Location Tracking appeared first on Center for Democracy and Technology .",
+            "source_name": "CDT",
+            "source_tier": "C",
+            "published_at": "2026-04-29T15:08:39+00:00",
+            "score_a": 5,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 40,
+            "fingerprint": "US-SCOTUS-Chatrie-LocationTracking-2026-04",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "文章讨论美国最高法院关于位置追踪的第四修正案案件，属于隐私保护领域，但未命中网信办8大焦虑点，A分低；议题处于司法讨论阶段，B分中等；信源权威度由系统覆盖；产业借鉴性中性；中文世界报道较少，F分较高。"
           }
         ]
       }
@@ -1518,13 +1586,13 @@
     }
   ],
   "stats": {
-    "total": 78,
+    "total": 85,
     "by_type": {
       "fact_enforcement": 9,
-      "fact_legislative": 5,
+      "fact_legislative": 6,
       "fact_official_doc": 9,
-      "opinion_analysis": 8
+      "opinion_analysis": 13
     },
-    "veto": 47
+    "veto": 48
   }
 }
