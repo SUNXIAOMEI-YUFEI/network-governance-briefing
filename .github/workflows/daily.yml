@@ -93,10 +93,24 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "[ci] 无新数据变化，跳过 commit"
-          else
-            git commit -m "chore(data): daily briefing refresh $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            exit 0
           fi
+
+          git commit -m "chore(data): daily briefing refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+
+          # 关键：push 前先 rebase 远程最新 main
+          # 避免用户本地刚 push 过一个 commit（比如改 vercel.json）导致 non-fast-forward 失败
+          # --rebase --autostash 能把我们这个 data commit "摞到"远程最新 commit 后面
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push; then
+              echo "[ci] push 成功（第 $attempt 次尝试）"
+              exit 0
+            fi
+            echo "[ci] push 失败，等 5 秒重试..."
+            sleep 5
+          done
+          echo "[ci] push 连续失败 3 次，放弃"
+          exit 1
 
       - name: Upload today.json as artifact (便于调试)
         if: always()
