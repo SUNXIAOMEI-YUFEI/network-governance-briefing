@@ -1,0 +1,12 @@
+# Step 2 阶段（mock 流水线）：无第三方依赖，纯 stdlib 即可
+# 这里预留接真 API 阶段会用到的库
+
+# Step 4（真 Claude 评分）
+# anthropic>=0.34.0
+
+# Step 4（真 Inoreader 拉取）
+# requests>=2.31.0
+
+# Step 6（FastAPI 后端 + 网页）
+# fastapi>=0.111.0
+# uvicorn>=0.30.0

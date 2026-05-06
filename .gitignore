@@ -1,0 +1,31 @@
+# ===== 敏感凭证 =====
+.env
+.env.*
+!.env.example
+
+# ===== 本地开发残留（CI 产出不忽略，见下）=====
+data/briefing.db-journal
+data/briefing.db-wal
+data/briefing.db-shm
+
+# ⚠️ 注意：以下两个文件 CI 会自动更新并 commit 到仓库，**不应 gitignore**
+#   data/briefing.db    —— 评分历史（SQLite）
+#   data/today.json     —— 前端读取的每日产物
+#   data/archive/*.json —— 历史快照
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ===== IDE =====
+.vscode/
+.idea/
+.DS_Store
+
+# ===== 临时日志 =====
+/tmp/
+*.log

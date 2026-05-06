@@ -1,0 +1,107 @@
+# 每日选题流水线：抓 RSS → LLM 评分 → 聚类 → 出 today.json → 提交到仓库
+#
+# 触发方式：
+#   1. 每天 UTC 06:00（北京 14:00）自动跑
+#   2. 手动在 GitHub Actions 页面点 "Run workflow"
+#   3. push 代码时冒烟测试（只跑 mock 数据，不消耗 LLM 额度）
+
+name: Daily Briefing Pipeline
+
+on:
+  schedule:
+    # UTC 06:00 = 北京 14:00
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "抓取时间窗（小时）"
+        required: false
+        default: "24"
+      use_mock:
+        description: "用 mock 数据（冒烟测试，不调 LLM）"
+        type: boolean
+        required: false
+        default: false
+  push:
+    branches: [main, master]
+    paths:
+      - "app/**"
+      - "scripts/**"
+      - ".github/workflows/daily.yml"
+      - "app/data/mock_articles.json"
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    # 关键：让 Actions 拥有写回仓库的权限
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies (stdlib-only, quick pass)
+        run: |
+          python --version
+          # 当前 requirements.txt 是空的（stdlib 跑），这里留着以便后续加包
+          if [ -f requirements.txt ]; then
+            pip install --upgrade pip
+            pip install -r requirements.txt || true
+          fi
+
+      - name: Run daily pipeline
+        env:
+          # 从 GitHub Secrets 注入（仓库 Settings → Secrets → Actions 里加）
+          LLM_API_KEY:    ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL:   ${{ secrets.LLM_BASE_URL || 'https://api.deepseek.com/v1' }}
+          LLM_MODEL:      ${{ secrets.LLM_MODEL || 'deepseek-chat' }}
+          LLM_CONCURRENCY: "4"
+        run: |
+          set -e
+          # 定时触发 & 手动触发无 mock 时走真数据
+          HOURS="${{ github.event.inputs.hours || '24' }}"
+          if [ "${{ github.event.inputs.use_mock }}" = "true" ] || [ "${{ github.event_name }}" = "push" ]; then
+            echo "[ci] 运行 mock 流水线（冒烟测试）"
+            python -m scripts.ci_run --use-mock
+          else
+            echo "[ci] 运行真数据流水线（hours=$HOURS）"
+            python -m scripts.ci_run --hours "$HOURS"
+          fi
+
+      - name: Commit today.json + archive
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 只提交 today.json 和 archive；briefing.db 另行处理（见下）
+          git add -A data/today.json data/archive/
+          # briefing.db 加进来可以保持评分历史（否则每天从零抓），仓库会慢慢变大
+          # 前 3 个月可以跟踪；之后再决定要不要 gitignore
+          if [ -f data/briefing.db ]; then
+            git add -f data/briefing.db || true
+          fi
+
+          if git diff --cached --quiet; then
+            echo "[ci] 无新数据变化，跳过 commit"
+          else
+            git commit -m "chore(data): daily briefing refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - name: Upload today.json as artifact (便于调试)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: today-json-${{ github.run_id }}
+          path: data/today.json
+          retention-days: 30

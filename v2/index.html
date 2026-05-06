@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>速递工作台 · 今日选题</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">📡</span>
+      <span class="brand-name">网络治理动态速递 · 工作台</span>
+    </div>
+    <div class="meta">
+      <span id="snapshot-time" class="muted">—</span>
+      <span class="dot">·</span>
+      <span id="stats-summary" class="muted">—</span>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab" data-tab="24h"  role="tab">过去 24 小时</button>
+  <button class="tab" data-tab="72h"  role="tab">过去 72 小时</button>
+  <button class="tab active" data-tab="120h" role="tab">过去 5 天</button>
+  <button class="tab" data-tab="360h" role="tab">过去 15 天</button>
+</nav>
+
+<main class="workspace">
+
+  <!-- 双栏 Top 3 -->
+  <section class="dual-grid" aria-label="今日 Top 3 选题">
+    <div class="column column-facts">
+      <header class="column-header">
+        <span class="column-icon">📋</span>
+        <h2>事实 Facts</h2>
+        <small>立法 · 执法 · 官方文件 — 写速递的「骨」</small>
+      </header>
+      <div id="facts-top3" class="card-list"></div>
+    </div>
+
+    <div class="column column-opinions">
+      <header class="column-header">
+        <span class="column-icon">💭</span>
+        <h2>观点 Opinions</h2>
+        <small>评论 · 分析 · 智库解读 — 写速递的「肉」</small>
+      </header>
+      <div id="opinions-top3" class="card-list"></div>
+    </div>
+  </section>
+
+  <!-- 议题聚类 -->
+  <section class="clusters" id="clusters-section">
+    <header class="section-header">
+      <h2>🔗 议题聚类</h2>
+      <small>同一议题的不同信源/角度自动归并；展开即拿全套素材</small>
+    </header>
+    <div id="clusters-list"></div>
+  </section>
+
+  <!-- 情报池 -->
+  <section class="pools">
+    <header class="section-header">
+      <h2>📑 情报池</h2>
+      <small>Top 3 之外的高分候选，按总分降序</small>
+    </header>
+    <div class="dual-grid pool-grid">
+      <div>
+        <h3 class="pool-title pool-title-facts">事实情报池</h3>
+        <div id="facts-pool" class="card-list compact"></div>
+      </div>
+      <div>
+        <h3 class="pool-title pool-title-opinions">观点情报池</h3>
+        <div id="opinions-pool" class="card-list compact"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span class="muted">数据来源：本地 today.json · 评分模型：DeepSeek V3 · v1.1 schema</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
