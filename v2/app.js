@@ -319,19 +319,48 @@ function renderTab(data, tabKey) {
   // 情报池
   const factsPool = $("#facts-pool");
   factsPool.innerHTML = "";
-  if (!tabData.facts.pool.length) {
-    factsPool.appendChild(renderEmpty("情报池为空"));
-  } else {
-    tabData.facts.pool.forEach(a => factsPool.appendChild(renderCard(a, { compact: true })));
-  }
+  renderPool(factsPool, tabData.facts.pool, "facts");
 
   const opPool = $("#opinions-pool");
   opPool.innerHTML = "";
-  if (!tabData.opinions.pool.length) {
-    opPool.appendChild(renderEmpty("情报池为空"));
-  } else {
-    tabData.opinions.pool.forEach(a => opPool.appendChild(renderCard(a, { compact: true })));
+  renderPool(opPool, tabData.opinions.pool, "opinions");
+}
+
+// v1.2：pool 长时间窗下会很长，默认只展 10 条，点按钮展开剩余
+const POOL_INITIAL_SHOW = 10;
+
+function renderPool(container, pool, columnKind) {
+  if (!pool || !pool.length) {
+    container.appendChild(renderEmpty("情报池为空"));
+    return;
   }
+
+  const initial = pool.slice(0, POOL_INITIAL_SHOW);
+  const rest    = pool.slice(POOL_INITIAL_SHOW);
+
+  initial.forEach(a => container.appendChild(renderCard(a, { compact: true })));
+
+  if (rest.length === 0) return;
+
+  // 剩余卡片先渲染但隐藏
+  const hiddenWrap = el("div", { class: "pool-hidden", style: "display: none;" });
+  rest.forEach(a => hiddenWrap.appendChild(renderCard(a, { compact: true })));
+  container.appendChild(hiddenWrap);
+
+  // 展开按钮
+  const toggleBtn = el("button", {
+    class: "pool-toggle",
+    type: "button",
+  }, `▼ 展开剩余 ${rest.length} 条（${columnKind === "facts" ? "事实" : "观点"}）`);
+  let expanded = false;
+  toggleBtn.addEventListener("click", () => {
+    expanded = !expanded;
+    hiddenWrap.style.display = expanded ? "" : "none";
+    toggleBtn.textContent = expanded
+      ? `▲ 收起 ${rest.length} 条`
+      : `▼ 展开剩余 ${rest.length} 条（${columnKind === "facts" ? "事实" : "观点"}）`;
+  });
+  container.appendChild(toggleBtn);
 }
 
 function renderClusters(data) {

@@ -32,7 +32,21 @@ TIME_WINDOWS = {
     "360h": 360,
 }
 TOP_N = 3
-POOL_PER_COLUMN = 8  # 左右各 8 条情报池
+
+# 按时间窗动态扩容情报池：窗口越长，累积文章越多，也应展示更多候选。
+# 左右栏各按这个数展示（不含 Top 3）。
+# 设计理念：
+#   24h  = 日报节奏，左右各 8 条 pool 足够扫一眼
+#   72h  = 3 天内的积累，放宽到 15 条
+#   120h = 周报节奏（5 天），放宽到 25 条
+#   360h = 双周/月报节奏（15 天），放宽到 40 条，确保高价值选题不被埋
+POOL_PER_COLUMN_BY_WINDOW = {
+    "24h":  8,
+    "72h":  15,
+    "120h": 25,
+    "360h": 40,
+}
+POOL_PER_COLUMN_DEFAULT = 8
 
 
 def _row_to_dict(row: sqlite3.Row) -> dict:
@@ -147,20 +161,23 @@ def _stats(conn: sqlite3.Connection) -> dict:
 
 
 def _feed_health(conn: sqlite3.Connection) -> list[dict]:
-    """信源健康度：每个 feed 当前状态 + 近 7 天成功率。
+    """信源健康度：每个 feed 当前状态 + 近 7 天成功率 + 最新文章距今。
 
     返回按状态排序（🔴 红的排最上面，方便一眼看到故障源）：
         [
           {"source_name","feed_url","source_tier",
            "last_attempt_at","last_success_at","last_error",
            "last_article_count","consecutive_fails",
-           "recent_7d_success","recent_7d_total","status"}
+           "recent_7d_success","recent_7d_total",
+           "latest_article_at","stale_days",
+           "status"}
         ]
-    status ∈ "ok" | "warn" | "dead" | "unknown"
-        dead     : 连续失败 >= 3 次
-        warn     : 连续失败 1-2 次 或 近 7 天成功率 < 70%
+    status ∈ "ok" | "warn" | "dead" | "stale" | "unknown"
+        dead     : 连续失败 >= 3 次（feed URL 抓不动）
+        stale    : feed 能抓，但最新文章 > 10 天没更新（典型：DG 试用到期后 KtN 收不到信）
+        warn     : 连续失败 1-2 次 / 近 7 天成功率 < 70% / 最新文章 5-10 天无更新
         ok       : 其余有成功记录
-        unknown  : 没有任何历史（新加的 feed，还没被跑过）
+        unknown  : 没有任何历史（新加的 feed）
     """
     # feed_health 主表不存在的话（老数据库），直接返回空
     exists = conn.execute(
@@ -170,7 +187,8 @@ def _feed_health(conn: sqlite3.Connection) -> list[dict]:
         return []
 
     from datetime import datetime as _dt, timedelta as _td, timezone as _tz
-    cutoff_7d = (_dt.now(_tz.utc) - _td(days=7)).isoformat()
+    now = _dt.now(_tz.utc)
+    cutoff_7d = (now - _td(days=7)).isoformat()
 
     rows = conn.execute(
         """
@@ -200,12 +218,37 @@ def _feed_health(conn: sqlite3.Connection) -> list[dict]:
         d["recent_7d_success"] = succ_7d
         d["recent_7d_total"] = total_7d
 
+        # 最新一篇文章距今多少天（从 articles 表按 source_name 查）
+        art_row = conn.execute(
+            """
+            SELECT MAX(published_at) AS latest FROM articles WHERE source_name = ?
+            """,
+            (d["source_name"],),
+        ).fetchone()
+        latest_iso = art_row["latest"] if art_row else None
+        d["latest_article_at"] = latest_iso
+        stale_days: int | None = None
+        if latest_iso:
+            try:
+                dt = _dt.fromisoformat(latest_iso.replace("Z", "+00:00"))
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=_tz.utc)
+                stale_days = max(0, (now - dt).days)
+            except ValueError:
+                stale_days = None
+        d["stale_days"] = stale_days
+
         # 状态判定
         fails = d.get("consecutive_fails") or 0
         has_success_ever = bool(d.get("last_success_at"))
         if fails >= 3:
             status = "dead"
+        elif stale_days is not None and stale_days >= 10:
+            # feed 抓得到但已经 10+ 天没新文章 —— 大概率订阅被停或 newsletter 关停
+            status = "stale"
         elif fails >= 1:
+            status = "warn"
+        elif stale_days is not None and stale_days >= 5:
             status = "warn"
         elif total_7d > 0 and succ_7d / total_7d < 0.7:
             status = "warn"
@@ -216,8 +259,8 @@ def _feed_health(conn: sqlite3.Connection) -> list[dict]:
         d["status"] = status
         out.append(d)
 
-    # 排序：dead > warn > unknown > ok；每组内按 last_attempt_at 倒序
-    status_order = {"dead": 0, "warn": 1, "unknown": 2, "ok": 3}
+    # 排序：dead > stale > warn > unknown > ok；每组内按 last_attempt_at 倒序
+    status_order = {"dead": 0, "stale": 1, "warn": 2, "unknown": 3, "ok": 4}
     out.sort(key=lambda x: x.get("last_attempt_at") or "", reverse=True)
     out.sort(key=lambda x: status_order.get(x["status"], 9))
     return out
@@ -232,11 +275,12 @@ def build(*, snapshot_now: datetime | None = None) -> dict:
         tabs: dict[str, dict] = {}
         for tab_name, hours in TIME_WINDOWS.items():
             since = now - timedelta(hours=hours)
+            pool_n = POOL_PER_COLUMN_BY_WINDOW.get(tab_name, POOL_PER_COLUMN_DEFAULT)
             facts_all = _query_window(
-                conn, since_utc=since, column_kind="facts", limit=TOP_N + POOL_PER_COLUMN,
+                conn, since_utc=since, column_kind="facts", limit=TOP_N + pool_n,
             )
             opinions_all = _query_window(
-                conn, since_utc=since, column_kind="opinions", limit=TOP_N + POOL_PER_COLUMN,
+                conn, since_utc=since, column_kind="opinions", limit=TOP_N + pool_n,
             )
             tabs[tab_name] = {
                 "facts": {

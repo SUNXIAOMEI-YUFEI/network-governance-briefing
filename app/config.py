@@ -41,6 +41,7 @@ SOURCE_AUTHORITY: dict[str, str] = {
 
     # --- A 级 顶律所/顶刊 ---
     "DataGuidance (KtN)":           "A",
+    "IAPP Daily Dashboard (KtN)":   "A",
     "Inside Privacy (Covington)":   "A",
     "Inside Privacy (KtN)":         "A",
     "WilmerHale Privacy":           "A",
@@ -237,6 +238,7 @@ RSS_FEEDS: list[tuple[str, str, str]] = [
     # === KtN 转 RSS（邮件订阅）===
     # 注意：以下条目和上面同名时，URL 不同；按 URL 去重，两路都跑确保覆盖
     ("DataGuidance (KtN)",         "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml", "A"),
+    ("IAPP Daily Dashboard (KtN)", "https://kill-the-newsletter.com/feeds/9v0c5wjcqvoklno87tca.xml", "A"),
     ("Lawfare (KtN)",              "https://kill-the-newsletter.com/feeds/eqkwbtfnwj1lqbi08d5p.xml", "A"),
     ("Inside Privacy (KtN)",       "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml", "A"),
     ("MLex AI (KtN)",              "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml", "B"),

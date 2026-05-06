@@ -285,3 +285,30 @@
   .fh-name { max-width: 180px; }
   .fh-error-cell { max-width: 140px; }
 }
+
+/* ========== 情报池"展开更多"按钮 ========== */
+.pool-toggle {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 6px;
+  background: #f3f5f8;
+  color: var(--c-fg-soft);
+  border: 1px dashed #c6cfdb;
+  border-radius: var(--r-md);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  text-align: center;
+}
+.pool-toggle:hover {
+  background: #e7ebf2;
+  color: var(--c-fg);
+  border-style: solid;
+}
+.pool-hidden {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
