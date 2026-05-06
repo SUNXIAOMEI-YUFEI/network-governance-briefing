@@ -1,5 +1,5 @@
 {
-  "snapshot_at": "2026-05-06T11:25:56.700040+00:00",
+  "snapshot_at": "2026-05-06T11:29:19.816284+00:00",
   "schema_version": "v1.1",
   "tabs": {
     "24h": {
@@ -1518,13 +1518,13 @@
     }
   ],
   "stats": {
-    "total": 74,
+    "total": 78,
     "by_type": {
       "fact_enforcement": 9,
       "fact_legislative": 5,
       "fact_official_doc": 9,
       "opinion_analysis": 8
     },
-    "veto": 43
+    "veto": 47
   }
 }
