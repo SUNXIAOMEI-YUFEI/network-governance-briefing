@@ -16,7 +16,13 @@
       ]
     },
     {
-      "source": "/v2/(.*)",
+      "source": "/v2/(.*)\\.html",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/v2/(.*)\\.(css|js)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=60, must-revalidate" }
       ]
