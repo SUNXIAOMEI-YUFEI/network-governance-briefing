@@ -1,5 +1,5 @@
 {
-  "snapshot_at": "2026-05-07T02:30:25.061866+00:00",
+  "snapshot_at": "2026-05-07T02:38:47.972825+00:00",
   "schema_version": "v1.4",
   "tabs": {
     "24h": {
@@ -61,10 +61,10 @@
             "score_a": 18,
             "score_b": 8,
             "score_c": 12,
-            "score_d": 3,
+            "score_d": 6,
             "score_e": 5,
             "score_f": 7,
-            "total_score": 53,
+            "total_score": 56,
             "fingerprint": "UK-ICO-cookies-guidance-2026-04",
             "anxiety_hits": [],
             "maturity_stage": "规则成形期",
@@ -94,6 +94,28 @@
             "maturity_stage": "风险冒头期",
             "content_type": "fact_legislative",
             "reason": "文章涉及Chrome Android新增近似位置共享功能，属于数据与隐私主题（T3），但仅为产品功能更新，非监管动态，主题对齐度低（A1=10）。无关切议题命中（A2=0）。风险冒头期（B=20）。产业可借鉴性中性（E=5）。中文世界无报道（F=7）。"
+          },
+          {
+            "id": 220,
+            "url": "https://www.cov.com/en/news-and-insights/insights/2026/05/texas-sb2420-effective-january-2026-what-companies-need-to-know",
+            "title": "Texas SB 2420 Comes Into Effect: What Companies Need to Know About AI Disclosure Obligations",
+            "title_cn": "Texas SB 2420 Comes Into Effect: What Companies Need to Know About AI Disclosure Obligations",
+            "summary": "Texas Senate Bill 2420, signed June 22, 2025, takes effect today, May 6, 2026. The law requires any business operating in Texas to disclose to consumers when AI is used to make 'consequential decisions' affecting employment, housing, healthcare, or financial services. The Texas Attorney General has been given enforcement authority with civil penalties up to $7,500 per violation.",
+            "source_name": "Inside Privacy (Covington)",
+            "source_tier": "A",
+            "published_at": "2026-05-06T08:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 44,
+            "fingerprint": "US-TX-SB2420-AIDisclosure-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_enforcement",
+            "reason": "[执法事实] Inside Privacy (Covington) · 风险冒头期 · 无关切议题命中"
           }
         ]
       },
@@ -425,10 +447,10 @@
             "score_a": 18,
             "score_b": 8,
             "score_c": 12,
-            "score_d": 3,
+            "score_d": 6,
             "score_e": 5,
             "score_f": 7,
-            "total_score": 53,
+            "total_score": 56,
             "fingerprint": "UK-ICO-cookies-guidance-2026-04",
             "anxiety_hits": [],
             "maturity_stage": "规则成形期",
@@ -480,6 +502,50 @@
             "reason": "文章涉及Chrome Android新增近似位置共享功能，属于数据与隐私主题（T3），但仅为产品功能更新，非监管动态，主题对齐度低（A1=10）。无关切议题命中（A2=0）。风险冒头期（B=20）。产业可借鉴性中性（E=5）。中文世界无报道（F=7）。"
           },
           {
+            "id": 212,
+            "url": "https://www.techpolicy.press/the-gpai-code-and-the-myth-of-european-ai-leadership",
+            "title": "The GPAI Code and the Myth of European AI Leadership",
+            "title_cn": "The GPAI Code and the Myth of European AI Leadership",
+            "summary": "Behind the celebratory press releases lies a sobering reality: the EU has neither the compute, the talent, nor the capital to lead AI governance through regulatory instruments alone. The new GPAI Code is a well-crafted document — and a politically convenient one — but it cannot substitute for industrial policy. Brussels risks regulating an industry it does not have.",
+            "source_name": "Tech Policy Press",
+            "source_tier": "A",
+            "published_at": "2026-05-05T16:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 9,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 50,
+            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_official_doc",
+            "reason": "[官方文件] Tech Policy Press · 风险冒头期 · 无关切议题命中"
+          },
+          {
+            "id": 210,
+            "url": "https://www.dataguidance.com/news/eu-commission-publishes-final-gpai-code-of-practice",
+            "title": "EU Commission publishes final GPAI Code of Practice",
+            "title_cn": "EU Commission publishes final GPAI Code of Practice",
+            "summary": "On May 4, 2026, the European Commission officially published the final version of the General-Purpose AI Code of Practice under the EU AI Act. Effective from August 2, 2026, the Code requires GPAI providers to disclose training data sources, conduct systemic risk assessments, and report serious incidents within 15 days. Signatories include OpenAI, Anthropic, Google DeepMind, and Mistral.",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-05-04T08:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 9,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 50,
+            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_legislative",
+            "reason": "[立法事实] DataGuidance (KtN) · 风险冒头期 · 无关切议题命中"
+          },
+          {
             "id": 85,
             "url": "https://www.politico.eu/article/pornhub-lets-uk-apple-users-back-on-its-platform/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
             "title": "PornHub lets UK Apple users back on its platform",
@@ -500,6 +566,50 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "文章报道PornHub因英国《在线安全法》部分解禁，主题对齐内容治理（T4）和未成年人保护（T5），属于落地执行期（B=3），产业可借鉴性中性（E=5），中文世界无报道（F=7）。"
+          },
+          {
+            "id": 220,
+            "url": "https://www.cov.com/en/news-and-insights/insights/2026/05/texas-sb2420-effective-january-2026-what-companies-need-to-know",
+            "title": "Texas SB 2420 Comes Into Effect: What Companies Need to Know About AI Disclosure Obligations",
+            "title_cn": "Texas SB 2420 Comes Into Effect: What Companies Need to Know About AI Disclosure Obligations",
+            "summary": "Texas Senate Bill 2420, signed June 22, 2025, takes effect today, May 6, 2026. The law requires any business operating in Texas to disclose to consumers when AI is used to make 'consequential decisions' affecting employment, housing, healthcare, or financial services. The Texas Attorney General has been given enforcement authority with civil penalties up to $7,500 per violation.",
+            "source_name": "Inside Privacy (Covington)",
+            "source_tier": "A",
+            "published_at": "2026-05-06T08:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 44,
+            "fingerprint": "US-TX-SB2420-AIDisclosure-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_enforcement",
+            "reason": "[执法事实] Inside Privacy (Covington) · 风险冒头期 · 无关切议题命中"
+          },
+          {
+            "id": 221,
+            "url": "https://www.engage.hoganlovells.com/knowledgeservices/news/uk-ofcom-illegal-harms-codes-second-enforcement-wave",
+            "title": "Ofcom Launches Second Wave of Illegal Harms Code Enforcement: Five Platforms Under Investigation",
+            "title_cn": "Ofcom Launches Second Wave of Illegal Harms Code Enforcement: Five Platforms Under Investigation",
+            "summary": "The UK communications regulator Ofcom announced on May 5, 2026, the opening of formal investigations against five major user-to-user services for failures under the Online Safety Act's Illegal Harms Codes of Practice. Affected platforms include two adult content sites, two messaging apps, and one image-sharing service. Maximum penalties under the Act reach 10% of global annual turnover.",
+            "source_name": "Hogan Lovells Engage",
+            "source_tier": "A",
+            "published_at": "2026-05-05T10:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 44,
+            "fingerprint": "UK-Ofcom-OSA-IllegalHarms-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_enforcement",
+            "reason": "[执法事实] Hogan Lovells Engage · 风险冒头期 · 无关切议题命中"
           }
         ]
       },
@@ -650,6 +760,28 @@
             "reason": "文章报道Google AI搜索整合Reddit等论坛内容，属于AI治理（T1）中的算法设计/内容呈现议题，但主题对齐度较低（A1=10），未命中高权重关切议题（A2=0）。议题处于风险冒头期（B=20），产业可借鉴性中性（E=5），中文世界无报道（F=7）。"
           },
           {
+            "id": 211,
+            "url": "https://www.lawfaremedia.org/article/eu-gpai-code-of-practice-three-flaws",
+            "title": "Why the EU's GPAI Code of Practice Won't Solve the Frontier Risk Problem",
+            "title_cn": "Why the EU's GPAI Code of Practice Won't Solve the Frontier Risk Problem",
+            "summary": "The EU's final GPAI Code of Practice, while celebrated as the world's first binding industry code for frontier AI, suffers from three structural flaws: first, the systemic risk threshold of 10^25 FLOPs is already obsolete; second, the third-party audit clause lacks teeth; third, signatories retain unilateral exit rights. We argue the Code is more a political signal than a regulatory instrument.",
+            "source_name": "Lawfare",
+            "source_tier": "A",
+            "published_at": "2026-05-05T14:30:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 9,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 50,
+            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "[观点分析] Lawfare · 风险冒头期 · 无关切议题命中"
+          },
+          {
             "id": 97,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/rbgfa0jhgwhqhhxqbgaq.html",
             "title": "AI Regulation in the US: What the White House Framework Signals Next",
@@ -670,6 +802,30 @@
             "maturity_stage": "规则成形期",
             "content_type": "opinion_analysis",
             "reason": "文章为KtN营销邮件，主体是推销webinar/解读，缺少具体事实要素。主题对齐AI治理（T1），但属于规则成形期的评论，A1=12（部分对齐），B=8（规则成形期评论），E=5（中性借鉴），F=7（中文无报道）。"
+          },
+          {
+            "id": 219,
+            "url": "https://importai.substack.com/p/agentic-ai-and-the-coming-liability-mess",
+            "title": "Agentic AI and the Coming Liability Mess: Why 2026 Is the Year of the Lawsuit",
+            "title_cn": "Agentic AI and the Coming Liability Mess: Why 2026 Is the Year of the Lawsuit",
+            "summary": "Anthropic's Claude can now operate a computer. OpenAI's Operator can buy you tickets. Google's Project Mariner browses the web on your behalf. None of the existing legal frameworks — agency law, product liability, consumer protection — were written with autonomous AI in mind. I predict 2026 will see at least three landmark lawsuits that will force courts to choose a doctrine. Here's my bet on which.",
+            "source_name": "Import AI (Substack)",
+            "source_tier": "D",
+            "published_at": "2026-05-04T07:00:00Z",
+            "score_a": 28,
+            "score_b": 3,
+            "score_c": 2,
+            "score_d": 6,
+            "score_e": 6,
+            "score_f": 2,
+            "total_score": 47,
+            "fingerprint": "Global-AgenticAI-Liability-2026-Q2",
+            "anxiety_hits": [
+              "Agent 等新形态"
+            ],
+            "maturity_stage": "落地执行期",
+            "content_type": "opinion_analysis",
+            "reason": "[观点分析] Import AI (Substack) · 落地执行期 · Agent 等新形态"
           }
         ]
       }
@@ -677,6 +833,30 @@
     "120h": {
       "facts": {
         "top3": [
+          {
+            "id": 215,
+            "url": "https://ico.org.uk/about-the-ico/news-and-events/news-and-blogs/2026/05/ico-publishes-final-age-assurance-guidance/",
+            "title": "ICO Publishes Final Age Assurance Guidance for Online Services",
+            "title_cn": "ICO Publishes Final Age Assurance Guidance for Online Services",
+            "summary": "The UK Information Commissioner's Office released its final Age Assurance Guidance on May 2, 2026, providing detailed expectations for online services likely to be accessed by children. The guidance establishes a 'risk-proportionate' standard, recommends specific age estimation methods, and requires DPIAs for any age assurance system processing biometric data.",
+            "source_name": "ICO",
+            "source_tier": "S",
+            "published_at": "2026-05-02T09:30:00Z",
+            "score_a": 28,
+            "score_b": 18,
+            "score_c": 15,
+            "score_d": 6,
+            "score_e": 9,
+            "score_f": 9,
+            "total_score": 85,
+            "fingerprint": "UK-ICO-cookies-guidance-2026-04",
+            "anxiety_hits": [
+              "未成年人极端事件"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_official_doc",
+            "reason": "[官方文件] ICO · 风险冒头期 · 未成年人极端事件"
+          },
           {
             "id": 98,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/wkbk8ruiy1w6d4lmdai4.html",
@@ -724,7 +904,9 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_official_doc",
             "reason": "NIST下属CAISI与AI实验室签署前沿AI国家安全测试协议，主题深度对齐AI治理（T1），涉及预部署评估，属于Agent等新形态监管的关切议题。A1=22（深度对齐前沿AI安全测试），A2=3（Agent新形态，中档）→A=25；协议签署属于讨论立法期（B=15）；产业可借鉴性高（E=8）；中文世界无报道（F=9）。"
-          },
+          }
+        ],
+        "pool": [
           {
             "id": 76,
             "url": "https://techcrunch.com/2026/05/05/pennsylvania-sues-character-ai-after-a-chatbot-allegedly-posed-as-a-doctor/",
@@ -750,9 +932,7 @@
             "maturity_stage": "风险冒头期",
             "content_type": "fact_enforcement",
             "reason": "宾州起诉Character.AI，指控其聊天机器人冒充医生，深度对齐AI治理（T1）和内容治理（T4），命中AI Agent治理和未成年人极端事件关切议题。A1=23 A2=5 → A=28；风险冒头期B=20；产业可借鉴E=8；中文世界无报道F=9。"
-          }
-        ],
-        "pool": [
+          },
           {
             "id": 83,
             "url": "https://www.politico.eu/article/eu-pressure-builds-on-anthropic-over-mythos-hacking-risks/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
@@ -822,6 +1002,30 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
             "reason": "文章报道德国推动欧盟AI法案中工业豁免条款的谈判，主题深度对齐AI治理（T1），属于讨论立法期。A1=25，A2=0，A=25；B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
+            "id": 217,
+            "url": "https://www.legislature.ca.gov/billtextclient.xhtml?bill_id=20260SB1047",
+            "title": "California Senate Bill 1047 Signed: AI Companion Apps Must Implement Suicide Prevention Protocols by January 2027",
+            "title_cn": "California Senate Bill 1047 Signed: AI Companion Apps Must Implement Suicide Prevention Protocols by January 2027",
+            "summary": "California Governor signed SB 1047 into law on May 3, 2026, establishing the nation's first state-level requirements for AI companion applications. The law mandates suicide-prevention prompts when minors discuss self-harm, requires age verification for accounts, and imposes a $10,000-per-incident civil penalty for violations. Effective January 1, 2027.",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-05-03T18:00:00Z",
+            "score_a": 28,
+            "score_b": 3,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 9,
+            "score_f": 8,
+            "total_score": 63,
+            "fingerprint": "US-CA-SB1047-AICompanion-2026-05",
+            "anxiety_hits": [
+              "未成年人极端事件"
+            ],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_legislative",
+            "reason": "[立法事实] DataGuidance (KtN) · 落地执行期 · 未成年人极端事件"
           },
           {
             "id": 208,
@@ -925,10 +1129,10 @@
             "score_a": 18,
             "score_b": 8,
             "score_c": 12,
-            "score_d": 3,
+            "score_d": 6,
             "score_e": 5,
             "score_f": 7,
-            "total_score": 53,
+            "total_score": 56,
             "fingerprint": "UK-ICO-cookies-guidance-2026-04",
             "anxiety_hits": [],
             "maturity_stage": "规则成形期",
@@ -980,6 +1184,50 @@
             "reason": "文章涉及Chrome Android新增近似位置共享功能，属于数据与隐私主题（T3），但仅为产品功能更新，非监管动态，主题对齐度低（A1=10）。无关切议题命中（A2=0）。风险冒头期（B=20）。产业可借鉴性中性（E=5）。中文世界无报道（F=7）。"
           },
           {
+            "id": 212,
+            "url": "https://www.techpolicy.press/the-gpai-code-and-the-myth-of-european-ai-leadership",
+            "title": "The GPAI Code and the Myth of European AI Leadership",
+            "title_cn": "The GPAI Code and the Myth of European AI Leadership",
+            "summary": "Behind the celebratory press releases lies a sobering reality: the EU has neither the compute, the talent, nor the capital to lead AI governance through regulatory instruments alone. The new GPAI Code is a well-crafted document — and a politically convenient one — but it cannot substitute for industrial policy. Brussels risks regulating an industry it does not have.",
+            "source_name": "Tech Policy Press",
+            "source_tier": "A",
+            "published_at": "2026-05-05T16:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 9,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 50,
+            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_official_doc",
+            "reason": "[官方文件] Tech Policy Press · 风险冒头期 · 无关切议题命中"
+          },
+          {
+            "id": 210,
+            "url": "https://www.dataguidance.com/news/eu-commission-publishes-final-gpai-code-of-practice",
+            "title": "EU Commission publishes final GPAI Code of Practice",
+            "title_cn": "EU Commission publishes final GPAI Code of Practice",
+            "summary": "On May 4, 2026, the European Commission officially published the final version of the General-Purpose AI Code of Practice under the EU AI Act. Effective from August 2, 2026, the Code requires GPAI providers to disclose training data sources, conduct systemic risk assessments, and report serious incidents within 15 days. Signatories include OpenAI, Anthropic, Google DeepMind, and Mistral.",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-05-04T08:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 9,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 50,
+            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_legislative",
+            "reason": "[立法事实] DataGuidance (KtN) · 风险冒头期 · 无关切议题命中"
+          },
+          {
             "id": 85,
             "url": "https://www.politico.eu/article/pornhub-lets-uk-apple-users-back-on-its-platform/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
             "title": "PornHub lets UK Apple users back on its platform",
@@ -1000,6 +1248,50 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "文章报道PornHub因英国《在线安全法》部分解禁，主题对齐内容治理（T4）和未成年人保护（T5），属于落地执行期（B=3），产业可借鉴性中性（E=5），中文世界无报道（F=7）。"
+          },
+          {
+            "id": 220,
+            "url": "https://www.cov.com/en/news-and-insights/insights/2026/05/texas-sb2420-effective-january-2026-what-companies-need-to-know",
+            "title": "Texas SB 2420 Comes Into Effect: What Companies Need to Know About AI Disclosure Obligations",
+            "title_cn": "Texas SB 2420 Comes Into Effect: What Companies Need to Know About AI Disclosure Obligations",
+            "summary": "Texas Senate Bill 2420, signed June 22, 2025, takes effect today, May 6, 2026. The law requires any business operating in Texas to disclose to consumers when AI is used to make 'consequential decisions' affecting employment, housing, healthcare, or financial services. The Texas Attorney General has been given enforcement authority with civil penalties up to $7,500 per violation.",
+            "source_name": "Inside Privacy (Covington)",
+            "source_tier": "A",
+            "published_at": "2026-05-06T08:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 44,
+            "fingerprint": "US-TX-SB2420-AIDisclosure-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_enforcement",
+            "reason": "[执法事实] Inside Privacy (Covington) · 风险冒头期 · 无关切议题命中"
+          },
+          {
+            "id": 221,
+            "url": "https://www.engage.hoganlovells.com/knowledgeservices/news/uk-ofcom-illegal-harms-codes-second-enforcement-wave",
+            "title": "Ofcom Launches Second Wave of Illegal Harms Code Enforcement: Five Platforms Under Investigation",
+            "title_cn": "Ofcom Launches Second Wave of Illegal Harms Code Enforcement: Five Platforms Under Investigation",
+            "summary": "The UK communications regulator Ofcom announced on May 5, 2026, the opening of formal investigations against five major user-to-user services for failures under the Online Safety Act's Illegal Harms Codes of Practice. Affected platforms include two adult content sites, two messaging apps, and one image-sharing service. Maximum penalties under the Act reach 10% of global annual turnover.",
+            "source_name": "Hogan Lovells Engage",
+            "source_tier": "A",
+            "published_at": "2026-05-05T10:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 44,
+            "fingerprint": "UK-Ofcom-OSA-IllegalHarms-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_enforcement",
+            "reason": "[执法事实] Hogan Lovells Engage · 风险冒头期 · 无关切议题命中"
           }
         ]
       },
@@ -1150,6 +1442,52 @@
             "reason": "文章报道Google AI搜索整合Reddit等论坛内容，属于AI治理（T1）中的算法设计/内容呈现议题，但主题对齐度较低（A1=10），未命中高权重关切议题（A2=0）。议题处于风险冒头期（B=20），产业可借鉴性中性（E=5），中文世界无报道（F=7）。"
           },
           {
+            "id": 211,
+            "url": "https://www.lawfaremedia.org/article/eu-gpai-code-of-practice-three-flaws",
+            "title": "Why the EU's GPAI Code of Practice Won't Solve the Frontier Risk Problem",
+            "title_cn": "Why the EU's GPAI Code of Practice Won't Solve the Frontier Risk Problem",
+            "summary": "The EU's final GPAI Code of Practice, while celebrated as the world's first binding industry code for frontier AI, suffers from three structural flaws: first, the systemic risk threshold of 10^25 FLOPs is already obsolete; second, the third-party audit clause lacks teeth; third, signatories retain unilateral exit rights. We argue the Code is more a political signal than a regulatory instrument.",
+            "source_name": "Lawfare",
+            "source_tier": "A",
+            "published_at": "2026-05-05T14:30:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 9,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 50,
+            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "[观点分析] Lawfare · 风险冒头期 · 无关切议题命中"
+          },
+          {
+            "id": 222,
+            "url": "https://www.aisnakeoil.com/p/why-watermarking-is-failing-and-what",
+            "title": "Why AI Watermarking Is Failing — And What Should Replace It",
+            "title_cn": "Why AI Watermarking Is Failing — And What Should Replace It",
+            "summary": "Three years after the major labs committed to robust watermarking under the White House voluntary commitments, independent audits show 80%+ removal rates with simple post-processing. The C2PA standard fares slightly better but suffers from low adoption. We argue the entire 'detect AI content' paradigm is misconceived, and propose a shift to provenance-by-design at the hardware layer.",
+            "source_name": "AI Snake Oil",
+            "source_tier": "D",
+            "published_at": "2026-05-02T12:00:00Z",
+            "score_a": 18,
+            "score_b": 18,
+            "score_c": 2,
+            "score_d": 3,
+            "score_e": 6,
+            "score_f": 2,
+            "total_score": 49,
+            "fingerprint": "Global-AIWatermark-Failure-2026-05",
+            "anxiety_hits": [
+              "标识失效"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "[观点分析] AI Snake Oil · 风险冒头期 · 标识失效"
+          },
+          {
             "id": 97,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/rbgfa0jhgwhqhhxqbgaq.html",
             "title": "AI Regulation in the US: What the White House Framework Signals Next",
@@ -1170,6 +1508,30 @@
             "maturity_stage": "规则成形期",
             "content_type": "opinion_analysis",
             "reason": "文章为KtN营销邮件，主体是推销webinar/解读，缺少具体事实要素。主题对齐AI治理（T1），但属于规则成形期的评论，A1=12（部分对齐），B=8（规则成形期评论），E=5（中性借鉴），F=7（中文无报道）。"
+          },
+          {
+            "id": 219,
+            "url": "https://importai.substack.com/p/agentic-ai-and-the-coming-liability-mess",
+            "title": "Agentic AI and the Coming Liability Mess: Why 2026 Is the Year of the Lawsuit",
+            "title_cn": "Agentic AI and the Coming Liability Mess: Why 2026 Is the Year of the Lawsuit",
+            "summary": "Anthropic's Claude can now operate a computer. OpenAI's Operator can buy you tickets. Google's Project Mariner browses the web on your behalf. None of the existing legal frameworks — agency law, product liability, consumer protection — were written with autonomous AI in mind. I predict 2026 will see at least three landmark lawsuits that will force courts to choose a doctrine. Here's my bet on which.",
+            "source_name": "Import AI (Substack)",
+            "source_tier": "D",
+            "published_at": "2026-05-04T07:00:00Z",
+            "score_a": 28,
+            "score_b": 3,
+            "score_c": 2,
+            "score_d": 6,
+            "score_e": 6,
+            "score_f": 2,
+            "total_score": 47,
+            "fingerprint": "Global-AgenticAI-Liability-2026-Q2",
+            "anxiety_hits": [
+              "Agent 等新形态"
+            ],
+            "maturity_stage": "落地执行期",
+            "content_type": "opinion_analysis",
+            "reason": "[观点分析] Import AI (Substack) · 落地执行期 · Agent 等新形态"
           }
         ]
       }
@@ -1177,6 +1539,55 @@
     "360h": {
       "facts": {
         "top3": [
+          {
+            "id": 215,
+            "url": "https://ico.org.uk/about-the-ico/news-and-events/news-and-blogs/2026/05/ico-publishes-final-age-assurance-guidance/",
+            "title": "ICO Publishes Final Age Assurance Guidance for Online Services",
+            "title_cn": "ICO Publishes Final Age Assurance Guidance for Online Services",
+            "summary": "The UK Information Commissioner's Office released its final Age Assurance Guidance on May 2, 2026, providing detailed expectations for online services likely to be accessed by children. The guidance establishes a 'risk-proportionate' standard, recommends specific age estimation methods, and requires DPIAs for any age assurance system processing biometric data.",
+            "source_name": "ICO",
+            "source_tier": "S",
+            "published_at": "2026-05-02T09:30:00Z",
+            "score_a": 28,
+            "score_b": 18,
+            "score_c": 15,
+            "score_d": 6,
+            "score_e": 9,
+            "score_f": 9,
+            "total_score": 85,
+            "fingerprint": "UK-ICO-cookies-guidance-2026-04",
+            "anxiety_hits": [
+              "未成年人极端事件"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_official_doc",
+            "reason": "[官方文件] ICO · 风险冒头期 · 未成年人极端事件"
+          },
+          {
+            "id": 216,
+            "url": "https://www.nist.gov/news-events/news/2026/04/nist-releases-ai-rmf-generative-ai-profile-2-0",
+            "title": "NIST Releases AI RMF Generative AI Profile 2.0",
+            "title_cn": "NIST Releases AI RMF Generative AI Profile 2.0",
+            "summary": "The National Institute of Standards and Technology released version 2.0 of its Generative AI Profile under the AI Risk Management Framework on April 30, 2026. The update introduces new guidance on synthetic content provenance, agentic AI risk taxonomies, and red-teaming protocols for foundation models above 10^25 FLOPs.",
+            "source_name": "NIST",
+            "source_tier": "S",
+            "published_at": "2026-04-30T15:00:00Z",
+            "score_a": 28,
+            "score_b": 18,
+            "score_c": 15,
+            "score_d": 3,
+            "score_e": 9,
+            "score_f": 9,
+            "total_score": 82,
+            "fingerprint": "US-NIST-AIRMF-GenAI-Profile-2026-04",
+            "anxiety_hits": [
+              "Agent 等新形态",
+              "标识失效"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_official_doc",
+            "reason": "[官方文件] NIST · 风险冒头期 · Agent 等新形态+标识失效"
+          },
           {
             "id": 99,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/t5d221uy9gh9dk707sv9.html",
@@ -1200,7 +1611,9 @@
             "maturity_stage": "风险冒头期",
             "content_type": "fact_official_doc",
             "reason": "澳大利亚ACSC发布关于agentic AI系统网络安全风险的指南，主题深度对齐AI治理（T1），命中Agent等新形态关切议题。A1=20 A2=5 → A=25；风险冒头期B=20；产业可借鉴E=8；中文世界无报道F=10。"
-          },
+          }
+        ],
+        "pool": [
           {
             "id": 98,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/wkbk8ruiy1w6d4lmdai4.html",
@@ -1248,9 +1661,7 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_official_doc",
             "reason": "NIST下属CAISI与AI实验室签署前沿AI国家安全测试协议，主题深度对齐AI治理（T1），涉及预部署评估，属于Agent等新形态监管的关切议题。A1=22（深度对齐前沿AI安全测试），A2=3（Agent新形态，中档）→A=25；协议签署属于讨论立法期（B=15）；产业可借鉴性高（E=8）；中文世界无报道（F=9）。"
-          }
-        ],
-        "pool": [
+          },
           {
             "id": 76,
             "url": "https://techcrunch.com/2026/05/05/pennsylvania-sues-character-ai-after-a-chatbot-allegedly-posed-as-a-doctor/",
@@ -1346,6 +1757,30 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
             "reason": "文章报道德国推动欧盟AI法案中工业豁免条款的谈判，主题深度对齐AI治理（T1），属于讨论立法期。A1=25，A2=0，A=25；B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
+            "id": 217,
+            "url": "https://www.legislature.ca.gov/billtextclient.xhtml?bill_id=20260SB1047",
+            "title": "California Senate Bill 1047 Signed: AI Companion Apps Must Implement Suicide Prevention Protocols by January 2027",
+            "title_cn": "California Senate Bill 1047 Signed: AI Companion Apps Must Implement Suicide Prevention Protocols by January 2027",
+            "summary": "California Governor signed SB 1047 into law on May 3, 2026, establishing the nation's first state-level requirements for AI companion applications. The law mandates suicide-prevention prompts when minors discuss self-harm, requires age verification for accounts, and imposes a $10,000-per-incident civil penalty for violations. Effective January 1, 2027.",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-05-03T18:00:00Z",
+            "score_a": 28,
+            "score_b": 3,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 9,
+            "score_f": 8,
+            "total_score": 63,
+            "fingerprint": "US-CA-SB1047-AICompanion-2026-05",
+            "anxiety_hits": [
+              "未成年人极端事件"
+            ],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_legislative",
+            "reason": "[立法事实] DataGuidance (KtN) · 落地执行期 · 未成年人极端事件"
           },
           {
             "id": 208,
@@ -1541,10 +1976,10 @@
             "score_a": 18,
             "score_b": 8,
             "score_c": 12,
-            "score_d": 3,
+            "score_d": 6,
             "score_e": 5,
             "score_f": 7,
-            "total_score": 53,
+            "total_score": 56,
             "fingerprint": "UK-ICO-cookies-guidance-2026-04",
             "anxiety_hits": [],
             "maturity_stage": "规则成形期",
@@ -1596,6 +2031,50 @@
             "reason": "文章涉及Chrome Android新增近似位置共享功能，属于数据与隐私主题（T3），但仅为产品功能更新，非监管动态，主题对齐度低（A1=10）。无关切议题命中（A2=0）。风险冒头期（B=20）。产业可借鉴性中性（E=5）。中文世界无报道（F=7）。"
           },
           {
+            "id": 212,
+            "url": "https://www.techpolicy.press/the-gpai-code-and-the-myth-of-european-ai-leadership",
+            "title": "The GPAI Code and the Myth of European AI Leadership",
+            "title_cn": "The GPAI Code and the Myth of European AI Leadership",
+            "summary": "Behind the celebratory press releases lies a sobering reality: the EU has neither the compute, the talent, nor the capital to lead AI governance through regulatory instruments alone. The new GPAI Code is a well-crafted document — and a politically convenient one — but it cannot substitute for industrial policy. Brussels risks regulating an industry it does not have.",
+            "source_name": "Tech Policy Press",
+            "source_tier": "A",
+            "published_at": "2026-05-05T16:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 9,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 50,
+            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_official_doc",
+            "reason": "[官方文件] Tech Policy Press · 风险冒头期 · 无关切议题命中"
+          },
+          {
+            "id": 210,
+            "url": "https://www.dataguidance.com/news/eu-commission-publishes-final-gpai-code-of-practice",
+            "title": "EU Commission publishes final GPAI Code of Practice",
+            "title_cn": "EU Commission publishes final GPAI Code of Practice",
+            "summary": "On May 4, 2026, the European Commission officially published the final version of the General-Purpose AI Code of Practice under the EU AI Act. Effective from August 2, 2026, the Code requires GPAI providers to disclose training data sources, conduct systemic risk assessments, and report serious incidents within 15 days. Signatories include OpenAI, Anthropic, Google DeepMind, and Mistral.",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-05-04T08:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 9,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 50,
+            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_legislative",
+            "reason": "[立法事实] DataGuidance (KtN) · 风险冒头期 · 无关切议题命中"
+          },
+          {
             "id": 101,
             "url": "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp/entries/2mik0dgdfnme130rik70.html",
             "title": "Pour accompagner les professionnels",
@@ -1618,6 +2097,28 @@
             "reason": "CNIL发布2026年工作计划，涉及GDPR和RIA合规指导，但未命中网信办核心焦虑点，A分低；处于讨论立法期，B分中等；信源权威但内容为工作计划，产业借鉴性中性；中文世界报道少，稀缺性较高。"
           },
           {
+            "id": 214,
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-finalizes-coppa-rule-update",
+            "title": "FTC Finalizes COPPA Rule Update with New Restrictions on AI-Generated Content for Minors",
+            "title_cn": "FTC Finalizes COPPA Rule Update with New Restrictions on AI-Generated Content for Minors",
+            "summary": "The Federal Trade Commission announced on April 28, 2026 the finalization of its COPPA Rule update. The new rule prohibits operators from using personal information of children under 13 to train generative AI models without verifiable parental consent, and bans behavioral advertising targeting minors. Compliance deadline: October 1, 2026.",
+            "source_name": "FTC",
+            "source_tier": "S",
+            "published_at": "2026-04-28T13:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 15,
+            "score_d": 3,
+            "score_e": 3,
+            "score_f": 9,
+            "total_score": 48,
+            "fingerprint": "US-FTC-COPPA-Update-2026-04",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_legislative",
+            "reason": "[立法事实] FTC · 风险冒头期 · 无关切议题命中"
+          },
+          {
             "id": 85,
             "url": "https://www.politico.eu/article/pornhub-lets-uk-apple-users-back-on-its-platform/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
             "title": "PornHub lets UK Apple users back on its platform",
@@ -1638,6 +2139,94 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "文章报道PornHub因英国《在线安全法》部分解禁，主题对齐内容治理（T4）和未成年人保护（T5），属于落地执行期（B=3），产业可借鉴性中性（E=5），中文世界无报道（F=7）。"
+          },
+          {
+            "id": 220,
+            "url": "https://www.cov.com/en/news-and-insights/insights/2026/05/texas-sb2420-effective-january-2026-what-companies-need-to-know",
+            "title": "Texas SB 2420 Comes Into Effect: What Companies Need to Know About AI Disclosure Obligations",
+            "title_cn": "Texas SB 2420 Comes Into Effect: What Companies Need to Know About AI Disclosure Obligations",
+            "summary": "Texas Senate Bill 2420, signed June 22, 2025, takes effect today, May 6, 2026. The law requires any business operating in Texas to disclose to consumers when AI is used to make 'consequential decisions' affecting employment, housing, healthcare, or financial services. The Texas Attorney General has been given enforcement authority with civil penalties up to $7,500 per violation.",
+            "source_name": "Inside Privacy (Covington)",
+            "source_tier": "A",
+            "published_at": "2026-05-06T08:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 44,
+            "fingerprint": "US-TX-SB2420-AIDisclosure-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_enforcement",
+            "reason": "[执法事实] Inside Privacy (Covington) · 风险冒头期 · 无关切议题命中"
+          },
+          {
+            "id": 221,
+            "url": "https://www.engage.hoganlovells.com/knowledgeservices/news/uk-ofcom-illegal-harms-codes-second-enforcement-wave",
+            "title": "Ofcom Launches Second Wave of Illegal Harms Code Enforcement: Five Platforms Under Investigation",
+            "title_cn": "Ofcom Launches Second Wave of Illegal Harms Code Enforcement: Five Platforms Under Investigation",
+            "summary": "The UK communications regulator Ofcom announced on May 5, 2026, the opening of formal investigations against five major user-to-user services for failures under the Online Safety Act's Illegal Harms Codes of Practice. Affected platforms include two adult content sites, two messaging apps, and one image-sharing service. Maximum penalties under the Act reach 10% of global annual turnover.",
+            "source_name": "Hogan Lovells Engage",
+            "source_tier": "A",
+            "published_at": "2026-05-05T10:00:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 44,
+            "fingerprint": "UK-Ofcom-OSA-IllegalHarms-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_enforcement",
+            "reason": "[执法事实] Hogan Lovells Engage · 风险冒头期 · 无关切议题命中"
+          },
+          {
+            "id": 213,
+            "url": "https://www.gpdp.it/en/web/guest/home/docweb/-/docweb-display/docweb/10052026",
+            "title": "Italy's Garante Fines OpenAI €15 Million for ChatGPT Data Protection Violations",
+            "title_cn": "Italy's Garante Fines OpenAI €15 Million for ChatGPT Data Protection Violations",
+            "summary": "The Italian Data Protection Authority (Garante) imposed a €15 million fine on OpenAI on May 1, 2026, for violations of GDPR Articles 5, 6, and 13 in connection with ChatGPT's processing of training data. The investigation, opened in March 2023, concluded that OpenAI failed to establish a valid legal basis for scraping personal data from public sources. OpenAI has 60 days to appeal.",
+            "source_name": "Garante",
+            "source_tier": "S",
+            "published_at": "2026-05-01T10:00:00Z",
+            "score_a": 0,
+            "score_b": 3,
+            "score_c": 15,
+            "score_d": 3,
+            "score_e": 3,
+            "score_f": 9,
+            "total_score": 33,
+            "fingerprint": "IT-Garante-OpenAI-GDPR-Fine-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_enforcement",
+            "reason": "[执法事实] Garante · 落地执行期 · 无关切议题命中"
+          },
+          {
+            "id": 218,
+            "url": "https://www.iapp.org/news/a/the-quiet-rise-of-agent-liability-regimes",
+            "title": "The Quiet Rise of Agent Liability Regimes: A Comparative Analysis",
+            "title_cn": "The Quiet Rise of Agent Liability Regimes: A Comparative Analysis",
+            "summary": "While headlines focus on the EU AI Act and US executive orders, a quieter regulatory front is opening: dedicated liability regimes for autonomous AI agents. Singapore's MDA, the UK's Law Commission, and Japan's METI have all issued consultation papers in the past 60 days. We compare three emerging models: principal-agent attribution, manufacturer strict liability, and the 'electronic person' approach.",
+            "source_name": "IAPP",
+            "source_tier": "C",
+            "published_at": "2026-04-29T11:00:00Z",
+            "score_a": 0,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 6,
+            "score_e": 3,
+            "score_f": 3,
+            "total_score": 32,
+            "fingerprint": "Global-AgenticAI-Liability-2026-Q2",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_official_doc",
+            "reason": "[官方文件] IAPP · 讨论立法期 · 无关切议题命中"
           }
         ]
       },
@@ -1924,6 +2513,52 @@
             "reason": "文章报道Google AI搜索整合Reddit等论坛内容，属于AI治理（T1）中的算法设计/内容呈现议题，但主题对齐度较低（A1=10），未命中高权重关切议题（A2=0）。议题处于风险冒头期（B=20），产业可借鉴性中性（E=5），中文世界无报道（F=7）。"
           },
           {
+            "id": 211,
+            "url": "https://www.lawfaremedia.org/article/eu-gpai-code-of-practice-three-flaws",
+            "title": "Why the EU's GPAI Code of Practice Won't Solve the Frontier Risk Problem",
+            "title_cn": "Why the EU's GPAI Code of Practice Won't Solve the Frontier Risk Problem",
+            "summary": "The EU's final GPAI Code of Practice, while celebrated as the world's first binding industry code for frontier AI, suffers from three structural flaws: first, the systemic risk threshold of 10^25 FLOPs is already obsolete; second, the third-party audit clause lacks teeth; third, signatories retain unilateral exit rights. We argue the Code is more a political signal than a regulatory instrument.",
+            "source_name": "Lawfare",
+            "source_tier": "A",
+            "published_at": "2026-05-05T14:30:00Z",
+            "score_a": 0,
+            "score_b": 18,
+            "score_c": 12,
+            "score_d": 9,
+            "score_e": 3,
+            "score_f": 8,
+            "total_score": 50,
+            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "[观点分析] Lawfare · 风险冒头期 · 无关切议题命中"
+          },
+          {
+            "id": 222,
+            "url": "https://www.aisnakeoil.com/p/why-watermarking-is-failing-and-what",
+            "title": "Why AI Watermarking Is Failing — And What Should Replace It",
+            "title_cn": "Why AI Watermarking Is Failing — And What Should Replace It",
+            "summary": "Three years after the major labs committed to robust watermarking under the White House voluntary commitments, independent audits show 80%+ removal rates with simple post-processing. The C2PA standard fares slightly better but suffers from low adoption. We argue the entire 'detect AI content' paradigm is misconceived, and propose a shift to provenance-by-design at the hardware layer.",
+            "source_name": "AI Snake Oil",
+            "source_tier": "D",
+            "published_at": "2026-05-02T12:00:00Z",
+            "score_a": 18,
+            "score_b": 18,
+            "score_c": 2,
+            "score_d": 3,
+            "score_e": 6,
+            "score_f": 2,
+            "total_score": 49,
+            "fingerprint": "Global-AIWatermark-Failure-2026-05",
+            "anxiety_hits": [
+              "标识失效"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "[观点分析] AI Snake Oil · 风险冒头期 · 标识失效"
+          },
+          {
             "id": 97,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/rbgfa0jhgwhqhhxqbgaq.html",
             "title": "AI Regulation in the US: What the White House Framework Signals Next",
@@ -1944,6 +2579,30 @@
             "maturity_stage": "规则成形期",
             "content_type": "opinion_analysis",
             "reason": "文章为KtN营销邮件，主体是推销webinar/解读，缺少具体事实要素。主题对齐AI治理（T1），但属于规则成形期的评论，A1=12（部分对齐），B=8（规则成形期评论），E=5（中性借鉴），F=7（中文无报道）。"
+          },
+          {
+            "id": 219,
+            "url": "https://importai.substack.com/p/agentic-ai-and-the-coming-liability-mess",
+            "title": "Agentic AI and the Coming Liability Mess: Why 2026 Is the Year of the Lawsuit",
+            "title_cn": "Agentic AI and the Coming Liability Mess: Why 2026 Is the Year of the Lawsuit",
+            "summary": "Anthropic's Claude can now operate a computer. OpenAI's Operator can buy you tickets. Google's Project Mariner browses the web on your behalf. None of the existing legal frameworks — agency law, product liability, consumer protection — were written with autonomous AI in mind. I predict 2026 will see at least three landmark lawsuits that will force courts to choose a doctrine. Here's my bet on which.",
+            "source_name": "Import AI (Substack)",
+            "source_tier": "D",
+            "published_at": "2026-05-04T07:00:00Z",
+            "score_a": 28,
+            "score_b": 3,
+            "score_c": 2,
+            "score_d": 6,
+            "score_e": 6,
+            "score_f": 2,
+            "total_score": 47,
+            "fingerprint": "Global-AgenticAI-Liability-2026-Q2",
+            "anxiety_hits": [
+              "Agent 等新形态"
+            ],
+            "maturity_stage": "落地执行期",
+            "content_type": "opinion_analysis",
+            "reason": "[观点分析] Import AI (Substack) · 落地执行期 · Agent 等新形态"
           },
           {
             "id": 34,
@@ -1972,6 +2631,52 @@
     }
   },
   "clusters": [
+    {
+      "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
+      "article_count": 3,
+      "main_is_fact": true,
+      "main": {
+        "id": 210,
+        "url": "https://www.dataguidance.com/news/eu-commission-publishes-final-gpai-code-of-practice",
+        "title": "EU Commission publishes final GPAI Code of Practice",
+        "title_cn": "EU Commission publishes final GPAI Code of Practice",
+        "summary": "On May 4, 2026, the European Commission officially published the final version of the General-Purpose AI Code of Practice under the EU AI Act. Effective from August 2, 2026, the Code requires GPAI providers to disclose training data sources, conduct systemic risk assessments, and report serious incidents within 15 days. Signatories include OpenAI, Anthropic, Google DeepMind, and Mistral.",
+        "source_name": "DataGuidance (KtN)",
+        "source_tier": "A",
+        "published_at": "2026-05-04T08:00:00Z",
+        "total_score": 50,
+        "anxiety_hits": [],
+        "maturity_stage": "风险冒头期",
+        "content_type": "fact_legislative",
+        "reason": "[立法事实] DataGuidance (KtN) · 风险冒头期 · 无关切议题命中"
+      },
+      "related_facts": [
+        {
+          "id": 212,
+          "url": "https://www.techpolicy.press/the-gpai-code-and-the-myth-of-european-ai-leadership",
+          "title": "The GPAI Code and the Myth of European AI Leadership",
+          "title_cn": "The GPAI Code and the Myth of European AI Leadership",
+          "source_name": "Tech Policy Press",
+          "source_tier": "A",
+          "published_at": "2026-05-05T16:00:00Z",
+          "total_score": 50,
+          "content_type": "fact_official_doc"
+        }
+      ],
+      "related_opinions": [
+        {
+          "id": 211,
+          "url": "https://www.lawfaremedia.org/article/eu-gpai-code-of-practice-three-flaws",
+          "title": "Why the EU's GPAI Code of Practice Won't Solve the Frontier Risk Problem",
+          "title_cn": "Why the EU's GPAI Code of Practice Won't Solve the Frontier Risk Problem",
+          "source_name": "Lawfare",
+          "source_tier": "A",
+          "published_at": "2026-05-05T14:30:00Z",
+          "total_score": 50,
+          "content_type": "opinion_analysis"
+        }
+      ]
+    },
     {
       "fingerprint": "Australia-ACSC-agentic-AI-cybersecurity-guidance-2026-05",
       "article_count": 2,
@@ -2007,17 +2712,87 @@
         }
       ],
       "related_opinions": []
+    },
+    {
+      "fingerprint": "UK-ICO-cookies-guidance-2026-04",
+      "article_count": 2,
+      "main_is_fact": true,
+      "main": {
+        "id": 215,
+        "url": "https://ico.org.uk/about-the-ico/news-and-events/news-and-blogs/2026/05/ico-publishes-final-age-assurance-guidance/",
+        "title": "ICO Publishes Final Age Assurance Guidance for Online Services",
+        "title_cn": "ICO Publishes Final Age Assurance Guidance for Online Services",
+        "summary": "The UK Information Commissioner's Office released its final Age Assurance Guidance on May 2, 2026, providing detailed expectations for online services likely to be accessed by children. The guidance establishes a 'risk-proportionate' standard, recommends specific age estimation methods, and requires DPIAs for any age assurance system processing biometric data.",
+        "source_name": "ICO",
+        "source_tier": "S",
+        "published_at": "2026-05-02T09:30:00Z",
+        "total_score": 85,
+        "anxiety_hits": [
+          "未成年人极端事件"
+        ],
+        "maturity_stage": "风险冒头期",
+        "content_type": "fact_official_doc",
+        "reason": "[官方文件] ICO · 风险冒头期 · 未成年人极端事件"
+      },
+      "related_facts": [
+        {
+          "id": 174,
+          "url": "https://www.insideprivacy.com/advertising-marketing/three-notable-changes-to-the-uk-icos-guidance-on-cookies-and-a-hint-of-a-more-permissive-approach-to-advertising-cookies-in-the-future/",
+          "title": "Three notable changes to the UK ICO’s guidance on cookies, and a hint of a more permissive approach to advertising cookies in the future",
+          "title_cn": "英国ICO更新cookie指南，暗示广告cookie监管趋松",
+          "source_name": "Inside Privacy (Covington)",
+          "source_tier": "A",
+          "published_at": "2026-05-06T23:22:04+00:00",
+          "total_score": 56,
+          "content_type": "fact_official_doc"
+        }
+      ],
+      "related_opinions": []
+    },
+    {
+      "fingerprint": "Global-AgenticAI-Liability-2026-Q2",
+      "article_count": 2,
+      "main_is_fact": true,
+      "main": {
+        "id": 218,
+        "url": "https://www.iapp.org/news/a/the-quiet-rise-of-agent-liability-regimes",
+        "title": "The Quiet Rise of Agent Liability Regimes: A Comparative Analysis",
+        "title_cn": "The Quiet Rise of Agent Liability Regimes: A Comparative Analysis",
+        "summary": "While headlines focus on the EU AI Act and US executive orders, a quieter regulatory front is opening: dedicated liability regimes for autonomous AI agents. Singapore's MDA, the UK's Law Commission, and Japan's METI have all issued consultation papers in the past 60 days. We compare three emerging models: principal-agent attribution, manufacturer strict liability, and the 'electronic person' approach.",
+        "source_name": "IAPP",
+        "source_tier": "C",
+        "published_at": "2026-04-29T11:00:00Z",
+        "total_score": 32,
+        "anxiety_hits": [],
+        "maturity_stage": "讨论立法期",
+        "content_type": "fact_official_doc",
+        "reason": "[官方文件] IAPP · 讨论立法期 · 无关切议题命中"
+      },
+      "related_facts": [],
+      "related_opinions": [
+        {
+          "id": 219,
+          "url": "https://importai.substack.com/p/agentic-ai-and-the-coming-liability-mess",
+          "title": "Agentic AI and the Coming Liability Mess: Why 2026 Is the Year of the Lawsuit",
+          "title_cn": "Agentic AI and the Coming Liability Mess: Why 2026 Is the Year of the Lawsuit",
+          "source_name": "Import AI (Substack)",
+          "source_tier": "D",
+          "published_at": "2026-05-04T07:00:00Z",
+          "total_score": 47,
+          "content_type": "opinion_analysis"
+        }
+      ]
     }
   ],
   "stats": {
-    "total": 149,
+    "total": 164,
     "by_type": {
-      "fact_enforcement": 6,
-      "fact_legislative": 6,
-      "fact_official_doc": 8,
-      "opinion_analysis": 14
+      "fact_enforcement": 9,
+      "fact_legislative": 9,
+      "fact_official_doc": 12,
+      "opinion_analysis": 17
     },
-    "veto": 115
+    "veto": 117
   },
   "feed_health": [
     {
@@ -2046,8 +2821,8 @@
       "consecutive_fails": 1,
       "recent_7d_success": 0,
       "recent_7d_total": 1,
-      "latest_article_at": null,
-      "stale_days": null,
+      "latest_article_at": "2026-05-02T12:00:00Z",
+      "stale_days": 4,
       "status": "warn"
     },
     {
@@ -2061,8 +2836,8 @@
       "consecutive_fails": 1,
       "recent_7d_success": 0,
       "recent_7d_total": 1,
-      "latest_article_at": null,
-      "stale_days": null,
+      "latest_article_at": "2026-05-05T14:30:00Z",
+      "stale_days": 1,
       "status": "warn"
     },
     {
@@ -2151,8 +2926,8 @@
       "consecutive_fails": 1,
       "recent_7d_success": 0,
       "recent_7d_total": 1,
-      "latest_article_at": null,
-      "stale_days": null,
+      "latest_article_at": "2026-05-02T09:30:00Z",
+      "stale_days": 4,
       "status": "warn"
     },
     {
@@ -2271,8 +3046,8 @@
       "consecutive_fails": 0,
       "recent_7d_success": 1,
       "recent_7d_total": 1,
-      "latest_article_at": null,
-      "stale_days": null,
+      "latest_article_at": "2026-05-05T16:00:00Z",
+      "stale_days": 1,
       "status": "ok"
     },
     {
@@ -2605,17 +3380,18 @@
       {
         "emoji": "🤖",
         "name": "AI治理与监管动态",
-        "blurb": "欧盟AI法案豁免及AGI护栏讨论",
+        "blurb": "欧盟AI法案豁免、AGI护栏等",
         "article_ids": [
           198,
           208,
-          177
+          177,
+          220
         ]
       },
       {
         "emoji": "🔐",
-        "name": "隐私与数据保护政策",
-        "blurb": "英国ICO cookie指南及位置共享",
+        "name": "隐私与数据保护",
+        "blurb": "cookie指南、位置共享等",
         "article_ids": [
           174,
           188
@@ -2624,7 +3400,7 @@
       {
         "emoji": "📢",
         "name": "平台内容与搜索治理",
-        "blurb": "谷歌AI搜索整合论坛内容争议",
+        "blurb": "AI搜索整合论坛内容争议",
         "article_ids": [
           189
         ]
@@ -2634,31 +3410,35 @@
       {
         "emoji": "🤖",
         "name": "前沿AI安全与监管",
-        "blurb": "AI模型安全测试与监管动态",
+        "blurb": "前沿模型安全测试与监管动态",
         "article_ids": [
           37,
           83,
           86,
           35,
-          177,
-          97
+          210,
+          211,
+          212,
+          97,
+          219
         ]
       },
       {
         "emoji": "👶",
         "name": "未成年人网络保护",
-        "blurb": "针对未成年人的网络与AI保护措施",
+        "blurb": "未成年人年龄识别与社交媒体限制",
         "article_ids": [
           76,
           82,
           196,
-          163
+          163,
+          85
         ]
       },
       {
         "emoji": "🔐",
-        "name": "数据隐私与位置追踪",
-        "blurb": "数据隐私执法与位置共享政策",
+        "name": "数据隐私与位置保护",
+        "blurb": "位置数据出售与cookie指南更新",
         "article_ids": [
           58,
           174,
@@ -2667,87 +3447,105 @@
       },
       {
         "emoji": "⚖️",
-        "name": "欧盟AI法案与豁免",
-        "blurb": "欧盟AI法案工业豁免与实施",
+        "name": "AI法案与合规义务",
+        "blurb": "欧盟AI法案工业豁免与GPAI守则",
         "article_ids": [
           198,
-          208
+          208,
+          220,
+          221
         ]
       },
       {
         "emoji": "📢",
-        "name": "AI平台与内容治理",
-        "blurb": "AI平台内容整合与责任争议",
+        "name": "AI平台责任与透明度",
+        "blurb": "AI幻觉调查与第三方模型选择",
         "article_ids": [
           96,
-          189,
-          85
+          71,
+          189
         ]
       },
       {
         "emoji": "🛰️",
-        "name": "AI模型选择与互操作",
-        "blurb": "用户选择第三方AI模型与互操作",
+        "name": "国际AI治理与峰会",
+        "blurb": "印度AI峰会与白宫AI框架",
         "article_ids": [
-          71,
-          32
+          32,
+          177
         ]
       }
     ],
     "120h": [
       {
         "emoji": "🤖",
-        "name": "AI Agent与前沿模型安全治理",
-        "blurb": "Agent安全指南及前沿模型测试协议",
+        "name": "AI Agent与前沿模型治理",
+        "blurb": "Agent AI安全与监管动态",
         "article_ids": [
           98,
           37,
           83,
           86,
           35,
+          219,
           177
         ]
       },
       {
         "emoji": "👶",
         "name": "未成年人网络与AI保护",
-        "blurb": "年龄验证、聊天机器人及社交媒体限制",
+        "blurb": "年龄验证与未成年人保护措施",
         "article_ids": [
-          76,
+          215,
           82,
           196,
-          163
-        ]
-      },
-      {
-        "emoji": "⚖️",
-        "name": "AI监管执法与立法动态",
-        "blurb": "AI幻觉调查、工业豁免及隐私执法",
-        "article_ids": [
-          96,
-          198,
-          58,
-          208,
-          97
-        ]
-      },
-      {
-        "emoji": "🔐",
-        "name": "隐私与数据保护政策更新",
-        "blurb": "位置数据、cookie指南及年龄门控",
-        "article_ids": [
-          174,
-          188,
+          163,
           85
         ]
       },
       {
-        "emoji": "📢",
-        "name": "平台内容与AI搜索争议",
-        "blurb": "AI搜索整合论坛内容及平台责任",
+        "emoji": "⚖️",
+        "name": "欧盟AI法案与GPAI守则",
+        "blurb": "欧盟AI法案实施与GPAI守则",
         "article_ids": [
-          189,
+          198,
+          210,
+          211,
+          212
+        ]
+      },
+      {
+        "emoji": "🔐",
+        "name": "AI安全与隐私执法行动",
+        "blurb": "AI幻觉、位置数据等执法案例",
+        "article_ids": [
+          76,
+          96,
+          58,
+          220,
+          221
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "AI透明度与内容治理",
+        "blurb": "AI披露义务与内容标注争议",
+        "article_ids": [
+          217,
+          222,
+          97,
+          189
+        ]
+      },
+      {
+        "emoji": "🛰️",
+        "name": "数字平台与数据治理",
+        "blurb": "平台数据共享与cookie监管",
+        "article_ids": [
           71,
+          174,
+          188,
+          208,
           32
         ]
       }
@@ -2755,71 +3553,96 @@
     "360h": [
       {
         "emoji": "🤖",
-        "name": "AI Agent 安全与治理",
-        "blurb": "Agent AI 风险指南与监管动态",
+        "name": "AI Agent与前沿模型治理",
+        "blurb": "Agent AI安全与监管动态",
         "article_ids": [
           99,
           98,
           37,
           83,
           86,
-          90,
           35,
+          90,
+          219,
           177
         ]
       },
       {
         "emoji": "👶",
-        "name": "未成年人网络保护",
-        "blurb": "年龄识别与社交媒体限制",
+        "name": "未成年人网络与AI保护",
+        "blurb": "年龄验证与儿童在线安全",
         "article_ids": [
+          215,
           82,
           196,
-          163
-        ]
-      },
-      {
-        "emoji": "🔐",
-        "name": "隐私与数据保护立法",
-        "blurb": "联邦隐私法案与执法行动",
-        "article_ids": [
-          62,
-          58,
-          102,
-          114,
-          174,
-          101,
-          188
+          163,
+          214,
+          85
         ]
       },
       {
         "emoji": "⚖️",
-        "name": "AI 监管与法律挑战",
-        "blurb": "AI 幻觉、安全漂移与诉讼",
+        "name": "AI立法与标准制定",
+        "blurb": "各国AI法案与规范更新",
+        "article_ids": [
+          216,
+          198,
+          217,
+          210,
+          211,
+          212,
+          220,
+          208
+        ]
+      },
+      {
+        "emoji": "🔐",
+        "name": "隐私与数据保护执法",
+        "blurb": "数据隐私执法与合规动态",
         "article_ids": [
           76,
           96,
-          113,
-          94,
-          111,
-          198,
-          33,
-          97,
-          34
+          58,
+          102,
+          114,
+          174,
+          103,
+          188,
+          221
         ]
       },
       {
         "emoji": "📢",
-        "name": "平台内容与竞争治理",
-        "blurb": "AI 搜索、年龄门控与反垄断",
+        "name": "AI内容治理与表达自由",
+        "blurb": "AI生成内容与言论边界",
         "article_ids": [
-          71,
-          189,
-          85,
-          208,
+          94,
+          113,
+          111,
+          222,
+          189
+        ]
+      },
+      {
+        "emoji": "🛰️",
+        "name": "国际AI治理与多边合作",
+        "blurb": "全球AI治理峰会与倡议",
+        "article_ids": [
           32,
           109,
-          103
+          34
+        ]
+      },
+      {
+        "emoji": "🔀",
+        "name": "其他治理动态",
+        "blurb": "未归入主类的候选选题",
+        "article_ids": [
+          33,
+          62,
+          71,
+          101,
+          97
         ]
       }
     ]
