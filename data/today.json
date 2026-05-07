@@ -1,107 +1,10 @@
 {
-  "snapshot_at": "2026-05-06T14:23:00.300801+00:00",
-  "schema_version": "v1.2",
+  "snapshot_at": "2026-05-07T02:20:04.529374+00:00",
+  "schema_version": "v1.4",
   "tabs": {
     "24h": {
       "facts": {
         "top3": [
-          {
-            "id": 83,
-            "url": "https://www.politico.eu/article/eu-pressure-builds-on-anthropic-over-mythos-hacking-risks/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "EU pressure builds on Anthropic over Mythos hacking risks",
-            "title_cn": "欧盟就Mythos黑客风险向Anthropic施压",
-            "summary": "Officials are losing patience over lack of access to superhacking model.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-05-05T19:46:13+00:00",
-            "score_a": 30,
-            "score_b": 15,
-            "score_c": 8,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 9,
-            "total_score": 70,
-            "fingerprint": "EU-Anthropic-Mythos-hacking-risks-2026-05",
-            "anxiety_hits": [
-              "Agent 等新形态"
-            ],
-            "maturity_stage": "讨论立法期",
-            "content_type": "fact_legislative",
-            "reason": "文章涉及AI Agent（超级黑客模型）的安全风险，命中网信办对Agent新形态的焦虑点，且欧盟正在施压，处于讨论立法期。"
-          },
-          {
-            "id": 82,
-            "url": "https://techcrunch.com/2026/05/05/meta-will-use-ai-to-analyze-height-and-bone-structure-to-identify-if-users-are-underage/",
-            "title": "Meta will use AI to analyze height and bone structure to identify if users are underage",
-            "title_cn": "Meta用AI分析身高骨骼识别未成年人年龄",
-            "summary": "The visual analysis system is now operating in select countries, but Meta says it's working toward a broader rollout.",
-            "source_name": "TechCrunch",
-            "source_tier": "C",
-            "published_at": "2026-05-05T14:27:00+00:00",
-            "score_a": 28,
-            "score_b": 8,
-            "score_c": 5,
-            "score_d": 3,
-            "score_e": 10,
-            "score_f": 7,
-            "total_score": 61,
-            "fingerprint": "Meta-AI-AgeVerification-2026-05",
-            "anxiety_hits": [
-              "未成年人极端事件"
-            ],
-            "maturity_stage": "规则成形期",
-            "content_type": "fact_legislative",
-            "reason": "Meta使用AI分析身高和骨骼结构识别未成年人，直接命中未成年人保护焦虑点，但已进入部署阶段（规则成形期），B分中等。信源权威，产业借鉴性高（中国可参考），中文报道较少。"
-          },
-          {
-            "id": 76,
-            "url": "https://techcrunch.com/2026/05/05/pennsylvania-sues-character-ai-after-a-chatbot-allegedly-posed-as-a-doctor/",
-            "title": "Pennsylvania sues Character.AI after a chatbot allegedly posed as a doctor",
-            "title_cn": "宾州起诉Character.AI：聊天机器人冒充医生",
-            "summary": "According to Pennsylvania's filing, a Character.AI chatbot presented itself as a licensed psychiatrist during a state investigation, and also fabricated a serial number for its state medical license.",
-            "source_name": "TechCrunch",
-            "source_tier": "C",
-            "published_at": "2026-05-05T17:46:10+00:00",
-            "score_a": 30,
-            "score_b": 3,
-            "score_c": 5,
-            "score_d": 3,
-            "score_e": 10,
-            "score_f": 7,
-            "total_score": 58,
-            "fingerprint": "US-CharacterAI-Pennsylvania-Lawsuit-2026-05",
-            "anxiety_hits": [
-              "未成年人极端事件",
-              "Agent 等新形态"
-            ],
-            "maturity_stage": "落地执行期",
-            "content_type": "fact_enforcement",
-            "reason": "宾州起诉Character.AI，涉及AI聊天机器人冒充医生，命中未成年人极端事件（可能诱导未成年人）和Agent新形态（AI冒充专业人士），但已进入执法阶段，B分较低。"
-          }
-        ],
-        "pool": [
-          {
-            "id": 133,
-            "url": "https://www.techpolicy.press/the-gpai-code-and-the-myth-of-european-ai-leadership",
-            "title": "The GPAI Code and the Myth of European AI Leadership",
-            "title_cn": "The GPAI Code and the Myth of European AI Leadership",
-            "summary": "Behind the celebratory press releases lies a sobering reality: the EU has neither the compute, the talent, nor the capital to lead AI governance through regulatory instruments alone. The new GPAI Code is a well-crafted document — and a politically convenient one — but it cannot substitute for industrial policy. Brussels risks regulating an industry it does not have.",
-            "source_name": "Tech Policy Press",
-            "source_tier": "A",
-            "published_at": "2026-05-05T16:00:00Z",
-            "score_a": 0,
-            "score_b": 18,
-            "score_c": 12,
-            "score_d": 9,
-            "score_e": 3,
-            "score_f": 8,
-            "total_score": 50,
-            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
-            "anxiety_hits": [],
-            "maturity_stage": "风险冒头期",
-            "content_type": "fact_official_doc",
-            "reason": "[官方文件] Tech Policy Press · 风险冒头期 · 无焦虑点命中"
-          },
           {
             "id": 141,
             "url": "https://www.cov.com/en/news-and-insights/insights/2026/05/texas-sb2420-effective-january-2026-what-companies-need-to-know",
@@ -123,154 +26,18 @@
             "maturity_stage": "风险冒头期",
             "content_type": "fact_enforcement",
             "reason": "[执法事实] Inside Privacy (Covington) · 风险冒头期 · 无焦虑点命中"
-          },
-          {
-            "id": 65,
-            "url": "https://techcrunch.com/2026/05/05/nuro-receives-driverless-testing-permit-ahead-of-uber-robotaxi-service-launch/",
-            "title": "Nuro receives driverless testing permit ahead of Uber robotaxi service launch",
-            "title_cn": "Nuro获无人驾驶测试许可，Uber即将推出机器人出租车服务",
-            "summary": "The Silicon Valley AV startup has not started driverless testing yet.",
-            "source_name": "TechCrunch",
-            "source_tier": "C",
-            "published_at": "2026-05-06T00:07:47+00:00",
-            "score_a": 0,
-            "score_b": 3,
-            "score_c": 5,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 3,
-            "total_score": 19,
-            "fingerprint": "US-Nuro-DriverlessPermit-2026-05",
-            "anxiety_hits": [],
-            "maturity_stage": "落地执行期",
-            "content_type": "fact_legislative",
-            "reason": "文章为商业新闻，涉及自动驾驶测试许可，但未命中网信办8大焦虑点，A=0；议题成熟度为落地执行期，B=3；产业可借鉴性中性，E=5；中文世界已有类似报道，F=3。"
-          }
-        ]
-      },
-      "opinions": {
-        "top3": [
-          {
-            "id": 132,
-            "url": "https://www.lawfaremedia.org/article/eu-gpai-code-of-practice-three-flaws",
-            "title": "Why the EU's GPAI Code of Practice Won't Solve the Frontier Risk Problem",
-            "title_cn": "Why the EU's GPAI Code of Practice Won't Solve the Frontier Risk Problem",
-            "summary": "The EU's final GPAI Code of Practice, while celebrated as the world's first binding industry code for frontier AI, suffers from three structural flaws: first, the systemic risk threshold of 10^25 FLOPs is already obsolete; second, the third-party audit clause lacks teeth; third, signatories retain unilateral exit rights. We argue the Code is more a political signal than a regulatory instrument.",
-            "source_name": "Lawfare",
-            "source_tier": "A",
-            "published_at": "2026-05-05T14:30:00Z",
-            "score_a": 0,
-            "score_b": 18,
-            "score_c": 12,
-            "score_d": 9,
-            "score_e": 3,
-            "score_f": 8,
-            "total_score": 50,
-            "fingerprint": "EU-AI-Act-GPAI-CodeOfPractice-2026-05",
-            "anxiety_hits": [],
-            "maturity_stage": "风险冒头期",
-            "content_type": "opinion_analysis",
-            "reason": "[观点分析] Lawfare · 风险冒头期 · 无焦虑点命中"
-          },
-          {
-            "id": 35,
-            "url": "https://www.platformer.news/trump-administration-doomers-ai/",
-            "title": "The Trump administration's AI doomer moment",
-            "title_cn": "特朗普政府AI安全态度转变：从轻视到担忧",
-            "summary": "A year ago, officials all but sneered at the idea of AI safety. A new frontier model has them reconsidering",
-            "source_name": "Platformer",
-            "source_tier": "C",
-            "published_at": "2026-05-06T00:00:22+00:00",
-            "score_a": 5,
-            "score_b": 20,
-            "score_c": 5,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 45,
-            "fingerprint": "US-Trump-AI-Safety-Doomer-2026-05",
-            "anxiety_hits": [],
-            "maturity_stage": "风险冒头期",
-            "content_type": "opinion_analysis",
-            "reason": "文章讨论美国特朗普政府对AI安全态度的转变，属于风险冒头期，但未命中网信办8大焦虑点，A分低。"
-          },
-          {
-            "id": 71,
-            "url": "https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/",
-            "title": "Apple plans to make iOS 27 a Choose Your Own Adventure of AI models",
-            "title_cn": "苹果计划在iOS 27中让用户自由选择AI模型",
-            "summary": "With Apple's latest operating system updates, users will reportedly have their pick of which third-party AI models they want to use for a host of tasks.",
-            "source_name": "TechCrunch",
-            "source_tier": "C",
-            "published_at": "2026-05-05T20:56:41+00:00",
-            "score_a": 5,
-            "score_b": 20,
-            "score_c": 5,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 45,
-            "fingerprint": "Apple-iOS27-AI-model-choice-2026-05",
-            "anxiety_hits": [],
-            "maturity_stage": "风险冒头期",
-            "content_type": "opinion_analysis",
-            "reason": "文章报道苹果计划让用户选择第三方AI模型，属于新形态（Agent等）的潜在风险，但未明确命中网信办焦虑点，A分较低；议题处于风险冒头期，B分满分；信源权威度中等；产业借鉴性中性；中文世界报道较少，F分较高。"
           }
         ],
-        "pool": [
-          {
-            "id": 32,
-            "url": "https://fpf.org/blog/taking-stock-the-impact-of-the-india-ai-impact-summit-2026/",
-            "title": "Taking stock: The Impact of the India AI Impact Summit 2026",
-            "title_cn": "FPF评印度AI峰会：全球南方主导治理议程",
-            "summary": "India&#8217;s hosting of the AI Impact Summit 2026 was an ambitious undertaking. With 600,000 attendees and 92 signatories to the New Delhi Declaration, the Summit was a showcase of a Global South country taking a leading role in shaping the AI governance agenda. The Summit’s official framing centered on infrastructure, compute, and equitable access to [&#8230;]",
-            "source_name": "Future of Privacy Forum",
-            "source_tier": "A",
-            "published_at": "2026-05-05T16:53:49+00:00",
-            "score_a": 5,
-            "score_b": 3,
-            "score_c": 12,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 35,
-            "fingerprint": "India-AI-Impact-Summit-2026-Declaration",
-            "anxiety_hits": [],
-            "maturity_stage": "落地执行期",
-            "content_type": "opinion_analysis",
-            "reason": "文章主要报道印度AI峰会成果，属于产业政策/国际会议，未命中网信办8大焦虑点，A分低；峰会已举办，议题成熟度低；信源权威度中等；产业借鉴性中性；中文世界报道较少。"
-          }
-        ]
+        "pool": []
+      },
+      "opinions": {
+        "top3": [],
+        "pool": []
       }
     },
     "72h": {
       "facts": {
         "top3": [
-          {
-            "id": 98,
-            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/wkbk8ruiy1w6d4lmdai4.html",
-            "title": "New from DataGuidance collections",
-            "title_cn": "澳大利亚发布Agentic AI安全指南·密歇根州通过未成年人AI陪伴法案",
-            "summary": "Onetrust DataGuidance New from collections Hi sun, Here are the most recent additions to your collections: for multiple collections --> My Bookmarks for each item in collections --> Australia: ASD's ACSC issues guidance on cybersecurity risks of agentic AI systems Michigan: Bill on companion chatbots for minors passed in the Senate Michigan: Bill on companion chatbots for minors referred to Committee View these and more from My Bookmarks here . Happy researching The DataGuidance Team www.dataguidance.com To unsubscribe or manage your email preferences, please click here . Kill the Newsletter! ",
-            "source_name": "DataGuidance (KtN)",
-            "source_tier": "A",
-            "published_at": "2026-05-04T01:10:13.608000+00:00",
-            "score_a": 30,
-            "score_b": 15,
-            "score_c": 12,
-            "score_d": 6,
-            "score_e": 10,
-            "score_f": 9,
-            "total_score": 82,
-            "fingerprint": "Australia-ASD-ACSC-AgenticAI-Cybersecurity-2026-05",
-            "anxiety_hits": [
-              "Agent 等新形态",
-              "未成年人极端事件"
-            ],
-            "maturity_stage": "讨论立法期",
-            "content_type": "fact_legislative",
-            "reason": "文章包含两条关键动态：1) 澳大利亚ACSC发布agentic AI网络安全指南，命中'Agent等新形态'焦虑点，处于风险冒头期；2) 密歇根州未成年人陪伴聊天机器人法案在参议院通过并提交委员会，命中'未成年人极端事件'焦虑点，处于讨论立法期。两者均属高关切议题，且中文世界无报道，稀缺性高。"
-          },
           {
             "id": 37,
             "url": "https://www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing",
@@ -318,32 +85,6 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
             "reason": "文章涉及AI Agent（超级黑客模型）的安全风险，命中网信办对Agent新形态的焦虑点，且欧盟正在施压，处于讨论立法期。"
-          }
-        ],
-        "pool": [
-          {
-            "id": 138,
-            "url": "https://www.legislature.ca.gov/billtextclient.xhtml?bill_id=20260SB1047",
-            "title": "California Senate Bill 1047 Signed: AI Companion Apps Must Implement Suicide Prevention Protocols by January 2027",
-            "title_cn": "California Senate Bill 1047 Signed: AI Companion Apps Must Implement Suicide Prevention Protocols by January 2027",
-            "summary": "California Governor signed SB 1047 into law on May 3, 2026, establishing the nation's first state-level requirements for AI companion applications. The law mandates suicide-prevention prompts when minors discuss self-harm, requires age verification for accounts, and imposes a $10,000-per-incident civil penalty for violations. Effective January 1, 2027.",
-            "source_name": "DataGuidance (KtN)",
-            "source_tier": "A",
-            "published_at": "2026-05-03T18:00:00Z",
-            "score_a": 28,
-            "score_b": 3,
-            "score_c": 12,
-            "score_d": 3,
-            "score_e": 9,
-            "score_f": 8,
-            "total_score": 63,
-            "fingerprint": "US-CA-SB1047-AICompanion-2026-05",
-            "anxiety_hits": [
-              "未成年人极端事件"
-            ],
-            "maturity_stage": "落地执行期",
-            "content_type": "fact_legislative",
-            "reason": "[立法事实] DataGuidance (KtN) · 落地执行期 · 未成年人极端事件"
           },
           {
             "id": 96,
@@ -368,7 +109,9 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
             "reason": "意大利Agcom向欧盟委员会报告Google AI服务，涉及平台垄断焦虑点，处于讨论立法期，但信源为摘要汇总，议题热度中等。"
-          },
+          }
+        ],
+        "pool": [
           {
             "id": 82,
             "url": "https://techcrunch.com/2026/05/05/meta-will-use-ai-to-analyze-height-and-bone-structure-to-identify-if-users-are-underage/",
@@ -2659,5 +2402,224 @@
     },
     "veto": 53
   },
-  "feed_health": []
+  "feed_health": [],
+  "topics_by_window": {
+    "24h": [
+      {
+        "emoji": "📌",
+        "name": "当期要点",
+        "blurb": "候选文章较少，未做主题归纳",
+        "article_ids": [
+          141
+        ]
+      }
+    ],
+    "72h": [
+      {
+        "emoji": "🤖",
+        "name": "前沿AI安全与测试协议",
+        "blurb": "NIST与AI实验室签署安全测试协议",
+        "article_ids": [
+          37,
+          83,
+          86,
+          35
+        ]
+      },
+      {
+        "emoji": "📜",
+        "name": "欧盟AI治理与GPAI实践准则",
+        "blurb": "欧盟发布通用AI实践准则及分析",
+        "article_ids": [
+          131,
+          132,
+          133,
+          96
+        ]
+      },
+      {
+        "emoji": "👶",
+        "name": "未成年人网络保护与AI风险",
+        "blurb": "Meta用AI识别年龄，Character.AI被诉",
+        "article_ids": [
+          82,
+          76
+        ]
+      },
+      {
+        "emoji": "⚖️",
+        "name": "数据隐私与执法行动",
+        "blurb": "FTC禁止位置数据销售，Ofcom调查",
+        "article_ids": [
+          58,
+          142
+        ]
+      },
+      {
+        "emoji": "🔀",
+        "name": "其他治理动态",
+        "blurb": "平台竞争、AI责任、州立法等",
+        "article_ids": [
+          41,
+          140,
+          71,
+          141,
+          97
+        ]
+      }
+    ],
+    "120h": [
+      {
+        "emoji": "🤖",
+        "name": "Agent AI 安全与责任",
+        "blurb": "Agent AI 安全指南与责任风险",
+        "article_ids": [
+          98,
+          83,
+          86,
+          140
+        ]
+      },
+      {
+        "emoji": "👶",
+        "name": "未成年人网络与AI保护",
+        "blurb": "未成年人AI陪伴法案与年龄验证",
+        "article_ids": [
+          136,
+          138,
+          82,
+          76
+        ]
+      },
+      {
+        "emoji": "⚖️",
+        "name": "欧盟AI治理与GPAI守则",
+        "blurb": "欧盟GPAI实践守则发布与争议",
+        "article_ids": [
+          131,
+          132,
+          133
+        ]
+      },
+      {
+        "emoji": "🔐",
+        "name": "AI安全测试与前沿模型",
+        "blurb": "NIST与AI实验室安全测试协议",
+        "article_ids": [
+          37,
+          35
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "AI透明度与披露义务",
+        "blurb": "AI披露义务与内容水印失效",
+        "article_ids": [
+          141,
+          143
+        ]
+      },
+      {
+        "emoji": "🔀",
+        "name": "其他治理动态",
+        "blurb": "平台监管、数据隐私等动态",
+        "article_ids": [
+          96,
+          58,
+          97,
+          41,
+          71,
+          142
+        ]
+      }
+    ],
+    "360h": [
+      {
+        "emoji": "🤖",
+        "name": "Agent AI 安全与治理",
+        "blurb": "Agent AI 安全指南与责任讨论",
+        "article_ids": [
+          99,
+          98,
+          140,
+          90,
+          35,
+          83,
+          86,
+          37
+        ]
+      },
+      {
+        "emoji": "👶",
+        "name": "未成年人网络保护与AI",
+        "blurb": "未成年人AI陪伴、年龄验证与COPPA",
+        "article_ids": [
+          136,
+          138,
+          82,
+          135,
+          76
+        ]
+      },
+      {
+        "emoji": "⚖️",
+        "name": "AI监管框架与合规",
+        "blurb": "NIST、EU GPAI、白宫AI框架等",
+        "article_ids": [
+          137,
+          131,
+          132,
+          133,
+          97,
+          101,
+          141
+        ]
+      },
+      {
+        "emoji": "🔐",
+        "name": "数据隐私与安全执法",
+        "blurb": "位置数据、COPPA、加密后门等",
+        "article_ids": [
+          58,
+          102,
+          103,
+          114,
+          115,
+          142
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "AI内容与言论自由",
+        "blurb": "AI生成内容第一修正案、水印",
+        "article_ids": [
+          111,
+          143,
+          94,
+          113
+        ]
+      },
+      {
+        "emoji": "🛰️",
+        "name": "平台监管与竞争政策",
+        "blurb": "CMA、意大利Agcom、苹果AI选择",
+        "article_ids": [
+          41,
+          96,
+          71,
+          62,
+          112,
+          109
+        ]
+      },
+      {
+        "emoji": "🔀",
+        "name": "其他治理动态",
+        "blurb": "未归入主类的候选选题",
+        "article_ids": [
+          33
+        ]
+      }
+    ]
+  }
 }
