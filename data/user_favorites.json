@@ -1,5 +1,28 @@
 [
   {
+    "id": 229,
+    "url": "https://www.politico.eu/article/eu-clinches-deal-to-roll-back-ai-restrictions/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+    "title": "EU clinches deal to roll back AI restrictions",
+    "title_cn": "欧盟达成协议放宽AI限制",
+    "summary": "Deal marks first significant delay of digital rules amid pressure from the U.S.",
+    "source_name": "Politico EU Tech",
+    "source_tier": "B",
+    "published_at": "2026-05-07T04:26:17+00:00",
+    "score_a": 28,
+    "score_b": 15,
+    "score_c": 8,
+    "score_d": 3,
+    "score_e": 8,
+    "score_f": 9,
+    "total_score": 71,
+    "fingerprint": "EU-AI-Act-rollback-deal-2026-05",
+    "anxiety_hits": [],
+    "maturity_stage": "讨论立法期",
+    "content_type": "fact_legislative",
+    "reason": "文章报道欧盟达成协议放宽AI限制，主题深度对齐AI治理（T1），属于立法讨论阶段。A1=25，A2=0（未命中关切议题），A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=9。",
+    "savedAt": "2026-05-07T07:47:04.864Z"
+  },
+  {
     "id": 163,
     "url": "https://www.theregister.com/security/2026/05/06/uk-age-gating-plans-risk-breaking-the-internet-privacy-groups-warn/5230732",
     "title": "UK age-gating plans risk breaking the internet, privacy groups warn",
