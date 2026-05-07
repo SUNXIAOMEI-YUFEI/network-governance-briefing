@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>选题工作台 · 今日情报</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
 </head>
 <body>
 
@@ -54,13 +55,19 @@
     </div>
   </section>
 
-  <!-- 议题聚类 -->
+  <!-- 议题聚类（v1.4：按时间窗 LLM 主题归纳） -->
   <section class="clusters" id="clusters-section">
     <header class="section-header">
-      <h2>🔗 议题聚类</h2>
-      <small>同一议题的不同信源/角度自动归并；展开即拿全套素材</small>
+      <h2>🔗 当期热点主题</h2>
+      <small>按当前时间窗自动归纳；每个主题下列出相关信源文章</small>
     </header>
-    <div id="clusters-list"></div>
+    <div id="topics-list"></div>
+
+    <!-- 旧的 fingerprint 聚类区（同议题多源归并），保留但默认折叠 -->
+    <details class="legacy-clusters" id="legacy-clusters">
+      <summary>🔎 同议题多源归并（技术聚类，按议题指纹匹配）</summary>
+      <div id="clusters-list"></div>
+    </details>
   </section>
 
   <!-- 情报池 -->

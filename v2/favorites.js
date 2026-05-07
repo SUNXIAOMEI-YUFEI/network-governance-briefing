@@ -13,6 +13,26 @@ const TYPE_LABEL = {
 };
 const FACT_TYPES = new Set(["fact_legislative", "fact_enforcement", "fact_official_doc"]);
 
+// v1.4：title_cn 兜底（与 app.js 的 normalizeTitleCn 保持一致）
+function normalizeTitleCn(article) {
+  const raw = (article.title_cn || "").trim();
+  const enTitle = article.title || "";
+  const isBad =
+    !raw ||
+    raw === enTitle ||
+    raw.length < 4 ||
+    /^New from DataGuidance/i.test(raw) ||
+    /^Daily Dashboard/i.test(raw) ||
+    /^Daily Briefing/i.test(raw) ||
+    /newsletter$/i.test(raw);
+  if (!isBad) return { titleCn: raw, isFallback: false };
+  if (article.summary) {
+    const hint = article.summary.slice(0, 60).replace(/\s+/g, " ").trim();
+    return { titleCn: "[未归纳] " + hint + "…", isFallback: true };
+  }
+  return { titleCn: enTitle || "(无标题)", isFallback: true };
+}
+
 // 对外展示脱敏：与 app.js 保持一致
 const SANITIZE_MAP = [
   [/中央网信办关切/g,   "政策关切议题"],
@@ -85,9 +105,9 @@ function renderFavCard(fav, onRemove) {
     el("span", { class: "label" }, "TOTAL")
   );
 
-  const titleCn = (a.title_cn && a.title_cn.trim()) || a.title || "(无标题)";
+  const { titleCn, isFallback } = normalizeTitleCn(a);
   const titleEn = a.title || "";
-  const showEn = titleEn && titleEn !== titleCn;
+  const showEn = titleEn && titleEn !== titleCn && !isFallback;
 
   const titleBlock = el("div", { class: "card-title-block" },
     el("a", {

@@ -50,6 +50,31 @@ const TYPE_LABEL = {
 };
 const FACT_TYPES = new Set(["fact_legislative", "fact_enforcement", "fact_official_doc"]);
 
+// v1.4：title_cn 规范化
+// LLM 偶尔没归纳出中文标题，或 KtN 邮件的通用英文标题被当 title_cn 存了
+// 前端展示时兜底：如果 title_cn 是英文通用标题，从 summary 扒一段替代
+function normalizeTitleCn(article) {
+  const raw = (article.title_cn || "").trim();
+  const enTitle = article.title || "";
+
+  const isBadTitleCn =
+    !raw ||
+    raw === enTitle ||
+    raw.length < 4 ||
+    /^New from DataGuidance/i.test(raw) ||
+    /^Daily Dashboard/i.test(raw) ||
+    /^Daily Briefing/i.test(raw) ||
+    /newsletter$/i.test(raw);
+
+  if (!isBadTitleCn) return { titleCn: raw, isFallback: false };
+
+  if (article.summary) {
+    const hint = article.summary.slice(0, 60).replace(/\s+/g, " ").trim();
+    return { titleCn: "[未归纳] " + hint + "…", isFallback: true };
+  }
+  return { titleCn: enTitle || "(无标题)", isFallback: true };
+}
+
 // ---------- 工具 ----------
 const $  = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
@@ -147,10 +172,10 @@ function renderCard(article, { compact = false } = {}) {
     el("span", { class: "label" }, "TOTAL")
   );
 
-  // 中文归纳标题 + 英文原题
-  const titleCn = (article.title_cn && article.title_cn.trim()) || article.title || "(无标题)";
+  // 中文归纳标题 + 英文原题（v1.4 统一走 normalizeTitleCn 兜底）
+  const { titleCn, isFallback } = normalizeTitleCn(article);
   const titleEn = article.title || "";
-  const showEnglishLine = titleEn && titleEn !== titleCn;
+  const showEnglishLine = titleEn && titleEn !== titleCn && !isFallback;
 
   const isKtnEntry = (article.url || "").includes("kill-the-newsletter.com/feeds/");
   const ktnHint = isKtnEntry
@@ -253,9 +278,9 @@ function renderCluster(cluster) {
     noFact ? el("span", { class: "warn-no-fact" }, "⚠️ 该议题暂无事实源（仅观点）") : null,
   );
 
-  const mainTitleCn = (main.title_cn && main.title_cn.trim()) || main.title;
+  const { titleCn: mainTitleCn, isFallback: mainFallback } = normalizeTitleCn(main);
   const mainTitleEn = main.title || "";
-  const showMainEn = mainTitleEn && mainTitleEn !== mainTitleCn;
+  const showMainEn = mainTitleEn && mainTitleEn !== mainTitleCn && !mainFallback;
 
   const mainBlock = el("div", { class: "cluster-main" },
     el("div", { class: `label${noFact ? " no-fact" : ""}` },
@@ -278,7 +303,7 @@ function renderCluster(cluster) {
     const items = all.map(r => {
       const tlabel = TYPE_LABEL[r.content_type] || {};
       const cls = FACT_TYPES.has(r.content_type) ? "fact" : "opinion";
-      const rTitleCn = (r.title_cn && r.title_cn.trim()) || r.title;
+      const { titleCn: rTitleCn } = normalizeTitleCn(r);
       return el("li", { class: cls },
         el("span", { class: "ct" }, `${tlabel.icon || "•"} ${tlabel.text || r.content_type}`),
         el("a", { href: r.url, target: "_blank", rel: "noopener noreferrer", title: r.title }, rTitleCn),
@@ -316,6 +341,9 @@ function renderTab(data, tabKey) {
     tabData.opinions.top3.forEach(a => opTop3.appendChild(renderCard(a)));
   }
 
+  // v1.4：当期热点主题（按时间窗随 tab 切换）
+  renderTopicsForWindow(data, tabKey);
+
   // 情报池
   const factsPool = $("#facts-pool");
   factsPool.innerHTML = "";
@@ -324,6 +352,65 @@ function renderTab(data, tabKey) {
   const opPool = $("#opinions-pool");
   opPool.innerHTML = "";
   renderPool(opPool, tabData.opinions.pool, "opinions");
+}
+
+// v1.4：渲染当前时间窗的 LLM 主题聚类
+function renderTopicsForWindow(data, tabKey) {
+  const list = $("#topics-list");
+  if (!list) return;
+  list.innerHTML = "";
+
+  const topicsByWindow = data.topics_by_window || {};
+  const topics = topicsByWindow[tabKey] || [];
+
+  if (!topics.length) {
+    list.appendChild(renderEmpty("当前时间窗暂无聚类结果（候选文章过少或 LLM 未生成）"));
+    return;
+  }
+
+  // 建个 id → article 的索引（合并所有 tab 的 top3 + pool）
+  const idToArticle = {};
+  for (const tk of Object.keys(data.tabs || {})) {
+    const tab = data.tabs[tk];
+    for (const col of ["facts", "opinions"]) {
+      for (const src of ["top3", "pool"]) {
+        for (const a of (tab[col]?.[src] || [])) {
+          idToArticle[a.id] = a;
+        }
+      }
+    }
+  }
+
+  topics.forEach(t => list.appendChild(renderTopic(t, idToArticle)));
+}
+
+function renderTopic(topic, idToArticle) {
+  const articles = (topic.article_ids || [])
+    .map(id => idToArticle[id])
+    .filter(Boolean);
+
+  const head = el("div", { class: "topic-head" },
+    el("span", { class: "topic-emoji" }, topic.emoji || "📌"),
+    el("span", { class: "topic-name" }, topic.name || "未命名主题"),
+    el("span", { class: "topic-count" }, `${articles.length} 篇`),
+    topic.blurb
+      ? el("span", { class: "topic-blurb muted" }, `· ${topic.blurb}`)
+      : null,
+  );
+
+  const listEl = el("ul", { class: "topic-articles" });
+  articles.forEach(a => {
+    const { titleCn } = normalizeTitleCn(a);
+    const typeMeta = TYPE_LABEL[a.content_type] || {};
+    listEl.appendChild(el("li", { class: FACT_TYPES.has(a.content_type) ? "fact" : "opinion" },
+      el("span", { class: "topic-score" }, String(a.total_score)),
+      el("span", { class: "topic-type" }, typeMeta.icon || "•"),
+      el("a", { href: a.url, target: "_blank", rel: "noopener noreferrer", title: a.title }, titleCn),
+      el("span", { class: "muted small" }, ` · ${a.source_name}`),
+    ));
+  });
+
+  return el("div", { class: "topic-card" }, head, listEl);
 }
 
 // v1.2：pool 长时间窗下会很长，默认只展 10 条，点按钮展开剩余

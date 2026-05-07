@@ -266,7 +266,7 @@ def _feed_health(conn: sqlite3.Connection) -> list[dict]:
     return out
 
 
-def build(*, snapshot_now: datetime | None = None) -> dict:
+def build(*, snapshot_now: datetime | None = None, with_topics: bool = True) -> dict:
     now = snapshot_now or datetime.now(timezone.utc)
 
     with sqlite3.connect(DB_PATH) as conn:
@@ -297,13 +297,24 @@ def build(*, snapshot_now: datetime | None = None) -> dict:
         stats = _stats(conn)
         feed_health = _feed_health(conn)
 
+    # v1.4：按时间窗 LLM 主题聚类
+    topics_by_window: dict[str, list[dict]] = {}
+    if with_topics:
+        try:
+            from app.topic_cluster import build_topics_by_window
+            topics_by_window = build_topics_by_window(TIME_WINDOWS)
+        except Exception as e:  # noqa
+            print(f"[build_today] ⚠️ LLM 主题聚类失败（不阻塞）：{e}")
+            topics_by_window = {}
+
     payload = {
         "snapshot_at": now.isoformat(),
-        "schema_version": "v1.2",
+        "schema_version": "v1.4",
         "tabs": tabs,
         "clusters": clusters,
         "stats": stats,
         "feed_health": feed_health,
+        "topics_by_window": topics_by_window,  # v1.4: {tab: [{emoji,name,blurb,article_ids}]}
     }
     return payload
 
