@@ -30,7 +30,7 @@
   <section class="about-section">
     <h1>这是什么</h1>
     <p class="lead">
-      一个为法律研究团队搭建的选题情报工作台，每天自动从 37 个境外信源抓取
+      一个为法律研究团队搭建的选题情报工作台，每天自动从 38 个境外信源抓取
       网络治理、AI 监管、隐私、平台反垄断相关动态，用 LLM 按 6 维度评分，
       挑出最值得写进内部情报简报的选题。
     </p>
@@ -55,7 +55,7 @@
         <tr><th>维度</th><th class="num">权重</th><th>含义</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>A. 政策关切度</strong></td><td class="num">30</td><td>命中若干内部关切议题（按预设标签体系自动识别）</td></tr>
+        <tr><td><strong>A. 主题对齐度</strong></td><td class="num">30</td><td>A1 是否属于 5 大治理主题（25 分） + A2 命中关切议题加分（5 分）</td></tr>
         <tr><td><strong>B. 议题成熟度</strong></td><td class="num">20</td><td>风险冒头期(20) / 讨论立法期(15) / 规则成形期(8) / 落地执行期(3)</td></tr>
         <tr><td><strong>C. 信源权威度</strong></td><td class="num">15</td><td>S 官方(15) / A 顶律所+顶刊(12) / B 主流(8) / C 行业(5) / D 社媒(2)</td></tr>
         <tr><td><strong>D. 议题热度</strong></td><td class="num">15</td><td>多源验证：被 N 个独立信源覆盖 → <code>min(N × 3, 15)</code></td></tr>
@@ -63,6 +63,22 @@
         <tr><td><strong>F. 稀缺性</strong></td><td class="num">10</td><td>中文世界报道越少分越高（S/A 级英文官方源常得高分）</td></tr>
       </tbody>
     </table>
+    <p class="muted small">
+      v1.4 把原"焦虑点命中"从主力评分（30 分）降级为加分项（5 分），主力改为"是否属于五大治理主题"。
+      这样评分更贴近信源展现的真实主题，而不是机械命中预设关键词。
+    </p>
+
+    <h2>五大治理主题（A1 判定范围）</h2>
+    <ul>
+      <li><strong>T1 · AI 治理</strong>：AI 法规 / 算法监管 / Agent 治理 / 基础模型安全 / 训练数据 / 标识办法</li>
+      <li><strong>T2 · 平台治理</strong>：DMA / DSA / 平台责任 / 反垄断（限数字平台）</li>
+      <li><strong>T3 · 数据与隐私</strong>：GDPR / 隐私法 / 数据跨境 / DPA 执法 / 生物识别</li>
+      <li><strong>T4 · 内容治理</strong>：在线安全 / deepfake / 虚假信息 / 合成媒体标识</li>
+      <li><strong>T5 · 未成年人网络保护</strong>：age assurance / child safety / AI companion</li>
+    </ul>
+    <p class="muted small">
+      任何和这 5 个主题都无关的文章（如通用反垄断、卫星频率、非网络消费者保护等）直接命中 veto #7，不进流水线。
+    </p>
 
     <h2>一票否决（命中即 total = 0）</h2>
     <ol class="about-list">
@@ -72,6 +88,7 @@
       <li>30 天内已写过同议题（系统按议题指纹判断）</li>
       <li>国内主管部门自身执法动态（主管部门一手信息充足，不必转报）</li>
       <li><strong>产业政策</strong>（芯片 / 制裁 / 贸易 / 出口管制）—— 硬黑名单 + LLM 双重过滤</li>
+      <li><strong>v1.4 新增：主题不相关</strong>—— 不属于五大治理主题任何一个（如通用反垄断、监控定价、卫星频率、环境气候医疗等）</li>
     </ol>
 
     <h2>v1.1 内容类型二分</h2>
@@ -91,7 +108,7 @@
   <!-- ========== 3. 信源 ========== -->
   <section class="about-section">
     <h1>信源</h1>
-    <p>共 37 个 RSS 信源，两条路径接入：</p>
+    <p>共 38 个 RSS 信源，两条路径接入：</p>
 
     <h2>① 直链 RSS（25 个，官方提供 feed）</h2>
     <ul class="about-list source-list">
@@ -102,7 +119,7 @@
       <li><span class="tier-badge D">D</span> <strong>社媒 / Substack</strong>：Import AI（Anthropic 的 Jack Clark）· Don't Worry About the Vase · AI Snake Oil</li>
     </ul>
 
-    <h2>② 邮件订阅 → Kill the Newsletter! 转 RSS（12 个，绕开付费墙）</h2>
+    <h2>② 邮件订阅 → Kill the Newsletter! 转 RSS（13 个，绕开付费墙）</h2>
     <p>
       有些高价值信源（DataGuidance、MLex、律所 alert、官方 newsletter）只提供邮件订阅、不给 RSS，
       通过 <a href="https://kill-the-newsletter.com" target="_blank" rel="noopener">Kill the Newsletter!</a>
@@ -110,6 +127,7 @@
     </p>
     <ul class="about-list source-list">
       <li><strong>DataGuidance</strong>（OneTrust · 隐私 / AI 监管专业媒体 · 本来付费墙）</li>
+      <li><strong>IAPP Daily Dashboard</strong>（全球最大隐私/AI 治理 newsletter · v1.4 新增）</li>
       <li><strong>MLex AI</strong>（反垄断 / 科技政策专业记者）</li>
       <li>Lawfare / TechPolicy Press / Brookings TechTank（官方 Substack newsletter）</li>
       <li>Inside Privacy（Covington）· WilmerHale Privacy（顶级律所 client alert）</li>
@@ -157,6 +175,62 @@
     </div>
   </section>
 
+  <!-- ========== 3.7 版本演进（v1.4 新增） ========== -->
+  <section class="about-section">
+    <h1>版本演进</h1>
+    <p class="lead">当前线上运行版本：<strong>v1.4</strong>（2026-05-07）</p>
+
+    <h2>v1.4 · 评分引擎大升级（2026-05-07）</h2>
+    <ul>
+      <li><strong>A 维度重构</strong>：从"命中焦虑点"主导 → 改为"是否属于五大治理主题"主导，加"关切议题"作为 5 分加分项。避免机械关键词匹配。</li>
+      <li><strong>新增 veto #7 · 主题不相关</strong>：任何非 AI/平台/数据隐私/内容治理/未成年人保护的文章直接否决（如通用反垄断、卫星频率、监控定价等）。</li>
+      <li><strong>双评取高</strong>：每篇文章调 2 次 LLM（温度 0.0 + 0.3），合并策略取高分、取非 veto，消除单次抽风。</li>
+      <li><strong>KtN 长摘要</strong>：邮件源的摘要长度从 600 字扩到 2500 字，让 LLM 能看到完整多议题内容。</li>
+      <li><strong>KtN 反营销识别</strong>：识别"推销自家讲座"类邮件（"Register now"/"Join our webinar"/"How teams should prepare"），封顶 55 分。</li>
+      <li><strong>评分保护 SCORE_DROP_GUARD</strong>：rescore 时若新评分比旧评分低 ≥ 15 分，自动保留旧评分（防 LLM 波动覆盖高分）。</li>
+      <li><strong>收藏夹保护</strong>：用户 👍 过的文章放入 <code>data/user_favorites.json</code>，rescore_all 时完全跳过，评分永不变。</li>
+      <li><strong>收藏夹远程同步</strong>：点 👍 节流 15 秒后自动 POST 到 Vercel Serverless 函数，函数再调 GitHub API 写入仓库，实现跨设备同步。首次打开时自动从仓库拉取合并。</li>
+      <li><strong>LLM 主题聚类</strong>：每个时间窗（24h/72h/120h/360h）跑一次 LLM 归纳 3-6 个热点主题，带 emoji + 中文关键词，替代原来机械的 fingerprint 聚类。</li>
+      <li><strong>title_cn 兜底</strong>：前端检测到 LLM 归纳失败或 KtN 通用标题时，从摘要前 60 字扒一个临时标题（带"[未归纳]"前缀），不再直接露出英文垃圾标题。</li>
+    </ul>
+
+    <h2>v1.3 · Prompt 稳定性强化（2026-05-06）</h2>
+    <ul>
+      <li>加入评分稳定性硬约束、content_type 反例对照表（8 个典型错判场景）、KtN newsletter 多议题识别规则。</li>
+      <li>max_tokens 从 800 → 1200，支持更长 reason/多议题拆分。</li>
+      <li>统一对外文案中性措辞（去掉特定机构口径词）。</li>
+    </ul>
+
+    <h2>v1.2 · 用户体验升级（2026-05-06）</h2>
+    <ul>
+      <li><strong>中文标题归纳</strong>：每篇英文文章由 LLM 生成 15-30 字简洁中文标题（<code>title_cn</code>）。</li>
+      <li><strong>收藏夹</strong>：点 👍 自动加入"我的收藏"（localStorage），独立页面查看，支持 JSON 导出导入跨设备。</li>
+      <li><strong>关于本站</strong>：本页面。</li>
+      <li><strong>信源健康度监控</strong>：每次 fetch 记录每个 feed 的成功/失败，本页下方可视化展示；新增 <code>stale</code> 状态识别"能抓但长期无新文章"的源。</li>
+      <li><strong>情报池按时间窗动态扩容</strong>：过去 24h 每栏展示 8 条，72h 15 条，5 天 25 条，15 天 40 条；前端支持分段折叠（默认展 10 条，点"展开剩余 N 条"可见全部）。</li>
+      <li>新增 IAPP Daily Dashboard 信源（经 KtN 中转），对冲 DataGuidance 试用到期的风险。</li>
+    </ul>
+
+    <h2>v1.1 · 双栏内容分流（2026-05）</h2>
+    <ul>
+      <li><strong>content_type 四分</strong>：每篇文章打 1 个"内容类型"标签 —— 📋 立法事实 / ⚖️ 执法事实 / 📄 官方文件 / 💭 观点分析。</li>
+      <li><strong>左右双栏 + 双 Top 3</strong>：左"事实栏"（简报骨架）、右"观点栏"（简报肉），名额独立，互不挤占。</li>
+    </ul>
+
+    <h2>v1.0 · 初版骨架（2026-04）</h2>
+    <ul>
+      <li>6 维度 100 分评分 + 6 条一票否决规则，首版 prompt。</li>
+      <li>37 个 RSS 信源金字塔（S/A/B/C/D 五档权威度）+ KtN 邮件→RSS 转换。</li>
+      <li>GitHub Actions cron 每日自动抓取 + 评分 + 出 JSON，Vercel 静态托管。</li>
+      <li>议题指纹聚类（同议题多信源归并）。</li>
+    </ul>
+
+    <p class="muted small">
+      升级原则：历史文章评分默认冻结；只在 prompt 有重大升级时手动触发 rescore_all；
+      用户收藏的文章永远不 rescore；SCORE_DROP_GUARD 兜底防 LLM 单次波动覆盖高分。
+    </p>
+  </section>
+
   <!-- ========== 4. 技术架构 ========== -->
   <section class="about-section">
     <h1>技术架构</h1>
@@ -166,7 +240,7 @@
 ┌────────────────────────────────────────────────┐
 │  GitHub Actions （境外 Ubuntu runner）         │
 │                                                │
-│  1. fetch.py    抓 37 个 RSS (境外直连)        │
+│  1. fetch.py    抓 38 个 RSS (境外直连)        │
 │  2. score.py    DeepSeek V3 按 rubric 评分     │
 │  3. cluster.py  议题聚类 + fingerprint 归并    │
 │  4. build_today.py   出 today.json             │
@@ -187,9 +261,11 @@
     <ul>
       <li><strong>Python stdlib only</strong>：fetch/score/cluster/build 全部用标准库（urllib + xml.etree + sqlite3），不引 feedparser / requests / openai-sdk，避免环境问题</li>
       <li><strong>DeepSeek V3</strong>：国内直连免翻墙，15 条评分约 ¥0.01，每天 300 条每月约 ¥3，对比 Claude Sonnet 便宜 50 倍，本任务准确率 85-90% 够用</li>
+      <li><strong>双评取高（v1.4）</strong>：每篇调 2 次 LLM（温度 0.0 + 0.3），合并取高分 / 取非 veto，显著降低单次抽风影响。成本 ×2，但质量稳定性收益大。</li>
       <li><strong>SQLite</strong>：零依赖、跟着仓库 git 走，天然有版本历史；每天 briefing.db 被 CI 提交一次，任意时间回滚</li>
-      <li><strong>纯静态前端</strong>：不用框架，HTML + CSS + 原生 JS，Vercel 静态托管秒部署</li>
-      <li><strong>收藏夹 localStorage</strong>：👍 的卡片存本地浏览器，支持导出 / 导入 JSON 跨设备同步，服务器不存任何个人偏好</li>
+      <li><strong>纯静态前端 + Vercel Serverless</strong>：前端不用框架（HTML + CSS + 原生 JS），Vercel 静态托管秒部署；收藏夹同步走 Vercel Serverless 函数（/api/fav）调 GitHub API 写入仓库，任何设备自动同步</li>
+      <li><strong>收藏夹双层存储</strong>：localStorage 即时生效 + 节流 15 秒后推到仓库 <code>data/user_favorites.json</code>，服务器永不存"当前用户是谁"（本项目单用户）</li>
+      <li><strong>LLM 主题聚类（v1.4）</strong>：每个时间窗跑一次 LLM，把合格文章归纳成 3-6 个主题（🤖 Agent / 👶 未成年人 / ⚖️ 监管等），替代机械 fingerprint 匹配</li>
     </ul>
 
     <h2>数据流时间线</h2>
@@ -247,7 +323,7 @@
 </main>
 
 <footer class="footer">
-  <span class="muted">v1.2 · 如发现评分异常 / 选题质量问题，请在仓库开 issue</span>
+  <span class="muted">v1.4 · 如发现评分异常 / 选题质量问题，请在仓库开 issue</span>
   <span class="footer-sep">·</span>
   <a href="index.html" class="footer-link">← 返回工作台</a>
   <span class="footer-sep">·</span>
