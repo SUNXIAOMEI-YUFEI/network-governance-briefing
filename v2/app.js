@@ -617,6 +617,50 @@ async function loadTodayJson() {
   throw lastErr || new Error("加载 today.json 失败");
 }
 
+// v1.5：检测流水线是否漏跑
+// data/last_run.json 由 ci_run.py 在每次成功跑完时更新；如果超过 18 小时未更新，
+// 说明 GitHub Actions cron 可能被跳过了，在顶部弹红条提醒手动触发。
+const STALE_RUN_THRESHOLD_HOURS = 18;
+const LAST_RUN_CANDIDATES = [
+  "/data/last_run.json",
+  "../data/last_run.json",
+  "./data/last_run.json",
+];
+async function checkLastRunFreshness() {
+  let lastRunData = null;
+  for (const url of LAST_RUN_CANDIDATES) {
+    try {
+      const resp = await fetch(url, { cache: "no-store" });
+      if (resp.ok) { lastRunData = await resp.json(); break; }
+    } catch (_) { /* 继续尝试下一个 */ }
+  }
+  if (!lastRunData || !lastRunData.last_run_at) return;  // 文件不存在不告警
+
+  const lastRun = new Date(lastRunData.last_run_at);
+  if (isNaN(lastRun.getTime())) return;
+  const hoursAgo = (Date.now() - lastRun.getTime()) / 36e5;
+  if (hoursAgo < STALE_RUN_THRESHOLD_HOURS) return;
+
+  // 渲染顶部红条
+  const banner = document.createElement("div");
+  banner.className = "stale-run-banner";
+  const hoursText = hoursAgo >= 24
+    ? `${Math.floor(hoursAgo / 24)} 天 ${Math.round(hoursAgo % 24)} 小时`
+    : `${Math.round(hoursAgo)} 小时`;
+  banner.innerHTML = `
+    <span class="stale-icon">⚠️</span>
+    <span class="stale-text">
+      数据已经 <strong>${hoursText}</strong> 没有更新（GitHub Actions cron 可能被跳过了）。
+      <a href="https://github.com/SUNXIAOMEI-YUFEI/network-governance-briefing/actions/workflows/daily.yml"
+         target="_blank" rel="noopener">前往手动触发 ↗</a>
+    </span>
+    <button class="stale-close" aria-label="关闭">×</button>
+  `;
+  document.body.insertBefore(banner, document.body.firstChild);
+  banner.querySelector(".stale-close").addEventListener("click", () => banner.remove());
+  console.warn("[briefing] 漏跑告警", { last_run_at: lastRunData.last_run_at, hoursAgo });
+}
+
 async function main() {
   let data;
   try {
@@ -645,6 +689,7 @@ python3 -m http.server 8765
   bindTabs(data);
   updateFavBadge();   // v1.2: 初始化顶栏收藏数
   pullRemoteFavs();   // v1.4: 异步从仓库拉取合并收藏列表
+  checkLastRunFreshness();  // v1.5: 异步检测漏跑，超 18h 弹顶部红条
   console.log("[briefing] 已加载", data);
 }
 

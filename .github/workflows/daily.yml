@@ -1,16 +1,22 @@
 # 每日选题流水线：抓 RSS → LLM 评分 → 聚类 → 出 today.json → 提交到仓库
 #
 # 触发方式：
-#   1. 每天 UTC 06:00（北京 14:00）自动跑
+#   1. 每天定时跑（错峰双触发，规避 GitHub Actions 整点 cron 拥堵）
+#      - UTC 06:17（北京 14:17）主跑
+#      - UTC 07:17（北京 15:17）兜底（若 14:17 已成功跑过、DB 无新文章，则自动 skip commit）
 #   2. 手动在 GitHub Actions 页面点 "Run workflow"
 #   3. push 代码时冒烟测试（只跑 mock 数据，不消耗 LLM 额度）
+#
+# 为什么不用 "0 6 * * *"？
+#   GitHub Actions 免费版 cron 在整点（especially UTC 06:00 = 全球高峰）经常被
+#   延迟 30-90 分钟甚至完全跳过。错峰到 :17 + 加兜底场次能把"漏跑"概率压到极低。
 
 name: Daily Briefing Pipeline
 
 on:
   schedule:
-    # UTC 06:00 = 北京 14:00
-    - cron: "0 6 * * *"
+    - cron: "17 6 * * *"  # 北京 14:17 主跑
+    - cron: "17 7 * * *"  # 北京 15:17 兜底
   workflow_dispatch:
     inputs:
       hours:
@@ -95,8 +101,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # 只提交 today.json 和 archive；briefing.db 另行处理（见下）
-          git add -A data/today.json data/archive/
+          # 只提交 today.json / last_run.json / archive；briefing.db 另行处理（见下）
+          git add -A data/today.json data/last_run.json data/archive/
           # briefing.db 加进来可以保持评分历史（否则每天从零抓），仓库会慢慢变大
           # 前 3 个月可以跟踪；之后再决定要不要 gitignore
           if [ -f data/briefing.db ]; then

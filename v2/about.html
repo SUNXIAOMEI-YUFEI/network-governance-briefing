@@ -186,6 +186,8 @@
       <li><strong>workflow 事件分流</strong>：<code>daily.yml</code> 里 push/PR 触发时走 <code>--use-mock</code> 冒烟测试路径（快速验证代码能跑），cron 触发才走真数据路径并 commit 结果，互不串线。</li>
       <li><strong>purge_mock.py</strong>：一键清除历史遗留 mock（标签型 reason、FUSE_TEST 之类的测试源名），把流水线状态从"不可信"强制拉回"可信"。</li>
       <li><strong>评分 reason 格式约束</strong>：真实 LLM 评分必须带 <code>A1=/A2=/B=/C=</code> 公式痕迹，靠这个特征辨别人工 mock 数据，不需要额外加 schema / 加字段。</li>
+      <li><strong>cron 错峰双触发</strong>：原来 <code>0 6 * * *</code>（UTC 整点 = 全球高峰）经常被 GitHub Actions 跳过，改成 <code>17 6 * * *</code>（北京 14:17）主跑 + <code>17 7 * * *</code>（北京 15:17）兜底；首次跑成功后第二次会自动 skip commit，不会重复污染。</li>
+      <li><strong>漏跑前端告警</strong>：流水线每次跑完写 <code>data/last_run.json</code>，前端首页加载时检测 <code>now − last_run &gt; 18 小时</code> 立即在顶部弹红条，附"前往 GitHub Actions 手动触发"链接。从此告别"页面静默挂着旧数据，几天后才发现 CI 没跑"。</li>
     </ul>
 
     <h2>v1.4 · 评分引擎大升级（2026-05-07）</h2>

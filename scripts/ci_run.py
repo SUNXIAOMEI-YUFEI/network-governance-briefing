@@ -135,6 +135,35 @@ def main() -> int:
     build_today.write(payload)
     build_today._print_summary(payload)
 
+    # ---- 6. 写 last_run.json（前端用来检测"是否漏跑"）----
+    # mock 模式（push 触发的冒烟测试）不写，否则会让前端误以为线上是新鲜数据
+    if not args.use_mock:
+        _step("Step 6 · 更新 last_run.json")
+        import json
+        from datetime import datetime, timezone
+        last_run_path = PROJECT_ROOT / "data" / "last_run.json"
+        # 顺手统计本次跑的产物，便于前端展示 / 排障
+        articles_24h = 0
+        try:
+            with sqlite3.connect(DB_PATH) as conn:
+                articles_24h = conn.execute(
+                    "SELECT COUNT(*) FROM articles "
+                    "WHERE fetched_at >= datetime('now', '-24 hours')"
+                ).fetchone()[0]
+        except Exception:
+            pass
+        last_run_data = {
+            "last_run_at": datetime.now(timezone.utc).isoformat(),
+            "hours_window": args.hours,
+            "articles_fetched_24h": articles_24h,
+            "rescored_all": bool(args.rescore_all),
+        }
+        last_run_path.write_text(
+            json.dumps(last_run_data, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        print(f"[ci] last_run.json 已更新: {last_run_data['last_run_at']}")
+
     print("\n" + "=" * 72)
     print("  ✅ 流水线完成")
     print("=" * 72)
