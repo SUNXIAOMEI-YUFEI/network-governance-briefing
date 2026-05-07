@@ -12,6 +12,107 @@ const TODAY_JSON_CANDIDATES = [
 const FEEDBACK_KEY   = "briefing.feedback.v1";
 const FAV_KEY        = "briefing.favorites.v1";  // v1.2：收藏夹（点赞 = 加收藏）
 
+// v1.4：远程同步（Vercel Serverless /api/fav）
+// - 点赞改本地 localStorage 立刻生效
+// - 节流 15 秒后批量同步到仓库（连点多次只触发一次网络请求）
+// - 页面首次打开时自动从仓库拉取合并
+const FAV_SYNC_ENDPOINT = "/api/fav";
+// 跟 Vercel 环境变量 FAV_SHARED_SECRET 对齐；URL 里 ?secret= 也可带，但头更干净
+// 如果 Vercel 没配 FAV_SHARED_SECRET 则这里留空即可（会被后端放行）
+const FAV_SYNC_SECRET = "";
+const FAV_SYNC_DEBOUNCE_MS = 15000;
+let _favSyncTimer = null;
+let _favSyncInFlight = false;
+
+function scheduleRemoteSync() {
+  if (!FAV_SYNC_ENDPOINT) return;
+  if (_favSyncTimer) clearTimeout(_favSyncTimer);
+  _favSyncTimer = setTimeout(doRemoteSync, FAV_SYNC_DEBOUNCE_MS);
+}
+
+async function doRemoteSync() {
+  if (_favSyncInFlight) {
+    // 正在同步，稍后重试（等当前完成）
+    _favSyncTimer = setTimeout(doRemoteSync, 5000);
+    return;
+  }
+  _favSyncInFlight = true;
+  try {
+    const favs = loadFavs();
+    const res = await fetch(FAV_SYNC_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        ...(FAV_SYNC_SECRET ? { "X-Fav-Secret": FAV_SYNC_SECRET } : {}),
+      },
+      body: JSON.stringify({ favorites: favs, secret: FAV_SYNC_SECRET || undefined }),
+    });
+    if (!res.ok) {
+      console.warn("[fav sync] HTTP", res.status, await res.text());
+    } else {
+      const data = await res.json();
+      console.log("[fav sync] ok", data);
+      flashSyncIndicator(data.changed ? "✅ 已同步到仓库" : "✅ 已是最新");
+    }
+  } catch (e) {
+    console.warn("[fav sync] failed:", e);
+    flashSyncIndicator("⚠️ 同步失败（已存本地）");
+  } finally {
+    _favSyncInFlight = false;
+  }
+}
+
+/** 首次打开页面时，从仓库拉取收藏列表，合并到 localStorage（更新的为准） */
+async function pullRemoteFavs() {
+  if (!FAV_SYNC_ENDPOINT) return;
+  try {
+    const res = await fetch(FAV_SYNC_ENDPOINT, { method: "GET" });
+    if (!res.ok) return;
+    const data = await res.json();
+    const remote = Array.isArray(data.favorites) ? data.favorites : [];
+    if (!remote.length) return;
+
+    const local = loadFavs();
+    const byId = new Map();
+    for (const f of local) if (f && f.id != null) byId.set(f.id, f);
+    let merged = 0;
+    for (const f of remote) {
+      if (!f || f.id == null) continue;
+      const exist = byId.get(f.id);
+      if (!exist || (f.savedAt || "") > (exist.savedAt || "")) {
+        byId.set(f.id, f);
+        merged++;
+      }
+    }
+    const mergedArr = Array.from(byId.values())
+      .sort((a, b) => (b.savedAt || "").localeCompare(a.savedAt || ""));
+    localStorage.setItem(FAV_KEY, JSON.stringify(mergedArr));
+    updateFavBadge();
+    if (merged > 0) {
+      console.log("[fav sync] 从仓库拉取，合并 +" + merged + " 条");
+    }
+  } catch (e) {
+    console.warn("[fav sync] pull failed:", e);
+  }
+}
+
+// 同步状态小指示（右下角飘一下然后消失）
+function flashSyncIndicator(text) {
+  let el = document.getElementById("fav-sync-indicator");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "fav-sync-indicator";
+    el.style.cssText = "position:fixed;right:18px;bottom:18px;z-index:9999;"
+      + "background:#1f2937;color:#fff;padding:8px 14px;border-radius:8px;"
+      + "font-size:12.5px;opacity:0;transition:opacity 0.25s;pointer-events:none;";
+    document.body.appendChild(el);
+  }
+  el.textContent = text;
+  el.style.opacity = "1";
+  clearTimeout(el._t);
+  el._t = setTimeout(() => { el.style.opacity = "0"; }, 2000);
+}
+
 // ---------- 对外文案脱敏 ----------
 // 目的：历史 LLM 输出（reason / anxiety_hits）里含有只用于内部口径的词
 // （例如"网信办"、"8 大焦虑点"、"涉企黑嘴"等）。前端展示前统一替换为中性词，
@@ -137,6 +238,7 @@ function loadFavs() {
 function saveFavs(arr) {
   localStorage.setItem(FAV_KEY, JSON.stringify(arr));
   updateFavBadge();
+  scheduleRemoteSync();  // v1.4: 节流触发远程同步
 }
 /** 加入收藏（如果已在就不重复） */
 function addToFav(article) {
@@ -524,6 +626,7 @@ python3 -m http.server 8765
   renderTab(data, initialTab);
   bindTabs(data);
   updateFavBadge();   // v1.2: 初始化顶栏收藏数
+  pullRemoteFavs();   // v1.4: 异步从仓库拉取合并收藏列表
   console.log("[briefing] 已加载", data);
 }
 

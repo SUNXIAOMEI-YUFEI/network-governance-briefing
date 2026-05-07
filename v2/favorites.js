@@ -65,6 +65,44 @@ function loadFavs() {
 }
 function saveFavs(arr) {
   localStorage.setItem(FAV_KEY, JSON.stringify(arr));
+  scheduleRemoteSync();  // v1.4: 节流同步到仓库
+}
+
+// v1.4：远程同步（与 app.js 保持逻辑一致）
+const FAV_SYNC_ENDPOINT = "/api/fav";
+const FAV_SYNC_SECRET = "";
+const FAV_SYNC_DEBOUNCE_MS = 15000;
+let _favSyncTimer = null;
+let _favSyncInFlight = false;
+
+function scheduleRemoteSync() {
+  if (!FAV_SYNC_ENDPOINT) return;
+  if (_favSyncTimer) clearTimeout(_favSyncTimer);
+  _favSyncTimer = setTimeout(doRemoteSync, FAV_SYNC_DEBOUNCE_MS);
+}
+async function doRemoteSync() {
+  if (_favSyncInFlight) {
+    _favSyncTimer = setTimeout(doRemoteSync, 5000);
+    return;
+  }
+  _favSyncInFlight = true;
+  try {
+    const favs = loadFavs();
+    const res = await fetch(FAV_SYNC_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        ...(FAV_SYNC_SECRET ? { "X-Fav-Secret": FAV_SYNC_SECRET } : {}),
+      },
+      body: JSON.stringify({ favorites: favs, secret: FAV_SYNC_SECRET || undefined }),
+    });
+    if (!res.ok) console.warn("[fav sync] HTTP", res.status);
+    else console.log("[fav sync] ok", await res.json());
+  } catch (e) {
+    console.warn("[fav sync] failed:", e);
+  } finally {
+    _favSyncInFlight = false;
+  }
 }
 
 function fmtTime(iso) {

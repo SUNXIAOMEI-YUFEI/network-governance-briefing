@@ -513,11 +513,45 @@ def _row_to_article(row: sqlite3.Row) -> Article:
     )
 
 
+def _load_protected_ids() -> set[int]:
+    """v1.4：读取 data/user_favorites.json 里的文章 id 集合。
+
+    rescore 时跳过这些文章，让用户收藏过的选题评分**永远不变**。
+    """
+    from app.config import DATA_DIR
+    fav_file = DATA_DIR / "user_favorites.json"
+    if not fav_file.exists():
+        return set()
+    try:
+        import json as _json
+        data = _json.loads(fav_file.read_text(encoding="utf-8"))
+        if not isinstance(data, list):
+            return set()
+        ids = set()
+        for f in data:
+            if isinstance(f, dict) and "id" in f:
+                try:
+                    ids.add(int(f["id"]))
+                except (TypeError, ValueError):
+                    continue
+        return ids
+    except Exception as e:  # noqa
+        print(f"[score] ⚠️ 读用户收藏保护列表失败：{e}")
+        return set()
+
+
 def run(scorer: ArticleScorer, *, rescore_all: bool = False, concurrency: int = 1) -> None:
+    protected_ids: set[int] = _load_protected_ids() if rescore_all else set()
+    if protected_ids:
+        print(f"[score] 🛡️ 用户收藏保护：{len(protected_ids)} 篇收藏文章将跳过 rescore")
+
     with sqlite3.connect(DB_PATH) as conn:
         conn.row_factory = sqlite3.Row
         if rescore_all:
             rows = conn.execute("SELECT * FROM articles").fetchall()
+            # 过滤掉受保护的收藏
+            if protected_ids:
+                rows = [r for r in rows if r["id"] not in protected_ids]
         else:
             rows = conn.execute(
                 "SELECT * FROM articles WHERE total_score IS NULL"
