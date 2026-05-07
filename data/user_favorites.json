@@ -1,5 +1,30 @@
 [
   {
+    "id": 35,
+    "url": "https://www.platformer.news/trump-administration-doomers-ai/",
+    "title": "The Trump administration's AI doomer moment",
+    "title_cn": "特朗普政府AI安全立场转向：前沿模型引发担忧",
+    "summary": "A year ago, officials all but sneered at the idea of AI safety. A new frontier model has them reconsidering",
+    "source_name": "Platformer",
+    "source_tier": "C",
+    "published_at": "2026-05-06T00:00:22+00:00",
+    "score_a": 25,
+    "score_b": 20,
+    "score_c": 5,
+    "score_d": 3,
+    "score_e": 5,
+    "score_f": 7,
+    "total_score": 65,
+    "fingerprint": "Trump-AI-doomer-frontier-model-2026-05",
+    "anxiety_hits": [
+      "Agent 等新形态"
+    ],
+    "maturity_stage": "风险冒头期",
+    "content_type": "opinion_analysis",
+    "reason": "文章报道特朗普政府因新前沿模型重新考虑AI安全，主题深度对齐AI治理（T1），命中Agent等新形态关切议题。A1=20 A2=5 → A=25；风险冒头期B=20；产业可借鉴中性E=5；中文世界无报道F=7。",
+    "savedAt": "2026-05-07T03:28:47.830Z"
+  },
+  {
     "id": 98,
     "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/wkbk8ruiy1w6d4lmdai4.html",
     "title": "New from DataGuidance collections",
@@ -48,31 +73,6 @@
     "content_type": "fact_official_doc",
     "reason": "NIST下属CAISI与AI实验室签署前沿AI国家安全测试协议，主题深度对齐AI治理（T1），涉及预部署评估，属于Agent等新形态监管的关切议题。A1=22（深度对齐前沿AI安全测试），A2=3（Agent新形态，中档）→A=25；协议签署属于讨论立法期（B=15）；产业可借鉴性高（E=8）；中文世界无报道（F=9）。",
     "savedAt": "2026-05-07T03:23:28.495Z"
-  },
-  {
-    "id": 35,
-    "url": "https://www.platformer.news/trump-administration-doomers-ai/",
-    "title": "The Trump administration's AI doomer moment",
-    "title_cn": "特朗普政府AI安全立场转向：前沿模型引发担忧",
-    "summary": "A year ago, officials all but sneered at the idea of AI safety. A new frontier model has them reconsidering",
-    "source_name": "Platformer",
-    "source_tier": "C",
-    "published_at": "2026-05-06T00:00:22+00:00",
-    "score_a": 25,
-    "score_b": 20,
-    "score_c": 5,
-    "score_d": 3,
-    "score_e": 5,
-    "score_f": 7,
-    "total_score": 65,
-    "fingerprint": "Trump-AI-doomer-frontier-model-2026-05",
-    "anxiety_hits": [
-      "Agent 等新形态"
-    ],
-    "maturity_stage": "风险冒头期",
-    "content_type": "opinion_analysis",
-    "reason": "文章报道特朗普政府因新前沿模型重新考虑AI安全，主题深度对齐AI治理（T1），命中Agent等新形态关切议题。A1=20 A2=5 → A=25；风险冒头期B=20；产业可借鉴中性E=5；中文世界无报道F=7。",
-    "savedAt": "2026-05-07T03:23:26.295Z"
   },
   {
     "id": 196,
