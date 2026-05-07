@@ -178,7 +178,15 @@
   <!-- ========== 3.7 版本演进（v1.4 新增） ========== -->
   <section class="about-section">
     <h1>版本演进</h1>
-    <p class="lead">当前线上运行版本：<strong>v1.4</strong>（2026-05-07）</p>
+    <p class="lead">当前线上运行版本：<strong>v1.5</strong>（2026-05-07）</p>
+
+    <h2>v1.5 · CI 可靠性强化（2026-05-07）</h2>
+    <ul>
+      <li><strong>三层防污染保险丝</strong>：针对"冒烟测试 mock 数据污染线上 today.json"这类事故，建立 L1 workflow 层（push 事件产物不 commit）+ L2 清理层（每次真数据跑前自动 <code>purge_mock.py</code>）+ L3 体检层（检测到 <code>[XXX] 源·阶段·关切</code> 这类 mock 特征 reason 立即 <code>raise</code> 停流水线），从"已知污染路径"到"未知污染路径"全覆盖。</li>
+      <li><strong>workflow 事件分流</strong>：<code>daily.yml</code> 里 push/PR 触发时走 <code>--use-mock</code> 冒烟测试路径（快速验证代码能跑），cron 触发才走真数据路径并 commit 结果，互不串线。</li>
+      <li><strong>purge_mock.py</strong>：一键清除历史遗留 mock（标签型 reason、FUSE_TEST 之类的测试源名），把流水线状态从"不可信"强制拉回"可信"。</li>
+      <li><strong>评分 reason 格式约束</strong>：真实 LLM 评分必须带 <code>A1=/A2=/B=/C=</code> 公式痕迹，靠这个特征辨别人工 mock 数据，不需要额外加 schema / 加字段。</li>
+    </ul>
 
     <h2>v1.4 · 评分引擎大升级（2026-05-07）</h2>
     <ul>
@@ -266,6 +274,7 @@
       <li><strong>纯静态前端 + Vercel Serverless</strong>：前端不用框架（HTML + CSS + 原生 JS），Vercel 静态托管秒部署；收藏夹同步走 Vercel Serverless 函数（/api/fav）调 GitHub API 写入仓库，任何设备自动同步</li>
       <li><strong>收藏夹双层存储</strong>：localStorage 即时生效 + 节流 15 秒后推到仓库 <code>data/user_favorites.json</code>，服务器永不存"当前用户是谁"（本项目单用户）</li>
       <li><strong>LLM 主题聚类（v1.4）</strong>：每个时间窗跑一次 LLM，把合格文章归纳成 3-6 个主题（🤖 Agent / 👶 未成年人 / ⚖️ 监管等），替代机械 fingerprint 匹配</li>
+      <li><strong>三层防污染保险丝（v1.5）</strong>：CI 冒烟测试和真数据跑通过 workflow 事件分流（push/PR → mock，cron → 真数据）+ 启动前自动清理 mock + 启动后特征体检 raise 三层串联，任何未来新增的脚本 / 迁移 / 手动 INSERT 写入 mock 都会在流水线前段暴露，保证 today.json 永远干净</li>
     </ul>
 
     <h2>数据流时间线</h2>
@@ -323,7 +332,7 @@
 </main>
 
 <footer class="footer">
-  <span class="muted">v1.4 · 如发现评分异常 / 选题质量问题，请在仓库开 issue</span>
+  <span class="muted">v1.5 · 如发现评分异常 / 选题质量问题，请在仓库开 issue</span>
   <span class="footer-sep">·</span>
   <a href="index.html" class="footer-link">← 返回工作台</a>
   <span class="footer-sep">·</span>
