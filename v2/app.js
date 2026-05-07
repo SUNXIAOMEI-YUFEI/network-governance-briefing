@@ -154,24 +154,39 @@ const FACT_TYPES = new Set(["fact_legislative", "fact_enforcement", "fact_offici
 // v1.4：title_cn 规范化
 // LLM 偶尔没归纳出中文标题，或 KtN 邮件的通用英文标题被当 title_cn 存了
 // 前端展示时兜底：如果 title_cn 是英文通用标题，从 summary 扒一段替代
+// v1.5 fix：额外检测普通英文句子（以大写冠词/介词开头、含 "the/and/of/to/in/for" 等），这类也是 LLM 放错位置
 function normalizeTitleCn(article) {
   const raw = (article.title_cn || "").trim();
   const enTitle = article.title || "";
 
-  const isBadTitleCn =
-    !raw ||
-    raw === enTitle ||
-    raw.length < 4 ||
+  // 已知 newsletter 通用标题
+  const isNewsletterGeneric =
     /^New from DataGuidance/i.test(raw) ||
     /^Daily Dashboard/i.test(raw) ||
     /^Daily Briefing/i.test(raw) ||
     /newsletter$/i.test(raw);
 
+  // 英文句子特征：以大写冠词/介词/代词开头，含英文常见虚词组合（LLM 把英文 title 当 title_cn 存的误判）
+  // 例如："The UK Information Commissioner's Office updated its guidance..."
+  // 匹配：开头大写 + 含 " the " / " and " / " of " / " to " / " for " / " in " 等英文常见词
+  const isEnglishSentence = /^(The |A |An |This |That |These |Those |On |In |At |For |With |By |From |To |About )[A-Z]/.test(raw)
+    && /\b(the|and|of|to|in|for|with|by|from|that|this|which|their|its)\b/i.test(raw);
+
+  const isBadTitleCn =
+    !raw ||
+    raw === enTitle ||
+    raw.length < 4 ||
+    isNewsletterGeneric ||
+    isEnglishSentence;  // 新增：英文句子也当坏标题处理
+
   if (!isBadTitleCn) return { titleCn: raw, isFallback: false };
 
+  // 有 summary → 取前 60 字符；中文摘要不加 [未归纳] 前缀（已有人工归纳），英文 summary 才加
   if (article.summary) {
     const hint = article.summary.slice(0, 60).replace(/\s+/g, " ").trim();
-    return { titleCn: "[未归纳] " + hint + "…", isFallback: true };
+    const looksChinese = /[\u4e00-\u9fff]/.test(hint);
+    const display = looksChinese ? hint : "[未归纳] " + hint;
+    return { titleCn: display + "…", isFallback: true };
   }
   return { titleCn: enTitle || "(无标题)", isFallback: true };
 }
@@ -329,9 +344,12 @@ function renderCard(article, { compact = false } = {}) {
 
   // 反馈 + 收藏
   const fbMap = loadFeedback();
+  const favList = loadFavs();
   const cur = fbMap[article.id];
+  // v1.4 fix：拇指 active 要同时看 feedback 和 favorites（跨设备同步后 favorites 有但 feedback 可能没有）
+  const isFaved = favList.some(f => f.id === article.id);
   const upBtn = el("button", {
-    class: `fb-btn up${cur === 1 ? " active" : ""}`,
+    class: `fb-btn up${cur === 1 || isFaved ? " active" : ""}`,
     title: "认可这个选题（加入我的收藏）",
     "aria-label": "👍",
   }, "👍");
