@@ -88,6 +88,9 @@ jobs:
           fi
 
       - name: Commit today.json + archive
+        # 关键：push 事件跑的是 --use-mock 冒烟测试，产物不能污染生产数据
+        # 只有定时 / 手动触发（真数据）才允许 commit
+        if: github.event_name != 'push'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
