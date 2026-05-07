@@ -64,6 +64,27 @@ def main() -> int:
         from scripts import purge_mock
         purge_mock.purge()
 
+        # ---- 1.6 mock 残留保险丝 ----
+        # 特征：真实 LLM 评分 reason 必然带 "A1=" 公式；mock 的 reason 是人工拼的
+        # 标签格式 "[官方文件] 源 · 阶段 · 关切"。purge_mock 跑完后还能检测到 →
+        # 说明存在未知污染路径，立即停流水线，避免 mock 污染 today.json。
+        import sqlite3
+        with sqlite3.connect(DB_PATH) as conn:
+            rows = conn.execute(
+                "SELECT id, source_name, title, reason FROM articles "
+                "WHERE reason LIKE '[%' AND reason NOT LIKE '%A1=%' LIMIT 10"
+            ).fetchall()
+        if rows:
+            print("\n❌ 检测到 mock / 僵尸数据残留（purge_mock 未能清除）：")
+            for (aid, src, title, reason) in rows:
+                print(f"   id={aid} src={src}")
+                print(f"     title : {(title or '')[:80]}")
+                print(f"     reason: {(reason or '')[:100]}")
+            print("\n提示：扩展 scripts/purge_mock.py 的匹配规则，或检查是否有")
+            print("      额外脚本 / 迁移把 mock 写回了 articles 表。")
+            raise RuntimeError("mock data detected after purge — pipeline aborted")
+        print("[ci] ✅ mock 残留体检通过")
+
     # ---- 2. 抓取 ----
     if args.skip_fetch:
         print("\n[ci] 跳过 fetch 阶段")
