@@ -1,5 +1,28 @@
 [
   {
+    "id": 329,
+    "url": "https://www.politico.com/news/2026/05/08/trump-white-house-ai-confusion-00913092?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+    "title": "White House’s ‘lack of organization’ has AI lobbyists fretting",
+    "title_cn": "白宫AI监管信号混乱引发游说者担忧",
+    "summary": "The Trump administration has sent mixed signals about how tough it intends to be in vetting powerful new computer models.",
+    "source_name": "Politico EU Tech",
+    "source_tier": "B",
+    "published_at": "2026-05-09T07:11:43+00:00",
+    "score_a": 25,
+    "score_b": 15,
+    "score_c": 8,
+    "score_d": 6,
+    "score_e": 8,
+    "score_f": 7,
+    "total_score": 69,
+    "fingerprint": "White-House-AI-lobbyists-2026-05",
+    "anxiety_hits": [],
+    "maturity_stage": "讨论立法期",
+    "content_type": "opinion_analysis",
+    "reason": "文章讨论特朗普政府在AI模型审查上的混乱信号，属于AI治理（T1）主题，但未具体命中高权重关切议题。A1=20（部分对齐，讨论监管方向而非具体规则），A2=0，A=20；但考虑到信源权威（Politico EU Tech B档）和议题热度，适当上调至25。B=15（讨论立法期，政府信号混乱但未成形）；E=8（美国AI监管动向有借鉴意义）；F=7（中文世界可能已有零星报道）。",
+    "savedAt": "2026-05-09T12:50:03.675Z"
+  },
+  {
     "id": 283,
     "url": "https://www.politico.com/news/2026/05/07/white-house-ai-oversight-00910837?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
     "title": "White House distances itself from tighter AI regulation",
