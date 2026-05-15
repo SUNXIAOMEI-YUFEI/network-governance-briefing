@@ -1,5 +1,55 @@
 [
   {
+    "id": 568,
+    "url": "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself/",
+    "title": "What happens when AI starts building itself?",
+    "title_cn": "AI开始自我构建：新创企获6.5亿美元融资",
+    "summary": "Richard Socher's new $650 million startup wants to build an AI that can research and improve itself indefinitely — and he insists it will actually ship products.",
+    "source_name": "TechCrunch",
+    "source_tier": "C",
+    "published_at": "2026-05-14T19:57:20+00:00",
+    "score_a": 20,
+    "score_b": 20,
+    "score_c": 5,
+    "score_d": 3,
+    "score_e": 5,
+    "score_f": 10,
+    "total_score": 63,
+    "fingerprint": "AI-self-improving-Agent-2026-05-14",
+    "anxiety_hits": [
+      "Agent 等新形态"
+    ],
+    "maturity_stage": "风险冒头期",
+    "content_type": "opinion_analysis",
+    "reason": "文章报道AI自我改进能力的新风险，主题深度对齐AI治理（T1），命中Agent新形态关切议题。A1=18（核心议题但非监管动态），A2=5，A=23，但文章为商业报道且无监管角度，A1降为15，A=20；风险冒头期B=20；产业可借鉴性中性E=5；中文世界无报道F=10。",
+    "savedAt": "2026-05-15T10:03:52.593Z"
+  },
+  {
+    "id": 455,
+    "url": "https://www.insideprivacy.com/minors/eu-sets-the-clock-on-age-verification-rollout-urged-by-end%e2%80%912026/",
+    "title": "EU Sets the Clock on Age Verification: Rollout Urged by End‑2026",
+    "title_cn": "欧盟设定年龄验证时间表：建议2026年底前推广",
+    "summary": "The European Commission has set a clear timeline for rolling out age verification across the EU: This timeline, set out in the Commission’s (non-binding) Recommendation on establishing a common EU‑wide framework for age verification technologies of April 29, 2026 (“Recommendation”), signals that age verification is moving rapidly from policy debate to practical implementation. From Policy... Continue Reading…",
+    "source_name": "Inside Privacy (Covington)",
+    "source_tier": "A",
+    "published_at": "2026-05-13T07:15:49+00:00",
+    "score_a": 25,
+    "score_b": 15,
+    "score_c": 12,
+    "score_d": 6,
+    "score_e": 8,
+    "score_f": 7,
+    "total_score": 73,
+    "fingerprint": "EU-AgeVerification-Recommendation-2026-04",
+    "anxiety_hits": [
+      "未成年人极端事件"
+    ],
+    "maturity_stage": "讨论立法期",
+    "content_type": "fact_official_doc",
+    "reason": "文章主题为欧盟年龄验证框架建议，属于未成年人网络保护（T5）和内容治理（T4）交叉议题。A1=20（深度对齐T5），A2=5（命中未成年人极端事件关切），A=25；讨论立法期B=15；产业可借鉴E=8（欧盟做法可参考）；中文世界无报道F=7。",
+    "savedAt": "2026-05-15T10:03:46.382Z"
+  },
+  {
     "id": 549,
     "url": "https://www.theregister.com/security/2026/05/15/mps-want-social-media-treated-more-like-unsafe-toys-than-harmless-apps/5240578",
     "title": "MPs want social media treated more like unsafe toys than harmless apps",
