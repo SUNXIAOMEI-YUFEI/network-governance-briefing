@@ -1,5 +1,28 @@
 [
   {
+    "id": 649,
+    "url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx/entries/2fqhnzcdn00lzmcyubpr.html",
+    "title": "What's at Stake in Chatrie v. United States, The State by State Push to Restrict Youth Access to Social Media",
+    "title_cn": "Chatrie案与各州限制青少年社交媒体准入的博弈",
+    "summary": "96 What's at Stake in Chatrie v. United States, The State by State Push to Restrict Youth Access to Social Media View in browser Top stories on Tech Policy Press Good morning! At the end of last month, the Supreme Court heard oral argument in Chatrie v. United States. The case involves the use of a geofence warrant, which police use to demand information on all cellphones within a certain area and period of time. The outcome of the case, which revolves around Fourth Amendment questions, could have profound implications for location tracking and privacy in the digital age. To learn more, Tech P",
+    "source_name": "TechPolicy Press (KtN)",
+    "source_tier": "A",
+    "published_at": "2026-05-17T14:04:04.946000+00:00",
+    "score_a": 18,
+    "score_b": 15,
+    "score_c": 12,
+    "score_d": 3,
+    "score_e": 5,
+    "score_f": 7,
+    "total_score": 60,
+    "fingerprint": "Chatrie-v-US-geofence-warrant-youth-social-media-2026-05",
+    "anxiety_hits": [],
+    "maturity_stage": "讨论立法期",
+    "content_type": "opinion_analysis",
+    "reason": "文章涉及两个主题：Chatrie案（数据隐私T3）和州级限制青少年社交媒体访问（未成年人保护T5）。Chatrie案为最高法院审理中，属于讨论立法期；青少年社交媒体限制为各州立法推动，也属讨论立法期。A1=15（部分对齐两个主题），A2=0（未命中高权重关切议题），A=15+3=18；B=15；E=5（中性借鉴）；F=7（中文世界报道较少）。",
+    "savedAt": "2026-05-18T07:13:41.638Z"
+  },
+  {
     "id": 568,
     "url": "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself/",
     "title": "What happens when AI starts building itself?",
