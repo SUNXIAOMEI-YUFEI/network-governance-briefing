@@ -1,5 +1,28 @@
 [
   {
+    "id": 676,
+    "url": "https://fpf.org/blog/colorado-revises-its-ai-act-what-changed-and-why/",
+    "title": "Colorado Revises Its AI Act: What Changed and Why",
+    "title_cn": "科罗拉多州修订AI法案：从算法歧视转向透明度框架",
+    "summary": "On May 15, Governor Polis signed SB 189, revising the Colorado AI Act (CAIA) after two years of intense negotiations and national debate over the original 2024 law&#8217;s approach to AI regulation. The revised law, the Colorado ADM Act (CADMA), reflects a fundamental shift in approach: shifting from an algorithmic discrimination framework to a transparency-focused [&#8230;]",
+    "source_name": "Future of Privacy Forum",
+    "source_tier": "A",
+    "published_at": "2026-05-19T12:35:12+00:00",
+    "score_a": 28,
+    "score_b": 15,
+    "score_c": 12,
+    "score_d": 3,
+    "score_e": 8,
+    "score_f": 9,
+    "total_score": 75,
+    "fingerprint": "Colorado-AI-Act-revision-SB189-2026-05",
+    "anxiety_hits": [],
+    "maturity_stage": "讨论立法期",
+    "content_type": "fact_legislative",
+    "reason": "文章报道科罗拉多州修订AI法案，主题深度对齐AI治理（T1），属于州级立法动态。A1=23（核心议题），A2=0（未命中关切议题），A=23+0=23，但考虑到修订过程涉及透明度框架转变，给予A=28（接近深度对齐上限）；B=15（法案已签署，但属于修订后的新立法，仍处于讨论立法期）；E=8（美国州级AI立法对国内有借鉴意义）；F=9（中文世界无报道）。",
+    "savedAt": "2026-05-19T13:51:36.872Z"
+  },
+  {
     "id": 663,
     "url": "https://www.theregister.com/security/2026/05/18/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britains-age-check-mess/5241770",
     "title": "Mozilla warns UK: Breaking VPNs will not magically fix Britain's age-check mess",
