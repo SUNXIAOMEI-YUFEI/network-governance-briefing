@@ -1,5 +1,28 @@
 [
   {
+    "id": 726,
+    "url": "https://epic.org/press-release-epic-releases-new-report-on-manipulative-design-patterns-in-opt-out-processes/",
+    "title": "PRESS RELEASE: EPIC Releases New Report on Manipulative Design Patterns in Opt-Out Processes",
+    "title_cn": "EPIC发布平台退出流程操纵性设计模式报告",
+    "summary": "Washington, D.C. — Today, EPIC Scholar in Residence Justin Sherman and EPIC Counsel Caroline Kraczon released “Good Luck Opting Out: Manipulative Design Patterns in Opt-Out Processes.” The report found that the opt-out processes of many major online platforms—from social media platforms to data brokers to dating apps—use manipulative design patterns to make it more difficult for &#8230; Continued",
+    "source_name": "EPIC",
+    "source_tier": "C",
+    "published_at": "2026-05-20T09:11:27+00:00",
+    "score_a": 18,
+    "score_b": 20,
+    "score_c": 5,
+    "score_d": 3,
+    "score_e": 5,
+    "score_f": 9,
+    "total_score": 60,
+    "fingerprint": "EPIC-manipulative-design-opt-out-2026-05",
+    "anxiety_hits": [],
+    "maturity_stage": "风险冒头期",
+    "content_type": "fact_official_doc",
+    "reason": "报告揭露平台退出流程中的操纵性设计模式，属于平台治理（T2）和数据隐私（T3）交叉议题。A1=18（部分对齐，非核心立法/执法）；A2=0（未命中高权重关切议题）；B=20（风险冒头期，首次系统性报告）；E=5（中性借鉴）；F=9（中文世界无报道）。",
+    "savedAt": "2026-05-21T03:11:10.712Z"
+  },
+  {
     "id": 676,
     "url": "https://fpf.org/blog/colorado-revises-its-ai-act-what-changed-and-why/",
     "title": "Colorado Revises Its AI Act: What Changed and Why",
