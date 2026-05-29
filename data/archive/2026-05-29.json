@@ -1,5 +1,5 @@
 {
-  "snapshot_at": "2026-05-29T08:38:31.232776+00:00",
+  "snapshot_at": "2026-05-29T10:15:08.398461+00:00",
   "schema_version": "v1.4",
   "tabs": {
     "24h": {
@@ -147,30 +147,6 @@
             "reason": "文章涉及位置数据被用于军事目标定位，属于数据与隐私（T3）主题，但核心是国家安全而非网络治理具体监管动态。A1=15（部分对齐），A2=0（未命中关切议题），A=15；讨论立法期B=15；产业可借鉴性E=5；中文世界无报道F=7。"
           },
           {
-            "id": 1103,
-            "url": "https://www.politico.eu/article/eu-fines-china-temu-e200-million/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "EU fines China’s Temu €200M over illegal products",
-            "title_cn": "欧盟依据DSA对Temu处以2亿欧元罚款",
-            "summary": "Fine is largest so far under the bloc's platforms regulation, the Digital Services Act.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-05-28T10:12:54+00:00",
-            "score_a": 25,
-            "score_b": 3,
-            "score_c": 8,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 51,
-            "fingerprint": "EU-DSA-Temu-fine-200M-2026-05",
-            "anxiety_hits": [
-              "平台垄断"
-            ],
-            "maturity_stage": "落地执行期",
-            "content_type": "fact_enforcement",
-            "reason": "文章报道欧盟依据DSA对Temu罚款2亿欧元，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=22 A2=5 → A=27，但考虑到罚款金额虽大但议题成熟度低（已执行），A适当下调至25；落地执行期B=3；产业可借鉴性中性E=5；中文世界无报道F=7。"
-          },
-          {
             "id": 1105,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/vc3hbi1nidljysrq11to.html",
             "title": "South Korea PIPC sanctions five organizations for data safety and trustee supervision failures",
@@ -217,7 +193,30 @@
         ]
       },
       "opinions": {
-        "top3": [],
+        "top3": [
+          {
+            "id": 1114,
+            "url": "http://politico.com/news/magazine/2026/05/29/pope-leo-ai-jd-vance-00938737?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Does JD Vance have to choose between Pope Leo and Peter Thiel?",
+            "title_cn": "教皇通谕呼吁AI限制引发硅谷反弹",
+            "summary": "The pope’s encyclical calling for AI restraints has fueled a backlash in Silicon Valley.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-05-29T05:06:06+00:00",
+            "score_a": 15,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "Pope-encyclical-AI-Vance-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "文章报道教皇通谕呼吁AI限制，引发硅谷反弹，主题部分对齐AI治理（T1），但主要聚焦政治人物立场而非具体监管动态。A1=12（轻度对齐），A2=0（无明确关切议题命中），A=12；讨论立法期B=15；产业可借鉴性中性E=5；中文世界无报道F=7。"
+          }
+        ],
         "pool": []
       }
     },
@@ -715,7 +714,30 @@
             "reason": "文章报道Gartner预测AI Agent治理困境，主题对齐AI治理（T1），命中Agent新形态关切议题。A1=12（轻度对齐，主要讲预测而非具体监管动作），A2=5，A=15；风险冒头期B=20；产业可借鉴性中性E=5；中文世界无报道F=7。"
           }
         ],
-        "pool": []
+        "pool": [
+          {
+            "id": 1114,
+            "url": "http://politico.com/news/magazine/2026/05/29/pope-leo-ai-jd-vance-00938737?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Does JD Vance have to choose between Pope Leo and Peter Thiel?",
+            "title_cn": "教皇通谕呼吁AI限制引发硅谷反弹",
+            "summary": "The pope’s encyclical calling for AI restraints has fueled a backlash in Silicon Valley.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-05-29T05:06:06+00:00",
+            "score_a": 15,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "Pope-encyclical-AI-Vance-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "文章报道教皇通谕呼吁AI限制，引发硅谷反弹，主题部分对齐AI治理（T1），但主要聚焦政治人物立场而非具体监管动态。A1=12（轻度对齐），A2=0（无明确关切议题命中），A=12；讨论立法期B=15；产业可借鉴性中性E=5；中文世界无报道F=7。"
+          }
+        ]
       }
     },
     "120h": {
@@ -1372,6 +1394,28 @@
             "maturity_stage": "风险冒头期",
             "content_type": "opinion_analysis",
             "reason": "文章报道Gartner预测AI Agent治理困境，主题对齐AI治理（T1），命中Agent新形态关切议题。A1=12（轻度对齐，主要讲预测而非具体监管动作），A2=5，A=15；风险冒头期B=20；产业可借鉴性中性E=5；中文世界无报道F=7。"
+          },
+          {
+            "id": 1114,
+            "url": "http://politico.com/news/magazine/2026/05/29/pope-leo-ai-jd-vance-00938737?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Does JD Vance have to choose between Pope Leo and Peter Thiel?",
+            "title_cn": "教皇通谕呼吁AI限制引发硅谷反弹",
+            "summary": "The pope’s encyclical calling for AI restraints has fueled a backlash in Silicon Valley.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-05-29T05:06:06+00:00",
+            "score_a": 15,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "Pope-encyclical-AI-Vance-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "文章报道教皇通谕呼吁AI限制，引发硅谷反弹，主题部分对齐AI治理（T1），但主要聚焦政治人物立场而非具体监管动态。A1=12（轻度对齐），A2=0（无明确关切议题命中），A=12；讨论立法期B=15；产业可借鉴性中性E=5；中文世界无报道F=7。"
           },
           {
             "id": 914,
@@ -2764,6 +2808,28 @@
             "reason": "文章涉及英国年龄验证（age assurance）与VPN监管，属于未成年人网络保护（T5）和内容治理（T4）主题。Mozilla警告破坏VPN不会解决年龄验证问题，属于讨论立法期。A1=18（部分对齐，核心是年龄验证而非VPN本身），A2=5（命中未成年人极端事件关切），A=20；B=15（讨论立法期）；E=5（中性借鉴）；F=7（中文世界报道较少）。"
           },
           {
+            "id": 1114,
+            "url": "http://politico.com/news/magazine/2026/05/29/pope-leo-ai-jd-vance-00938737?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Does JD Vance have to choose between Pope Leo and Peter Thiel?",
+            "title_cn": "教皇通谕呼吁AI限制引发硅谷反弹",
+            "summary": "The pope’s encyclical calling for AI restraints has fueled a backlash in Silicon Valley.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-05-29T05:06:06+00:00",
+            "score_a": 15,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "Pope-encyclical-AI-Vance-2026-05",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "文章报道教皇通谕呼吁AI限制，引发硅谷反弹，主题部分对齐AI治理（T1），但主要聚焦政治人物立场而非具体监管动态。A1=12（轻度对齐），A2=0（无明确关切议题命中），A=12；讨论立法期B=15；产业可借鉴性中性E=5；中文世界无报道F=7。"
+          },
+          {
             "id": 849,
             "url": "https://www.theregister.com/ai-ml/2026/05/21/google-explains-how-it-will-infuse-ads-into-ai-answers/5244586",
             "title": "Google explains how it will infuse ads into AI answers",
@@ -3259,27 +3325,27 @@
     }
   ],
   "stats": {
-    "total": 1037,
+    "total": 1041,
     "by_type": {
       "fact_enforcement": 46,
       "fact_legislative": 42,
       "fact_official_doc": 26,
-      "opinion_analysis": 42
+      "opinion_analysis": 43
     },
-    "veto": 881
+    "veto": 884
   },
   "feed_health": [
     {
       "source_name": "Don't Worry About the Vase",
       "feed_url": "https://thezvi.substack.com/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
       "last_success_at": null,
       "last_error": "HTTP 403",
       "last_article_count": 0,
-      "consecutive_fails": 52,
+      "consecutive_fails": 53,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "dead"
@@ -3288,13 +3354,13 @@
       "source_name": "AI Snake Oil",
       "feed_url": "https://arvindnarayanan.substack.com/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
       "last_success_at": null,
       "last_error": "HTTP 403",
       "last_article_count": 0,
-      "consecutive_fails": 52,
+      "consecutive_fails": 53,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "dead"
@@ -3303,13 +3369,13 @@
       "source_name": "Lawfare",
       "feed_url": "https://www.lawfaremedia.org/feeds/cybersecurity-tech.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
       "last_success_at": null,
       "last_error": "HTTP 403",
       "last_article_count": 0,
-      "consecutive_fails": 52,
+      "consecutive_fails": 53,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "dead"
@@ -3318,13 +3384,13 @@
       "source_name": "CDT",
       "feed_url": "https://cdt.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
       "last_success_at": "2026-05-11T17:11:07.731282+00:00",
       "last_error": "HTTP 403",
       "last_article_count": 10,
-      "consecutive_fails": 39,
+      "consecutive_fails": 40,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-04-30T17:21:52+00:00",
       "stale_days": 28,
       "status": "dead"
@@ -3333,13 +3399,13 @@
       "source_name": "Brookings TechTank",
       "feed_url": "https://www.brookings.edu/blog/techtank/feed",
       "source_tier": "B",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
       "last_success_at": null,
       "last_error": "XML parse error: undefined entity: line 35, column 0",
       "last_article_count": 0,
-      "consecutive_fails": 52,
+      "consecutive_fails": 53,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "dead"
@@ -3348,13 +3414,13 @@
       "source_name": "Ofcom",
       "feed_url": "https://www.ofcom.org.uk/news-centre/feed",
       "source_tier": "S",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
       "last_success_at": null,
       "last_error": "HTTP 403",
       "last_article_count": 0,
-      "consecutive_fails": 52,
+      "consecutive_fails": 53,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "dead"
@@ -3363,13 +3429,13 @@
       "source_name": "ICO",
       "feed_url": "https://ico.org.uk/about-the-ico/media-centre/news/news.rss",
       "source_tier": "S",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
       "last_success_at": null,
       "last_error": "HTTP 404",
       "last_article_count": 0,
-      "consecutive_fails": 52,
+      "consecutive_fails": 53,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "dead"
@@ -3378,13 +3444,13 @@
       "source_name": "OAIC",
       "feed_url": "https://www.oaic.gov.au/news.atom",
       "source_tier": "S",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
       "last_success_at": null,
       "last_error": "HTTP 404",
       "last_article_count": 0,
-      "consecutive_fails": 52,
+      "consecutive_fails": 53,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "dead"
@@ -3393,13 +3459,13 @@
       "source_name": "AlgorithmWatch",
       "feed_url": "https://algorithmwatch.org/en/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
       "last_success_at": null,
       "last_error": "XML parse error: XML or text declaration not at start of entity: line 3, column 0",
       "last_article_count": 0,
-      "consecutive_fails": 52,
+      "consecutive_fails": 53,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "dead"
@@ -3408,13 +3474,13 @@
       "source_name": "NIST",
       "feed_url": "https://www.nist.gov/news-events/news/rss.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 40,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-18T12:00:00+00:00",
       "stale_days": 10,
       "status": "stale"
@@ -3423,13 +3489,13 @@
       "source_name": "IAPP Daily Dashboard (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/9v0c5wjcqvoklno87tca.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 6,
       "consecutive_fails": 0,
-      "recent_7d_success": 10,
-      "recent_7d_total": 15,
+      "recent_7d_success": 11,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-06T13:18:40.669000+00:00",
       "stale_days": 22,
       "status": "stale"
@@ -3438,13 +3504,13 @@
       "source_name": "OII",
       "feed_url": "https://www.oii.ox.ac.uk/news-events/news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-08T15:38:51+00:00",
       "stale_days": 20,
       "status": "stale"
@@ -3453,13 +3519,13 @@
       "source_name": "AI Now",
       "feed_url": "https://ainowinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-19T13:13:38+00:00",
       "stale_days": 9,
       "status": "warn"
@@ -3468,28 +3534,28 @@
       "source_name": "EPIC",
       "feed_url": "https://epic.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-20T09:11:27+00:00",
-      "stale_days": 8,
+      "stale_days": 9,
       "status": "warn"
     },
     {
       "source_name": "FTC",
       "feed_url": "https://www.ftc.gov/feeds/press-release.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-20T12:00:00+00:00",
       "stale_days": 8,
       "status": "warn"
@@ -3498,13 +3564,13 @@
       "source_name": "DataGuidance (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 11,
       "consecutive_fails": 0,
-      "recent_7d_success": 9,
-      "recent_7d_total": 15,
+      "recent_7d_success": 10,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-29T00:10:14.751000+00:00",
       "stale_days": 0,
       "status": "warn"
@@ -3513,13 +3579,13 @@
       "source_name": "Lawfare (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eqkwbtfnwj1lqbi08d5p.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 10,
-      "recent_7d_total": 15,
+      "recent_7d_success": 11,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "warn"
@@ -3528,13 +3594,13 @@
       "source_name": "Inside Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 10,
-      "recent_7d_total": 15,
+      "recent_7d_success": 11,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "warn"
@@ -3543,13 +3609,13 @@
       "source_name": "TechPolicy Press (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 4,
       "consecutive_fails": 0,
-      "recent_7d_success": 8,
-      "recent_7d_total": 15,
+      "recent_7d_success": 9,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-24T16:04:13.475000+00:00",
       "stale_days": 4,
       "status": "warn"
@@ -3558,13 +3624,13 @@
       "source_name": "Brookings TechTank (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/btrel8v1yu4h5i4xcsze.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
       "last_success_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_error": null,
+      "last_error": "TimeoutError: The read operation timed out",
       "last_article_count": 12,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 10,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T11:00:11.350000+00:00",
       "stale_days": 0,
       "status": "warn"
@@ -3573,13 +3639,13 @@
       "source_name": "CNIL (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 2,
       "consecutive_fails": 0,
-      "recent_7d_success": 8,
-      "recent_7d_total": 15,
+      "recent_7d_success": 9,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T22:42:06.057000+00:00",
       "stale_days": 0,
       "status": "warn"
@@ -3588,13 +3654,13 @@
       "source_name": "Import AI (Substack)",
       "feed_url": "https://jack-clark.net/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-26T12:32:03+00:00",
       "stale_days": 2,
       "status": "ok"
@@ -3603,13 +3669,13 @@
       "source_name": "Platformer",
       "feed_url": "https://www.platformer.news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 15,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T14:00:47+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3618,13 +3684,13 @@
       "source_name": "Tech Policy Press",
       "feed_url": "https://www.techpolicy.press/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3633,14 +3699,14 @@
       "source_name": "The Register",
       "feed_url": "https://www.theregister.com/headlines.atom",
       "source_tier": "C",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 50,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-05-29T08:30:00+00:00",
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
+      "latest_article_at": "2026-05-29T09:15:00+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -3648,13 +3714,13 @@
       "source_name": "DLA Piper",
       "feed_url": "https://privacymatters.dlapiper.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T15:46:13+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3663,13 +3729,13 @@
       "source_name": "Future of Privacy Forum",
       "feed_url": "https://fpf.org/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T18:46:38+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3678,13 +3744,13 @@
       "source_name": "Inside Privacy (Covington)",
       "feed_url": "https://www.insideprivacy.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T18:55:19+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3693,13 +3759,13 @@
       "source_name": "TechCrunch",
       "feed_url": "https://techcrunch.com/feed/",
       "source_tier": "C",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 20,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-29T01:22:16+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3708,14 +3774,14 @@
       "source_name": "Politico EU Tech",
       "feed_url": "https://www.politico.eu/section/technology/feed",
       "source_tier": "B",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 31,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-05-29T02:00:00+00:00",
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
+      "latest_article_at": "2026-05-29T05:06:06+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -3723,14 +3789,14 @@
       "source_name": "CMA UK",
       "feed_url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
       "source_tier": "S",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 20,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-05-28T12:04:37+00:00",
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
+      "latest_article_at": "2026-05-29T10:11:03+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -3738,13 +3804,13 @@
       "source_name": "Ada Lovelace",
       "feed_url": "https://www.adalovelaceinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3753,13 +3819,13 @@
       "source_name": "WilmerHale Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/muwfbzqx60g7b14mspkf.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3768,13 +3834,13 @@
       "source_name": "HAI Stanford (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 5,
       "consecutive_fails": 0,
-      "recent_7d_success": 12,
-      "recent_7d_total": 15,
+      "recent_7d_success": 13,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-24T17:06:00.178000+00:00",
       "stale_days": 4,
       "status": "ok"
@@ -3783,13 +3849,13 @@
       "source_name": "MLex AI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3798,13 +3864,13 @@
       "source_name": "EDPS (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 12,
-      "recent_7d_total": 15,
+      "recent_7d_success": 13,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3813,13 +3879,13 @@
       "source_name": "OAIC (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 1,
       "consecutive_fails": 0,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T02:29:23.683000+00:00",
       "stale_days": 1,
       "status": "ok"
@@ -3828,13 +3894,13 @@
       "source_name": "NIST AISI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-05-29T08:34:20.636023+00:00",
-      "last_success_at": "2026-05-29T08:34:20.636023+00:00",
+      "last_attempt_at": "2026-05-29T10:15:02.688857+00:00",
+      "last_success_at": "2026-05-29T10:15:02.688857+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3844,28 +3910,20 @@
     "24h": [
       {
         "emoji": "🤖",
-        "name": "AI治理立法与指南",
-        "blurb": "各国AI治理法律与安全指南",
+        "name": "AI治理立法与安全指南",
+        "blurb": "各国AI立法及安全指南动态",
         "article_ids": [
           1075,
           1104,
           1076,
-          1106
-        ]
-      },
-      {
-        "emoji": "⚖️",
-        "name": "平台监管与执法",
-        "blurb": "DSA罚款及广告技术安全警告",
-        "article_ids": [
-          1103,
-          1097
+          1106,
+          1114
         ]
       },
       {
         "emoji": "🔐",
         "name": "数据安全与隐私保护",
-        "blurb": "数据安全处罚与隐私增强技术",
+        "blurb": "数据安全违规处罚与隐私技术",
         "article_ids": [
           1105,
           1058
@@ -3873,10 +3931,11 @@
       },
       {
         "emoji": "📢",
-        "name": "平台治理与监督机制",
-        "blurb": "Meta监督委员会资助变动",
+        "name": "平台治理与广告技术监管",
+        "blurb": "平台资助及广告技术安全威胁",
         "article_ids": [
-          1057
+          1057,
+          1097
         ]
       }
     ],
@@ -3891,85 +3950,8 @@
           1107,
           1106,
           997,
-          1019
-        ]
-      },
-      {
-        "emoji": "👶",
-        "name": "儿童在线安全与保护",
-        "blurb": "儿童网络保护立法争议",
-        "article_ids": [
-          993,
-          1108,
-          959
-        ]
-      },
-      {
-        "emoji": "🔐",
-        "name": "数据泄露与安全事件",
-        "blurb": "数据泄露及安全违规处罚",
-        "article_ids": [
-          973,
-          1039,
-          1105
-        ]
-      },
-      {
-        "emoji": "⚖️",
-        "name": "平台监管与执法",
-        "blurb": "DSA罚款及内容审核",
-        "article_ids": [
-          1103,
-          1003,
-          1057
-        ]
-      },
-      {
-        "emoji": "📢",
-        "name": "AI伦理与歧视风险",
-        "blurb": "AI算法歧视及影子AI",
-        "article_ids": [
-          1014,
-          1016,
-          1021
-        ]
-      },
-      {
-        "emoji": "🔀",
-        "name": "其他治理动态",
-        "blurb": "隐私技术及版权协议",
-        "article_ids": [
-          998,
-          1058,
-          986,
-          1097
-        ]
-      },
-      {
-        "emoji": "🔀",
-        "name": "其他治理动态",
-        "blurb": "未归入主类的候选选题",
-        "article_ids": [
-          1076
-        ]
-      }
-    ],
-    "120h": [
-      {
-        "emoji": "🤖",
-        "name": "AI治理立法与合规",
-        "blurb": "各国AI法案及合规动态",
-        "article_ids": [
-          1075,
-          1104,
-          1107,
-          1106,
-          997,
           1019,
-          941,
-          937,
-          1014,
-          1021
+          1114
         ]
       },
       {
@@ -4000,29 +3982,115 @@
         "article_ids": [
           1103,
           1003,
-          1057,
-          1097
+          1057
         ]
       },
       {
-        "emoji": "🛰️",
-        "name": "AI安全与黑客能力",
-        "blurb": "AI模型安全风险关注",
+        "emoji": "📢",
+        "name": "AI伦理与偏见研究",
+        "blurb": "AI算法歧视与治理挑战",
         "article_ids": [
-          1076,
-          922,
-          928,
-          1016
+          1014,
+          1016,
+          1021,
+          986
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "其他相关治理新闻",
+        "blurb": "广告技术威胁等杂项",
         "article_ids": [
-          938,
-          986,
+          1097,
           998
+        ]
+      },
+      {
+        "emoji": "🔀",
+        "name": "其他治理动态",
+        "blurb": "未归入主类的候选选题",
+        "article_ids": [
+          1076
+        ]
+      }
+    ],
+    "120h": [
+      {
+        "emoji": "🤖",
+        "name": "AI治理立法与合规",
+        "blurb": "各国AI法案及合规动态",
+        "article_ids": [
+          1075,
+          1104,
+          1107,
+          1106,
+          997,
+          1019,
+          941,
+          937,
+          1114
+        ]
+      },
+      {
+        "emoji": "🔐",
+        "name": "Agent智能体安全治理",
+        "blurb": "Agent AI安全指南与风险",
+        "article_ids": [
+          1076,
+          922,
+          1021,
+          928
+        ]
+      },
+      {
+        "emoji": "👶",
+        "name": "未成年人网络保护",
+        "blurb": "儿童在线安全立法争议",
+        "article_ids": [
+          993,
+          1108,
+          959
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "平台监管与数据安全",
+        "blurb": "DSA罚款及数据泄露事件",
+        "article_ids": [
+          1103,
+          973,
+          1039,
+          1097,
+          1003
+        ]
+      },
+      {
+        "emoji": "⚖️",
+        "name": "AI伦理与算法歧视",
+        "blurb": "AI招聘歧视及影子AI风险",
+        "article_ids": [
+          1014,
+          1016,
+          986
+        ]
+      },
+      {
+        "emoji": "🔀",
+        "name": "其他治理动态",
+        "blurb": "隐私法修订及教育指南",
+        "article_ids": [
+          998,
+          1058,
+          1105,
+          1057
+        ]
+      },
+      {
+        "emoji": "🔀",
+        "name": "其他治理动态",
+        "blurb": "未归入主类的候选选题",
+        "article_ids": [
+          938
         ]
       }
     ],
@@ -4087,16 +4155,19 @@
           532,
           751,
           704,
-          702
+          702,
+          831,
+          938
         ]
       },
       {
         "emoji": "📢",
         "name": "数据隐私与执法行动",
-        "blurb": "数据泄露与隐私执法案例",
+        "blurb": "数据泄露、隐私执法与合规",
         "article_ids": [
           973,
           1039,
+          726,
           715,
           773,
           829,
@@ -4108,31 +4179,21 @@
         "name": "其他治理动态",
         "blurb": "其他相关治理与政策动态",
         "article_ids": [
-          724,
           568,
           587,
           941,
           891,
-          726,
           555,
           643,
           656,
-          831,
           873,
           928,
           937,
-          938,
           1014,
           775,
           548,
-          648
-        ]
-      },
-      {
-        "emoji": "🔀",
-        "name": "其他治理动态",
-        "blurb": "未归入主类的候选选题",
-        "article_ids": [
+          648,
+          724,
           1019
         ]
       }
