@@ -662,8 +662,37 @@ async function runTopicInsight(topic, articles, btn, box, refreshBtn) {
 
     // 渲染结果
     box.innerHTML = "";
+
+    const searchLog = Array.isArray(data.searchLog) ? data.searchLog : [];
+    const okSearches = searchLog.filter(s => s.ok).length;
+    const failSearches = searchLog.length - okSearches;
+
     box.appendChild(el("div", { class: "topic-insight-meta muted" },
-      `生成完成 · ${data.model || "chat"} · ${elapsed}s · ${cost} · ${articles.length} 条素材 + ${data.searchLog?.length || 0} 次 Tavily 搜索`));
+      `生成完成 · ${data.model || "chat"} · ${elapsed}s · ${cost} · ${articles.length} 条素材 + ${okSearches} 次 Tavily 搜索${failSearches ? `（含 ${failSearches} 次失败）` : ""}`));
+
+    // v1.8：可折叠的 Tavily 搜索详情——证明确实调了，且能看到每条素材发了什么 query、命中几条、耗时多少
+    if (searchLog.length) {
+      const details = el("details", { class: "topic-insight-search-log" });
+      const summary = el("summary", {},
+        `🔍 查看 ${searchLog.length} 次 Tavily 搜索详情（点击展开）`,
+      );
+      details.appendChild(summary);
+      const ul = el("ul", { class: "topic-insight-search-list" });
+      searchLog.forEach((s, i) => {
+        const status = s.ok
+          ? `✅ ${s.nResults || 0} 条结果 · ${s.elapsedMs || 0}ms`
+          : `❌ 失败：${(s.error || "未知错误").slice(0, 80)}`;
+        const li = el("li", {},
+          el("div", { class: "search-title" }, `${i + 1}. ${s.title || "(无标题)"}`),
+          el("div", { class: "search-query muted small" }, `query: ${s.query || ""}`),
+          el("div", { class: "search-status small", style: s.ok ? "color: var(--c-steel-deep)" : "color: var(--c-vermillion)" }, status),
+        );
+        ul.appendChild(li);
+      });
+      details.appendChild(ul);
+      box.appendChild(details);
+    }
+
     const tipEl = el("div", { class: "topic-insight-text" }, tip);
     box.appendChild(tipEl);
     const actions = el("div", { class: "topic-insight-actions" },
