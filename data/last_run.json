@@ -1,7 +1,7 @@
 {
-  "last_run_at": "2026-06-02T07:17:43.444292+00:00",
-  "hours_window": 72,
-  "articles_fetched_24h": 26,
+  "last_run_at": "2026-06-02T10:56:12.070006+00:00",
+  "hours_window": 24,
+  "articles_fetched_24h": 28,
   "rescored_all": false,
-  "latest_article_published_at": "2026-06-01T21:35:00+00:00"
+  "latest_article_published_at": "2026-06-02T10:00:17+00:00"
 }
