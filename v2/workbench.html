@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>写作工作台 · 选题工作台</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <a href="index.html" class="back-link" title="返回工作台">←</a>
+      <span class="brand-mark">📝</span>
+      <span class="brand-name">写作工作台 · 用 AI 把已收藏的素材炒一盘菜</span>
+    </div>
+    <div class="meta">
+      <a href="favorites.html" class="nav-link" title="管理收藏">⭐ 收藏夹</a>
+      <span class="dot">·</span>
+      <a href="index.html" class="nav-link" title="回到主工作台">🏠 主工作台</a>
+    </div>
+  </div>
+</header>
+
+<main class="workspace workbench-page">
+  <section class="about-intro">
+    <p class="muted">
+      从已收藏的选题里勾选 <b>2-12 条</b>，可选写一段补充判断，AI 会用你的范文笔法生成
+      <b>300-500 字的深度洞察</b>（不复述事实，直接产洞察——你已经知道事实是什么了）。
+      生成结果保存在<b>本浏览器</b>的历史里，可随时复制 / 删除。
+    </p>
+  </section>
+
+  <!-- 三段布局：左 = 收藏池（勾选）/ 右 = 控制面板（补充 + 模型 + 生成）/ 下方 = 历史 -->
+  <div class="wb-grid">
+
+    <!-- 左：收藏池 -->
+    <section class="wb-pool">
+      <header class="section-header">
+        <h2>📋 我的收藏池</h2>
+        <small id="pool-stat">—</small>
+      </header>
+
+      <div class="wb-filter-bar">
+        <label>时间窗：</label>
+        <select id="time-filter">
+          <option value="24">过去 24 小时</option>
+          <option value="72">过去 72 小时</option>
+          <option value="120">过去 5 天</option>
+          <option value="360">过去 15 天</option>
+          <option value="all" selected>全部 👍</option>
+        </select>
+        <label class="wb-search-label">
+          搜索：
+          <input type="text" id="title-search" placeholder="标题关键词..." spellcheck="false">
+        </label>
+        <button id="select-none-btn" class="wb-secondary-btn" title="取消所有勾选">清空勾选</button>
+      </div>
+
+      <div id="pool-list" class="wb-pool-list">
+        <div class="empty">加载中...</div>
+      </div>
+    </section>
+
+    <!-- 右：控制面板 -->
+    <aside class="wb-panel">
+      <header class="section-header">
+        <h2>🎛️ 生成控制</h2>
+        <small id="selected-count">已选 0 条</small>
+      </header>
+
+      <div class="wb-panel-body">
+        <div class="wb-selected-preview" id="selected-preview">
+          <div class="muted">从左侧勾选 2-12 条素材...</div>
+        </div>
+
+        <div class="wb-field">
+          <label for="user-note">
+            💭 我的补充（可选）
+            <small class="muted">用户提供的判断主线，AI 会围绕此展开。不写也行——AI 自己提主线</small>
+          </label>
+          <textarea id="user-note" rows="5"
+                    placeholder="比如：今天和小张讨论提到，欧盟 AI Act 落地节奏比纸面慢，西班牙这次只是姿态..."
+                    spellcheck="false"></textarea>
+        </div>
+
+        <div class="wb-field">
+          <label>🤖 模型</label>
+          <div class="wb-radio-group">
+            <label class="wb-radio">
+              <input type="radio" name="model" value="reasoner" checked>
+              <span><b>深度模式</b><br><small class="muted">reasoner，笔法最佳，约 15-25 秒</small></span>
+            </label>
+            <label class="wb-radio">
+              <input type="radio" name="model" value="chat">
+              <span><b>快速模式</b><br><small class="muted">chat，约 8-12 秒，成本 1/5</small></span>
+            </label>
+          </div>
+        </div>
+
+        <button id="generate-btn" class="wb-primary-btn" disabled>
+          ✨ 生成洞察（请先勾选 2-12 条）
+        </button>
+        <div id="generate-status" class="wb-status muted"></div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- 下方：本次生成结果 -->
+  <section class="wb-result-section" id="result-section" style="display:none;">
+    <header class="section-header">
+      <h2>💡 本次生成结果</h2>
+      <small id="result-meta" class="muted">—</small>
+    </header>
+    <div id="result-body" class="wb-result-body"></div>
+    <div class="wb-result-actions">
+      <button id="copy-btn" class="wb-secondary-btn">📋 复制</button>
+      <button id="save-btn" class="wb-primary-btn">💾 保存到历史</button>
+      <button id="discard-btn" class="wb-secondary-btn">🗑️ 弃用</button>
+    </div>
+  </section>
+
+  <!-- 历史 -->
+  <section class="wb-history-section">
+    <header class="section-header">
+      <h2>📚 历史 tips</h2>
+      <small id="history-stat" class="muted">—</small>
+    </header>
+    <div id="history-list" class="wb-history-list">
+      <div class="empty">暂无历史</div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="muted">v1.7 · 工作台数据 / 历史均存本浏览器，清缓存会丢</span>
+  <span class="footer-sep">·</span>
+  <a href="index.html" class="footer-link">← 主工作台</a>
+  <span class="footer-sep">·</span>
+  <a href="favorites.html" class="footer-link">⭐ 收藏夹</a>
+  <span class="footer-sep">·</span>
+  <a href="about.html" class="footer-link">关于本站</a>
+</footer>
+
+<script src="workbench.js"></script>
+<script data-goatcounter="https://BRIEFING_GOATCOUNTER_SITE_CODE.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
