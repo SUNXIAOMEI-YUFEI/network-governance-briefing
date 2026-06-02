@@ -201,8 +201,7 @@ RSS_FEEDS: list[tuple[str, str, str]] = [
     # === 1. 政治内容 ===
     ("Tech Policy Press",          "https://www.techpolicy.press/feed",                   "A"),
     # 已删 Lawfare 主源（HTTP 403），改用 "Lawfare (KtN)" 邮件中转（见下方 KtN 区）
-    # 已删 The Register（科技八卦站，95% 与治理主题无关，每日污染评分配额）；
-    #   如要恢复请加关键词预筛并控制每次最多 5 条。
+    # The Register 已移到下方"通用科技 (FEED_PREFILTER)"区，参与关键词预筛 + 8 条限流
 
     # === 2. 算法极化 ===
     # 已删 AlgorithmWatch（feed XML parse error 长期失败），无 KtN 备份；放弃该源
@@ -238,6 +237,12 @@ RSS_FEEDS: list[tuple[str, str, str]] = [
 
     # === A. 通用科技（关键词预筛 + 限流，见 fetch.py / FEED_PREFILTER）===
     ("TechCrunch",                 "https://techcrunch.com/feed/",                        "C"),
+    # 2026-06-02 重新加回：之前删是因为八卦多，但用户复审后认为 The Register
+    # 有不少观点类（opinion_analysis）内容值得保留。配套保护：
+    #   1. 已在 FEED_PREFILTER_SOURCES，关键词预筛把"网红八卦"挡在入口
+    #   2. FEED_MAX_ITEMS["The Register"] = 8，单次最多 8 条
+    #   3. SOURCE_AUTHORITY 已为 "C" 级
+    ("The Register",               "https://www.theregister.com/headlines.atom",          "C"),
 
     # === KtN 转 RSS（邮件订阅）===
     # 注意：以下条目和上面同名时，URL 不同；按 URL 去重，两路都跑确保覆盖
