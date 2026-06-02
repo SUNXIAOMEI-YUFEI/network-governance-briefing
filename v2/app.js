@@ -789,8 +789,10 @@ function renderTipWithBold(host, raw) {
     host.appendChild(p);
   });
 
-  if (boldCount > 5) {
-    console.warn(`[insight] 加粗 ${boldCount} 处，超过约束的 5 处上限——LLM 没完全遵守 prompt，可考虑「重新生成」`);
+  if (boldCount > 10) {
+    console.warn(`[insight] 加粗 ${boldCount} 处，超过约束的 10 处上限——LLM 加粗过多，可考虑「重新生成」`);
+  } else if (boldCount < 4) {
+    console.warn(`[insight] 加粗仅 ${boldCount} 处，低于建议下限 4 处——可点「重新生成」试试`);
   }
 }
 

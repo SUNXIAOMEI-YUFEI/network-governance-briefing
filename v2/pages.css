@@ -1128,10 +1128,13 @@
 .topic-insight-text .topic-insight-paragraph:last-child {
   margin-bottom: 0;
 }
-/* 加粗——用更深一点的墨色而不是粗到刺眼，配合衬线字 */
+/* 加粗——朱红墨色，让用户一眼扫到核心论点；配合 6-10 处加粗仍保持克制 */
 .topic-insight-text .topic-insight-bold {
-  font-weight: 600;   /* serif 字体 700 太重，600 更克制 */
+  font-weight: 650;
   color: var(--c-vermillion-deep, var(--c-vermillion));
+  /* 极淡的底色，进一步强化视觉锚点而不刺眼 */
+  background: linear-gradient(transparent 60%, var(--c-vermillion-faint) 60%);
+  padding: 0 2px;
 }
 
 .topic-insight-actions {
