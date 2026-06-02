@@ -155,6 +155,7 @@ def cluster_by_llm(articles: list[ArticleBrief], *, cfg: LLMConfig | None = None
             temperature=0.0,
             max_tokens=1500,
             response_format_json=True,
+            stage="topic_cluster",
         )
         obj = extract_json(raw)
     except LLMError as e:

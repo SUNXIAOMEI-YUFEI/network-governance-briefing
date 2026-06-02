@@ -92,15 +92,23 @@ def chat_completion(
     temperature: float = 0.0,
     max_tokens: int = 1024,
     response_format_json: bool = True,
+    stage: str = "llm",
+    model_override: str | None = None,
 ) -> str:
     """调 /chat/completions，返回 assistant message content（字符串）。
 
     - temperature=0：评分场景追求稳定性
     - response_format_json：要求输出 JSON（OpenAI / OpenRouter 大部分模型支持）
+    - stage：成本计量分类标签（"score" / "topic_cluster" / "ab_validation" 等），
+             供 cost_meter 按阶段汇总。默认 "llm" 表示未分类。
+    - model_override：临时覆盖 cfg.model 而不修改 cfg（用于 quality_ab.py 用 pro 跑对照评分）。
+
+    注意：返回值仍是 str（不破坏既有调用方），usage 字段通过 cost_meter 旁路记录。
     """
+    model = model_override or cfg.model
     url = f"{cfg.base_url}/chat/completions"
     payload: dict[str, Any] = {
-        "model": cfg.model,
+        "model": model,
         "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
@@ -137,6 +145,14 @@ def chat_completion(
                 content = choices[0].get("message", {}).get("content", "")
                 if not content:
                     raise LLMError(f"响应 content 为空：{body[:400]}")
+
+                # === 旁路记录成本（失败不影响主流程）===
+                try:
+                    from app.cost_meter import meter as _cost_meter
+                    _cost_meter.record(model, obj.get("usage"), stage=stage)
+                except Exception:  # noqa
+                    pass  # 成本计量永远不能拖垮主调用
+
                 return content
         except urllib.error.HTTPError as e:
             err_body = ""

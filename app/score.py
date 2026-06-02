@@ -361,14 +361,25 @@ class OpenAICompatScorer(ArticleScorer):
     v1.2 升级：
     - 双评取高（self-consistency）：同一文章调用 LLM 2 次，合并策略见 score()。
     - temperature 两次分别用 0.0 / 0.3，增加第二次的探索性。
+
+    v1.6 升级（智能双评，2026-05-31）：
+    - double_pass 参数从 bool 改成 int 阈值：第一次评分 (A+B+E+F) ≥ threshold 才二评取高
+    - 默认阈值 7 → 库内约 25-30% 文章会双评（top10 候选 100% 双评，质量零损失）
+    - threshold=0 → 全部双评（恢复旧行为）；threshold=11 → 全部单评（最省）
+    - 通过 env LLM_DOUBLE_PASS_THRESHOLD 调整
+    - 旧 LLM_DOUBLE_PASS=0/1 仍兼容（0 → threshold=11 单评，1 → threshold=0 全双评）
     """
 
-    def __init__(self, cfg: LLMConfig | None = None, *, double_pass: bool = True) -> None:
+    def __init__(self, cfg: LLMConfig | None = None, *,
+                 double_pass_threshold: int = 7) -> None:
+        """double_pass_threshold：第一次评分 (A+B+E+F) ≥ 该阈值才触发第二次评分。
+        范围 0-11；0 = 全部双评，11 = 全部单评，默认 7（约覆盖 top 25-30%）。"""
         self.cfg = cfg or LLMConfig.from_env()
         self._system, self._user_tpl = _load_prompt_template()
-        self.double_pass = double_pass  # 可通过 env LLM_DOUBLE_PASS=0 关掉
+        self.double_pass_threshold = max(0, min(11, int(double_pass_threshold)))
 
-    def _single_call(self, article: Article, *, temperature: float) -> ScoreResult:
+    def _single_call(self, article: Article, *, temperature: float,
+                     stage: str = "score", model_override: str | None = None) -> ScoreResult:
         user_msg = self._user_tpl.format(
             title=article.title,
             source_name=article.source_name,
@@ -384,6 +395,8 @@ class OpenAICompatScorer(ArticleScorer):
             temperature=temperature,
             max_tokens=1200,  # v1.2 从 800 → 1200，支持更长 reason
             response_format_json=True,
+            stage=stage,
+            model_override=model_override,
         )
         try:
             obj = extract_json(raw)
@@ -438,14 +451,26 @@ class OpenAICompatScorer(ArticleScorer):
 
     def score(self, article: Article) -> ScoreResult:
         # 第一次调用（确定性，temperature=0）
-        r1 = self._single_call(article, temperature=0.0)
+        r1 = self._single_call(article, temperature=0.0, stage="score")
 
-        if not self.double_pass:
+        # === 智能双评判定（v1.6）===
+        # threshold=11 → 永远不双评（全部单评最省）
+        # threshold=0 → 永远双评（恢复旧 self-consistency 行为）
+        # 否则：仅当第一次评分（不含 C、D 维度，因为这两维和 LLM 无关）≥ threshold 才二评
+        if self.double_pass_threshold >= 11:
             return r1
+        if self.double_pass_threshold > 0:
+            # 提前评估第一次的"非外部"分（A+B+E+F），低于阈值就跳过二评省钱
+            r1_score = (
+                0 if r1.veto
+                else r1.score_a + r1.score_b + r1.score_e + r1.score_f
+            )
+            if r1_score < self.double_pass_threshold:
+                return r1
 
         # 第二次调用（小扰动，temperature=0.3）
         try:
-            r2 = self._single_call(article, temperature=0.3)
+            r2 = self._single_call(article, temperature=0.3, stage="score")
         except LLMError as e:
             print(f"[score] ⚠️ 第二次评分失败（仍用第一次）id={article.id}: {e}")
             return r1
@@ -672,6 +697,18 @@ def run(scorer: ArticleScorer, *, rescore_all: bool = False, concurrency: int = 
         f"content_type 分布={type_dist}"
     )
 
+    # === 失败率守门（v1.6）===
+    # 历史教训：2026-05-24 余额耗光后，LLM 全军覆没但 ci_run 用 try/except 吞了，
+    # 流水线"绿绿地"跑完，commit 一份内容空的 today.json，用户 20 天才发现。
+    # 现在：如果本批失败 ≥ 50% 直接 raise 让 workflow 红，宁可红一次也不再静默挂 20 天。
+    total = scored + errors
+    if total > 0 and errors / total >= 0.5:
+        raise RuntimeError(
+            f"评分失败率 {errors}/{total} = {errors/total:.0%} ≥ 50%，"
+            f"疑似 LLM 异常（余额？key 失效？端点不可达？）。"
+            f"主动 raise 让 workflow 红叉，避免静默成功"
+        )
+
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -688,10 +725,32 @@ def main() -> int:
 
     if args.real_llm:
         import os as _os
-        double_pass = _os.getenv("LLM_DOUBLE_PASS", "1") != "0"
-        scorer: ArticleScorer = OpenAICompatScorer(double_pass=double_pass)
+        # 智能双评（v1.6）：threshold-based
+        # 优先读 LLM_DOUBLE_PASS_THRESHOLD（0-11）；
+        # 兼容旧 LLM_DOUBLE_PASS：0 → threshold=11 单评；1/未设 → threshold=7 智能双评
+        thr_env = _os.getenv("LLM_DOUBLE_PASS_THRESHOLD")
+        if thr_env is not None:
+            try:
+                threshold = int(thr_env)
+            except ValueError:
+                threshold = 7
+        else:
+            # 向后兼容旧 env
+            old_dp = _os.getenv("LLM_DOUBLE_PASS")
+            if old_dp == "0":
+                threshold = 11  # 全单评
+            elif old_dp == "1":
+                threshold = 0   # 全双评（旧默认）
+            else:
+                threshold = 7   # 新默认：智能双评
+        scorer: ArticleScorer = OpenAICompatScorer(double_pass_threshold=threshold)
         concurrency = args.concurrency or scorer.cfg.concurrency  # type: ignore[attr-defined]
-        dp_flag = "双评取高" if double_pass else "单评"
+        if threshold >= 11:
+            dp_flag = "全部单评"
+        elif threshold <= 0:
+            dp_flag = "全部双评"
+        else:
+            dp_flag = f"智能双评（≥{threshold} 分二评）"
         print(f"[score] 真 LLM 模式 · model={scorer.cfg.model} · {dp_flag} · concurrency={concurrency}")  # type: ignore[attr-defined]
     else:
         scorer = MockScorer()
