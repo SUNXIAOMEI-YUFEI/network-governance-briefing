@@ -16,7 +16,11 @@
 const FAV_KEY = "briefing.favorites.v1";
 const TIPS_HISTORY_KEY = "briefing.tips.v1";
 const GENERATE_ENDPOINT = "/api/generate-tip";
-const TIPS_SECRET = "";  // 与 fav.js 保持一致的留空策略；如果 Vercel 配了 secret，前端这里也要填
+// 与 Vercel 环境变量 TIPS_SHARED_SECRET 保持一致。
+// 注：这是个人工作台，secret 只是防止匿名访问者随手烧 LLM 调用的薄护栏，
+//     不是真正的机密——任何打开你域名的人都能在浏览器看到它，但实际风险等同于
+//     "你的项目域名直接公开"，可接受。如果未来要做正经多用户产品，必须改 OAuth/JWT。
+const TIPS_SECRET = "zsGuJlOkyk_lFBF9WFRTOz2WslKF7RqG";
 
 const $  = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => root.querySelectorAll(sel);
