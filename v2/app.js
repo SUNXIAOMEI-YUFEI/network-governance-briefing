@@ -693,7 +693,8 @@ async function runTopicInsight(topic, articles, btn, box, refreshBtn) {
       box.appendChild(details);
     }
 
-    const tipEl = el("div", { class: "topic-insight-text" }, tip);
+    const tipEl = el("div", { class: "topic-insight-text" });
+    renderTipWithBold(tipEl, tip);
     box.appendChild(tipEl);
     const actions = el("div", { class: "topic-insight-actions" },
       mkBtn("📋 复制", () => {
@@ -753,6 +754,54 @@ function mkBtn(text, onClick) {
   const b = el("button", { class: "topic-insight-action-btn" }, text);
   b.addEventListener("click", onClick);
   return b;
+}
+
+// v1.8：把 LLM 输出的 markdown 极简版渲染到目标节点
+//   - 只支持 **xxx** 加粗（其他 md 语法原样保留为文本）
+//   - 段落用 \n\n 分隔；段内 \n 转 <br>
+//   - 全部走 textNode，无 innerHTML，无 XSS 风险
+//   - 同时统计 bold count，超过 5 处会在 console 警告（方便用户/我后续观察）
+function renderTipWithBold(host, raw) {
+  if (!raw) return;
+  const text = String(raw).replace(/\r\n/g, "\n").trim();
+  // 段落切分：\n\n+ 视为新段
+  const paragraphs = text.split(/\n{2,}/);
+  let boldCount = 0;
+
+  paragraphs.forEach((para, pIdx) => {
+    const p = el("p", { class: "topic-insight-paragraph" });
+    // 段内的 **xxx**（最短匹配，禁止跨行）
+    const regex = /\*\*([^*\n]+?)\*\*/g;
+    let lastIndex = 0;
+    let m;
+    while ((m = regex.exec(para)) !== null) {
+      // 加粗前的文本（含可能的换行）
+      const before = para.slice(lastIndex, m.index);
+      appendTextWithBr(p, before);
+      // 加粗内容
+      const strong = el("strong", { class: "topic-insight-bold" }, m[1]);
+      p.appendChild(strong);
+      boldCount += 1;
+      lastIndex = m.index + m[0].length;
+    }
+    // 段落剩余尾巴
+    appendTextWithBr(p, para.slice(lastIndex));
+    host.appendChild(p);
+  });
+
+  if (boldCount > 5) {
+    console.warn(`[insight] 加粗 ${boldCount} 处，超过约束的 5 处上限——LLM 没完全遵守 prompt，可考虑「重新生成」`);
+  }
+}
+
+// 把含 \n 的纯文本切成 textNode + <br> 序列追加到容器
+function appendTextWithBr(host, str) {
+  if (!str) return;
+  const lines = str.split("\n");
+  lines.forEach((line, i) => {
+    if (i > 0) host.appendChild(el("br"));
+    if (line) host.appendChild(document.createTextNode(line));
+  });
 }
 
 function flash(host, text) {

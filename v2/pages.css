@@ -1118,10 +1118,20 @@
   font-size: 15px;
   line-height: 1.95;
   color: var(--c-ink);
-  white-space: pre-wrap;
   word-break: break-word;
   padding: 4px 0 12px;
   letter-spacing: 0.2px;
+}
+.topic-insight-text .topic-insight-paragraph {
+  margin: 0 0 1em 0;
+}
+.topic-insight-text .topic-insight-paragraph:last-child {
+  margin-bottom: 0;
+}
+/* 加粗——用更深一点的墨色而不是粗到刺眼，配合衬线字 */
+.topic-insight-text .topic-insight-bold {
+  font-weight: 600;   /* serif 字体 700 太重，600 更克制 */
+  color: var(--c-vermillion-deep, var(--c-vermillion));
 }
 
 .topic-insight-actions {
