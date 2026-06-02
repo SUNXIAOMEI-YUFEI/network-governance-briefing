@@ -617,10 +617,16 @@ async function loadTodayJson() {
   throw lastErr || new Error("加载 today.json 失败");
 }
 
-// v1.5：检测流水线是否漏跑
-// data/last_run.json 由 ci_run.py 在每次成功跑完时更新；如果超过 18 小时未更新，
-// 说明 GitHub Actions cron 可能被跳过了，在顶部弹红条提醒手动触发。
-const STALE_RUN_THRESHOLD_HOURS = 18;
+// v1.5 → v1.6 升级：检测「数据陈旧」而非「流水线没跑」
+//
+// 历史教训（2026-05-09 ~ 2026-05-29）：
+// 老逻辑用 last_run_at（流水线跑完时间）判断陈旧，但 LLM 没钱时流水线还会"绿绿地跑完"
+// 一份内容空的 today.json，last_run_at 每天刷新但实际数据 20 天没变。前端永远不弹红条。
+//
+// 新逻辑：优先看 latest_article_published_at（库里最新文章发布时间），> 36h 才弹。
+// fallback 到老的 last_run_at + 18h（兼容旧版 last_run.json）。
+const STALE_DATA_THRESHOLD_HOURS = 36;     // 新：库里最新文章 > 36h 触发
+const STALE_RUN_THRESHOLD_HOURS = 18;      // 老 fallback：last_run_at > 18h
 const LAST_RUN_CANDIDATES = [
   "/data/last_run.json",
   "../data/last_run.json",
@@ -634,31 +640,56 @@ async function checkLastRunFreshness() {
       if (resp.ok) { lastRunData = await resp.json(); break; }
     } catch (_) { /* 继续尝试下一个 */ }
   }
-  if (!lastRunData || !lastRunData.last_run_at) return;  // 文件不存在不告警
+  if (!lastRunData) return;
 
+  // === 新逻辑（v1.6）：优先看 latest_article_published_at ===
+  const latestPubIso = lastRunData.latest_article_published_at;
+  if (latestPubIso) {
+    const latestPub = new Date(latestPubIso);
+    if (!isNaN(latestPub.getTime())) {
+      const hoursAgo = (Date.now() - latestPub.getTime()) / 36e5;
+      if (hoursAgo >= STALE_DATA_THRESHOLD_HOURS) {
+        renderStaleBanner({
+          hoursAgo,
+          mode: "data",
+          extra: lastRunData,
+        });
+      }
+      return;  // 已用新逻辑，不再走老 fallback
+    }
+  }
+
+  // === 老 fallback（v1.5）：旧 last_run.json 没 latest_article_published_at 字段时 ===
+  if (!lastRunData.last_run_at) return;
   const lastRun = new Date(lastRunData.last_run_at);
   if (isNaN(lastRun.getTime())) return;
   const hoursAgo = (Date.now() - lastRun.getTime()) / 36e5;
   if (hoursAgo < STALE_RUN_THRESHOLD_HOURS) return;
+  renderStaleBanner({ hoursAgo, mode: "run", extra: lastRunData });
+}
 
-  // 渲染顶部红条
+function renderStaleBanner({ hoursAgo, mode, extra }) {
   const banner = document.createElement("div");
   banner.className = "stale-run-banner";
   const hoursText = hoursAgo >= 24
     ? `${Math.floor(hoursAgo / 24)} 天 ${Math.round(hoursAgo % 24)} 小时`
     : `${Math.round(hoursAgo)} 小时`;
+  // 文案根据 mode 区分：mode=data 表示数据陈旧（核心问题），mode=run 表示流水线漏跑
+  const message = mode === "data"
+    ? `库里最新文章已经是 <strong>${hoursText}</strong>前的（数据陈旧，流水线可能跑了但没新评分文章入库）`
+    : `数据已经 <strong>${hoursText}</strong> 没有更新（GitHub Actions cron 可能被跳过了）`;
   banner.innerHTML = `
     <span class="stale-icon">⚠️</span>
     <span class="stale-text">
-      数据已经 <strong>${hoursText}</strong> 没有更新（GitHub Actions cron 可能被跳过了）。
+      ${message}。
       <a href="https://github.com/SUNXIAOMEI-YUFEI/network-governance-briefing/actions/workflows/daily.yml"
-         target="_blank" rel="noopener">前往手动触发 ↗</a>
+         target="_blank" rel="noopener">前往 GitHub Actions ↗</a>
     </span>
     <button class="stale-close" aria-label="关闭">×</button>
   `;
   document.body.insertBefore(banner, document.body.firstChild);
   banner.querySelector(".stale-close").addEventListener("click", () => banner.remove());
-  console.warn("[briefing] 漏跑告警", { last_run_at: lastRunData.last_run_at, hoursAgo });
+  console.warn("[briefing] 数据陈旧告警", { mode, hoursAgo, ...extra });
 }
 
 async function main() {
@@ -683,8 +714,11 @@ python3 -m http.server 8765
 
   renderHeader(data);
   renderClusters(data);
-  // 默认选 120h（"过去 5 天"）—— mock 数据这一档候选最丰富
-  const initialTab = "120h";
+  // v1.6：默认选 360h（过去 15 天）作为兜底
+  // 历史教训：之前默认 120h（过去 5 天），2026-05 流水线挂了 20 天后，
+  // 用户打开网页 4 个 tab 全空，因为 5/9 数据落不进 5/24-5/29 这个窗口。
+  // 改成 360h 后，即使将来再有 7-10 天故障，至少第一眼能看到内容。
+  const initialTab = "360h";
   renderTab(data, initialTab);
   bindTabs(data);
   updateFavBadge();   // v1.2: 初始化顶栏收藏数

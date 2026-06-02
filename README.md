@@ -93,3 +93,60 @@ v2/
 Vercel 部署：https://network-governance-briefing.vercel.app/v2/index.html
 
 每天北京时间 14:00-14:30 自动刷新一次。
+
+---
+
+## v1.6 · 成本与可靠性守护（2026-05-31 起）
+
+### 背景
+
+2026-05-09 ~ 2026-05-31，项目暴露了两类问题：
+1. **静默失败**：DeepSeek 余额耗光后，所有 LLM 调用 402，但 `score.py` / `ci_run.py` 用 try/except 把异常全部吞了，workflow 显示绿勾，但 `today.json` 实际是空的，前端"挂 20 天"才被发现
+2. **成本失控**：GitHub Secrets 里的 `LLM_MODEL` 被改成 `deepseek-v4-pro`（贵 3 倍）+ `double_pass` 默认开 + 一次 `--rescore-all` 触发，10 天烧掉 ¥91（预期 ¥3）
+
+### 守护机制
+
+| 机制 | 位置 | 作用 |
+| --- | --- | --- |
+| **模型硬锁** | `.github/workflows/daily.yml` | `LLM_MODEL: 'deepseek-chat'` 写死，不再走 secret，避免被偷偷改成 pro 模型 |
+| **余额预检** | `app/check_balance.py` | 流水线开头查 DeepSeek 余额，< ¥5 直接 fail |
+| **成本计量** | `app/cost_meter.py` | 每次 LLM 调用记 usage，每天写 `data/cost_log.jsonl`，跑完打印「本次 ≈ ¥X.XX」|
+| **失败率守门** | `app/score.py` | score 阶段失败率 ≥ 50% 直接 raise，让 workflow 红叉而非静默成功 |
+| **智能双评** | `app/score.py` | 第一次评分 ≥ 7 分才二评取高，省 ~35% 成本（top10 候选 100% 双评，质量零损失）|
+| **chat-vs-pro A/B 验证** | `app/quality_ab.py` | 前 7 天每天抽 30 篇用 chat 和 pro 各评一次，用数据决定是否永久切 chat |
+| **数据陈旧告警** | `data/last_run.json` + `v2/app.js` | 前端基于 `latest_article_published_at` 而非 `last_run_at` 判断告警，>36h 弹红条 |
+| **默认 360h tab** | `v2/index.html` | 兜底防数据陈旧时打开就空白 |
+
+### 常用命令
+
+```bash
+# 看最近 7 天 LLM 成本汇总（按天 / 按模型 / 按阶段）
+python -m scripts.cost_summary --since 7d
+
+# A/B 验证累计 7 天后看 chat vs pro 对比报告，决策是否永久切 chat
+python -m scripts.quality_report --since 7d
+
+# 死 feed 巡检（feed_health 表里 fails ≥ 3 的源逐个真请求）
+python -m scripts.check_feeds
+
+# 手动查一次 DeepSeek 余额
+python -m app.check_balance --threshold 5
+```
+
+### 一键回滚（环境变量都能调）
+
+| 想要 | 操作 |
+| --- | --- |
+| 评分质量再保险（恢复全部双评）| `.github/workflows/daily.yml` 把 `LLM_DOUBLE_PASS_THRESHOLD` 改 `0` |
+| 全部单评最省 | `LLM_DOUBLE_PASS_THRESHOLD: "11"` |
+| 立刻关闭 A/B 验证（不再多花 ¥0.4/天）| `AB_VALIDATION_DAYS: "0"` |
+| 切回 pro 模型（不推荐，贵 3 倍）| 改 `LLM_MODEL: 'deepseek-reasoner'`（**改 yaml 不要改 secret**，留 git 历史可追溯）|
+| 调高余额预检阈值 | yaml 里 `python -m app.check_balance --threshold 10` |
+
+### GoatCounter 访问统计（待激活）
+
+`v2/index.html`、`about.html`、`favorites.html` 三个页面已加 GoatCounter 埋点占位（`BRIEFING_GOATCOUNTER_SITE_CODE`）。激活步骤：
+
+1. https://www.goatcounter.com/signup 注册账号，site code 建议填 `briefing`
+2. 在三个 HTML 文件里全局替换 `BRIEFING_GOATCOUNTER_SITE_CODE` → 你的 site code
+3. commit + push，Vercel 自动部署

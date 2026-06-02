@@ -30,12 +30,25 @@ const TIPS_SECRET = process.env.TIPS_SHARED_SECRET || process.env.FAV_SHARED_SEC
 // 但为了对称性还是带上
 const VERCEL_URL = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '';
 
+// ⚠️ 2026-06-02 紧急止血：reasoner 选项已禁用
+// 原因：6/2 单天 deepseek-v4-pro 烧了约 ¥27（3529 次调用，4.27 亿 token），
+//       即使设了 max_tokens=3000，DeepSeek reasoner 的 reasoning_content（思考链）
+//       在某些情况下绕过 max_tokens 限制，单次仍可能产生 5-10 万 token。
+//       且公开 endpoint + 前端硬编码 secret 让任何能 view source 的人都能刷。
+//
+// 修复方案（v1.7）：
+//   1. 服务端把 model="reasoner" 强制 fallback 到 chat（用户即使在前端选 reasoner，
+//      实际用的也是 chat）
+//   2. 单 IP 速率限制（5 分钟内最多 3 次）防扫
+//   3. 之后再考虑：把 reasoner 换成 chat-v3.2（同档位非推理模型）做"深度模式"
 const MODEL_SPECS = {
   reasoner: {
-    model: 'deepseek-reasoner',
-    maxTokens: 3000,
-    pricePer1MOutputCny: 6,
-    pricePer1MInputCny: 3,
+    // ⚠️ 实际仍走 chat 模型（紧急止血），保留 key 兼容前端传入
+    model: 'deepseek-chat',
+    maxTokens: 2000,
+    pricePer1MOutputCny: 2,
+    pricePer1MInputCny: 1,
+    note: 'fallback-to-chat (reasoner disabled 2026-06-02 due to runaway cost)',
   },
   chat: {
     model: 'deepseek-chat',
@@ -44,6 +57,27 @@ const MODEL_SPECS = {
     pricePer1MInputCny: 1,
   },
 };
+
+// ---- 极简内存速率限制（防恶意刷）----
+// Vercel function 跨调用不保证状态，但同一容器内能限流；多容器最坏情况是限流被绕过
+// （每容器 N 次），但已经把 reasoner 关了所以最坏也只是浪费 chat 的钱（¥0.005/次）
+const _rateLimitMap = new Map();  // ip -> [timestamp, ...]
+const RATE_LIMIT_WINDOW_MS = 5 * 60 * 1000;  // 5 min
+const RATE_LIMIT_MAX = 5;                     // 每 IP 每 5 min 最多 5 次
+
+function checkRateLimit(ip) {
+  const now = Date.now();
+  const arr = (_rateLimitMap.get(ip) || []).filter(t => now - t < RATE_LIMIT_WINDOW_MS);
+  if (arr.length >= RATE_LIMIT_MAX) return false;
+  arr.push(now);
+  _rateLimitMap.set(ip, arr);
+  // 清理：只保留最近 50 个 IP，防内存膨胀
+  if (_rateLimitMap.size > 50) {
+    const oldestKey = _rateLimitMap.keys().next().value;
+    _rateLimitMap.delete(oldestKey);
+  }
+  return true;
+}
 
 // ============================================================
 // 嵌入式范文笔法（从 brain/style_samples 抽离的核心，避免函数读外部文件）
@@ -351,6 +385,17 @@ export default async function handler(req, res) {
       (req.body && req.body.secret);
     if (TIPS_SECRET && secret !== TIPS_SECRET) {
       return j(res, 403, { error: 'forbidden (shared secret mismatch)' });
+    }
+
+    // ---- 速率限制（v1.7，2026-06-02 防扫）----
+    const clientIp = (req.headers['x-forwarded-for'] || '').split(',')[0].trim()
+      || req.headers['x-real-ip']
+      || 'unknown';
+    if (!checkRateLimit(clientIp)) {
+      return j(res, 429, {
+        error: 'rate limit exceeded',
+        detail: `每 5 分钟最多 ${RATE_LIMIT_MAX} 次请求；请稍后再试`,
+      });
     }
 
     const body = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});

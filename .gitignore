@@ -29,3 +29,9 @@ venv/
 # ===== 临时日志 =====
 /tmp/
 *.log
+
+# ===== v1.6 成本与质量监控（本地分析用，不进版本库）=====
+data/cost_log.jsonl
+data/quality_ab/
+data/.ab_started_at
+data/tips_poc/
