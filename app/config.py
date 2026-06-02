@@ -192,19 +192,22 @@ CONTENT_TYPE_SIGNALS = {
 RSS_FEEDS: list[tuple[str, str, str]] = [
     # === 0. 高信号必扫源 ===
     ("Import AI (Substack)",       "https://jack-clark.net/feed",                         "D"),
-    ("Don't Worry About the Vase", "https://thezvi.substack.com/feed",                    "D"),
-    ("AI Snake Oil",               "https://arvindnarayanan.substack.com/feed",           "D"),
+    # 已删 (2026-06-02)：Substack 反爬升级，连 30 天 HTTP 403。
+    #   - "Don't Worry About the Vase"  https://thezvi.substack.com/feed
+    #   - "AI Snake Oil"                https://arvindnarayanan.substack.com/feed
+    # 如要恢复：通过 KtN 邮件订阅（订阅 newsletter → KtN 转 RSS）。
     ("Platformer",                 "https://www.platformer.news/feed",                    "C"),
 
     # === 1. 政治内容 ===
     ("Tech Policy Press",          "https://www.techpolicy.press/feed",                   "A"),
-    ("Lawfare",                    "https://www.lawfaremedia.org/feeds/cybersecurity-tech.xml", "A"),
-    ("The Register",               "https://www.theregister.com/headlines.atom",          "C"),
+    # 已删 Lawfare 主源（HTTP 403），改用 "Lawfare (KtN)" 邮件中转（见下方 KtN 区）
+    # 已删 The Register（科技八卦站，95% 与治理主题无关，每日污染评分配额）；
+    #   如要恢复请加关键词预筛并控制每次最多 5 条。
 
     # === 2. 算法极化 ===
-    ("AlgorithmWatch",             "https://algorithmwatch.org/en/feed",                  "C"),
+    # 已删 AlgorithmWatch（feed XML parse error 长期失败），无 KtN 备份；放弃该源
     ("AI Now",                     "https://ainowinstitute.org/feed",                     "C"),
-    ("Brookings TechTank",         "https://www.brookings.edu/blog/techtank/feed",        "B"),
+    # 已删 Brookings TechTank 主源（XML parse error），改用 "Brookings TechTank (KtN)" 邮件中转
 
     # === 3. 未成年人保护 ===
     ("Future of Privacy Forum",    "https://fpf.org/feed",                                "A"),
@@ -214,7 +217,7 @@ RSS_FEEDS: list[tuple[str, str, str]] = [
     ("DLA Piper",                  "https://privacymatters.dlapiper.com/feed",            "A"),
     ("Inside Privacy (Covington)", "https://www.insideprivacy.com/feed",                  "A"),
     ("EPIC",                       "https://epic.org/feed",                               "C"),
-    ("CDT",                        "https://cdt.org/feed",                                "C"),
+    # 已删 CDT（HTTP 403 反爬，无 KtN 替代）
 
     # === 5. 内容标识 ===
     ("NIST",                       "https://www.nist.gov/news-events/news/rss.xml",       "S"),
@@ -228,11 +231,12 @@ RSS_FEEDS: list[tuple[str, str, str]] = [
     ("Politico EU Tech",           "https://www.politico.eu/section/technology/feed",     "B"),
 
     # === 9. UK / 多辖区 ===
-    ("ICO",                        "https://ico.org.uk/about-the-ico/media-centre/news/news.rss", "S"),
-    ("Ofcom",                      "https://www.ofcom.org.uk/news-centre/feed",           "S"),
-    ("OAIC",                       "https://www.oaic.gov.au/news.atom",                   "S"),
+    # 已删 ICO（2026 年改版彻底没了 RSS feed，全 404）
+    # 已删 Ofcom（Cloudflare 反爬，所有 URL 候选均返回 "Just a moment..." 403）
+    # 已删 OAIC 主源（HTTP 404），改用 "OAIC (KtN)" 邮件中转
+    # 待补：未来通过 KtN 邮件订阅 Ofcom/ICO 官方 newsletter 后，加 KtN 中转 feed
 
-    # === A. 通用科技（关键词过滤） ===
+    # === A. 通用科技（关键词预筛 + 限流，见 fetch.py / FEED_PREFILTER）===
     ("TechCrunch",                 "https://techcrunch.com/feed/",                        "C"),
 
     # === KtN 转 RSS（邮件订阅）===
@@ -250,6 +254,84 @@ RSS_FEEDS: list[tuple[str, str, str]] = [
     ("CNIL (KtN)",                 "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp.xml", "S"),
     ("OAIC (KtN)",                 "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4.xml", "S"),
     ("NIST AISI (KtN)",            "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml", "S"),
+]
+
+
+# ============================================================
+# 信源限流 + 关键词预筛（v1.7，2026-06-02）
+# ============================================================
+#
+# 背景：5/30 起 24h tab 全空——根因是 TechCrunch / The Register 等通用科技站
+# 每天发 30-80 条新闻，其中 95% 与"五大治理主题"无关（YouTuber 拍电影、
+# 火箭展览、SoftBank 投资数据中心等），全被 LLM 判 veto=7，但已经吃光了
+# LLM 评分配额，挤掉真正高质量信源（律所 / 智库 / 监管官方）的份额。
+#
+# 修复策略：在 fetch 阶段（不调 LLM）做廉价的关键词预筛：
+#   - 标题或摘要含治理关键词 → 进库（让 LLM 评分）
+#   - 全没命中 → 直接丢弃，不入库不调 LLM
+#
+# 这样 TechCrunch / The Register 真正相关的"FTC 起诉 Meta"还能进来，
+# 但"网红拍电影"这种就被廉价的 grep 在入口拦掉了。
+
+# 信源单次抓取上限：超出按 RSS 倒序裁剪。None / 不在表里 = 不限
+FEED_MAX_ITEMS: dict[str, int] = {
+    "TechCrunch":   12,   # 默认 RSS 通常 20 条，留治理类
+    "The Register": 8,    # 八卦多，紧一点
+    "The Verge":    12,
+    "Wired":        12,
+    "Reuters Tech": 15,
+    "FT Tech":      15,
+    "NYT Tech":     15,
+    "Bloomberg Tech": 15,
+}
+
+# 启用关键词预筛的信源（C/D 级通用科技/媒体类）
+# 律所、智库、官方源不预筛——它们本身就专业，发的就是治理内容
+FEED_PREFILTER_SOURCES: set[str] = {
+    "TechCrunch",
+    "The Register",
+    "The Verge",
+    "Wired",
+    "Reuters Tech",
+    "FT Tech",
+    "NYT Tech",
+    "Bloomberg Tech",
+    "The Record",
+    "Platformer",
+}
+
+# 治理关键词（标题 + 摘要任一命中即放行；大小写不敏感）
+# 覆盖五大主题（焦虑点）+ 监管者/法规/裁判术语
+GOVERNANCE_KEYWORDS: list[str] = [
+    # 法规与立法
+    "regulation", "regulatory", "regulator", "regulate",
+    "law", "lawsuit", "legislation", "bill", "act", "statute",
+    "compliance", "enforcement", "enforce", "fine", "fined", "penalty",
+    "settlement", "settle", "investigation", "probe", "subpoena",
+    "ruling", "ruled", "court", "judge", "judgment", "verdict",
+    "appeal", "appeal court", "supreme court",
+    # 监管机构（精确名）
+    "ftc", "fcc", "doj ", " doj", "sec filing", "sec rule", "sec lawsuit",
+    "ofcom", "ico ", "cnil", "edpb", "edps",
+    "garante", "cma", "european commission", "white house",
+    "ec ", "dsa", "dma", "ai act", "gdpr", "ccpa", "cpra", "coppa",
+    "nist", "nis2", "cyber resilience act",
+    # 五大主题/八大焦虑（对应 ANXIETY_KEYWORDS 的英文）
+    "deepfake", "election", "disinfo", "misinformation", "foreign influence",
+    "algorithm", "recommender", "filter bubble",
+    "minor", "child safety", "self-harm", "age assurance", "age verification",
+    "cross-border data", "data transfer", "data localization", "training data",
+    "ai agent", "agentic", "autonomous agent", "embodied ai",
+    "antitrust", "monopoly", "gatekeeper", "platform abuse",
+    "watermark", "provenance", "c2pa", "synthetic media", "labeling",
+    # 隐私 / 安全 / 治理通用
+    "privacy", "data protection", "personal data", "biometric",
+    "ai governance", "ai safety", "ai policy", "ai ethics",
+    "content moderation", "child safety", "transparency report",
+    "section 230", "intermediary liability",
+    # 中文（防漏）
+    "监管", "执法", "处罚", "起诉", "判决", "立法", "草案", "法案",
+    "数据保护", "隐私", "未成年人", "深度伪造", "算法", "标识",
 ]
 
 

@@ -32,13 +32,52 @@ from typing import Iterable
 
 from app.config import (
     DB_PATH,
+    FEED_MAX_ITEMS,
+    FEED_PREFILTER_SOURCES,
     FETCH_CONCURRENCY,
+    GOVERNANCE_KEYWORDS,
     HTTP_TIMEOUT_SEC,
     HTTP_USER_AGENT,
     KTN_NOISE_PATTERNS,
     RSS_FEEDS,
     SOURCE_AUTHORITY,
 )
+
+
+# ---- 关键词预筛预编译（性能 + 大小写不敏感）----
+_GOVERNANCE_KW_LOWER: list[str] = [k.lower() for k in GOVERNANCE_KEYWORDS]
+
+# 短英文关键词需要单词边界保护（避免 "act" 匹配 "transactions" / "factor"），
+# ≥4 字 + 全字母才走边界正则；其他用普通子串。
+import re as _re  # noqa: E402  局部 import，避免污染顶部
+_SHORT_KW_RE = _re.compile(
+    r"(?<![a-z0-9])(?:"
+    + "|".join(
+        _re.escape(kw)
+        for kw in _GOVERNANCE_KW_LOWER
+        if len(kw) <= 5 and kw.replace(" ", "").isascii() and kw.replace(" ", "").isalpha()
+    )
+    + r")(?![a-z0-9])"
+)
+_LONG_KW_LOWER: list[str] = [
+    kw for kw in _GOVERNANCE_KW_LOWER
+    if not (len(kw) <= 5 and kw.replace(" ", "").isascii() and kw.replace(" ", "").isalpha())
+]
+
+
+def _is_governance_relevant(title: str, summary: str) -> bool:
+    """判断标题或摘要是否含治理类关键词（大小写不敏感）。
+
+    用于在 fetch 阶段对通用科技媒体（TechCrunch/The Register 等）做廉价预筛，
+    把"网红拍电影"这种纯八卦在入库前就过滤掉，避免污染 LLM 评分配额。
+
+    实现：短英文关键词（≤5 字，纯字母）走单词边界正则，避免 "act" 误匹配 "transactions"；
+    长关键词（含数字/连字符/中文）走普通子串。
+    """
+    text = (title + " " + summary).lower()
+    if _SHORT_KW_RE.search(text):
+        return True
+    return any(kw in text for kw in _LONG_KW_LOWER)
 
 
 # ============================================================
@@ -286,6 +325,29 @@ def fetch_one_feed(source_name: str, feed_url: str, source_tier: str) -> tuple[l
         for a in articles:
             if _needs_title_augmentation(source_name, a.title):
                 a.title = _augment_title_from_summary(a.title, a.summary)
+
+    raw_count = len(articles)
+
+    # ---- 关键词预筛（C/D 级通用科技媒体专用，v1.7）----
+    # 律所、智库、官方源的内容本身就是治理相关，不预筛；
+    # 通用科技站（TechCrunch/The Register 等）发的 95% 是八卦，需要预筛。
+    if source_name in FEED_PREFILTER_SOURCES:
+        articles = [a for a in articles if _is_governance_relevant(a.title, a.summary)]
+
+    # ---- 单源单次抓取上限（v1.7）----
+    # RSS 通常按时间倒序，前面就是最新；超出上限的丢掉
+    max_items = FEED_MAX_ITEMS.get(source_name)
+    if max_items is not None and len(articles) > max_items:
+        articles = articles[:max_items]
+
+    # FeedResult.article_count 用筛后的数（更反映实际入库量）
+    # 顺手 stdout 打一条 prefilter / cap 的备注，方便观察
+    if source_name in FEED_PREFILTER_SOURCES and raw_count > len(articles):
+        print(
+            f"[fetch] {source_name}: prefilter {raw_count} → {len(articles)}（按治理关键词丢弃 {raw_count - len(articles)} 条）"
+        )
+    if max_items is not None and raw_count > max_items and len(articles) == max_items:
+        print(f"[fetch] {source_name}: capped at {max_items}（原 RSS 含 {raw_count} 条）")
 
     return articles, FeedResult(source_name, feed_url, True, len(articles))
 
