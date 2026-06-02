@@ -1,5 +1,31 @@
 [
   {
+    "id": 1202,
+    "url": "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/",
+    "title": "Florida sues OpenAI, Sam Altman, in first-of-its-kind lawsuit over violent incidents",
+    "title_cn": "佛罗里达州起诉OpenAI涉暴力事件",
+    "summary": "The lawsuit partially revolves around a shooting at Florida State University last year, and ChatGPT's alleged role in the incident.",
+    "source_name": "TechCrunch",
+    "source_tier": "C",
+    "published_at": "2026-06-01T20:03:40+00:00",
+    "score_a": 28,
+    "score_b": 15,
+    "score_c": 5,
+    "score_d": 3,
+    "score_e": 8,
+    "score_f": 9,
+    "total_score": 68,
+    "fingerprint": "Florida-sues-OpenAI-violent-incidents-2026-06",
+    "anxiety_hits": [
+      "未成年人极端事件",
+      "政治内容失控"
+    ],
+    "maturity_stage": "讨论立法期",
+    "content_type": "fact_enforcement",
+    "reason": "佛罗里达州起诉OpenAI，涉及ChatGPT与暴力事件关联，属于AI治理（T1）和内容治理（T4）主题。诉讼本身是执法行动，但议题处于风险冒头期（首次此类诉讼），A1=23（深度对齐），A2=5（未成年人极端事件），A=28；B=15（讨论立法期，诉讼推动立法讨论）；E=8（可借鉴）；F=9（中文无报道）。",
+    "savedAt": "2026-06-02T11:37:49.122Z"
+  },
+  {
     "id": 1075,
     "url": "https://privacymatters.dlapiper.com/2026/05/spain-government-approves-the-draft-organic-law-on-the-proper-use-and-governance-of-artificial-intelligence/",
     "title": "Spain: Government approves the draft Organic Law on the proper use and governance of artificial intelligence",
