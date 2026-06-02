@@ -81,7 +81,7 @@ GitHub 仓库页刷新 → 应该能看到所有文件（`app/`、`v2/`、`data/
 3. 点 **New repository secret**
 4. 填：
    - Name：`LLM_API_KEY`
-   - Secret：`sk-c4b9c342c8d84f148f3ece04f73f4598`（DeepSeek 官方 key）
+   - Secret：`sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`（**填你 DeepSeek 后台拿到的 key，不要把真实 key 写进任何 git 文件！**）
 5. **Add secret**
 
 （可选）如果未来你想切到别的 AI 服务：
