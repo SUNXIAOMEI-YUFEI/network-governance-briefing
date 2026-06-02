@@ -1128,13 +1128,17 @@
 .topic-insight-text .topic-insight-paragraph:last-child {
   margin-bottom: 0;
 }
-/* 加粗——朱红墨色，让用户一眼扫到核心论点；配合 6-10 处加粗仍保持克制 */
+/* 加粗——支持词级和整句加粗。朱红墨色 + 极淡朱红底色高亮，
+   让读者扫一眼就能定位主论点。整句加粗换行时底色不断 */
 .topic-insight-text .topic-insight-bold {
   font-weight: 650;
   color: var(--c-vermillion-deep, var(--c-vermillion));
-  /* 极淡的底色，进一步强化视觉锚点而不刺眼 */
-  background: linear-gradient(transparent 60%, var(--c-vermillion-faint) 60%);
+  /* 日式荧光打底——半行高的底色，比纯粗体更扎眼但不刺 */
+  background: linear-gradient(transparent 55%, rgba(168, 48, 42, 0.10) 55%);
   padding: 0 2px;
+  /* 句级加粗在 CJK 长句换行时，让底色每行都连续 */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .topic-insight-actions {
