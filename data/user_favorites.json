@@ -1,5 +1,28 @@
 [
   {
+    "id": 849,
+    "url": "https://www.theregister.com/ai-ml/2026/05/21/google-explains-how-it-will-infuse-ads-into-ai-answers/5244586",
+    "title": "Google explains how it will infuse ads into AI answers",
+    "title_cn": "谷歌计划在AI回答中植入广告",
+    "summary": "Just like in The Truman Show",
+    "source_name": "The Register",
+    "source_tier": "C",
+    "published_at": "2026-05-21T21:16:17+00:00",
+    "score_a": 15,
+    "score_b": 15,
+    "score_c": 5,
+    "score_d": 3,
+    "score_e": 5,
+    "score_f": 7,
+    "total_score": 50,
+    "fingerprint": "Google-ads-AI-answers-2026-05-21",
+    "anxiety_hits": [],
+    "maturity_stage": "讨论立法期",
+    "content_type": "opinion_analysis",
+    "reason": "文章报道Google计划在AI回答中植入广告，涉及AI治理（T1）中的算法监管和透明度议题，但主体是商业策略而非监管动态，主题对齐度较低（A1=12）。无明确关切议题命中（A2=0）。议题处于讨论立法期（B=15），信源权威度C档（C=0），产业可借鉴性中性（E=5），中文世界无报道（F=7）。",
+    "savedAt": "2026-06-02T12:14:12.389Z"
+  },
+  {
     "id": 1202,
     "url": "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/",
     "title": "Florida sues OpenAI, Sam Altman, in first-of-its-kind lawsuit over violent incidents",
