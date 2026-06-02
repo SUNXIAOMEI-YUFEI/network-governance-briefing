@@ -1,5 +1,28 @@
 [
   {
+    "id": 1075,
+    "url": "https://privacymatters.dlapiper.com/2026/05/spain-government-approves-the-draft-organic-law-on-the-proper-use-and-governance-of-artificial-intelligence/",
+    "title": "Spain: Government approves the draft Organic Law on the proper use and governance of artificial intelligence",
+    "title_cn": "西班牙政府批准AI治理法律草案",
+    "summary": "On 26 May 2026, Spain&#8217;s Council of Ministers approved a draft Organic Law on the proper use and governance of artificial intelligence, aligning Spain&#8217;s national law with Regulation (EU) 2024/1689 (the “EU AI Act”). The legislation aims to create a framework for trustworthy, human‑centric AI, combining regulatory oversight while supporting innovation. Governance and designated authorities... Continue Reading",
+    "source_name": "DLA Piper",
+    "source_tier": "A",
+    "published_at": "2026-05-28T15:46:13+00:00",
+    "score_a": 28,
+    "score_b": 15,
+    "score_c": 12,
+    "score_d": 9,
+    "score_e": 8,
+    "score_f": 9,
+    "total_score": 81,
+    "fingerprint": "Spain-AI-Governance-Law-2026-05",
+    "anxiety_hits": [],
+    "maturity_stage": "讨论立法期",
+    "content_type": "fact_legislative",
+    "reason": "西班牙政府批准AI治理法律草案，深度对齐AI治理（T1），属于讨论立法期（B=15），产业可借鉴（E=8），中文世界无报道（F=9）。",
+    "savedAt": "2026-06-02T06:14:05.099Z"
+  },
+  {
     "id": 1120,
     "url": "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members",
     "title": "NIST Expands AI Consortium’s Scope, Calls for New Members",
