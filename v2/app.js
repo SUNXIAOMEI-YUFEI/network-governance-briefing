@@ -504,6 +504,9 @@ function renderTopicsForWindow(data, tabKey) {
   topics.forEach(t => list.appendChild(renderTopic(t, idToArticle)));
 }
 
+// 后端 /api/generate-tip 单次最多接受的文章数（与 api/generate-tip.js 的 max 12 保持一致）
+const TOPIC_INSIGHT_MAX = 12;
+
 function renderTopic(topic, idToArticle) {
   const articles = (topic.article_ids || [])
     .map(id => idToArticle[id])
@@ -518,29 +521,75 @@ function renderTopic(topic, idToArticle) {
       : null,
   );
 
+  // ---- v1.8：在每条文章前加 checkbox，让用户挑选要送进 LLM 的素材 ----
+  // 默认全部不勾选——用户自己来挑；后端硬上限 12 条
+  const showCheckbox = articles.length >= 2;
+  const checkboxes = [];   // 与 articles 同序，方便统计
+
   const listEl = el("ul", { class: "topic-articles" });
-  articles.forEach(a => {
+  articles.forEach((a, idx) => {
     const { titleCn } = normalizeTitleCn(a);
     const typeMeta = TYPE_LABEL[a.content_type] || {};
-    listEl.appendChild(el("li", { class: FACT_TYPES.has(a.content_type) ? "fact" : "opinion" },
-      el("span", { class: "topic-score" }, String(a.total_score)),
-      el("span", { class: "topic-type" }, typeMeta.icon || "•"),
-      el("a", { href: a.url, target: "_blank", rel: "noopener noreferrer", title: a.title }, titleCn),
-      el("span", { class: "muted small" }, ` · ${a.source_name}`),
-    ));
+
+    let checkbox = null;
+    if (showCheckbox) {
+      checkbox = el("input", {
+        type: "checkbox",
+        class: "topic-article-pick",
+        title: "勾选则纳入「写成一段洞察」（最多 " + TOPIC_INSIGHT_MAX + " 条）",
+      });
+      // 默认全部不勾选——交给用户自己点
+      checkbox.checked = false;
+      checkboxes.push(checkbox);
+    }
+
+    const li = el("li", { class: FACT_TYPES.has(a.content_type) ? "fact" : "opinion" });
+    if (checkbox) li.appendChild(checkbox);
+    li.appendChild(el("span", { class: "topic-score" }, String(a.total_score)));
+    li.appendChild(el("span", { class: "topic-type" }, typeMeta.icon || "•"));
+    li.appendChild(el("a", { href: a.url, target: "_blank", rel: "noopener noreferrer", title: a.title }, titleCn));
+    li.appendChild(el("span", { class: "muted small" }, ` · ${a.source_name}`));
+    listEl.appendChild(li);
   });
 
-  // ---- v1.7：一键洞察按钮 + 就地展开结果区 ----
+  // ---- v1.7/v1.8：一键洞察按钮 + 就地展开结果区 ----
   const card = el("div", { class: "topic-card" }, head, listEl);
-  if (articles.length >= 2) {
+  if (showCheckbox) {
     const insightBox = el("div", { class: "topic-insight-box" });  // 默认空，按钮触发后填
+
     const btn = el("button", {
       class: "topic-insight-btn",
-      title: "把这组 " + articles.length + " 条素材作为输入，让 AI 写成一段 300-500 字的深度洞察（默认 chat 模型，约 ¥0.01-0.03 / 次）",
-    }, "✨ 写成一段洞察");
+    }, "");
+
+    // 复用：根据当前勾选数刷新按钮文案 / disabled 状态 / title 提示
+    const refreshBtn = () => {
+      const picked = checkboxes.filter(cb => cb.checked).length;
+      btn.dataset.picked = String(picked);
+      if (picked === 0) {
+        btn.disabled = true;
+        btn.textContent = "✨ 写成一段洞察（请先勾选至少 1 条）";
+        btn.title = "请在上方文章列表里至少勾选 1 条";
+      } else if (picked > TOPIC_INSIGHT_MAX) {
+        btn.disabled = true;
+        btn.textContent = `✨ 写成一段洞察（已选 ${picked} 条，超过上限 ${TOPIC_INSIGHT_MAX}）`;
+        btn.title = `最多只能勾选 ${TOPIC_INSIGHT_MAX} 条；请取消多余勾选`;
+      } else {
+        btn.disabled = false;
+        btn.textContent = `✨ 写成一段洞察（已选 ${picked} 条）`;
+        btn.title = `把已勾选的 ${picked} 条素材送进 AI，写一段 300-500 字深度洞察（chat 模型，约 ¥0.01-0.03 / 次）`;
+      }
+    };
+    refreshBtn();
+    checkboxes.forEach(cb => cb.addEventListener("change", refreshBtn));
+
     btn.addEventListener("click", () => {
-      runTopicInsight(topic, articles, btn, insightBox);
+      // 收集当前勾选的 articles，按原始顺序传给后端
+      const picked = articles.filter((_, i) => checkboxes[i].checked);
+      if (!picked.length) return;
+      if (picked.length > TOPIC_INSIGHT_MAX) return;
+      runTopicInsight(topic, picked, btn, insightBox, refreshBtn);
     });
+
     const footer = el("div", { class: "topic-actions" }, btn);
     card.appendChild(footer);
     card.appendChild(insightBox);
@@ -550,7 +599,9 @@ function renderTopic(topic, idToArticle) {
 
 // v1.7：调 /api/generate-tip 给 topic 写一段 300-500 字洞察
 // 复用工作台 endpoint + 同款 prompt + 文风注入
-async function runTopicInsight(topic, articles, btn, box) {
+// v1.8：articles 是用户已勾选的子集；refreshBtn 用于在结束后把按钮文案重置为
+//       「✨ 重新生成（已选 N 条）」/ disabled 状态由 refreshBtn 重新计算
+async function runTopicInsight(topic, articles, btn, box, refreshBtn) {
   if (btn.disabled) return;
   btn.disabled = true;
   const startedAt = Date.now();
@@ -629,20 +680,43 @@ async function runTopicInsight(topic, articles, btn, box) {
       mkBtn("🗑️ 弃用", () => {
         box.innerHTML = "";
         btn.disabled = false;
-        btn.textContent = "✨ 写成一段洞察";
+        if (typeof refreshBtn === "function") {
+          refreshBtn();   // 让按钮文案恢复成「✨ 写成一段洞察（已选 N 条）」
+        } else {
+          btn.textContent = "✨ 写成一段洞察";
+        }
       }),
     );
     box.appendChild(actions);
 
-    btn.textContent = "✨ 重新生成";
-    btn.disabled = false;
+    // 生成完后，按当前勾选数刷新按钮文案为「✨ 重新生成（已选 N 条）」
+    if (typeof refreshBtn === "function") {
+      refreshBtn();
+      // refreshBtn 默认前缀是「✨ 写成一段洞察」，这里覆盖成「✨ 重新生成」
+      // （只改文案前缀，状态保持 refreshBtn 计算结果）
+      if (!btn.disabled) {
+        const picked = btn.dataset.picked || articles.length;
+        btn.textContent = `✨ 重新生成（已选 ${picked} 条）`;
+      }
+    } else {
+      btn.textContent = "✨ 重新生成";
+      btn.disabled = false;
+    }
   } catch (e) {
     clearInterval(timer);
     box.innerHTML = "";
     box.appendChild(el("div", { class: "topic-insight-error" },
       "❌ 生成失败：", String(e.message || e)));
-    btn.textContent = "✨ 重试";
-    btn.disabled = false;
+    if (typeof refreshBtn === "function") {
+      refreshBtn();
+      if (!btn.disabled) {
+        const picked = btn.dataset.picked || articles.length;
+        btn.textContent = `✨ 重试（已选 ${picked} 条）`;
+      }
+    } else {
+      btn.textContent = "✨ 重试";
+      btn.disabled = false;
+    }
   }
 }
 

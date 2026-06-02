@@ -505,6 +505,23 @@
 .topic-articles li.opinion a { color: var(--c-ochre-deep); }
 .topic-articles .small { font-size: 11px; font-family: var(--font-mono); }
 
+/* v1.8：每条文章前的勾选框——纳入「写成一段洞察」的素材选择 */
+.topic-articles .topic-article-pick {
+  flex-shrink: 0;
+  margin: 0;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  accent-color: var(--c-vermillion);
+  /* baseline 对齐时 checkbox 偏低，往上提一点 */
+  position: relative;
+  top: 2px;
+}
+.topic-articles .topic-article-pick:hover {
+  outline: 1px solid var(--c-vermillion);
+  outline-offset: 1px;
+}
+
 /* =============================================================
  *  写作工作台 (workbench.html)
  *  灵魂：把"勾选 + 生成"做成一份编辑桌
