@@ -530,7 +530,158 @@ function renderTopic(topic, idToArticle) {
     ));
   });
 
-  return el("div", { class: "topic-card" }, head, listEl);
+  // ---- v1.7：一键洞察按钮 + 就地展开结果区 ----
+  const card = el("div", { class: "topic-card" }, head, listEl);
+  if (articles.length >= 2) {
+    const insightBox = el("div", { class: "topic-insight-box" });  // 默认空，按钮触发后填
+    const btn = el("button", {
+      class: "topic-insight-btn",
+      title: "把这组 " + articles.length + " 条素材作为输入，让 AI 写成一段 300-500 字的深度洞察（默认 chat 模型，约 ¥0.01-0.03 / 次）",
+    }, "✨ 写成一段洞察");
+    btn.addEventListener("click", () => {
+      runTopicInsight(topic, articles, btn, insightBox);
+    });
+    const footer = el("div", { class: "topic-actions" }, btn);
+    card.appendChild(footer);
+    card.appendChild(insightBox);
+  }
+  return card;
+}
+
+// v1.7：调 /api/generate-tip 给 topic 写一段 300-500 字洞察
+// 复用工作台 endpoint + 同款 prompt + 文风注入
+async function runTopicInsight(topic, articles, btn, box) {
+  if (btn.disabled) return;
+  btn.disabled = true;
+  const startedAt = Date.now();
+
+  // 状态条
+  let timer = setInterval(() => {
+    const sec = Math.round((Date.now() - startedAt) / 1000);
+    btn.textContent = `⏳ 生成中 ${sec}s（约 8-15 秒）`;
+  }, 1000);
+
+  box.innerHTML = "";
+  box.appendChild(el("div", { class: "topic-insight-status muted" },
+    "✨ 正在调用 Tavily 补全 + DeepSeek 撰写……"));
+
+  try {
+    // 与工作台保持一致的 payload 结构
+    const payload = {
+      articles: articles.map(a => ({
+        id: a.id,
+        title: a.title,
+        title_cn: a.title_cn || "",
+        url: a.url,
+        summary: a.summary || "",
+        source_name: a.source_name,
+        source_tier: a.source_tier,
+        content_type: a.content_type,
+        published_at: a.published_at,
+        reason: a.reason || "",
+      })),
+      // 给 AI 一个隐性的"主题导览"（topic.name + blurb）作为补充判断
+      // 让它知道这一批素材在用户视角下是同一个主题
+      userNote: topic.name
+        ? `（这一批素材属于「${topic.name}${topic.blurb ? " — " + topic.blurb : ""}」主题，请围绕这条主线展开）`
+        : "",
+      model: "chat",  // 安全默认（reasoner 已 fallback 到 chat）
+      doSearch: true,
+    };
+
+    const res = await fetch("/api/generate-tip", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Tips-Secret": "zsGuJlOkyk_lFBF9WFRTOz2WslKF7RqG",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    clearInterval(timer);
+
+    if (!res.ok) {
+      const errText = await res.text().catch(() => res.statusText);
+      throw new Error(`HTTP ${res.status}: ${errText.slice(0, 200)}`);
+    }
+    const data = await res.json();
+    const tip = data.tip || "（生成结果为空）";
+    const cost = data.costEstimateCny != null ? `¥${data.costEstimateCny.toFixed(3)}` : "";
+    const elapsed = ((data.elapsedMs || (Date.now() - startedAt)) / 1000).toFixed(1);
+
+    // 渲染结果
+    box.innerHTML = "";
+    box.appendChild(el("div", { class: "topic-insight-meta muted" },
+      `生成完成 · ${data.model || "chat"} · ${elapsed}s · ${cost} · ${articles.length} 条素材 + ${data.searchLog?.length || 0} 次 Tavily 搜索`));
+    const tipEl = el("div", { class: "topic-insight-text" }, tip);
+    box.appendChild(tipEl);
+    const actions = el("div", { class: "topic-insight-actions" },
+      mkBtn("📋 复制", () => {
+        navigator.clipboard.writeText(tip).then(
+          () => flash(actions, "已复制"),
+          () => flash(actions, "复制失败"),
+        );
+      }),
+      mkBtn("💾 存到工作台历史", () => {
+        saveInsightToWorkbenchHistory(topic, articles, tip, data, payload);
+        flash(actions, "已存到工作台历史");
+      }),
+      mkBtn("🗑️ 弃用", () => {
+        box.innerHTML = "";
+        btn.disabled = false;
+        btn.textContent = "✨ 写成一段洞察";
+      }),
+    );
+    box.appendChild(actions);
+
+    btn.textContent = "✨ 重新生成";
+    btn.disabled = false;
+  } catch (e) {
+    clearInterval(timer);
+    box.innerHTML = "";
+    box.appendChild(el("div", { class: "topic-insight-error" },
+      "❌ 生成失败：", String(e.message || e)));
+    btn.textContent = "✨ 重试";
+    btn.disabled = false;
+  }
+}
+
+function mkBtn(text, onClick) {
+  const b = el("button", { class: "topic-insight-action-btn" }, text);
+  b.addEventListener("click", onClick);
+  return b;
+}
+
+function flash(host, text) {
+  const f = el("span", { class: "topic-insight-flash" }, " " + text);
+  host.appendChild(f);
+  setTimeout(() => f.remove(), 1600);
+}
+
+function saveInsightToWorkbenchHistory(topic, articles, tip, apiData, payload) {
+  // 与工作台 workbench.js 同样的 storage key & schema
+  const KEY = "briefing.tips.v1";
+  let arr = [];
+  try {
+    arr = JSON.parse(localStorage.getItem(KEY) || "[]");
+    if (!Array.isArray(arr)) arr = [];
+  } catch (_) { arr = []; }
+
+  arr.unshift({
+    id: "topic_" + Date.now(),
+    generatedAt: new Date().toISOString(),
+    model: apiData.model || "chat",
+    elapsedMs: apiData.elapsedMs || 0,
+    costEstimateCny: apiData.costEstimateCny || 0,
+    userNote: payload.userNote || "",
+    sources: articles.map(a => ({
+      id: a.id, title: a.title, url: a.url, source_name: a.source_name,
+    })),
+    tip,
+    triggeredFrom: "topic:" + (topic.name || "?"),
+  });
+  if (arr.length > 100) arr.length = 100;
+  localStorage.setItem(KEY, JSON.stringify(arr));
 }
 
 // v1.2：pool 长时间窗下会很长，默认只展 10 条，点按钮展开剩余
