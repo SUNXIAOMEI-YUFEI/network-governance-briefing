@@ -70,13 +70,38 @@ jobs:
             pip install -r requirements.txt || true
           fi
 
+      - name: Pre-flight · DeepSeek balance check
+        # 真数据流水线开跑前先查余额；< ¥5 直接 fail，避免静默烧到 402
+        # mock / push 触发不耗钱跳过这步
+        if: ${{ github.event.inputs.use_mock != 'true' && github.event_name != 'push' }}
+        env:
+          LLM_API_KEY:  ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL || 'https://api.deepseek.com/v1' }}
+        run: |
+          set -e
+          python -m app.check_balance --threshold 5
+
       - name: Run daily pipeline
         env:
           # 从 GitHub Secrets 注入（仓库 Settings → Secrets → Actions 里加）
           LLM_API_KEY:    ${{ secrets.LLM_API_KEY }}
           LLM_BASE_URL:   ${{ secrets.LLM_BASE_URL || 'https://api.deepseek.com/v1' }}
-          LLM_MODEL:      ${{ secrets.LLM_MODEL || 'deepseek-chat' }}
+          # 关键：硬写 deepseek-chat，故意忽略 secrets.LLM_MODEL
+          # 历史教训：5/22 secrets 里 LLM_MODEL 被改成 deepseek-v4-pro 后，
+          # 单周烧掉 ¥91；此后所有模型切换必须改这里（留 git 历史可追溯），
+          # 不再走 secret（secret 的值在 UI 上不可见，无法审计）
+          LLM_MODEL:      "deepseek-chat"
           LLM_CONCURRENCY: "4"
+          # 智能双评：第一次评分 ≥ 该阈值才二评取高，<阈值只评一次（省 ~35% 成本，top10 质量零损失）
+          # 改 0 = 全部双评（恢复旧行为）；改 11 = 全部单评（最省）
+          LLM_DOUBLE_PASS_THRESHOLD: "7"
+          # chat-vs-pro A/B 验证启用天数（首次跑流水线后开始计时；过了自动停）
+          # ⚠️ 2026-06-02 紧急关闭：deepseek-reasoner 推理模型单次输出 30k-60k tokens
+          # （含"思考链"），单次成本 ¥0.30-0.50，远超 quality_ab.py 注释里 ¥0.013 的预估。
+          # 6/1 单天 AB + 4 次流水线重跑 = 烧掉 ¥52.71（充值后立刻清零）。
+          # 修复方案：先关 A/B；如未来要重启，必须先在 quality_ab.py 给 reasoner 调用
+          # 加 max_tokens=2000 截断思考链，并实测验证成本预估准确。
+          AB_VALIDATION_DAYS: "0"
         run: |
           set -e
           # 定时触发 & 手动触发无 mock 时走真数据
@@ -84,12 +109,13 @@ jobs:
           RESCORE_FLAG=""
           if [ "${{ github.event.inputs.rescore_all }}" = "true" ]; then
             RESCORE_FLAG="--rescore-all"
+            echo "[ci] ⚠️⚠️⚠️ rescore_all 已开启，预计消耗 ¥10-20（按库内 1000 篇估算）"
           fi
           if [ "${{ github.event.inputs.use_mock }}" = "true" ] || [ "${{ github.event_name }}" = "push" ]; then
             echo "[ci] 运行 mock 流水线（冒烟测试）"
             python -m scripts.ci_run --use-mock $RESCORE_FLAG
           else
-            echo "[ci] 运行真数据流水线（hours=$HOURS, rescore=$RESCORE_FLAG）"
+            echo "[ci] 运行真数据流水线（hours=$HOURS, rescore=$RESCORE_FLAG, model=$LLM_MODEL）"
             python -m scripts.ci_run --hours "$HOURS" $RESCORE_FLAG
           fi
 
