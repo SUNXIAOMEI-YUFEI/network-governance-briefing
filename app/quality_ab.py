@@ -1,6 +1,22 @@
 """chat-vs-pro 质量 A/B 验证模块（v1.6，2026-05-31）。
 
-设计目的
+⚠️⚠️⚠️ 本模块已永久废弃，2026-06-02 ⚠️⚠️⚠️
+================================================
+本模块曾在 ci_run.py Step 7 自动调用，但因 reasoner 推理模型的"思考链"
+（reasoning_content 字段，单次输出 30k-60k tokens）让 6/1 单天烧 ¥52，
+而且产生的 jsonl 数据被 gitignore 没保留——**纯粹打水漂**。
+
+ci_run.py 已删除对本模块的调用。本文件保留只是为了：
+1. 让 git 历史可追溯（事故警示）
+2. 未来如果真要重启 chat-vs-pro 对照，**必须**先做下面三件事：
+   a. 在 chat_completion 调用 reasoner 时强制 max_tokens=2000 截断思考链
+   b. 把 sample_size 从 30 降到 10（reasoner 仍贵，省 2/3）
+   c. 把数据写到 git 不忽略的目录（不要再放 data/quality_ab/）
+   d. 实跑 1 天验证单次实际成本 < ¥0.05 后再扩窗口
+
+不要在没解决以上 4 点的情况下重新启用本模块，否则会再次烧钱。
+
+设计目的（旧）
 ========
 2026-05-22 GitHub Secrets 里的 LLM_MODEL 被偷偷设成 deepseek-v4-pro（推理模型，
 比 chat 贵 3 倍），10 天烧掉 ¥91。修复时把 LLM_MODEL 锁回 deepseek-chat，但用户

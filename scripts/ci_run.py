@@ -54,6 +54,19 @@ def main() -> int:
         print("❌ 未配置 LLM_API_KEY 环境变量（请检查 GitHub Secrets）")
         return 1
 
+    # ---- 0. 余额预检（真数据流水线开跑前）----
+    # 历史教训：2026-05-24 余额耗光后，所有 LLM 调用 402，try/except 静默吞了 20 天
+    # 现在：余额 < ¥5 直接 sys.exit(1)，让 workflow 红叉，避免静默
+    if not args.use_mock:
+        _step("Step 0 · DeepSeek 余额预检")
+        try:
+            from app import check_balance
+            check_balance.check_or_exit(threshold=5.0)
+        except SystemExit:
+            raise  # 余额不足时 check_or_exit 会 sys.exit(1)，让它继续退出
+        except Exception as e:
+            print(f"[ci] ⚠️ 余额预检失败（流水线继续，但要警惕）：{e}")
+
     # ---- 1. 初始化 DB（幂等）----
     _step("Step 1 · 初始化数据库")
     init_db.init()
@@ -113,15 +126,40 @@ def main() -> int:
     # ---- 3. 评分 ----
     _step("Step 3 · LLM 评分")
     from app.score import MockScorer, OpenAICompatScorer, run as score_run
-    scorer = MockScorer() if args.use_mock else OpenAICompatScorer()
-    concurrency = getattr(scorer, "cfg", None)
+    if args.use_mock:
+        scorer = MockScorer()
+    else:
+        # 智能双评（v1.6）：通过 LLM_DOUBLE_PASS_THRESHOLD env 调，默认 7
+        # 旧 LLM_DOUBLE_PASS=0/1 也兼容
+        thr_env = os.environ.get("LLM_DOUBLE_PASS_THRESHOLD")
+        if thr_env is not None:
+            try:
+                threshold = int(thr_env)
+            except ValueError:
+                threshold = 7
+        else:
+            old_dp = os.environ.get("LLM_DOUBLE_PASS")
+            if old_dp == "0":
+                threshold = 11
+            elif old_dp == "1":
+                threshold = 0
+            else:
+                threshold = 7
+        scorer = OpenAICompatScorer(double_pass_threshold=threshold)
+        if threshold >= 11:
+            dp_flag = "全部单评"
+        elif threshold <= 0:
+            dp_flag = "全部双评"
+        else:
+            dp_flag = f"智能双评（≥{threshold} 分二评）"
+        print(f"[ci] scorer 模式：{dp_flag} · model={scorer.cfg.model}")
+
     concurrency_n = int(os.environ.get("LLM_CONCURRENCY", "4")) if not args.use_mock else 1
 
-    try:
-        score_run(scorer, rescore_all=args.rescore_all, concurrency=concurrency_n)
-    except Exception:
-        print("[ci] ⚠️ 评分遇到异常，但流水线继续")
-        traceback.print_exc()
+    # 注意：这里不再 try/except 静默吞异常（历史教训）
+    # score_run 内部如果失败率 ≥50% 会主动 raise，让 workflow 红叉
+    # 单条文章失败仍由 score_run 内部记录到 errors 计数，不会拖垮整批
+    score_run(scorer, rescore_all=args.rescore_all, concurrency=concurrency_n)
 
     # ---- 4. 聚类 ----
     _step("Step 4 · 议题聚类 + D 维度回填")
@@ -144,11 +182,21 @@ def main() -> int:
         last_run_path = PROJECT_ROOT / "data" / "last_run.json"
         # 顺手统计本次跑的产物，便于前端展示 / 排障
         articles_24h = 0
+        latest_pub = None  # v1.6: 库里最新文章的 published_at（前端真实新鲜度判断用）
+        latest_scored_pub = None
         try:
             with sqlite3.connect(DB_PATH) as conn:
                 articles_24h = conn.execute(
                     "SELECT COUNT(*) FROM articles "
                     "WHERE fetched_at >= datetime('now', '-24 hours')"
+                ).fetchone()[0]
+                latest_pub = conn.execute(
+                    "SELECT MAX(published_at) FROM articles"
+                ).fetchone()[0]
+                # 进一步：库里最新「已评分」文章 → 这才是前端真正能看到的最新数据
+                latest_scored_pub = conn.execute(
+                    "SELECT MAX(published_at) FROM articles "
+                    "WHERE total_score IS NOT NULL"
                 ).fetchone()[0]
         except Exception:
             pass
@@ -157,12 +205,30 @@ def main() -> int:
             "hours_window": args.hours,
             "articles_fetched_24h": articles_24h,
             "rescored_all": bool(args.rescore_all),
+            # v1.6: 前端用 latest_article_published_at 判断「数据陈旧」而非 last_run_at
+            # 历史教训：last_run_at 只反映"流水线跑过"，但 LLM 没钱时也会更新这个时间，
+            # 让"18h 红条告警"永远不弹。改用 latest_article_published_at（已评分）就准了
+            "latest_article_published_at": latest_scored_pub or latest_pub,
         }
         last_run_path.write_text(
             json.dumps(last_run_data, ensure_ascii=False, indent=2),
             encoding="utf-8",
         )
         print(f"[ci] last_run.json 已更新: {last_run_data['last_run_at']}")
+        print(f"[ci]   latest_article_published_at: {last_run_data['latest_article_published_at']}")
+
+    # ---- 7. 成本汇总（每次跑都打印，无论 mock 还是真数据）----
+    # 注：旧版 v1.6 这里曾有"质量 A/B 验证"步骤——
+    # 6/1 单天烧 ¥52（reasoner 推理模型思考链超长，单次成本被低估 100 倍），
+    # 已彻底移除该步骤。如未来想重启 chat-vs-pro 对照，必须先解决 reasoner 输出截断问题。
+    _step("Step 7 · 成本汇总")
+    try:
+        from app.cost_meter import meter
+        meter.print_summary()
+        if not args.use_mock:
+            meter.write_jsonl(PROJECT_ROOT / "data" / "cost_log.jsonl")
+    except Exception as e:  # noqa
+        print(f"[ci] ⚠️ 成本汇总失败（不影响主流程）：{e}")
 
     print("\n" + "=" * 72)
     print("  ✅ 流水线完成")

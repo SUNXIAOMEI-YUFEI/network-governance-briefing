@@ -92,16 +92,11 @@ jobs:
           # 不再走 secret（secret 的值在 UI 上不可见，无法审计）
           LLM_MODEL:      "deepseek-chat"
           LLM_CONCURRENCY: "4"
-          # 智能双评：第一次评分 ≥ 该阈值才二评取高，<阈值只评一次（省 ~35% 成本，top10 质量零损失）
-          # 改 0 = 全部双评（恢复旧行为）；改 11 = 全部单评（最省）
-          LLM_DOUBLE_PASS_THRESHOLD: "7"
-          # chat-vs-pro A/B 验证启用天数（首次跑流水线后开始计时；过了自动停）
-          # ⚠️ 2026-06-02 紧急关闭：deepseek-reasoner 推理模型单次输出 30k-60k tokens
-          # （含"思考链"），单次成本 ¥0.30-0.50，远超 quality_ab.py 注释里 ¥0.013 的预估。
-          # 6/1 单天 AB + 4 次流水线重跑 = 烧掉 ¥52.71（充值后立刻清零）。
-          # 修复方案：先关 A/B；如未来要重启，必须先在 quality_ab.py 给 reasoner 调用
-          # 加 max_tokens=2000 截断思考链，并实测验证成本预估准确。
-          AB_VALIDATION_DAYS: "0"
+          # 评分模式：恢复 5/8 评分定稿状态——全部双评（threshold=0）。
+          # 用户已在 5/8 实测验证：双评模式下评分质量 OK，周烧 ¥1（事故前的稳定状态）。
+          # 5/31 v1.6 引入的"智能双评 threshold=7"是我画蛇添足，已废弃；
+          # 5/31 v1.6 引入的"AB 验证"是我画蛇添足且踩 reasoner 思考链坑，已删除。
+          LLM_DOUBLE_PASS_THRESHOLD: "0"
         run: |
           set -e
           # 定时触发 & 手动触发无 mock 时走真数据
