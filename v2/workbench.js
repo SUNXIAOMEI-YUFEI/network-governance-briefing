@@ -427,6 +427,39 @@ async function doGenerate() {
 // 当前结果
 // ============================================================
 
+// v1.8：跟 v2/app.js 的主题洞察渲染保持完全一致
+//   - 安全解析 **xxx** 为 <strong class="topic-insight-bold">
+//   - 段落分隔（\n\n）→ <p class="topic-insight-paragraph">
+//   - 段内换行（\n）→ <br>
+//   - 全程走 textNode + DOM API，无 innerHTML，无 XSS
+function renderTipWithBold(host, raw) {
+  if (!raw) return;
+  const text = String(raw).replace(/\r\n/g, "\n").trim();
+  const paragraphs = text.split(/\n{2,}/);
+  paragraphs.forEach(para => {
+    const p = el("p", { class: "topic-insight-paragraph" });
+    const regex = /\*\*([^*\n]+?)\*\*/g;
+    let lastIndex = 0;
+    let m;
+    while ((m = regex.exec(para)) !== null) {
+      appendTextWithBr(p, para.slice(lastIndex, m.index));
+      p.appendChild(el("strong", { class: "topic-insight-bold" }, m[1]));
+      lastIndex = m.index + m[0].length;
+    }
+    appendTextWithBr(p, para.slice(lastIndex));
+    host.appendChild(p);
+  });
+}
+
+function appendTextWithBr(host, str) {
+  if (!str) return;
+  const lines = str.split("\n");
+  lines.forEach((line, i) => {
+    if (i > 0) host.appendChild(el("br"));
+    if (line) host.appendChild(document.createTextNode(line));
+  });
+}
+
 function renderCurrentResult() {
   const r = state.currentResult;
   if (!r) {
@@ -438,7 +471,11 @@ function renderCurrentResult() {
     `模型：<b>${r.model}</b> · 耗时 ${(r.elapsedMs/1000).toFixed(1)}s · ` +
     `搜索 ${r.nSearches}/${r.nArticles} · ${r.outputChars} 字 · ` +
     `估算 ¥${(r.costEstimateCny || 0).toFixed(4)}`;
-  $("#result-body").textContent = r.tip;
+
+  // 用加粗渲染替代 textContent，保持与主题洞察一致的视觉
+  const body = $("#result-body");
+  body.innerHTML = "";  // 清空但不留 HTML 注入隐患（后面用 textNode）
+  renderTipWithBold(body, r.tip);
 
   // 滚到结果
   $("#result-section").scrollIntoView({ behavior: "smooth", block: "start" });
@@ -508,9 +545,12 @@ function renderHistory() {
           el("a", { href: a.url, target: "_blank", rel: "noopener noreferrer" },
             normalizeTitleCn(a)))));
 
+    // 历史正文也用加粗渲染保持一致
+    const histBody = el("div", { class: "wb-history-text" });
+    renderTipWithBold(histBody, entry.tip);
     const bodyToggle = el("details", { class: "wb-history-body" },
       el("summary", {}, "查看正文"),
-      el("div", { class: "wb-history-text" }, entry.tip));
+      histBody);
 
     const noteBlock = entry.userNote ? el("details", { class: "wb-history-note" },
       el("summary", { class: "muted" }, "💭 当时的补充"),

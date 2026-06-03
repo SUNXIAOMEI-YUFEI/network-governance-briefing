@@ -940,9 +940,15 @@
   font-size: 16px;
   line-height: 1.95;
   color: var(--c-ink);
-  white-space: pre-wrap;
   word-break: break-word;
   letter-spacing: 0.2px;
+}
+/* v1.8：让加粗渲染在工作台同样生效 */
+.wb-result-body .topic-insight-paragraph {
+  margin: 0 0 1em 0;
+}
+.wb-result-body .topic-insight-paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .wb-result-actions {
@@ -1031,11 +1037,22 @@
   border: 0;
   border-left: 2px solid var(--c-rule);
   border-radius: 0;
-  white-space: pre-wrap;
   font-family: var(--font-serif-cn);
   font-size: 14px;
   line-height: 1.85;
   color: var(--c-ink);
+  word-break: break-word;
+}
+/* v1.8：历史 tips 段落 + 加粗渲染 */
+.wb-history-text .topic-insight-paragraph {
+  margin: 0 0 0.8em 0;
+}
+.wb-history-text .topic-insight-paragraph:last-child {
+  margin-bottom: 0;
+}
+/* 注：纯文本 userNote 仍然用 white-space:pre-wrap 保留换行 */
+.wb-history-text.muted {
+  white-space: pre-wrap;
 }
 
 .wb-history-actions {
@@ -1129,8 +1146,9 @@
   margin-bottom: 0;
 }
 /* 加粗——支持词级和整句加粗。朱红墨色 + 极淡朱红底色高亮，
-   让读者扫一眼就能定位主论点。整句加粗换行时底色不断 */
-.topic-insight-text .topic-insight-bold {
+   让读者扫一眼就能定位主论点。整句加粗换行时底色不断。
+   v1.8：定义在全局类上，让主题洞察 + 写作工作台 + 工作台历史 三处复用 */
+.topic-insight-bold {
   font-weight: 650;
   color: var(--c-vermillion-deep, var(--c-vermillion));
   /* 日式荧光打底——半行高的底色，比纯粗体更扎眼但不刺 */
