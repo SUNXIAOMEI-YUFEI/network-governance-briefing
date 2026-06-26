@@ -1,5 +1,5 @@
 {
-  "snapshot_at": "2026-06-26T09:52:38.723303+00:00",
+  "snapshot_at": "2026-06-26T10:30:32.851553+00:00",
   "schema_version": "v1.4",
   "tabs": {
     "24h": {
@@ -30,28 +30,28 @@
             "reason": "文章报道白宫要求OpenAI推迟发布GPT 5.6，主题深度对齐AI治理（T1），涉及AI Agent新形态风险，属于风险冒头期。A1=23（核心议题），A2=5（Agent新形态），A=28；B=20（风险冒头期）；E=8（值得借鉴）；F=9（中文无报道）。"
           },
           {
-            "id": 1500,
-            "url": "https://www.politico.eu/article/eu-says-amazon-microsoft-cloud-services-should-fall-under-digital-dominance-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "EU says Amazon, Microsoft cloud services should fall under digital dominance rules",
-            "title_cn": "欧盟拟将亚马逊微软云服务纳入数字市场法管辖",
-            "summary": "The decision marks an expansion of the Digital Markets Act beyond consumer tech into the €220 billion European market for cloud services.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-06-25T09:55:40+00:00",
+            "id": 1507,
+            "url": "https://www.theregister.com/legal/2026/06/25/european-commission-lines-up-amazon-and-microsoft-for-cloud-gatekeeper-status/5262127",
+            "title": "European Commission lines up Amazon and Microsoft for cloud gatekeeper status",
+            "title_cn": "欧委会拟将亚马逊和微软云服务指定为DMA守门人",
+            "summary": "Preliminary position calls for designation under the Digital Markets Act",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-06-25T12:25:00+00:00",
             "score_a": 25,
             "score_b": 15,
-            "score_c": 8,
-            "score_d": 3,
+            "score_c": 5,
+            "score_d": 6,
             "score_e": 8,
             "score_f": 7,
             "total_score": 66,
-            "fingerprint": "EU-DMA-cloud-Amazon-Microsoft-2026-06",
+            "fingerprint": "EU-DMA-cloud-gatekeeper-Amazon-Microsoft-2026-06",
             "anxiety_hits": [
               "平台垄断"
             ],
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
-            "reason": "文章报道欧盟拟将云服务纳入DMA管辖，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+            "reason": "文章报道欧委会拟将亚马逊和微软云服务指定为DMA守门人，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
           },
           {
             "id": 1501,
@@ -186,6 +186,30 @@
             "reason": "主议题为德国BSI发布AI驱动网络风险安全提示，属于AI治理（T1）范围，主题对齐度较高（A1=20），无额外关切议题（A2=0），但议题处于讨论立法期（B=15），产业可借鉴性高（E=8），中文世界无报道（F=9）。"
           },
           {
+            "id": 1500,
+            "url": "https://www.politico.eu/article/eu-says-amazon-microsoft-cloud-services-should-fall-under-digital-dominance-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "EU says Amazon, Microsoft cloud services should fall under digital dominance rules",
+            "title_cn": "欧盟拟将亚马逊微软云服务纳入数字市场法管辖",
+            "summary": "The decision marks an expansion of the Digital Markets Act beyond consumer tech into the €220 billion European market for cloud services.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-06-25T09:55:40+00:00",
+            "score_a": 25,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 6,
+            "score_e": 8,
+            "score_f": 7,
+            "total_score": 69,
+            "fingerprint": "EU-DMA-cloud-gatekeeper-Amazon-Microsoft-2026-06",
+            "anxiety_hits": [
+              "平台垄断"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "文章报道欧盟拟将云服务纳入DMA管辖，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
             "id": 1479,
             "url": "https://www.insideprivacy.com/cybersecurity-2/five-eyes-cybersecurity-agencies-issue-statement-regarding-ai-related-shifts-in-cybersecurity-risks-urging-organizational-leaders-to-act-now/",
             "title": "Five Eyes Cybersecurity Agencies Issue Statement Regarding AI-Related Shifts in Cybersecurity Risks, Urging Organizational Leaders to “Act Now”",
@@ -208,28 +232,28 @@
             "reason": "文章报道五眼网络安全机构联合声明，聚焦AI对网络安全风险的影响，属于AI治理（T1）范畴，但主题偏向网络安全而非监管法规，A1=18；无明确关切议题命中，A2=0；A=18+2=20。声明为讨论立法期（呼吁行动），B=15；产业可借鉴性高（E=8）；中文世界无报道（F=9）。"
           },
           {
-            "id": 1500,
-            "url": "https://www.politico.eu/article/eu-says-amazon-microsoft-cloud-services-should-fall-under-digital-dominance-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "EU says Amazon, Microsoft cloud services should fall under digital dominance rules",
-            "title_cn": "欧盟拟将亚马逊微软云服务纳入数字市场法管辖",
-            "summary": "The decision marks an expansion of the Digital Markets Act beyond consumer tech into the €220 billion European market for cloud services.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-06-25T09:55:40+00:00",
+            "id": 1507,
+            "url": "https://www.theregister.com/legal/2026/06/25/european-commission-lines-up-amazon-and-microsoft-for-cloud-gatekeeper-status/5262127",
+            "title": "European Commission lines up Amazon and Microsoft for cloud gatekeeper status",
+            "title_cn": "欧委会拟将亚马逊和微软云服务指定为DMA守门人",
+            "summary": "Preliminary position calls for designation under the Digital Markets Act",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-06-25T12:25:00+00:00",
             "score_a": 25,
             "score_b": 15,
-            "score_c": 8,
-            "score_d": 3,
+            "score_c": 5,
+            "score_d": 6,
             "score_e": 8,
             "score_f": 7,
             "total_score": 66,
-            "fingerprint": "EU-DMA-cloud-Amazon-Microsoft-2026-06",
+            "fingerprint": "EU-DMA-cloud-gatekeeper-Amazon-Microsoft-2026-06",
             "anxiety_hits": [
               "平台垄断"
             ],
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
-            "reason": "文章报道欧盟拟将云服务纳入DMA管辖，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+            "reason": "文章报道欧委会拟将亚马逊和微软云服务指定为DMA守门人，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
           },
           {
             "id": 1477,
@@ -480,6 +504,30 @@
             "reason": "主议题为德国BSI发布AI驱动网络风险安全提示，属于AI治理（T1）范围，主题对齐度较高（A1=20），无额外关切议题（A2=0），但议题处于讨论立法期（B=15），产业可借鉴性高（E=8），中文世界无报道（F=9）。"
           },
           {
+            "id": 1500,
+            "url": "https://www.politico.eu/article/eu-says-amazon-microsoft-cloud-services-should-fall-under-digital-dominance-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "EU says Amazon, Microsoft cloud services should fall under digital dominance rules",
+            "title_cn": "欧盟拟将亚马逊微软云服务纳入数字市场法管辖",
+            "summary": "The decision marks an expansion of the Digital Markets Act beyond consumer tech into the €220 billion European market for cloud services.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-06-25T09:55:40+00:00",
+            "score_a": 25,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 6,
+            "score_e": 8,
+            "score_f": 7,
+            "total_score": 69,
+            "fingerprint": "EU-DMA-cloud-gatekeeper-Amazon-Microsoft-2026-06",
+            "anxiety_hits": [
+              "平台垄断"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "文章报道欧盟拟将云服务纳入DMA管辖，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
             "id": 1479,
             "url": "https://www.insideprivacy.com/cybersecurity-2/five-eyes-cybersecurity-agencies-issue-statement-regarding-ai-related-shifts-in-cybersecurity-risks-urging-organizational-leaders-to-act-now/",
             "title": "Five Eyes Cybersecurity Agencies Issue Statement Regarding AI-Related Shifts in Cybersecurity Risks, Urging Organizational Leaders to “Act Now”",
@@ -502,28 +550,28 @@
             "reason": "文章报道五眼网络安全机构联合声明，聚焦AI对网络安全风险的影响，属于AI治理（T1）范畴，但主题偏向网络安全而非监管法规，A1=18；无明确关切议题命中，A2=0；A=18+2=20。声明为讨论立法期（呼吁行动），B=15；产业可借鉴性高（E=8）；中文世界无报道（F=9）。"
           },
           {
-            "id": 1500,
-            "url": "https://www.politico.eu/article/eu-says-amazon-microsoft-cloud-services-should-fall-under-digital-dominance-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "EU says Amazon, Microsoft cloud services should fall under digital dominance rules",
-            "title_cn": "欧盟拟将亚马逊微软云服务纳入数字市场法管辖",
-            "summary": "The decision marks an expansion of the Digital Markets Act beyond consumer tech into the €220 billion European market for cloud services.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-06-25T09:55:40+00:00",
+            "id": 1507,
+            "url": "https://www.theregister.com/legal/2026/06/25/european-commission-lines-up-amazon-and-microsoft-for-cloud-gatekeeper-status/5262127",
+            "title": "European Commission lines up Amazon and Microsoft for cloud gatekeeper status",
+            "title_cn": "欧委会拟将亚马逊和微软云服务指定为DMA守门人",
+            "summary": "Preliminary position calls for designation under the Digital Markets Act",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-06-25T12:25:00+00:00",
             "score_a": 25,
             "score_b": 15,
-            "score_c": 8,
-            "score_d": 3,
+            "score_c": 5,
+            "score_d": 6,
             "score_e": 8,
             "score_f": 7,
             "total_score": 66,
-            "fingerprint": "EU-DMA-cloud-Amazon-Microsoft-2026-06",
+            "fingerprint": "EU-DMA-cloud-gatekeeper-Amazon-Microsoft-2026-06",
             "anxiety_hits": [
               "平台垄断"
             ],
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
-            "reason": "文章报道欧盟拟将云服务纳入DMA管辖，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+            "reason": "文章报道欧委会拟将亚马逊和微软云服务指定为DMA守门人，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
           },
           {
             "id": 1477,
@@ -1146,6 +1194,30 @@
             "reason": "文章报道欧盟议会批准AI法案简化措施，主题深度对齐AI治理（T1），属于立法动态。A1=25，A2=0（未命中关切议题），A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
           },
           {
+            "id": 1500,
+            "url": "https://www.politico.eu/article/eu-says-amazon-microsoft-cloud-services-should-fall-under-digital-dominance-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "EU says Amazon, Microsoft cloud services should fall under digital dominance rules",
+            "title_cn": "欧盟拟将亚马逊微软云服务纳入数字市场法管辖",
+            "summary": "The decision marks an expansion of the Digital Markets Act beyond consumer tech into the €220 billion European market for cloud services.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-06-25T09:55:40+00:00",
+            "score_a": 25,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 6,
+            "score_e": 8,
+            "score_f": 7,
+            "total_score": 69,
+            "fingerprint": "EU-DMA-cloud-gatekeeper-Amazon-Microsoft-2026-06",
+            "anxiety_hits": [
+              "平台垄断"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "文章报道欧盟拟将云服务纳入DMA管辖，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
             "id": 1479,
             "url": "https://www.insideprivacy.com/cybersecurity-2/five-eyes-cybersecurity-agencies-issue-statement-regarding-ai-related-shifts-in-cybersecurity-risks-urging-organizational-leaders-to-act-now/",
             "title": "Five Eyes Cybersecurity Agencies Issue Statement Regarding AI-Related Shifts in Cybersecurity Risks, Urging Organizational Leaders to “Act Now”",
@@ -1216,28 +1288,28 @@
             "reason": "巴西总统令建立针对女性网络暴力的监管框架，涉及内容治理（T4）和平台责任（T2），属于五大主题。A1=18（部分对齐，因主题聚焦性别暴力而非通用内容治理），A2=2（政治内容失控，但非选举干预，故给2分），A=20；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=9。"
           },
           {
-            "id": 1500,
-            "url": "https://www.politico.eu/article/eu-says-amazon-microsoft-cloud-services-should-fall-under-digital-dominance-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "EU says Amazon, Microsoft cloud services should fall under digital dominance rules",
-            "title_cn": "欧盟拟将亚马逊微软云服务纳入数字市场法管辖",
-            "summary": "The decision marks an expansion of the Digital Markets Act beyond consumer tech into the €220 billion European market for cloud services.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-06-25T09:55:40+00:00",
+            "id": 1507,
+            "url": "https://www.theregister.com/legal/2026/06/25/european-commission-lines-up-amazon-and-microsoft-for-cloud-gatekeeper-status/5262127",
+            "title": "European Commission lines up Amazon and Microsoft for cloud gatekeeper status",
+            "title_cn": "欧委会拟将亚马逊和微软云服务指定为DMA守门人",
+            "summary": "Preliminary position calls for designation under the Digital Markets Act",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-06-25T12:25:00+00:00",
             "score_a": 25,
             "score_b": 15,
-            "score_c": 8,
-            "score_d": 3,
+            "score_c": 5,
+            "score_d": 6,
             "score_e": 8,
             "score_f": 7,
             "total_score": 66,
-            "fingerprint": "EU-DMA-cloud-Amazon-Microsoft-2026-06",
+            "fingerprint": "EU-DMA-cloud-gatekeeper-Amazon-Microsoft-2026-06",
             "anxiety_hits": [
               "平台垄断"
             ],
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
-            "reason": "文章报道欧盟拟将云服务纳入DMA管辖，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+            "reason": "文章报道欧委会拟将亚马逊和微软云服务指定为DMA守门人，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
           },
           {
             "id": 1477,
@@ -2819,30 +2891,66 @@
         }
       ],
       "related_opinions": []
+    },
+    {
+      "fingerprint": "EU-DMA-cloud-gatekeeper-Amazon-Microsoft-2026-06",
+      "article_count": 2,
+      "main_is_fact": true,
+      "main": {
+        "id": 1500,
+        "url": "https://www.politico.eu/article/eu-says-amazon-microsoft-cloud-services-should-fall-under-digital-dominance-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+        "title": "EU says Amazon, Microsoft cloud services should fall under digital dominance rules",
+        "title_cn": "欧盟拟将亚马逊微软云服务纳入数字市场法管辖",
+        "summary": "The decision marks an expansion of the Digital Markets Act beyond consumer tech into the €220 billion European market for cloud services.",
+        "source_name": "Politico EU Tech",
+        "source_tier": "B",
+        "published_at": "2026-06-25T09:55:40+00:00",
+        "total_score": 69,
+        "anxiety_hits": [
+          "平台垄断"
+        ],
+        "maturity_stage": "讨论立法期",
+        "content_type": "fact_legislative",
+        "reason": "文章报道欧盟拟将云服务纳入DMA管辖，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+      },
+      "related_facts": [
+        {
+          "id": 1507,
+          "url": "https://www.theregister.com/legal/2026/06/25/european-commission-lines-up-amazon-and-microsoft-for-cloud-gatekeeper-status/5262127",
+          "title": "European Commission lines up Amazon and Microsoft for cloud gatekeeper status",
+          "title_cn": "欧委会拟将亚马逊和微软云服务指定为DMA守门人",
+          "source_name": "The Register",
+          "source_tier": "C",
+          "published_at": "2026-06-25T12:25:00+00:00",
+          "total_score": 66,
+          "content_type": "fact_legislative"
+        }
+      ],
+      "related_opinions": []
     }
   ],
   "stats": {
-    "total": 1428,
+    "total": 1432,
     "by_type": {
       "fact_enforcement": 77,
-      "fact_legislative": 80,
+      "fact_legislative": 81,
       "fact_official_doc": 41,
       "opinion_analysis": 67
     },
-    "veto": 1163
+    "veto": 1166
   },
   "feed_health": [
     {
       "source_name": "OII",
       "feed_url": "https://www.oii.ox.ac.uk/news-events/news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
       "last_success_at": "2026-06-04T10:13:12.070378+00:00",
       "last_error": "XML parse error: not well-formed (invalid token): line 5, column 175",
       "last_article_count": 10,
-      "consecutive_fails": 44,
+      "consecutive_fails": 45,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-08T15:38:51+00:00",
       "stale_days": 48,
       "status": "dead"
@@ -2986,13 +3094,13 @@
       "source_name": "Platformer",
       "feed_url": "https://www.platformer.news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 3,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T14:00:47+00:00",
       "stale_days": 28,
       "status": "stale"
@@ -3001,13 +3109,13 @@
       "source_name": "IAPP Daily Dashboard (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/9v0c5wjcqvoklno87tca.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 6,
       "consecutive_fails": 0,
-      "recent_7d_success": 12,
-      "recent_7d_total": 15,
+      "recent_7d_success": 13,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-06T13:18:40.669000+00:00",
       "stale_days": 50,
       "status": "stale"
@@ -3016,13 +3124,13 @@
       "source_name": "HAI Stanford (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
       "last_success_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_error": null,
+      "last_error": "TimeoutError: The read operation timed out",
       "last_article_count": 8,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 7,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-07T17:04:45.635000+00:00",
       "stale_days": 18,
       "status": "stale"
@@ -3031,13 +3139,13 @@
       "source_name": "OAIC (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
       "last_success_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_error": null,
+      "last_error": "HTTP 502",
       "last_article_count": 1,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 11,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T02:29:23.683000+00:00",
       "stale_days": 29,
       "status": "stale"
@@ -3046,13 +3154,13 @@
       "source_name": "CNIL (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 2,
       "consecutive_fails": 0,
-      "recent_7d_success": 14,
-      "recent_7d_total": 15,
+      "recent_7d_success": 15,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T22:42:06.057000+00:00",
       "stale_days": 28,
       "status": "stale"
@@ -3061,43 +3169,28 @@
       "source_name": "AI Now",
       "feed_url": "https://ainowinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-16T16:17:09+00:00",
       "stale_days": 9,
-      "status": "warn"
-    },
-    {
-      "source_name": "The Register",
-      "feed_url": "https://www.theregister.com/headlines.atom",
-      "source_tier": "C",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-25T10:21:53.112850+00:00",
-      "last_error": "XML parse error: not well-formed (invalid token): line 7, column 22",
-      "last_article_count": 5,
-      "consecutive_fails": 1,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-06-25T08:00:00+00:00",
-      "stale_days": 1,
       "status": "warn"
     },
     {
       "source_name": "EPIC",
       "feed_url": "https://epic.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-18T16:39:21+00:00",
       "stale_days": 7,
       "status": "warn"
@@ -3106,28 +3199,58 @@
       "source_name": "DLA Piper",
       "feed_url": "https://privacymatters.dlapiper.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-18T08:00:00+00:00",
       "stale_days": 8,
+      "status": "warn"
+    },
+    {
+      "source_name": "DataGuidance (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
+      "source_tier": "A",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_error": "TimeoutError: The read operation timed out",
+      "last_article_count": 11,
+      "consecutive_fails": 1,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
+      "latest_article_at": "2026-06-26T00:30:21.507000+00:00",
+      "stale_days": 0,
+      "status": "warn"
+    },
+    {
+      "source_name": "WilmerHale Privacy (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/muwfbzqx60g7b14mspkf.xml",
+      "source_tier": "A",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_error": "TimeoutError: The read operation timed out",
+      "last_article_count": 0,
+      "consecutive_fails": 1,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
+      "latest_article_at": null,
+      "stale_days": null,
       "status": "warn"
     },
     {
       "source_name": "Lawfare (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eqkwbtfnwj1lqbi08d5p.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
       "last_success_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_error": null,
+      "last_error": "TimeoutError: The read operation timed out",
       "last_article_count": 0,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 10,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "warn"
@@ -3136,13 +3259,13 @@
       "source_name": "MLex AI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
       "last_success_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_error": null,
+      "last_error": "TimeoutError: The read operation timed out",
       "last_article_count": 0,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 10,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "warn"
@@ -3151,28 +3274,43 @@
       "source_name": "NIST AISI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 9,
-      "recent_7d_total": 15,
+      "recent_7d_success": 10,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
+      "status": "warn"
+    },
+    {
+      "source_name": "Brookings TechTank (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/btrel8v1yu4h5i4xcsze.xml",
+      "source_tier": "B",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_error": "TimeoutError: The read operation timed out",
+      "last_article_count": 12,
+      "consecutive_fails": 1,
+      "recent_7d_success": 13,
+      "recent_7d_total": 16,
+      "latest_article_at": "2026-06-25T11:08:01.742000+00:00",
+      "stale_days": 0,
       "status": "warn"
     },
     {
       "source_name": "Import AI (Substack)",
       "feed_url": "https://jack-clark.net/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-22T12:31:45+00:00",
       "stale_days": 3,
       "status": "ok"
@@ -3181,28 +3319,43 @@
       "source_name": "Tech Policy Press",
       "feed_url": "https://www.techpolicy.press/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
+      "status": "ok"
+    },
+    {
+      "source_name": "The Register",
+      "feed_url": "https://www.theregister.com/headlines.atom",
+      "source_tier": "C",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_error": null,
+      "last_article_count": 4,
+      "consecutive_fails": 0,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
+      "latest_article_at": "2026-06-25T12:25:00+00:00",
+      "stale_days": 0,
       "status": "ok"
     },
     {
       "source_name": "Future of Privacy Forum",
       "feed_url": "https://fpf.org/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-24T16:31:03+00:00",
       "stale_days": 1,
       "status": "ok"
@@ -3211,13 +3364,13 @@
       "source_name": "NIST",
       "feed_url": "https://www.nist.gov/news-events/news/rss.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 40,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-22T12:00:00+00:00",
       "stale_days": 3,
       "status": "ok"
@@ -3226,13 +3379,13 @@
       "source_name": "FTC",
       "feed_url": "https://www.ftc.gov/feeds/press-release.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-23T12:00:00+00:00",
       "stale_days": 2,
       "status": "ok"
@@ -3241,13 +3394,13 @@
       "source_name": "Inside Privacy (Covington)",
       "feed_url": "https://www.insideprivacy.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-25T22:58:06+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3256,13 +3409,13 @@
       "source_name": "TechCrunch",
       "feed_url": "https://techcrunch.com/feed/",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 5,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-25T23:34:39+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3271,13 +3424,13 @@
       "source_name": "Politico EU Tech",
       "feed_url": "https://www.politico.eu/section/technology/feed",
       "source_tier": "B",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 31,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-26T04:00:00+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3286,14 +3439,14 @@
       "source_name": "CMA UK",
       "feed_url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 20,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-06-26T09:33:19+00:00",
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
+      "latest_article_at": "2026-06-26T10:00:20+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -3301,43 +3454,13 @@
       "source_name": "Ada Lovelace",
       "feed_url": "https://www.adalovelaceinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": null,
-      "stale_days": null,
-      "status": "ok"
-    },
-    {
-      "source_name": "DataGuidance (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
-      "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_error": null,
-      "last_article_count": 11,
-      "consecutive_fails": 0,
-      "recent_7d_success": 12,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-06-26T00:30:21.507000+00:00",
-      "stale_days": 0,
-      "status": "ok"
-    },
-    {
-      "source_name": "WilmerHale Privacy (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/muwfbzqx60g7b14mspkf.xml",
-      "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_error": null,
-      "last_article_count": 0,
-      "consecutive_fails": 0,
-      "recent_7d_success": 12,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3346,13 +3469,13 @@
       "source_name": "Inside Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3361,13 +3484,13 @@
       "source_name": "EDPS (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 12,
-      "recent_7d_total": 15,
+      "recent_7d_success": 13,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3376,30 +3499,15 @@
       "source_name": "TechPolicy Press (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
+      "last_attempt_at": "2026-06-26T10:30:26.539536+00:00",
+      "last_success_at": "2026-06-26T10:30:26.539536+00:00",
       "last_error": null,
       "last_article_count": 8,
       "consecutive_fails": 0,
-      "recent_7d_success": 12,
-      "recent_7d_total": 15,
+      "recent_7d_success": 13,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-21T15:44:15.564000+00:00",
       "stale_days": 4,
-      "status": "ok"
-    },
-    {
-      "source_name": "Brookings TechTank (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/btrel8v1yu4h5i4xcsze.xml",
-      "source_tier": "B",
-      "last_attempt_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_success_at": "2026-06-26T09:52:16.816802+00:00",
-      "last_error": null,
-      "last_article_count": 12,
-      "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-06-25T11:08:01.742000+00:00",
-      "stale_days": 0,
       "status": "ok"
     }
   ],
@@ -3411,7 +3519,7 @@
         "blurb": "候选文章较少，未做主题归纳",
         "article_ids": [
           1493,
-          1500,
+          1507,
           1501
         ]
       }
@@ -3419,8 +3527,8 @@
     "72h": [
       {
         "emoji": "🤖",
-        "name": "AI安全与治理",
-        "blurb": "AI模型安全审查与风险提示",
+        "name": "AI 安全与治理",
+        "blurb": "AI 模型安全审查与风险提示",
         "article_ids": [
           1493,
           1484,
@@ -3430,7 +3538,7 @@
       {
         "emoji": "👶",
         "name": "未成年人网络保护",
-        "blurb": "未成年人保护法案与立法争议",
+        "blurb": "未成年人保护立法与争议",
         "article_ids": [
           1485,
           1477
@@ -3438,36 +3546,37 @@
       },
       {
         "emoji": "⚖️",
-        "name": "平台反垄断与算法监管",
-        "blurb": "数字市场法管辖与算法定价禁令",
+        "name": "平台反垄断与云服务监管",
+        "blurb": "DMA 扩展至云服务",
         "article_ids": [
           1500,
-          1501
+          1507
         ]
       },
       {
         "emoji": "🔐",
-        "name": "隐私与数据保护立法",
-        "blurb": "健康数据隐私法案与AI充分性审查",
+        "name": "隐私与数据保护执法",
+        "blurb": "AI 搜索、人脸识别与健康数据",
         "article_ids": [
           1473,
+          1489,
           1468
         ]
       },
       {
         "emoji": "📢",
-        "name": "人脸识别与执法监控",
-        "blurb": "实时人脸识别部署争议",
+        "name": "算法定价与 AI 助手监管",
+        "blurb": "算法定价法案与 AI 助手重塑",
         "article_ids": [
-          1489
+          1501,
+          1469
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "AI助手重塑与隐私论坛",
+        "blurb": "隐私论坛与政策讨论",
         "article_ids": [
-          1469,
           1478
         ]
       }
@@ -3476,7 +3585,7 @@
       {
         "emoji": "🤖",
         "name": "AI Agent 与模型治理",
-        "blurb": "AI Agent 安全与监管动态",
+        "blurb": "AI Agent 监管与模型安全动态",
         "article_ids": [
           1473,
           1493,
@@ -3495,17 +3604,17 @@
       },
       {
         "emoji": "⚖️",
-        "name": "平台反垄断与算法监管",
-        "blurb": "DMA 扩展与算法定价禁令",
+        "name": "平台反垄断与数字市场法",
+        "blurb": "DMA 扩展至云服务",
         "article_ids": [
           1500,
-          1501
+          1507
         ]
       },
       {
         "emoji": "🔐",
-        "name": "AI 网络安全与风险提示",
-        "blurb": "AI 相关网络安全联合声明",
+        "name": "网络安全与AI风险",
+        "blurb": "AI 网络安全风险提示",
         "article_ids": [
           1484,
           1479
@@ -3513,20 +3622,14 @@
       },
       {
         "emoji": "📢",
-        "name": "人脸识别与隐私争议",
-        "blurb": "实时人脸识别引发争议",
+        "name": "隐私立法与执法动态",
+        "blurb": "各州隐私法案与执法",
         "article_ids": [
-          1489
-        ]
-      },
-      {
-        "emoji": "🔀",
-        "name": "其他治理动态",
-        "blurb": "各国隐私立法与政策更新",
-        "article_ids": [
-          1461,
           1462,
           1468,
+          1501,
+          1489,
+          1461,
           1457,
           1447,
           1478
@@ -3551,80 +3654,71 @@
       },
       {
         "emoji": "🤖",
-        "name": "AI模型治理与出口管制",
-        "blurb": "美欧对AI模型访问与出口的新限制",
+        "name": "AI模型出口管制与安全",
+        "blurb": "美国对Anthropic等AI模型实施出口限制",
         "article_ids": [
           1367,
           1393,
           1493,
           1379,
           1358,
-          1391,
-          1457,
-          1469,
-          1456
+          1391
         ]
       },
       {
         "emoji": "🔐",
         "name": "数据隐私与执法行动",
-        "blurb": "各国隐私执法与数据保护立法动态",
+        "blurb": "各国隐私执法与罚款动态",
         "article_ids": [
           1366,
-          1400,
-          1421,
-          1409,
           1354,
           1399,
           1341,
           1410,
-          1462,
-          1468
-        ]
-      },
-      {
-        "emoji": "⚖️",
-        "name": "平台监管与数字市场法",
-        "blurb": "DMA及平台竞争与算法监管",
-        "article_ids": [
-          1435,
-          1388,
-          1500,
-          1501,
-          1413,
-          1412
-        ]
-      },
-      {
-        "emoji": "🛰️",
-        "name": "AI治理与网络安全",
-        "blurb": "AI安全风险与治理框架进展",
-        "article_ids": [
-          1397,
-          1398,
-          1419,
-          1484,
-          1479,
-          1461,
-          1381,
-          1434,
-          1447,
+          1429,
           1440
         ]
       },
       {
-        "emoji": "🔀",
-        "name": "其他治理动态",
-        "blurb": "其他隐私与科技监管议题",
+        "emoji": "⚖️",
+        "name": "平台反垄断与数字市场",
+        "blurb": "DMA扩展至云服务及平台行为要求",
         "article_ids": [
-          1328,
-          1489,
-          1355,
-          1424,
-          1442,
+          1435,
+          1500,
+          1507,
+          1388,
+          1413
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "AI治理与立法进展",
+        "blurb": "欧盟及各国AI法案与治理框架",
+        "article_ids": [
+          1397,
+          1398,
+          1419,
+          1461,
+          1381,
+          1434,
+          1447,
           1384,
-          1429,
-          1478
+          1456,
+          1469
+        ]
+      },
+      {
+        "emoji": "🛰️",
+        "name": "美国州级隐私立法",
+        "blurb": "佛蒙特等州通过综合隐私法",
+        "article_ids": [
+          1400,
+          1421,
+          1409,
+          1462,
+          1468,
+          1501
         ]
       },
       {
@@ -3632,7 +3726,17 @@
         "name": "其他治理动态",
         "blurb": "未归入主类的候选选题",
         "article_ids": [
-          1473
+          1473,
+          1484,
+          1328,
+          1479,
+          1489,
+          1355,
+          1424,
+          1442,
+          1457,
+          1412,
+          1478
         ]
       }
     ]
