@@ -1,5 +1,55 @@
 [
   {
+    "id": 1380,
+    "url": "https://www.politico.eu/article/britain-bans-social-media-for-under-16s-who-are-the-winners-and-losers/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+    "title": "Britain bans social media for under-16s: Who are the winners and losers?",
+    "title_cn": "英国禁止16岁以下使用社交媒体：谁赢谁输？",
+    "summary": "For all the warm reception Keir Starmer’s carefully choreographed announcement garnered, some people are happier than others.",
+    "source_name": "Politico EU Tech",
+    "source_tier": "B",
+    "published_at": "2026-06-15T16:57:28+00:00",
+    "score_a": 28,
+    "score_b": 15,
+    "score_c": 8,
+    "score_d": 9,
+    "score_e": 8,
+    "score_f": 9,
+    "total_score": 77,
+    "fingerprint": "UK-ban-under16-social-media-2026-06",
+    "anxiety_hits": [
+      "未成年人极端事件"
+    ],
+    "maturity_stage": "讨论立法期",
+    "content_type": "opinion_analysis",
+    "reason": "文章主题为英国禁止16岁以下使用社交媒体，深度对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=23 A2=5 → A=28；讨论立法期 B=15；产业可借鉴 E=8；中文世界无报道 F=9。",
+    "savedAt": "2026-06-27T11:50:12.675Z"
+  },
+  {
+    "id": 1364,
+    "url": "https://www.politico.eu/article/uk-announces-social-media-ban-for-under-16s/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+    "title": "UK confirms social media ban for under-16s",
+    "title_cn": "英国拟禁止16岁以下未成年人使用社交媒体",
+    "summary": "British Prime Minister Keir Starmer said he is not \"prepared to compromise on the safety and happiness of our children.\"",
+    "source_name": "Politico EU Tech",
+    "source_tier": "B",
+    "published_at": "2026-06-15T07:50:27+00:00",
+    "score_a": 28,
+    "score_b": 15,
+    "score_c": 8,
+    "score_d": 9,
+    "score_e": 8,
+    "score_f": 9,
+    "total_score": 77,
+    "fingerprint": "UK-ban-under16-social-media-2026-06",
+    "anxiety_hits": [
+      "未成年人极端事件"
+    ],
+    "maturity_stage": "讨论立法期",
+    "content_type": "fact_legislative",
+    "reason": "英国首相宣布拟禁止16岁以下未成年人使用社交媒体，主题深度对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=23 A2=5 → A=28；讨论立法期 B=15；产业可借鉴 E=8；中文世界无报道 F=9。",
+    "savedAt": "2026-06-27T11:50:10.868Z"
+  },
+  {
     "id": 1493,
     "url": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
     "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
