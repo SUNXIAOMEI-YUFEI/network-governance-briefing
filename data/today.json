@@ -1,5 +1,5 @@
 {
-  "snapshot_at": "2026-06-30T10:02:52.155937+00:00",
+  "snapshot_at": "2026-06-30T10:40:52.716463+00:00",
   "schema_version": "v1.4",
   "tabs": {
     "24h": {
@@ -126,6 +126,31 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_official_doc",
             "reason": "CMA就Apple移动平台引导行为要求征求意见，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
+            "id": 1548,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/i6gi9pceula3ed0vd6yi.html",
+            "title": "New from DataGuidance collections | Onetrust DataGuidance New from collections Hi sun, Here are the most recent additions to your collections: for multiple collections --> My Bookmarks for each item in collections --…",
+            "title_cn": "越南政府要求标注AI生成的新闻内容",
+            "summary": "Onetrust DataGuidance New from collections Hi sun, Here are the most recent additions to your collections: for multiple collections --> My Bookmarks for each item in collections --> British Columbia: OIPC publishes 2025/26 annual report and service plan China: SAMR approves national standards for AI agent interconnection Vietnam: Deputy Prime Minister issues business ethics framework including AI governance and data protection standards International: DPAs participate in G7 Roundtable Vietnam: Government requires labeling of AI-generated journalistic content under new decree Accounting records",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-06-30T06:31:37.446000+00:00",
+            "score_a": 25,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 9,
+            "total_score": 72,
+            "fingerprint": "Vietnam-AI-journalistic-content-labeling-decree-2026-06",
+            "anxiety_hits": [
+              "Agent 等新形态",
+              "标识失效"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "主议题为越南政府要求标注AI生成的新闻内容，属于内容治理（T4）和AI治理（T1）交叉，命中关切议题'标识失效'。A1=20（深度对齐），A2=5，A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=9。"
           },
           {
             "id": 1547,
@@ -351,6 +376,31 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_official_doc",
             "reason": "CMA就Apple移动平台引导行为要求征求意见，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
+            "id": 1548,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/i6gi9pceula3ed0vd6yi.html",
+            "title": "New from DataGuidance collections | Onetrust DataGuidance New from collections Hi sun, Here are the most recent additions to your collections: for multiple collections --> My Bookmarks for each item in collections --…",
+            "title_cn": "越南政府要求标注AI生成的新闻内容",
+            "summary": "Onetrust DataGuidance New from collections Hi sun, Here are the most recent additions to your collections: for multiple collections --> My Bookmarks for each item in collections --> British Columbia: OIPC publishes 2025/26 annual report and service plan China: SAMR approves national standards for AI agent interconnection Vietnam: Deputy Prime Minister issues business ethics framework including AI governance and data protection standards International: DPAs participate in G7 Roundtable Vietnam: Government requires labeling of AI-generated journalistic content under new decree Accounting records",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-06-30T06:31:37.446000+00:00",
+            "score_a": 25,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 9,
+            "total_score": 72,
+            "fingerprint": "Vietnam-AI-journalistic-content-labeling-decree-2026-06",
+            "anxiety_hits": [
+              "Agent 等新形态",
+              "标识失效"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "主议题为越南政府要求标注AI生成的新闻内容，属于内容治理（T4）和AI治理（T1）交叉，命中关切议题'标识失效'。A1=20（深度对齐），A2=5，A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=9。"
           },
           {
             "id": 1547,
@@ -646,6 +696,31 @@
             "maturity_stage": "风险冒头期",
             "content_type": "fact_enforcement",
             "reason": "文章报道白宫要求OpenAI推迟发布GPT 5.6，主题深度对齐AI治理（T1），涉及AI Agent新形态风险，属于风险冒头期。A1=23（核心议题），A2=5（Agent新形态），A=28；B=20（风险冒头期）；E=8（值得借鉴）；F=9（中文无报道）。"
+          },
+          {
+            "id": 1548,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/i6gi9pceula3ed0vd6yi.html",
+            "title": "New from DataGuidance collections | Onetrust DataGuidance New from collections Hi sun, Here are the most recent additions to your collections: for multiple collections --> My Bookmarks for each item in collections --…",
+            "title_cn": "越南政府要求标注AI生成的新闻内容",
+            "summary": "Onetrust DataGuidance New from collections Hi sun, Here are the most recent additions to your collections: for multiple collections --> My Bookmarks for each item in collections --> British Columbia: OIPC publishes 2025/26 annual report and service plan China: SAMR approves national standards for AI agent interconnection Vietnam: Deputy Prime Minister issues business ethics framework including AI governance and data protection standards International: DPAs participate in G7 Roundtable Vietnam: Government requires labeling of AI-generated journalistic content under new decree Accounting records",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-06-30T06:31:37.446000+00:00",
+            "score_a": 25,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 9,
+            "total_score": 72,
+            "fingerprint": "Vietnam-AI-journalistic-content-labeling-decree-2026-06",
+            "anxiety_hits": [
+              "Agent 等新形态",
+              "标识失效"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "主议题为越南政府要求标注AI生成的新闻内容，属于内容治理（T4）和AI治理（T1）交叉，命中关切议题'标识失效'。A1=20（深度对齐），A2=5，A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=9。"
           },
           {
             "id": 1512,
@@ -1174,6 +1249,31 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "CMA对Google搜索排名（含AI Overviews）引入新行为要求，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；落地执行期B=3；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
+            "id": 1548,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/i6gi9pceula3ed0vd6yi.html",
+            "title": "New from DataGuidance collections | Onetrust DataGuidance New from collections Hi sun, Here are the most recent additions to your collections: for multiple collections --> My Bookmarks for each item in collections --…",
+            "title_cn": "越南政府要求标注AI生成的新闻内容",
+            "summary": "Onetrust DataGuidance New from collections Hi sun, Here are the most recent additions to your collections: for multiple collections --> My Bookmarks for each item in collections --> British Columbia: OIPC publishes 2025/26 annual report and service plan China: SAMR approves national standards for AI agent interconnection Vietnam: Deputy Prime Minister issues business ethics framework including AI governance and data protection standards International: DPAs participate in G7 Roundtable Vietnam: Government requires labeling of AI-generated journalistic content under new decree Accounting records",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-06-30T06:31:37.446000+00:00",
+            "score_a": 25,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 9,
+            "total_score": 72,
+            "fingerprint": "Vietnam-AI-journalistic-content-labeling-decree-2026-06",
+            "anxiety_hits": [
+              "Agent 等新形态",
+              "标识失效"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "主议题为越南政府要求标注AI生成的新闻内容，属于内容治理（T4）和AI治理（T1）交叉，命中关切议题'标识失效'。A1=20（深度对齐），A2=5，A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=9。"
           },
           {
             "id": 1512,
@@ -1889,28 +1989,6 @@
             "maturity_stage": "规则成形期",
             "content_type": "fact_official_doc",
             "reason": "KtN邮件摘要包含两条独立议题：比利时DPA和AEPD发布视频游戏行业数据保护建议（T3数据与隐私），以及中国NFRA发布银行业保险业AI指引（T1 AI治理）。选取权重较高的T1议题为主。A1=12（部分对齐，指引发布但非核心立法），A2=0（无高权重关切议题），A=12+3=15；B=8（规则成形期）；E=5（中性借鉴）；F=7（中文世界无报道）。"
-          },
-          {
-            "id": 1399,
-            "url": "https://www.insideprivacy.com/eu-data-protection/amadeus-it-group-receives-gdpr-fine/",
-            "title": "Amadeus IT Group Receives GDPR Fine",
-            "title_cn": "西班牙AEPD对Amadeus IT Group处以1800万欧元GDPR罚款",
-            "summary": "By Joshua Gray, Nigel Howard and Will Capstick On May 26, 2026, the Spanish Data Protection Agency (&ldquo;AEPD&rdquo;) published details of its decision to fine Amadeus IT Group, S.A. (&ldquo;Amadeus&rdquo;), a Madrid-headquartered technology provider for the global travel and tourism industry, EUR 18 million in connection with GDPR violations involving Amadeus&rsquo;s Global Distribution System (&ldquo;GDS&rdquo;). Amadeus voluntarily paid the fine, less a 20% reduction, on May 29, 2025, thereby terminating the proceedings without admitting liability. The fine, one of the largest the AEPD ha",
-            "source_name": "Inside Privacy (Covington)",
-            "source_tier": "A",
-            "published_at": "2026-06-17T11:25:14+00:00",
-            "score_a": 20,
-            "score_b": 3,
-            "score_c": 12,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 50,
-            "fingerprint": "AEPD-Amadesu-GDPR-fine-2026-05",
-            "anxiety_hits": [],
-            "maturity_stage": "落地执行期",
-            "content_type": "fact_enforcement",
-            "reason": "文章报道西班牙AEPD对Amadeus IT Group处以GDPR罚款，主题对齐数据与隐私（T3），属于执法事实。A1=20（深度对齐），A2=0（未命中关切议题）；B=3（落地执行期）；E=5（中性借鉴）；F=7（中文世界无报道）。"
           }
         ]
       },
@@ -3096,26 +3174,41 @@
     }
   ],
   "stats": {
-    "total": 1472,
+    "total": 1474,
     "by_type": {
       "fact_enforcement": 83,
-      "fact_legislative": 85,
+      "fact_legislative": 86,
       "fact_official_doc": 42,
       "opinion_analysis": 70
     },
-    "veto": 1192
+    "veto": 1193
   },
   "feed_health": [
     {
       "source_name": "WilmerHale Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/muwfbzqx60g7b14mspkf.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
       "last_success_at": "2026-06-28T10:08:56.003966+00:00",
-      "last_error": "HTTP 502",
+      "last_error": "TimeoutError: The read operation timed out",
+      "last_article_count": 0,
+      "consecutive_fails": 4,
+      "recent_7d_success": 9,
+      "recent_7d_total": 15,
+      "latest_article_at": null,
+      "stale_days": null,
+      "status": "dead"
+    },
+    {
+      "source_name": "Inside Privacy (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml",
+      "source_tier": "A",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-29T11:23:55.406196+00:00",
+      "last_error": "TimeoutError: The read operation timed out",
       "last_article_count": 0,
       "consecutive_fails": 3,
-      "recent_7d_success": 10,
+      "recent_7d_success": 11,
       "recent_7d_total": 15,
       "latest_article_at": null,
       "stale_days": null,
@@ -3125,11 +3218,11 @@
       "source_name": "OII",
       "feed_url": "https://www.oii.ox.ac.uk/news-events/news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
       "last_success_at": "2026-06-04T10:13:12.070378+00:00",
       "last_error": "XML parse error: not well-formed (invalid token): line 5, column 175",
       "last_article_count": 10,
-      "consecutive_fails": 52,
+      "consecutive_fails": 53,
       "recent_7d_success": 0,
       "recent_7d_total": 15,
       "latest_article_at": "2026-05-08T15:38:51+00:00",
@@ -3140,30 +3233,15 @@
       "source_name": "OAIC (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
       "last_success_at": "2026-06-28T10:08:56.003966+00:00",
-      "last_error": "HTTP 502",
+      "last_error": "TimeoutError: The read operation timed out",
       "last_article_count": 1,
-      "consecutive_fails": 3,
-      "recent_7d_success": 10,
+      "consecutive_fails": 4,
+      "recent_7d_success": 9,
       "recent_7d_total": 15,
       "latest_article_at": "2026-05-28T02:29:23.683000+00:00",
       "stale_days": 33,
-      "status": "dead"
-    },
-    {
-      "source_name": "TechPolicy Press (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx.xml",
-      "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-28T10:08:56.003966+00:00",
-      "last_error": "HTTP 502",
-      "last_article_count": 8,
-      "consecutive_fails": 3,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-06-21T15:44:15.564000+00:00",
-      "stale_days": 8,
       "status": "dead"
     },
     {
@@ -3305,8 +3383,8 @@
       "source_name": "Platformer",
       "feed_url": "https://www.platformer.news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 3,
       "consecutive_fails": 0,
@@ -3320,8 +3398,8 @@
       "source_name": "AI Now",
       "feed_url": "https://ainowinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3335,8 +3413,8 @@
       "source_name": "EPIC",
       "feed_url": "https://epic.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3350,11 +3428,11 @@
       "source_name": "IAPP Daily Dashboard (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/9v0c5wjcqvoklno87tca.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-29T12:12:28.409594+00:00",
-      "last_error": "HTTP 502",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_error": null,
       "last_article_count": 6,
-      "consecutive_fails": 1,
+      "consecutive_fails": 0,
       "recent_7d_success": 11,
       "recent_7d_total": 15,
       "latest_article_at": "2026-05-06T13:18:40.669000+00:00",
@@ -3365,12 +3443,12 @@
       "source_name": "HAI Stanford (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 8,
       "consecutive_fails": 0,
-      "recent_7d_success": 10,
+      "recent_7d_success": 11,
       "recent_7d_total": 15,
       "latest_article_at": "2026-06-07T17:04:45.635000+00:00",
       "stale_days": 22,
@@ -3380,8 +3458,8 @@
       "source_name": "CNIL (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 2,
       "consecutive_fails": 0,
@@ -3392,11 +3470,26 @@
       "status": "stale"
     },
     {
+      "source_name": "The Register",
+      "feed_url": "https://www.theregister.com/headlines.atom",
+      "source_tier": "C",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_error": "HTTP 403",
+      "last_article_count": 8,
+      "consecutive_fails": 1,
+      "recent_7d_success": 10,
+      "recent_7d_total": 15,
+      "latest_article_at": "2026-06-30T08:30:00+00:00",
+      "stale_days": 0,
+      "status": "warn"
+    },
+    {
       "source_name": "Future of Privacy Forum",
       "feed_url": "https://fpf.org/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3410,8 +3503,8 @@
       "source_name": "FTC",
       "feed_url": "https://www.ftc.gov/feeds/press-release.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3425,23 +3518,23 @@
       "source_name": "DataGuidance (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-29T12:12:28.409594+00:00",
-      "last_error": "HTTP 502",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_error": null,
       "last_article_count": 11,
-      "consecutive_fails": 1,
+      "consecutive_fails": 0,
       "recent_7d_success": 10,
       "recent_7d_total": 15,
-      "latest_article_at": "2026-06-29T05:35:25.932000+00:00",
-      "stale_days": 1,
+      "latest_article_at": "2026-06-30T06:31:37.446000+00:00",
+      "stale_days": 0,
       "status": "warn"
     },
     {
       "source_name": "Lawfare (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eqkwbtfnwj1lqbi08d5p.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -3452,59 +3545,14 @@
       "status": "warn"
     },
     {
-      "source_name": "Inside Privacy (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml",
-      "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-29T11:23:55.406196+00:00",
-      "last_error": "HTTP 502",
-      "last_article_count": 0,
-      "consecutive_fails": 2,
-      "recent_7d_success": 12,
-      "recent_7d_total": 15,
-      "latest_article_at": null,
-      "stale_days": null,
-      "status": "warn"
-    },
-    {
       "source_name": "MLex AI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-29T12:12:28.409594+00:00",
-      "last_error": "TimeoutError: The read operation timed out",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_error": null,
       "last_article_count": 0,
-      "consecutive_fails": 1,
-      "recent_7d_success": 9,
-      "recent_7d_total": 15,
-      "latest_article_at": null,
-      "stale_days": null,
-      "status": "warn"
-    },
-    {
-      "source_name": "EDPS (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
-      "source_tier": "S",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-29T12:12:28.409594+00:00",
-      "last_error": "HTTP 502",
-      "last_article_count": 0,
-      "consecutive_fails": 1,
-      "recent_7d_success": 12,
-      "recent_7d_total": 15,
-      "latest_article_at": null,
-      "stale_days": null,
-      "status": "warn"
-    },
-    {
-      "source_name": "NIST AISI (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml",
-      "source_tier": "S",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-29T12:12:28.409594+00:00",
-      "last_error": "HTTP 502",
-      "last_article_count": 0,
-      "consecutive_fails": 1,
+      "consecutive_fails": 0,
       "recent_7d_success": 10,
       "recent_7d_total": 15,
       "latest_article_at": null,
@@ -3512,15 +3560,30 @@
       "status": "warn"
     },
     {
+      "source_name": "TechPolicy Press (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx.xml",
+      "source_tier": "A",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_error": null,
+      "last_article_count": 8,
+      "consecutive_fails": 0,
+      "recent_7d_success": 11,
+      "recent_7d_total": 15,
+      "latest_article_at": "2026-06-21T15:44:15.564000+00:00",
+      "stale_days": 8,
+      "status": "warn"
+    },
+    {
       "source_name": "Brookings TechTank (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/btrel8v1yu4h5i4xcsze.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
       "last_success_at": "2026-06-29T12:12:28.409594+00:00",
-      "last_error": "HTTP 502",
+      "last_error": "TimeoutError: The read operation timed out",
       "last_article_count": 12,
-      "consecutive_fails": 1,
-      "recent_7d_success": 13,
+      "consecutive_fails": 2,
+      "recent_7d_success": 12,
       "recent_7d_total": 15,
       "latest_article_at": "2026-06-27T10:59:12.905000+00:00",
       "stale_days": 2,
@@ -3530,8 +3593,8 @@
       "source_name": "Import AI (Substack)",
       "feed_url": "https://jack-clark.net/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3545,8 +3608,8 @@
       "source_name": "Tech Policy Press",
       "feed_url": "https://www.techpolicy.press/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -3557,26 +3620,11 @@
       "status": "ok"
     },
     {
-      "source_name": "The Register",
-      "feed_url": "https://www.theregister.com/headlines.atom",
-      "source_tier": "C",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_error": null,
-      "last_article_count": 8,
-      "consecutive_fails": 0,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-06-30T08:30:00+00:00",
-      "stale_days": 0,
-      "status": "ok"
-    },
-    {
       "source_name": "DLA Piper",
       "feed_url": "https://privacymatters.dlapiper.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3590,8 +3638,8 @@
       "source_name": "NIST",
       "feed_url": "https://www.nist.gov/news-events/news/rss.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 40,
       "consecutive_fails": 0,
@@ -3605,8 +3653,8 @@
       "source_name": "Inside Privacy (Covington)",
       "feed_url": "https://www.insideprivacy.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3620,8 +3668,8 @@
       "source_name": "TechCrunch",
       "feed_url": "https://techcrunch.com/feed/",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 3,
       "consecutive_fails": 0,
@@ -3635,8 +3683,8 @@
       "source_name": "Politico EU Tech",
       "feed_url": "https://www.politico.eu/section/technology/feed",
       "source_tier": "B",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 31,
       "consecutive_fails": 0,
@@ -3650,8 +3698,8 @@
       "source_name": "CMA UK",
       "feed_url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
       "source_tier": "S",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 20,
       "consecutive_fails": 0,
@@ -3665,12 +3713,42 @@
       "source_name": "Ada Lovelace",
       "feed_url": "https://www.adalovelaceinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-06-30T10:02:15.522000+00:00",
-      "last_success_at": "2026-06-30T10:02:15.522000+00:00",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
       "recent_7d_success": 15,
+      "recent_7d_total": 15,
+      "latest_article_at": null,
+      "stale_days": null,
+      "status": "ok"
+    },
+    {
+      "source_name": "EDPS (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
+      "source_tier": "S",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_error": null,
+      "last_article_count": 0,
+      "consecutive_fails": 0,
+      "recent_7d_success": 12,
+      "recent_7d_total": 15,
+      "latest_article_at": null,
+      "stale_days": null,
+      "status": "ok"
+    },
+    {
+      "source_name": "NIST AISI (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml",
+      "source_tier": "S",
+      "last_attempt_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_success_at": "2026-06-30T10:40:46.526863+00:00",
+      "last_error": null,
+      "last_article_count": 0,
+      "consecutive_fails": 0,
+      "recent_7d_success": 11,
       "recent_7d_total": 15,
       "latest_article_at": null,
       "stale_days": null,
@@ -3680,9 +3758,9 @@
   "topics_by_window": {
     "24h": [
       {
-        "emoji": "⚖️",
-        "name": "英国移动平台反垄断监管",
-        "blurb": "CMA对苹果和谷歌的战略市场认定与规则",
+        "emoji": "📱",
+        "name": "移动平台反垄断监管",
+        "blurb": "CMA对苹果和谷歌的战略市场地位认定",
         "article_ids": [
           1530,
           1532,
@@ -3693,20 +3771,21 @@
         ]
       },
       {
-        "emoji": "🔐",
-        "name": "数据隐私与跨境传输",
-        "blurb": "数据共享协议与隐私执法决定",
+        "emoji": "🤖",
+        "name": "AI生成内容标注要求",
+        "blurb": "越南要求标注AI生成新闻内容",
         "article_ids": [
-          1547,
-          1540
+          1548
         ]
       },
       {
-        "emoji": "📢",
-        "name": "地理围栏令状与隐私权",
-        "blurb": "最高法院裁定地理围栏令状受隐私保护",
+        "emoji": "🔐",
+        "name": "数据隐私与跨境共享",
+        "blurb": "数据共享协议及隐私权保护",
         "article_ids": [
-          1537
+          1547,
+          1537,
+          1540
         ]
       }
     ],
@@ -3725,21 +3804,29 @@
         ]
       },
       {
-        "emoji": "🔐",
-        "name": "数据隐私与执法",
-        "blurb": "隐私权保护与数据共享执法动态",
+        "emoji": "🤖",
+        "name": "AI内容标注与政策动态",
+        "blurb": "AI生成内容标注要求及政策不确定性",
         "article_ids": [
-          1537,
-          1540,
-          1547
+          1548,
+          1519
         ]
       },
       {
-        "emoji": "🤖",
-        "name": "AI政策与平台治理",
-        "blurb": "特朗普AI政策及平台算法调整",
+        "emoji": "🔐",
+        "name": "数据隐私与跨境执法",
+        "blurb": "数据共享协议、地理围栏及隐私执法",
         "article_ids": [
-          1519,
+          1547,
+          1537,
+          1540
+        ]
+      },
+      {
+        "emoji": "🔀",
+        "name": "其他治理动态",
+        "blurb": "平台算法调整等杂项",
+        "article_ids": [
           1518
         ]
       }
@@ -3748,7 +3835,7 @@
       {
         "emoji": "📱",
         "name": "移动平台反垄断监管",
-        "blurb": "CMA对苹果和谷歌移动平台的市场地位认定与行为要求",
+        "blurb": "CMA对苹果和谷歌的战略市场地位认定",
         "article_ids": [
           1530,
           1532,
@@ -3760,8 +3847,8 @@
       },
       {
         "emoji": "🤖",
-        "name": "AI模型安全与监管博弈",
-        "blurb": "白宫要求推迟GPT发布及科技行业应对",
+        "name": "AI模型安全与监管",
+        "blurb": "白宫要求推迟GPT发布及AI监管动态",
         "article_ids": [
           1493,
           1519,
@@ -3770,31 +3857,32 @@
       },
       {
         "emoji": "👶",
-        "name": "未成年人网络保护立法",
-        "blurb": "爱荷华州推进打击在线儿童剥削法案",
+        "name": "未成年人网络保护",
+        "blurb": "爱荷华州法案打击在线儿童剥削",
         "article_ids": [
           1512
         ]
       },
       {
         "emoji": "⚖️",
-        "name": "数字市场与数据治理执法",
-        "blurb": "欧委会DMA守门人认定及数据共享协议",
+        "name": "数字市场与数据治理",
+        "blurb": "DMA守门人认定及数据共享协议",
         "article_ids": [
           1507,
-          1547,
-          1537,
-          1540
+          1547
         ]
       },
       {
         "emoji": "🔐",
-        "name": "算法定价与隐私执法",
-        "blurb": "密歇根州禁止算法定价及隐私执法决定",
+        "name": "隐私执法与算法监管",
+        "blurb": "地理围栏令状、追踪像素及算法定价",
         "article_ids": [
+          1537,
+          1540,
           1501,
           1517,
-          1518
+          1518,
+          1548
         ]
       }
     ],
@@ -3807,19 +3895,33 @@
           1393,
           1493,
           1379,
-          1519,
           1419,
           1469,
           1456,
+          1519,
+          1391,
           1442,
-          1513,
-          1391
+          1513
+        ]
+      },
+      {
+        "emoji": "👶",
+        "name": "未成年人网络保护",
+        "blurb": "未成年人社交媒体与AI保护立法",
+        "article_ids": [
+          1380,
+          1382,
+          1485,
+          1512,
+          1477,
+          1416,
+          1386
         ]
       },
       {
         "emoji": "⚖️",
         "name": "平台反垄断与数字市场",
-        "blurb": "CMA与DMA对科技巨头监管行动",
+        "blurb": "CMA与DMA对科技巨头的反垄断行动",
         "article_ids": [
           1530,
           1532,
@@ -3835,53 +3937,53 @@
       },
       {
         "emoji": "🔐",
-        "name": "数据隐私与安全立法",
-        "blurb": "美国各州及全球隐私法新进展",
+        "name": "数据隐私与安全执法",
+        "blurb": "隐私立法、执法与数据保护动态",
         "article_ids": [
           1400,
           1421,
           1409,
-          1462,
           1468,
-          1410,
-          1429,
-          1440,
+          1462,
+          1399,
           1540,
-          1537
+          1489,
+          1537,
+          1410
         ]
       },
       {
         "emoji": "📢",
-        "name": "AI监管与政策动态",
-        "blurb": "欧盟及各国AI法案实施与咨询",
+        "name": "AI监管与政策推进",
+        "blurb": "AI法案实施与监管机构动态",
         "article_ids": [
           1397,
           1398,
+          1548,
+          1484,
+          1479,
           1461,
           1381,
           1434,
           1447,
-          1384,
-          1484,
-          1479,
-          1478
+          1384
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "算法定价、人脸识别等杂项",
+        "blurb": "其他网络治理与合规动态",
         "article_ids": [
+          1473,
+          1424,
           1501,
-          1489,
-          1413,
-          1518,
-          1517,
           1412,
-          1399,
+          1429,
+          1440,
           1457,
-          1547,
-          1424
+          1517,
+          1518,
+          1478
         ]
       },
       {
@@ -3889,14 +3991,8 @@
         "name": "其他治理动态",
         "blurb": "未归入主类的候选选题",
         "article_ids": [
-          1380,
-          1382,
-          1473,
-          1485,
-          1512,
-          1477,
-          1416,
-          1386
+          1547,
+          1413
         ]
       }
     ]
