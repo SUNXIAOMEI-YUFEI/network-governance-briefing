@@ -1,5 +1,5 @@
 {
-  "snapshot_at": "2026-07-10T09:54:00.792534+00:00",
+  "snapshot_at": "2026-07-10T10:30:28.464257+00:00",
   "schema_version": "v1.4",
   "tabs": {
     "24h": {
@@ -79,6 +79,30 @@
           }
         ],
         "pool": [
+          {
+            "id": 1671,
+            "url": "https://www.politico.eu/article/eu-orders-instagram-facebook-meta-change-addictive-design/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "EU tells Meta to change its apps’ addictive design",
+            "title_cn": "欧盟要求Meta改变平台成瘾性设计",
+            "summary": "Social media giant engineered platforms to \"shift the brain into ‘autopilot mode,'\" EU says in new findings.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-07-10T10:00:00+00:00",
+            "score_a": 25,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 7,
+            "total_score": 66,
+            "fingerprint": "EU-Meta-addictive-design-DSA-2026-07",
+            "anxiety_hits": [
+              "算法极化"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_enforcement",
+            "reason": "文章报道欧盟依据DSA要求Meta改变其平台成瘾性设计，主题深度对齐平台治理（T2），命中算法极化关切议题。A1=20 A2=5 → A=25；处于讨论立法期（DSA执行阶段但具体措施仍在讨论）B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
           {
             "id": 1667,
             "url": "https://www.politico.eu/article/europes-conservatives-revive-zombie-bill-child-abuse-scanning/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
@@ -174,6 +198,28 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "文章涉及AI训练数据版权诉讼，属于AI治理（T1）主题，命中训练数据跨境关切议题。A1=15（部分对齐，版权诉讼是AI治理子议题但非核心监管动态），A2=5 → A=20；诉讼已进入制裁动议阶段，属落地执行期B=3；产业可借鉴性中性E=5；中文世界无广泛报道F=7。"
+          },
+          {
+            "id": 1672,
+            "url": "https://www.theregister.com/security/2026/07/10/scot-nhs-trust-probes-email-stuffup-involving-maternity-patients-data/5269749",
+            "title": "Scot NHS Trust probes email stuffup involving maternity patients' data",
+            "title_cn": "苏格兰NHS信托调查产妇邮件数据泄露事件",
+            "summary": "NHS Forth Valley is the latest health board to bungle basic email data protection principles",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-07-10T09:17:54+00:00",
+            "score_a": 15,
+            "score_b": 3,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 38,
+            "fingerprint": "NHS-ForthValley-email-data-breach-2026-07",
+            "anxiety_hits": [],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_enforcement",
+            "reason": "文章报道NHS医疗数据泄露事件，属于数据与隐私主题（T3），但为具体执法/事件报道，议题成熟度低（已发生），A1=15（部分对齐），A2=0，B=3，E=5（中性借鉴），F=7（中文报道少）。"
           }
         ]
       },
@@ -373,6 +419,30 @@
             "reason": "文章报道欧盟议会将儿童性虐待法案退回理事会，主题深度对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=20 A2=5 → A=25；讨论立法期 B=15；产业可借鉴 E=8；中文世界无报道 F=7。"
           },
           {
+            "id": 1671,
+            "url": "https://www.politico.eu/article/eu-orders-instagram-facebook-meta-change-addictive-design/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "EU tells Meta to change its apps’ addictive design",
+            "title_cn": "欧盟要求Meta改变平台成瘾性设计",
+            "summary": "Social media giant engineered platforms to \"shift the brain into ‘autopilot mode,'\" EU says in new findings.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-07-10T10:00:00+00:00",
+            "score_a": 25,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 7,
+            "total_score": 66,
+            "fingerprint": "EU-Meta-addictive-design-DSA-2026-07",
+            "anxiety_hits": [
+              "算法极化"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_enforcement",
+            "reason": "文章报道欧盟依据DSA要求Meta改变其平台成瘾性设计，主题深度对齐平台治理（T2），命中算法极化关切议题。A1=20 A2=5 → A=25；处于讨论立法期（DSA执行阶段但具体措施仍在讨论）B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
             "id": 1667,
             "url": "https://www.politico.eu/article/europes-conservatives-revive-zombie-bill-child-abuse-scanning/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
             "title": "Europe’s conservatives revive zombie bill on child abuse scanning",
@@ -563,6 +633,28 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "文章涉及AI训练数据版权诉讼，属于AI治理（T1）主题，命中训练数据跨境关切议题。A1=15（部分对齐，版权诉讼是AI治理子议题但非核心监管动态），A2=5 → A=20；诉讼已进入制裁动议阶段，属落地执行期B=3；产业可借鉴性中性E=5；中文世界无广泛报道F=7。"
+          },
+          {
+            "id": 1672,
+            "url": "https://www.theregister.com/security/2026/07/10/scot-nhs-trust-probes-email-stuffup-involving-maternity-patients-data/5269749",
+            "title": "Scot NHS Trust probes email stuffup involving maternity patients' data",
+            "title_cn": "苏格兰NHS信托调查产妇邮件数据泄露事件",
+            "summary": "NHS Forth Valley is the latest health board to bungle basic email data protection principles",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-07-10T09:17:54+00:00",
+            "score_a": 15,
+            "score_b": 3,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 38,
+            "fingerprint": "NHS-ForthValley-email-data-breach-2026-07",
+            "anxiety_hits": [],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_enforcement",
+            "reason": "文章报道NHS医疗数据泄露事件，属于数据与隐私主题（T3），但为具体执法/事件报道，议题成熟度低（已发生），A1=15（部分对齐），A2=0，B=3，E=5（中性借鉴），F=7（中文报道少）。"
           }
         ]
       },
@@ -881,6 +973,30 @@
             "reason": "文章报道欧盟儿童虐待扫描法案的立法进程，主题深度对齐未成年人网络保护（T5）和内容治理（T4），命中未成年人极端事件关切议题。A1=22 A2=5 → A=27，但文章侧重程序政治而非具体条款，扣2分得25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
           },
           {
+            "id": 1671,
+            "url": "https://www.politico.eu/article/eu-orders-instagram-facebook-meta-change-addictive-design/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "EU tells Meta to change its apps’ addictive design",
+            "title_cn": "欧盟要求Meta改变平台成瘾性设计",
+            "summary": "Social media giant engineered platforms to \"shift the brain into ‘autopilot mode,'\" EU says in new findings.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-07-10T10:00:00+00:00",
+            "score_a": 25,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 7,
+            "total_score": 66,
+            "fingerprint": "EU-Meta-addictive-design-DSA-2026-07",
+            "anxiety_hits": [
+              "算法极化"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_enforcement",
+            "reason": "文章报道欧盟依据DSA要求Meta改变其平台成瘾性设计，主题深度对齐平台治理（T2），命中算法极化关切议题。A1=20 A2=5 → A=25；处于讨论立法期（DSA执行阶段但具体措施仍在讨论）B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
             "id": 1667,
             "url": "https://www.politico.eu/article/europes-conservatives-revive-zombie-bill-child-abuse-scanning/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
             "title": "Europe’s conservatives revive zombie bill on child abuse scanning",
@@ -1093,6 +1209,28 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "文章涉及AI训练数据版权诉讼，属于AI治理（T1）主题，命中训练数据跨境关切议题。A1=15（部分对齐，版权诉讼是AI治理子议题但非核心监管动态），A2=5 → A=20；诉讼已进入制裁动议阶段，属落地执行期B=3；产业可借鉴性中性E=5；中文世界无广泛报道F=7。"
+          },
+          {
+            "id": 1672,
+            "url": "https://www.theregister.com/security/2026/07/10/scot-nhs-trust-probes-email-stuffup-involving-maternity-patients-data/5269749",
+            "title": "Scot NHS Trust probes email stuffup involving maternity patients' data",
+            "title_cn": "苏格兰NHS信托调查产妇邮件数据泄露事件",
+            "summary": "NHS Forth Valley is the latest health board to bungle basic email data protection principles",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-07-10T09:17:54+00:00",
+            "score_a": 15,
+            "score_b": 3,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 38,
+            "fingerprint": "NHS-ForthValley-email-data-breach-2026-07",
+            "anxiety_hits": [],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_enforcement",
+            "reason": "文章报道NHS医疗数据泄露事件，属于数据与隐私主题（T3），但为具体执法/事件报道，议题成熟度低（已发生），A1=15（部分对齐），A2=0，B=3，E=5（中性借鉴），F=7（中文报道少）。"
           }
         ]
       },
@@ -1698,28 +1836,28 @@
             "reason": "文章报道欧盟儿童虐待扫描法案的立法进程，主题深度对齐未成年人网络保护（T5）和内容治理（T4），命中未成年人极端事件关切议题。A1=22 A2=5 → A=27，但文章侧重程序政治而非具体条款，扣2分得25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
           },
           {
-            "id": 1500,
-            "url": "https://www.politico.eu/article/eu-says-amazon-microsoft-cloud-services-should-fall-under-digital-dominance-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "EU says Amazon, Microsoft cloud services should fall under digital dominance rules",
-            "title_cn": "欧盟拟将亚马逊微软云服务纳入数字市场法管辖",
-            "summary": "The decision marks an expansion of the Digital Markets Act beyond consumer tech into the €220 billion European market for cloud services.",
+            "id": 1671,
+            "url": "https://www.politico.eu/article/eu-orders-instagram-facebook-meta-change-addictive-design/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "EU tells Meta to change its apps’ addictive design",
+            "title_cn": "欧盟要求Meta改变平台成瘾性设计",
+            "summary": "Social media giant engineered platforms to \"shift the brain into ‘autopilot mode,'\" EU says in new findings.",
             "source_name": "Politico EU Tech",
             "source_tier": "B",
-            "published_at": "2026-06-25T09:55:40+00:00",
+            "published_at": "2026-07-10T10:00:00+00:00",
             "score_a": 25,
             "score_b": 15,
             "score_c": 8,
-            "score_d": 6,
+            "score_d": 3,
             "score_e": 8,
             "score_f": 7,
-            "total_score": 69,
-            "fingerprint": "EU-DMA-cloud-gatekeeper-Amazon-Microsoft-2026-06",
+            "total_score": 66,
+            "fingerprint": "EU-Meta-addictive-design-DSA-2026-07",
             "anxiety_hits": [
-              "平台垄断"
+              "算法极化"
             ],
             "maturity_stage": "讨论立法期",
-            "content_type": "fact_legislative",
-            "reason": "文章报道欧盟拟将云服务纳入DMA管辖，主题深度对齐平台治理（T2），命中平台垄断关切议题。A1=20 A2=5 → A=25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+            "content_type": "fact_enforcement",
+            "reason": "文章报道欧盟依据DSA要求Meta改变其平台成瘾性设计，主题深度对齐平台治理（T2），命中算法极化关切议题。A1=20 A2=5 → A=25；处于讨论立法期（DSA执行阶段但具体措施仍在讨论）B=15；产业可借鉴E=8；中文世界无报道F=7。"
           },
           {
             "id": 1667,
@@ -2188,6 +2326,28 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "文章涉及AI训练数据版权诉讼，属于AI治理（T1）主题，命中训练数据跨境关切议题。A1=15（部分对齐，版权诉讼是AI治理子议题但非核心监管动态），A2=5 → A=20；诉讼已进入制裁动议阶段，属落地执行期B=3；产业可借鉴性中性E=5；中文世界无广泛报道F=7。"
+          },
+          {
+            "id": 1672,
+            "url": "https://www.theregister.com/security/2026/07/10/scot-nhs-trust-probes-email-stuffup-involving-maternity-patients-data/5269749",
+            "title": "Scot NHS Trust probes email stuffup involving maternity patients' data",
+            "title_cn": "苏格兰NHS信托调查产妇邮件数据泄露事件",
+            "summary": "NHS Forth Valley is the latest health board to bungle basic email data protection principles",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-07-10T09:17:54+00:00",
+            "score_a": 15,
+            "score_b": 3,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 38,
+            "fingerprint": "NHS-ForthValley-email-data-breach-2026-07",
+            "anxiety_hits": [],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_enforcement",
+            "reason": "文章报道NHS医疗数据泄露事件，属于数据与隐私主题（T3），但为具体执法/事件报道，议题成熟度低（已发生），A1=15（部分对齐），A2=0，B=3，E=5（中性借鉴），F=7（中文报道少）。"
           }
         ]
       },
@@ -3533,9 +3693,9 @@
     }
   ],
   "stats": {
-    "total": 1595,
+    "total": 1597,
     "by_type": {
-      "fact_enforcement": 92,
+      "fact_enforcement": 94,
       "fact_legislative": 98,
       "fact_official_doc": 46,
       "opinion_analysis": 80
@@ -3547,11 +3707,11 @@
       "source_name": "OII",
       "feed_url": "https://www.oii.ox.ac.uk/news-events/news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
       "last_success_at": "2026-06-04T10:13:12.070378+00:00",
       "last_error": "XML parse error: not well-formed (invalid token): line 5, column 175",
       "last_article_count": 10,
-      "consecutive_fails": 75,
+      "consecutive_fails": 76,
       "recent_7d_success": 0,
       "recent_7d_total": 16,
       "latest_article_at": "2026-05-08T15:38:51+00:00",
@@ -3697,8 +3857,8 @@
       "source_name": "Platformer",
       "feed_url": "https://www.platformer.news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 2,
       "consecutive_fails": 0,
@@ -3712,11 +3872,11 @@
       "source_name": "IAPP Daily Dashboard (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/9v0c5wjcqvoklno87tca.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
       "last_success_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_error": null,
+      "last_error": "HTTP 502",
       "last_article_count": 6,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 9,
       "recent_7d_total": 16,
       "latest_article_at": "2026-05-06T13:18:40.669000+00:00",
@@ -3727,11 +3887,11 @@
       "source_name": "OAIC (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
       "last_success_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_error": null,
+      "last_error": "HTTP 502",
       "last_article_count": 2,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 10,
       "recent_7d_total": 16,
       "latest_article_at": "2026-06-29T23:38:05.650000+00:00",
@@ -3742,8 +3902,8 @@
       "source_name": "EPIC",
       "feed_url": "https://epic.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3757,11 +3917,11 @@
       "source_name": "DataGuidance (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
       "last_success_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_error": null,
+      "last_error": "HTTP 502",
       "last_article_count": 8,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 11,
       "recent_7d_total": 16,
       "latest_article_at": "2026-07-09T14:08:19.860000+00:00",
@@ -3772,11 +3932,11 @@
       "source_name": "WilmerHale Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/muwfbzqx60g7b14mspkf.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
       "last_success_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_error": null,
+      "last_error": "TimeoutError: The read operation timed out",
       "last_article_count": 0,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 10,
       "recent_7d_total": 16,
       "latest_article_at": null,
@@ -3787,12 +3947,12 @@
       "source_name": "Lawfare (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eqkwbtfnwj1lqbi08d5p.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 9,
+      "recent_7d_success": 10,
       "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
@@ -3802,38 +3962,8 @@
       "source_name": "Inside Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_error": null,
-      "last_article_count": 0,
-      "consecutive_fails": 0,
-      "recent_7d_success": 8,
-      "recent_7d_total": 16,
-      "latest_article_at": null,
-      "stale_days": null,
-      "status": "warn"
-    },
-    {
-      "source_name": "HAI Stanford (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6.xml",
-      "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_error": null,
-      "last_article_count": 9,
-      "consecutive_fails": 0,
-      "recent_7d_success": 10,
-      "recent_7d_total": 16,
-      "latest_article_at": "2026-07-05T17:32:02.859000+00:00",
-      "stale_days": 4,
-      "status": "warn"
-    },
-    {
-      "source_name": "MLex AI (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml",
-      "source_tier": "B",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -3844,14 +3974,44 @@
       "status": "warn"
     },
     {
-      "source_name": "EDPS (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
-      "source_tier": "S",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "source_name": "HAI Stanford (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6.xml",
+      "source_tier": "A",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_error": null,
+      "last_article_count": 9,
+      "consecutive_fails": 0,
+      "recent_7d_success": 11,
+      "recent_7d_total": 16,
+      "latest_article_at": "2026-07-05T17:32:02.859000+00:00",
+      "stale_days": 4,
+      "status": "warn"
+    },
+    {
+      "source_name": "MLex AI (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml",
+      "source_tier": "B",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
+      "recent_7d_success": 10,
+      "recent_7d_total": 16,
+      "latest_article_at": null,
+      "stale_days": null,
+      "status": "warn"
+    },
+    {
+      "source_name": "EDPS (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
+      "source_tier": "S",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_error": "HTTP 502",
+      "last_article_count": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 10,
       "recent_7d_total": 16,
       "latest_article_at": null,
@@ -3862,11 +4022,11 @@
       "source_name": "TechPolicy Press (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
       "last_success_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_error": null,
+      "last_error": "HTTP 502",
       "last_article_count": 8,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 11,
       "recent_7d_total": 16,
       "latest_article_at": "2026-07-05T14:12:21.290000+00:00",
@@ -3877,11 +4037,11 @@
       "source_name": "NIST AISI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
       "last_success_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_error": null,
+      "last_error": "HTTP 502",
       "last_article_count": 0,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 11,
       "recent_7d_total": 16,
       "latest_article_at": null,
@@ -3892,11 +4052,11 @@
       "source_name": "Brookings TechTank (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/btrel8v1yu4h5i4xcsze.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
       "last_success_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_error": null,
+      "last_error": "HTTP 502",
       "last_article_count": 12,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 9,
       "recent_7d_total": 16,
       "latest_article_at": "2026-07-09T11:08:42.824000+00:00",
@@ -3907,11 +4067,11 @@
       "source_name": "CNIL (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
       "last_success_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_error": null,
+      "last_error": "HTTP 502",
       "last_article_count": 3,
-      "consecutive_fails": 0,
+      "consecutive_fails": 1,
       "recent_7d_success": 10,
       "recent_7d_total": 16,
       "latest_article_at": "2026-07-01T17:34:05.943000+00:00",
@@ -3922,8 +4082,8 @@
       "source_name": "Import AI (Substack)",
       "feed_url": "https://jack-clark.net/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3937,8 +4097,8 @@
       "source_name": "AI Now",
       "feed_url": "https://ainowinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3952,8 +4112,8 @@
       "source_name": "Tech Policy Press",
       "feed_url": "https://www.techpolicy.press/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -3967,14 +4127,14 @@
       "source_name": "The Register",
       "feed_url": "https://www.theregister.com/headlines.atom",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
-      "last_article_count": 5,
+      "last_article_count": 6,
       "consecutive_fails": 0,
       "recent_7d_success": 13,
       "recent_7d_total": 16,
-      "latest_article_at": "2026-07-09T16:46:50+00:00",
+      "latest_article_at": "2026-07-10T09:17:54+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -3982,8 +4142,8 @@
       "source_name": "DLA Piper",
       "feed_url": "https://privacymatters.dlapiper.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -3997,8 +4157,8 @@
       "source_name": "Future of Privacy Forum",
       "feed_url": "https://fpf.org/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -4012,8 +4172,8 @@
       "source_name": "NIST",
       "feed_url": "https://www.nist.gov/news-events/news/rss.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 40,
       "consecutive_fails": 0,
@@ -4027,8 +4187,8 @@
       "source_name": "FTC",
       "feed_url": "https://www.ftc.gov/feeds/press-release.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -4042,8 +4202,8 @@
       "source_name": "Inside Privacy (Covington)",
       "feed_url": "https://www.insideprivacy.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -4057,8 +4217,8 @@
       "source_name": "TechCrunch",
       "feed_url": "https://techcrunch.com/feed/",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 5,
       "consecutive_fails": 0,
@@ -4072,14 +4232,14 @@
       "source_name": "Politico EU Tech",
       "feed_url": "https://www.politico.eu/section/technology/feed",
       "source_tier": "B",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 31,
       "consecutive_fails": 0,
       "recent_7d_success": 16,
       "recent_7d_total": 16,
-      "latest_article_at": "2026-07-09T19:46:24+00:00",
+      "latest_article_at": "2026-07-10T10:00:00+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -4087,8 +4247,8 @@
       "source_name": "CMA UK",
       "feed_url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 20,
       "consecutive_fails": 0,
@@ -4102,8 +4262,8 @@
       "source_name": "Ada Lovelace",
       "feed_url": "https://www.adalovelaceinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-10T09:53:33.160140+00:00",
-      "last_success_at": "2026-07-10T09:53:33.160140+00:00",
+      "last_attempt_at": "2026-07-10T10:30:21.645583+00:00",
+      "last_success_at": "2026-07-10T10:30:21.645583+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4128,54 +4288,64 @@
       },
       {
         "emoji": "🤖",
-        "name": "生成式AI治理与隐私",
-        "blurb": "EDPB指南、AI披露与版权争议",
+        "name": "生成式AI治理与版权",
+        "blurb": "AI网络抓取指南与版权诉讼动态",
         "article_ids": [
           1669,
-          1654,
-          1664,
           1663
         ]
       },
       {
-        "emoji": "⚖️",
-        "name": "美国最高法院判例与数据跨境",
-        "blurb": "Humphrey's Executor推翻影响独立机构",
+        "emoji": "🔐",
+        "name": "平台责任与数据跨境",
+        "blurb": "平台成瘾性设计及数据跨境影响",
         "article_ids": [
+          1671,
           1652
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "AI广告披露与隐私研讨",
+        "blurb": "AI广告披露要求及隐私研讨会",
+        "article_ids": [
+          1664,
+          1654
         ]
       }
     ],
     "72h": [
       {
         "emoji": "🤖",
-        "name": "AI治理与监管动态",
-        "blurb": "各国AI法规、指南与安全义务",
+        "name": "AI 安全与治理",
+        "blurb": "AI 系统安全、风险清单与监管动态",
         "article_ids": [
           1669,
           1630,
           1651,
           1636,
-          1654,
+          1620,
           1635,
           1664,
-          1640
+          1640,
+          1663
         ]
       },
       {
         "emoji": "👶",
         "name": "未成年人网络保护",
-        "blurb": "社交媒体禁令与儿童安全法案",
+        "blurb": "社交媒体禁令与儿童性虐待法案",
         "article_ids": [
           1666,
           1668,
-          1667
+          1667,
+          1671
         ]
       },
       {
         "emoji": "⚖️",
-        "name": "平台反垄断与市场规则",
-        "blurb": "DMA执法与应用商店监管",
+        "name": "平台反垄断与监管",
+        "blurb": "DMA 执法、应用商店安全与竞争",
         "article_ids": [
           1631,
           1628
@@ -4183,38 +4353,40 @@
       },
       {
         "emoji": "🔐",
-        "name": "隐私与数据安全风险",
-        "blurb": "AI Agent泄露、间谍软件与跨境",
+        "name": "隐私与数据保护",
+        "blurb": "间谍软件诉讼、数据跨境与隐私",
         "article_ids": [
-          1620,
           1622,
           1652,
-          1644
+          1644,
+          1642
         ]
       },
       {
         "emoji": "📢",
-        "name": "AI内容标识与版权争议",
-        "blurb": "广告披露、深度伪造与版权诉讼",
+        "name": "AI 透明度与版权",
+        "blurb": "AI 生成内容披露与版权诉讼",
         "article_ids": [
-          1642,
-          1663
+          1654
         ]
       }
     ],
     "120h": [
       {
         "emoji": "🤖",
-        "name": "AI 监管与安全义务",
-        "blurb": "各国AI法规与安全要求",
+        "name": "AI 监管与安全立法",
+        "blurb": "各国AI法规与安全义务动态",
         "article_ids": [
           1669,
           1630,
           1651,
           1617,
           1636,
+          1654,
+          1635,
           1629,
-          1654
+          1614,
+          1663
         ]
       },
       {
@@ -4231,41 +4403,39 @@
       {
         "emoji": "⚖️",
         "name": "平台反垄断与数字市场执法",
-        "blurb": "DMA执法与苹果挑战",
+        "blurb": "DMA执法、应用商店安全与成瘾性设计",
         "article_ids": [
           1631,
+          1671,
           1628
         ]
       },
       {
         "emoji": "🔐",
-        "name": "AI Agent 安全与隐私风险",
-        "blurb": "Agent漏洞、深度伪造与数据收集",
+        "name": "隐私、数据跨境与间谍软件",
+        "blurb": "数据跨境、间谍软件诉讼与隐私保护",
         "article_ids": [
-          1620,
-          1635,
-          1640,
-          1644,
-          1614
+          1652,
+          1622,
+          1644
         ]
       },
       {
         "emoji": "📢",
-        "name": "AI 内容披露与版权争议",
-        "blurb": "广告披露、社区笔记与版权诉讼",
+        "name": "AI内容标识与深度伪造治理",
+        "blurb": "AI生成内容披露与深度伪造检测",
         "article_ids": [
           1664,
-          1642,
-          1663
+          1640,
+          1642
         ]
       },
       {
         "emoji": "🛰️",
-        "name": "数据跨境与间谍软件诉讼",
-        "blurb": "最高法院判例与间谍软件诉讼",
+        "name": "AI Agent安全与版权争议",
+        "blurb": "AI Agent漏洞与版权诉讼",
         "article_ids": [
-          1652,
-          1622
+          1620
         ]
       }
     ],
@@ -4283,8 +4453,8 @@
           1529,
           1572,
           1628,
-          1500,
-          1507
+          1507,
+          1631
         ]
       },
       {
@@ -4313,57 +4483,57 @@
           1512,
           1603,
           1607,
-          1666,
           1668,
           1667,
           1583,
-          1585
+          1585,
+          1666
         ]
       },
       {
         "emoji": "🔐",
-        "name": "隐私保护与数据跨境治理",
+        "name": "隐私保护与数据跨境合规",
         "blurb": "数据经纪人注册、跨境协议争议",
         "article_ids": [
           1596,
           1597,
           1547,
+          1652,
           1537,
           1540,
-          1652,
-          1587,
-          1602
+          1602,
+          1587
         ]
       },
       {
         "emoji": "⚖️",
-        "name": "AI Agent安全与版权争议",
-        "blurb": "Agent漏洞、版权诉讼与深度伪造",
+        "name": "平台责任与算法治理",
+        "blurb": "算法定价、成瘾性设计、内容审核",
         "article_ids": [
-          1620,
-          1635,
-          1663,
-          1640,
+          1501,
+          1671,
+          1552,
+          1518,
+          1642,
+          1622,
+          1575,
           1664,
-          1614,
-          1642
+          1640
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "算法定价、间谍软件等杂项",
+        "blurb": "AI Agent安全、版权诉讼等",
         "article_ids": [
-          1501,
-          1622,
-          1517,
-          1518,
-          1575,
-          1629,
-          1644,
-          1552,
+          1620,
+          1635,
           1654,
-          1631
+          1517,
+          1644,
+          1614,
+          1663,
+          1629
         ]
       }
     ]
