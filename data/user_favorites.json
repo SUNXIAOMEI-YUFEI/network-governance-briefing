@@ -1,5 +1,31 @@
 [
   {
+    "id": 1676,
+    "url": "https://techcrunch.com/2026/07/10/eu-threatens-meta-with-fines-over-addictive-features-on-facebook-and-instagram/",
+    "title": "EU threatens Meta with fines over addictive features on Facebook and Instagram",
+    "title_cn": "欧盟威胁对Meta成瘾性功能处以罚款",
+    "summary": "The tech giant is in breach of the Digital Services Act by focusing on features like infinite scroll, autoplay, push notifications, and the highly personalized recommendation algorithms, the European Commission said.",
+    "source_name": "TechCrunch",
+    "source_tier": "C",
+    "published_at": "2026-07-10T14:19:40+00:00",
+    "score_a": 28,
+    "score_b": 15,
+    "score_c": 5,
+    "score_d": 6,
+    "score_e": 8,
+    "score_f": 9,
+    "total_score": 71,
+    "fingerprint": "EU-Meta-addictive-design-DSA-2026-07",
+    "anxiety_hits": [
+      "平台垄断",
+      "算法极化"
+    ],
+    "maturity_stage": "讨论立法期",
+    "content_type": "fact_enforcement",
+    "reason": "文章报道欧盟委员会依据DSA对Meta的成瘾性功能提出指控，主题深度对齐平台治理（T2），命中算法极化和平台垄断两个关切议题。A1=23 A2=5 → A=28；处于调查/指控阶段，属于讨论立法期 B=15；产业可借鉴 E=8；中文世界无报道 F=9。",
+    "savedAt": "2026-07-12T08:21:01.703Z"
+  },
+  {
     "id": 1635,
     "url": "https://ainowinstitute.org/publications/friendly-fire-policy-brief",
     "title": "Policy Brief: Friendly Fire",
