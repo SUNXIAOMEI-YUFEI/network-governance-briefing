@@ -1,5 +1,30 @@
 [
   {
+    "id": 1671,
+    "url": "https://www.politico.eu/article/eu-orders-instagram-facebook-meta-change-addictive-design/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+    "title": "EU tells Meta to change its apps’ addictive design",
+    "title_cn": "欧盟要求Meta改变平台成瘾性设计",
+    "summary": "Social media giant engineered platforms to \"shift the brain into ‘autopilot mode,'\" EU says in new findings.",
+    "source_name": "Politico EU Tech",
+    "source_tier": "B",
+    "published_at": "2026-07-10T10:00:00+00:00",
+    "score_a": 25,
+    "score_b": 15,
+    "score_c": 8,
+    "score_d": 6,
+    "score_e": 8,
+    "score_f": 7,
+    "total_score": 69,
+    "fingerprint": "EU-Meta-addictive-design-DSA-2026-07",
+    "anxiety_hits": [
+      "算法极化"
+    ],
+    "maturity_stage": "讨论立法期",
+    "content_type": "fact_enforcement",
+    "reason": "文章报道欧盟依据DSA要求Meta改变其平台成瘾性设计，主题深度对齐平台治理（T2），命中算法极化关切议题。A1=20 A2=5 → A=25；处于讨论立法期（DSA执行阶段但具体措施仍在讨论）B=15；产业可借鉴E=8；中文世界无报道F=7。",
+    "savedAt": "2026-07-12T08:24:51.171Z"
+  },
+  {
     "id": 1676,
     "url": "https://techcrunch.com/2026/07/10/eu-threatens-meta-with-fines-over-addictive-features-on-facebook-and-instagram/",
     "title": "EU threatens Meta with fines over addictive features on Facebook and Instagram",
