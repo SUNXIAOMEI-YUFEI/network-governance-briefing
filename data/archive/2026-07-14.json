@@ -1,33 +1,33 @@
 {
-  "snapshot_at": "2026-07-14T08:28:36.784658+00:00",
+  "snapshot_at": "2026-07-14T09:18:37.274055+00:00",
   "schema_version": "v1.4",
   "tabs": {
     "24h": {
       "facts": {
         "top3": [
           {
-            "id": 1681,
-            "url": "https://www.politico.eu/article/vdl-announces-age-restrictions-for-social-media-and-other-platforms/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "EU wants 13+ age restriction for social media",
-            "title_cn": "欧盟拟对13岁以下未成年人实施社交媒体时间限制",
-            "summary": "A Commission report published Monday recommends minors under 13 years of age should only have \"time-limited\" access to certain platforms.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-07-13T09:05:54+00:00",
-            "score_a": 25,
+            "id": 1696,
+            "url": "https://www.theregister.com/personal-tech/2026/07/14/ministers-arm-under-16s-social-media-ban-with-least-surprising-study-of-the-year/5270924",
+            "title": "Ministers arm under-16s social media ban with least surprising study of the year",
+            "title_cn": "英国政府以研究支撑16岁以下社交媒体禁令",
+            "summary": "Boffins confirm: taking away teens' phone makes them act like humans again",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-07-14T08:30:00+00:00",
+            "score_a": 20,
             "score_b": 15,
-            "score_c": 8,
-            "score_d": 3,
-            "score_e": 8,
+            "score_c": 5,
+            "score_d": 12,
+            "score_e": 5,
             "score_f": 7,
-            "total_score": 66,
-            "fingerprint": "EU-age-restriction-social-media-2026-07-13",
+            "total_score": 64,
+            "fingerprint": "UK-ban-under16-social-media-2026-06",
             "anxiety_hits": [
               "未成年人极端事件"
             ],
             "maturity_stage": "讨论立法期",
-            "content_type": "fact_official_doc",
-            "reason": "文章报道欧盟委员会报告建议对13岁以下未成年人实施社交媒体时间限制，主题深度对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=20 A2=5 → A=25；讨论立法期 B=15；产业可借鉴 E=8；中文世界无报道 F=7。"
+            "content_type": "fact_legislative",
+            "reason": "文章报道英国政府推动16岁以下社交媒体禁令，并引用研究支持，主题对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=15（部分对齐，研究本身非监管动作但支持立法），A2=5 → A=20；讨论立法期B=15；产业可借鉴E=5（中性）；中文世界无报道F=7。"
           },
           {
             "id": 1689,
@@ -183,6 +183,30 @@
             "reason": "文章报道欧盟委员会报告建议对13岁以下未成年人实施社交媒体时间限制，主题深度对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=20 A2=5 → A=25；讨论立法期 B=15；产业可借鉴 E=8；中文世界无报道 F=7。"
           },
           {
+            "id": 1696,
+            "url": "https://www.theregister.com/personal-tech/2026/07/14/ministers-arm-under-16s-social-media-ban-with-least-surprising-study-of-the-year/5270924",
+            "title": "Ministers arm under-16s social media ban with least surprising study of the year",
+            "title_cn": "英国政府以研究支撑16岁以下社交媒体禁令",
+            "summary": "Boffins confirm: taking away teens' phone makes them act like humans again",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-07-14T08:30:00+00:00",
+            "score_a": 20,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 12,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 64,
+            "fingerprint": "UK-ban-under16-social-media-2026-06",
+            "anxiety_hits": [
+              "未成年人极端事件"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "文章报道英国政府推动16岁以下社交媒体禁令，并引用研究支持，主题对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=15（部分对齐，研究本身非监管动作但支持立法），A2=5 → A=20；讨论立法期B=15；产业可借鉴E=5（中性）；中文世界无报道F=7。"
+          },
+          {
             "id": 1689,
             "url": "https://techcrunch.com/2026/07/13/lapd-lets-contract-with-surveillance-giant-flock-expire-citing-serious-concerns-over-civil-liberties-and-privacy/",
             "title": "LAPD lets contract with surveillance giant Flock expire, citing ‘serious concerns’ over civil liberties and privacy",
@@ -203,7 +227,9 @@
             "maturity_stage": "风险冒头期",
             "content_type": "fact_enforcement",
             "reason": "文章报道LAPD因公民自由和隐私担忧终止与监控公司Flock的合同，主题涉及数据与隐私（T3）和平台治理（T2，监控技术平台），但主要聚焦于执法机构与商业监控公司的合同终止，属于治理动态。A1=15（部分对齐，非核心议题），A2=0（未命中高权重关切议题），A=15；风险冒头期B=20；产业可借鉴性E=5（中性）；稀缺性F=7（中文世界报道较少）。"
-          },
+          }
+        ],
+        "pool": [
           {
             "id": 1685,
             "url": "https://www.insideprivacy.com/state-privacy/delaware-general-assembly-passes-hb-380-an-amendment-to-the-delaware-personal-data-privacy-act/",
@@ -225,9 +251,7 @@
             "maturity_stage": "规则成形期",
             "content_type": "fact_legislative",
             "reason": "文章报道特拉华州通过DPDPA修正案，主题对齐数据与隐私（T3），但属于州级隐私法常规修订，无高关切议题命中。A1=18（部分对齐，州级隐私法修订），A2=0；规则成形期B=8；产业可借鉴性E=5（中性）；中文世界无报道F=7。"
-          }
-        ],
-        "pool": [
+          },
           {
             "id": 1686,
             "url": "https://techcrunch.com/2026/07/13/x-just-tweaked-its-algorithm-to-make-it-more-friendly-less-battleground/",
@@ -525,6 +549,30 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
             "reason": "文章报道欧盟保守派推动恢复儿童性虐待材料扫描法案，主题深度对齐未成年人网络保护（T5）和内容治理（T4），命中未成年人极端事件关切议题。A1=22 A2=5 → A=27，但文章为政治动态而非具体立法细节，扣2分至25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
+          },
+          {
+            "id": 1696,
+            "url": "https://www.theregister.com/personal-tech/2026/07/14/ministers-arm-under-16s-social-media-ban-with-least-surprising-study-of-the-year/5270924",
+            "title": "Ministers arm under-16s social media ban with least surprising study of the year",
+            "title_cn": "英国政府以研究支撑16岁以下社交媒体禁令",
+            "summary": "Boffins confirm: taking away teens' phone makes them act like humans again",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-07-14T08:30:00+00:00",
+            "score_a": 20,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 12,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 64,
+            "fingerprint": "UK-ban-under16-social-media-2026-06",
+            "anxiety_hits": [
+              "未成年人极端事件"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "文章报道英国政府推动16岁以下社交媒体禁令，并引用研究支持，主题对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=15（部分对齐，研究本身非监管动作但支持立法），A2=5 → A=20；讨论立法期B=15；产业可借鉴E=5（中性）；中文世界无报道F=7。"
           },
           {
             "id": 1677,
@@ -1359,6 +1407,30 @@
             "reason": "文章报道欧盟保守派推动恢复儿童性虐待材料扫描法案，主题深度对齐未成年人网络保护（T5）和内容治理（T4），命中未成年人极端事件关切议题。A1=22 A2=5 → A=27，但文章为政治动态而非具体立法细节，扣2分至25；讨论立法期B=15；产业可借鉴E=8；中文世界无报道F=7。"
           },
           {
+            "id": 1696,
+            "url": "https://www.theregister.com/personal-tech/2026/07/14/ministers-arm-under-16s-social-media-ban-with-least-surprising-study-of-the-year/5270924",
+            "title": "Ministers arm under-16s social media ban with least surprising study of the year",
+            "title_cn": "英国政府以研究支撑16岁以下社交媒体禁令",
+            "summary": "Boffins confirm: taking away teens' phone makes them act like humans again",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-07-14T08:30:00+00:00",
+            "score_a": 20,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 12,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 64,
+            "fingerprint": "UK-ban-under16-social-media-2026-06",
+            "anxiety_hits": [
+              "未成年人极端事件"
+            ],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "文章报道英国政府推动16岁以下社交媒体禁令，并引用研究支持，主题对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=15（部分对齐，研究本身非监管动作但支持立法），A2=5 → A=20；讨论立法期B=15；产业可借鉴E=5（中性）；中文世界无报道F=7。"
+          },
+          {
             "id": 1620,
             "url": "https://www.theregister.com/security/2026/07/07/github-ai-agent-leaks-private-repos-when-asked-nicely/5267924",
             "title": "GitHub AI agent leaks private repos when asked nicely",
@@ -1797,28 +1869,6 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "文章涉及AI训练数据版权诉讼，属于AI治理（T1）主题，命中训练数据跨境关切议题。A1=15（部分对齐，版权诉讼是AI治理子议题但非核心监管动态），A2=5 → A=20；诉讼已进入制裁动议阶段，属落地执行期B=3；产业可借鉴性中性E=5；中文世界无广泛报道F=7。"
-          },
-          {
-            "id": 1672,
-            "url": "https://www.theregister.com/security/2026/07/10/scot-nhs-trust-probes-email-stuffup-involving-maternity-patients-data/5269749",
-            "title": "Scot NHS Trust probes email stuffup involving maternity patients' data",
-            "title_cn": "苏格兰NHS信托调查产妇邮件数据泄露事件",
-            "summary": "NHS Forth Valley is the latest health board to bungle basic email data protection principles",
-            "source_name": "The Register",
-            "source_tier": "C",
-            "published_at": "2026-07-10T09:17:54+00:00",
-            "score_a": 15,
-            "score_b": 3,
-            "score_c": 5,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 38,
-            "fingerprint": "NHS-ForthValley-email-data-breach-2026-07",
-            "anxiety_hits": [],
-            "maturity_stage": "落地执行期",
-            "content_type": "fact_enforcement",
-            "reason": "文章报道NHS医疗数据泄露事件，属于数据与隐私主题（T3），但为具体执法/事件报道，议题成熟度低（已发生），A1=15（部分对齐），A2=0，B=3，E=5（中性借鉴），F=7（中文报道少）。"
           }
         ]
       },
@@ -2343,6 +2393,65 @@
       "related_opinions": []
     },
     {
+      "fingerprint": "UK-ban-under16-social-media-2026-06",
+      "article_count": 4,
+      "main_is_fact": true,
+      "main": {
+        "id": 1346,
+        "url": "https://www.politico.eu/article/ministers-to-ban-under-16s-from-social-media-livestreaming-disappearing-messages/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+        "title": "UK set to ban under-16s from social media, livestreaming, disappearing messages",
+        "title_cn": "英国拟禁止16岁以下使用社交媒体和直播",
+        "summary": "Embattled Prime Minister Keir Starmer is looking for a clear policy win as he fights to stay in office.",
+        "source_name": "Politico EU Tech",
+        "source_tier": "B",
+        "published_at": "2026-06-11T13:27:31+00:00",
+        "total_score": 80,
+        "anxiety_hits": [
+          "未成年人极端事件"
+        ],
+        "maturity_stage": "讨论立法期",
+        "content_type": "fact_legislative",
+        "reason": "文章报道英国拟禁止16岁以下使用社交媒体、直播和阅后即焚消息，主题深度对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=23 A2=5 → A=28；讨论立法期 B=15；产业可借鉴 E=8；中文世界无报道 F=9。"
+      },
+      "related_facts": [
+        {
+          "id": 1364,
+          "url": "https://www.politico.eu/article/uk-announces-social-media-ban-for-under-16s/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "title": "UK confirms social media ban for under-16s",
+          "title_cn": "英国拟禁止16岁以下未成年人使用社交媒体",
+          "source_name": "Politico EU Tech",
+          "source_tier": "B",
+          "published_at": "2026-06-15T07:50:27+00:00",
+          "total_score": 80,
+          "content_type": "fact_legislative"
+        },
+        {
+          "id": 1696,
+          "url": "https://www.theregister.com/personal-tech/2026/07/14/ministers-arm-under-16s-social-media-ban-with-least-surprising-study-of-the-year/5270924",
+          "title": "Ministers arm under-16s social media ban with least surprising study of the year",
+          "title_cn": "英国政府以研究支撑16岁以下社交媒体禁令",
+          "source_name": "The Register",
+          "source_tier": "C",
+          "published_at": "2026-07-14T08:30:00+00:00",
+          "total_score": 64,
+          "content_type": "fact_legislative"
+        }
+      ],
+      "related_opinions": [
+        {
+          "id": 1380,
+          "url": "https://www.politico.eu/article/britain-bans-social-media-for-under-16s-who-are-the-winners-and-losers/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "title": "Britain bans social media for under-16s: Who are the winners and losers?",
+          "title_cn": "英国禁止16岁以下使用社交媒体：谁赢谁输？",
+          "source_name": "Politico EU Tech",
+          "source_tier": "B",
+          "published_at": "2026-06-15T16:57:28+00:00",
+          "total_score": 80,
+          "content_type": "opinion_analysis"
+        }
+      ]
+    },
+    {
       "fingerprint": "Spain-AI-Governance-Law-2026-05",
       "article_count": 3,
       "main_is_fact": true,
@@ -2386,54 +2495,6 @@
         }
       ],
       "related_opinions": []
-    },
-    {
-      "fingerprint": "UK-ban-under16-social-media-2026-06",
-      "article_count": 3,
-      "main_is_fact": true,
-      "main": {
-        "id": 1346,
-        "url": "https://www.politico.eu/article/ministers-to-ban-under-16s-from-social-media-livestreaming-disappearing-messages/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-        "title": "UK set to ban under-16s from social media, livestreaming, disappearing messages",
-        "title_cn": "英国拟禁止16岁以下使用社交媒体和直播",
-        "summary": "Embattled Prime Minister Keir Starmer is looking for a clear policy win as he fights to stay in office.",
-        "source_name": "Politico EU Tech",
-        "source_tier": "B",
-        "published_at": "2026-06-11T13:27:31+00:00",
-        "total_score": 77,
-        "anxiety_hits": [
-          "未成年人极端事件"
-        ],
-        "maturity_stage": "讨论立法期",
-        "content_type": "fact_legislative",
-        "reason": "文章报道英国拟禁止16岁以下使用社交媒体、直播和阅后即焚消息，主题深度对齐未成年人网络保护（T5），命中未成年人极端事件关切议题。A1=23 A2=5 → A=28；讨论立法期 B=15；产业可借鉴 E=8；中文世界无报道 F=9。"
-      },
-      "related_facts": [
-        {
-          "id": 1364,
-          "url": "https://www.politico.eu/article/uk-announces-social-media-ban-for-under-16s/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-          "title": "UK confirms social media ban for under-16s",
-          "title_cn": "英国拟禁止16岁以下未成年人使用社交媒体",
-          "source_name": "Politico EU Tech",
-          "source_tier": "B",
-          "published_at": "2026-06-15T07:50:27+00:00",
-          "total_score": 77,
-          "content_type": "fact_legislative"
-        }
-      ],
-      "related_opinions": [
-        {
-          "id": 1380,
-          "url": "https://www.politico.eu/article/britain-bans-social-media-for-under-16s-who-are-the-winners-and-losers/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-          "title": "Britain bans social media for under-16s: Who are the winners and losers?",
-          "title_cn": "英国禁止16岁以下使用社交媒体：谁赢谁输？",
-          "source_name": "Politico EU Tech",
-          "source_tier": "B",
-          "published_at": "2026-06-15T16:57:28+00:00",
-          "total_score": 77,
-          "content_type": "opinion_analysis"
-        }
-      ]
     },
     {
       "fingerprint": "New-Jersey-data-broker-registration-2026-07",
@@ -3248,10 +3309,10 @@
     }
   ],
   "stats": {
-    "total": 1620,
+    "total": 1621,
     "by_type": {
       "fact_enforcement": 97,
-      "fact_legislative": 100,
+      "fact_legislative": 101,
       "fact_official_doc": 48,
       "opinion_analysis": 83
     },
@@ -3262,13 +3323,13 @@
       "source_name": "OII",
       "feed_url": "https://www.oii.ox.ac.uk/news-events/news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
       "last_success_at": "2026-06-04T10:13:12.070378+00:00",
       "last_error": "XML parse error: not well-formed (invalid token): line 5, column 175",
       "last_article_count": 10,
-      "consecutive_fails": 83,
+      "consecutive_fails": 84,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-08T15:38:51+00:00",
       "stale_days": 66,
       "status": "dead"
@@ -3412,13 +3473,13 @@
       "source_name": "Platformer",
       "feed_url": "https://www.platformer.news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 1,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-28T14:00:47+00:00",
       "stale_days": 46,
       "status": "stale"
@@ -3427,13 +3488,13 @@
       "source_name": "EPIC",
       "feed_url": "https://epic.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-01T21:22:54+00:00",
       "stale_days": 12,
       "status": "stale"
@@ -3442,13 +3503,13 @@
       "source_name": "IAPP Daily Dashboard (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/9v0c5wjcqvoklno87tca.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 6,
       "consecutive_fails": 0,
-      "recent_7d_success": 9,
-      "recent_7d_total": 15,
+      "recent_7d_success": 10,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-05-06T13:18:40.669000+00:00",
       "stale_days": 68,
       "status": "stale"
@@ -3457,13 +3518,13 @@
       "source_name": "OAIC (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 2,
       "consecutive_fails": 0,
-      "recent_7d_success": 9,
-      "recent_7d_total": 15,
+      "recent_7d_success": 10,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-06-29T23:38:05.650000+00:00",
       "stale_days": 14,
       "status": "stale"
@@ -3472,13 +3533,13 @@
       "source_name": "CNIL (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 3,
       "consecutive_fails": 0,
-      "recent_7d_success": 9,
-      "recent_7d_total": 15,
+      "recent_7d_success": 10,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-01T17:34:05.943000+00:00",
       "stale_days": 12,
       "status": "stale"
@@ -3487,13 +3548,13 @@
       "source_name": "Import AI (Substack)",
       "feed_url": "https://jack-clark.net/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-06T12:31:05+00:00",
       "stale_days": 7,
       "status": "warn"
@@ -3502,13 +3563,13 @@
       "source_name": "AI Now",
       "feed_url": "https://ainowinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-08T12:40:29+00:00",
       "stale_days": 5,
       "status": "warn"
@@ -3517,13 +3578,13 @@
       "source_name": "WilmerHale Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/muwfbzqx60g7b14mspkf.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 9,
-      "recent_7d_total": 15,
+      "recent_7d_success": 10,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "warn"
@@ -3532,13 +3593,13 @@
       "source_name": "Inside Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 9,
-      "recent_7d_total": 15,
+      "recent_7d_success": 10,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "warn"
@@ -3547,13 +3608,13 @@
       "source_name": "HAI Stanford (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 9,
       "consecutive_fails": 0,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-05T17:32:02.859000+00:00",
       "stale_days": 8,
       "status": "warn"
@@ -3562,13 +3623,13 @@
       "source_name": "MLex AI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 10,
-      "recent_7d_total": 15,
+      "recent_7d_success": 11,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "warn"
@@ -3577,13 +3638,13 @@
       "source_name": "EDPS (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 9,
-      "recent_7d_total": 15,
+      "recent_7d_success": 10,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "warn"
@@ -3592,13 +3653,13 @@
       "source_name": "TechPolicy Press (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 8,
       "consecutive_fails": 0,
-      "recent_7d_success": 10,
-      "recent_7d_total": 15,
+      "recent_7d_success": 11,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-12T12:51:17.900000+00:00",
       "stale_days": 1,
       "status": "warn"
@@ -3607,13 +3668,13 @@
       "source_name": "Brookings TechTank (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/btrel8v1yu4h5i4xcsze.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 12,
       "consecutive_fails": 0,
-      "recent_7d_success": 9,
-      "recent_7d_total": 15,
+      "recent_7d_success": 10,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-11T11:30:09.917000+00:00",
       "stale_days": 2,
       "status": "warn"
@@ -3622,13 +3683,13 @@
       "source_name": "Tech Policy Press",
       "feed_url": "https://www.techpolicy.press/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3637,14 +3698,14 @@
       "source_name": "The Register",
       "feed_url": "https://www.theregister.com/headlines.atom",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 8,
       "consecutive_fails": 0,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-07-13T15:00:00+00:00",
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
+      "latest_article_at": "2026-07-14T08:30:00+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -3652,13 +3713,13 @@
       "source_name": "DLA Piper",
       "feed_url": "https://privacymatters.dlapiper.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-13T14:10:29+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3667,13 +3728,13 @@
       "source_name": "Future of Privacy Forum",
       "feed_url": "https://fpf.org/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-10T12:45:00+00:00",
       "stale_days": 3,
       "status": "ok"
@@ -3682,13 +3743,13 @@
       "source_name": "NIST",
       "feed_url": "https://www.nist.gov/news-events/news/rss.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 40,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-09T12:00:00+00:00",
       "stale_days": 4,
       "status": "ok"
@@ -3697,13 +3758,13 @@
       "source_name": "FTC",
       "feed_url": "https://www.ftc.gov/feeds/press-release.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-13T12:00:00+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3712,13 +3773,13 @@
       "source_name": "Inside Privacy (Covington)",
       "feed_url": "https://www.insideprivacy.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-13T20:47:33+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3727,13 +3788,13 @@
       "source_name": "TechCrunch",
       "feed_url": "https://techcrunch.com/feed/",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 4,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-13T23:58:27+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3742,13 +3803,13 @@
       "source_name": "Politico EU Tech",
       "feed_url": "https://www.politico.eu/section/technology/feed",
       "source_tier": "B",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 31,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-13T17:34:24+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3757,13 +3818,13 @@
       "source_name": "CMA UK",
       "feed_url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 20,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-09T10:50:02+00:00",
       "stale_days": 4,
       "status": "ok"
@@ -3772,13 +3833,13 @@
       "source_name": "Ada Lovelace",
       "feed_url": "https://www.adalovelaceinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 16,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3787,13 +3848,13 @@
       "source_name": "DataGuidance (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 8,
       "consecutive_fails": 0,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
       "latest_article_at": "2026-07-13T14:01:44.243000+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -3802,13 +3863,13 @@
       "source_name": "Lawfare (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eqkwbtfnwj1lqbi08d5p.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3817,13 +3878,13 @@
       "source_name": "NIST AISI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-07-14T08:28:18.676598+00:00",
-      "last_success_at": "2026-07-14T08:28:18.676598+00:00",
+      "last_attempt_at": "2026-07-14T09:18:31.193799+00:00",
+      "last_success_at": "2026-07-14T09:18:31.193799+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 11,
-      "recent_7d_total": 15,
+      "recent_7d_success": 12,
+      "recent_7d_total": 16,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -3834,40 +3895,40 @@
       {
         "emoji": "👶",
         "name": "未成年人网络保护",
-        "blurb": "欧盟拟限制未成年人社交媒体使用",
+        "blurb": "针对未成年人的社交媒体限制",
         "article_ids": [
-          1681,
-          1691
+          1696
         ]
       },
       {
         "emoji": "🤖",
         "name": "深度伪造与AI监管",
-        "blurb": "欧盟与中国深度伪造法律比较",
+        "blurb": "深度伪造法律比较分析",
         "article_ids": [
           1684
         ]
       },
       {
+        "emoji": "📢",
+        "name": "社交媒体平台治理",
+        "blurb": "欧盟与X平台监管动态",
+        "article_ids": [
+          1691,
+          1686
+        ]
+      },
+      {
         "emoji": "🔐",
         "name": "隐私与数据保护立法",
-        "blurb": "特拉华州通过DPDPA修正案",
+        "blurb": "美国州级隐私法修正案",
         "article_ids": [
           1685
         ]
       },
       {
-        "emoji": "📢",
-        "name": "平台算法与内容治理",
-        "blurb": "X平台调整算法增强社区氛围",
-        "article_ids": [
-          1686
-        ]
-      },
-      {
         "emoji": "🛰️",
-        "name": "执法与公民自由争议",
-        "blurb": "洛杉矶警局终止监控合同",
+        "name": "执法监控与公民自由",
+        "blurb": "警局终止监控合同",
         "article_ids": [
           1689
         ]
@@ -3880,7 +3941,7 @@
         "blurb": "针对未成年人的社交媒体限制",
         "article_ids": [
           1681,
-          1691
+          1696
         ]
       },
       {
@@ -3895,17 +3956,18 @@
       {
         "emoji": "🔐",
         "name": "隐私与数据保护立法",
-        "blurb": "隐私立法与执法动态",
+        "blurb": "隐私法案与执法行动",
         "article_ids": [
-          1689,
-          1685
+          1685,
+          1689
         ]
       },
       {
-        "emoji": "🔀",
-        "name": "其他治理动态",
-        "blurb": "平台算法调整等",
+        "emoji": "📢",
+        "name": "社交媒体平台监管",
+        "blurb": "欧盟路线图与平台算法调整",
         "article_ids": [
+          1691,
           1686
         ]
       }
@@ -3913,80 +3975,96 @@
     "120h": [
       {
         "emoji": "👶",
-        "name": "未成年人网络保护与社交媒体监管",
-        "blurb": "欧盟推动未成年人社交媒体限制与儿童安全立法",
+        "name": "未成年人网络保护与社交媒体限制",
+        "blurb": "欧盟及英国推动未成年人社交媒体禁令",
         "article_ids": [
           1666,
           1668,
           1667,
           1681,
-          1676,
-          1671,
-          1691
+          1696
         ]
       },
       {
         "emoji": "🤖",
-        "name": "AI治理与深度伪造法律比较",
-        "blurb": "生成式AI监管、深度伪造法律及AI主权讨论",
+        "name": "AI生成内容与深度伪造治理",
+        "blurb": "AI内容标识、深度伪造法律比较",
         "article_ids": [
           1669,
           1684,
-          1683,
           1664,
-          1663,
-          1654
+          1663
+        ]
+      },
+      {
+        "emoji": "⚖️",
+        "name": "平台责任与成瘾性设计监管",
+        "blurb": "欧盟对Meta成瘾性功能的执法行动",
+        "article_ids": [
+          1676,
+          1671,
+          1691,
+          1686
         ]
       },
       {
         "emoji": "🔐",
-        "name": "数据隐私与跨境合规动态",
-        "blurb": "数据经纪人注册、DPDPA修正案及美欧数据跨境",
+        "name": "数据隐私与跨境监管动态",
+        "blurb": "美国州级数据法及最高法院判例影响",
         "article_ids": [
           1673,
-          1685,
-          1652
+          1652,
+          1685
         ]
       },
       {
-        "emoji": "📢",
-        "name": "平台责任与算法透明度",
-        "blurb": "平台成瘾性设计、算法调整及广告披露要求",
+        "emoji": "🛰️",
+        "name": "AI主权与基础设施治理",
+        "blurb": "AI主权讨论及隐私基础设施研讨会",
         "article_ids": [
-          1686,
-          1689,
-          1677
+          1683,
+          1654
+        ]
+      },
+      {
+        "emoji": "🔀",
+        "name": "其他治理动态",
+        "blurb": "员工监控、警局合同终止等",
+        "article_ids": [
+          1677,
+          1689
         ]
       }
     ],
     "360h": [
       {
         "emoji": "📱",
-        "name": "移动平台反垄断监管",
-        "blurb": "CMA对苹果和谷歌的战略市场地位认定",
+        "name": "移动平台反垄断与数字市场",
+        "blurb": "CMA对苹果/谷歌的战略市场认定与监管",
         "article_ids": [
           1530,
           1532,
           1534,
           1533,
           1535,
+          1529,
           1572,
           1628
         ]
       },
       {
         "emoji": "👶",
-        "name": "未成年人网络保护与儿童安全",
-        "blurb": "年龄验证、社交媒体限制及儿童性虐待",
+        "name": "未成年人网络保护与社交媒体监管",
+        "blurb": "年龄验证、儿童安全、社交媒体限制",
         "article_ids": [
           1584,
           1603,
           1607,
           1666,
           1668,
-          1671,
           1667,
           1681,
+          1696,
           1583,
           1585
         ]
@@ -3994,7 +4072,7 @@
       {
         "emoji": "🤖",
         "name": "AI治理与深度伪造监管",
-        "blurb": "AI准确性、高风险系统及深度伪造法律",
+        "blurb": "AI准确性、高风险系统、深度伪造法律",
         "article_ids": [
           1578,
           1669,
@@ -4011,57 +4089,50 @@
       {
         "emoji": "🔐",
         "name": "数据隐私与跨境数据流动",
-        "blurb": "数据经纪人注册、隐私执法及跨境协议",
+        "blurb": "数据经纪人、跨境协议、隐私执法",
         "article_ids": [
           1673,
           1596,
           1597,
-          1652,
           1547,
+          1652,
           1685,
           1537,
-          1540
+          1540,
+          1602,
+          1677
         ]
       },
       {
         "emoji": "⚖️",
         "name": "平台责任与算法透明度",
-        "blurb": "DSA执法、算法调整及社区笔记",
+        "blurb": "DSA执法、算法调整、成瘾性设计",
         "article_ids": [
           1631,
           1676,
+          1671,
           1691,
-          1686,
-          1642
-        ]
-      },
-      {
-        "emoji": "🛰️",
-        "name": "新兴技术风险与监控",
-        "blurb": "AI Agent漏洞、间谍软件及监控合同",
-        "article_ids": [
-          1620,
-          1622,
-          1689,
-          1644,
-          1614,
-          1663
+          1642,
+          1686
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "未归入主类的候选选题",
+        "blurb": "间谍软件、AI Agent安全、版权等",
         "article_ids": [
-          1529,
-          1602,
+          1620,
+          1622,
           1654,
-          1677,
           1587,
           1683,
           1575,
+          1689,
           1629,
-          1640
+          1640,
+          1644,
+          1614,
+          1663
         ]
       }
     ]
