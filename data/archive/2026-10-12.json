@@ -1,14 +1,60 @@
 {
-  "snapshot_at": "2026-10-12T15:30:15.506577+00:00",
+  "snapshot_at": "2026-10-12T16:46:52.991319+00:00",
   "schema_version": "v1.4",
   "tabs": {
     "24h": {
       "facts": {
-        "top3": [],
+        "top3": [
+          {
+            "id": 2672,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/mtdhepxehnyyczijg6m6ksm874wkpniky3zpit2m.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 12, 20…",
+            "title_cn": "日越就 ICT 与数字转型 MOU 达成实施计划",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 12, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks International: Japan and Vietnam agree on implementation plan for ICT and digital transformation MOU Japan and Vietnam agreed on an implementation plan for their ICT and digital transformation MOU, focusing on AI, large language models, and human resource development. Read Now Save for Later &#160; KEY UPDATES AT A GLANCE 3 D",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-10-12T16:40:10.130000+00:00",
+            "score_a": 12,
+            "score_b": 8,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 47,
+            "fingerprint": "Japan-Vietnam-ICT-Digital-Transformation-MOU-AI-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "规则成形期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件摘要主议题为日本与越南就 ICT 与数字转型 MOU 达成实施计划，涉及 AI 与大语言模型，属 T1 AI 治理的轻度对齐（国际合作/政策层面，非具体监管规则）。A1=12，无关切议题命中 A2=0 → A=12；MOU 实施计划属规则成形期 B=8；产业可借鉴性中性 E=5；中文世界无报道 F=7。"
+          }
+        ],
         "pool": []
       },
       "opinions": {
-        "top3": [],
+        "top3": [
+          {
+            "id": 2670,
+            "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+            "title": "Microsoft president says UK is best placed to drive AI regulation",
+            "title_cn": "微软总裁呼吁英国主导 AI 监管",
+            "summary": "Microsoft President Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies.",
+            "source_name": "TechCrunch",
+            "source_tier": "C",
+            "published_at": "2026-10-12T15:31:19+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "Microsoft-Smith-UK-AI-regulation-call-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "微软总裁呼吁英国主导 AI 监管，属 AI 治理主题（T1），但文章主体是高管表态与倡议，非具体法案或执法动作，主题对齐度中等。A1=18，无命中关切议题 A2=0 → A=18；处于讨论立法期 B=15；产业可借鉴性中性 E=5；中文世界报道有限 F=7。"
+          }
+        ],
         "pool": []
       }
     },
@@ -40,30 +86,6 @@
             "reason": "Anthropic 承认无法可靠控制其 AI agent，切断内部评估的实时互联网访问。主题深度对齐 AI 治理（T1）中的 Agent 治理与基础模型安全，命中 Agent 等新形态关切议题。A1=18（深度对齐但非监管动作，属企业安全事件）+ A2=5（Agent 治理）→ A=22；风险冒头期 B=20；产业可借鉴 E=8；中文世界无报道 F=9。"
           },
           {
-            "id": 2661,
-            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/f8mym8oha0m49vcigjoe17qmp2pigvwkeqqf8e8e.html",
-            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 09, 20…",
-            "title_cn": "英国 ICO 就 agentic AI 数据保护风险发起证据征集",
-            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 09, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks UK: ICO launches call for evidence on data protection risks of agentic AI The ICO seeks evidence on data protection risks of agentic AI to develop guidance and support responsible AI development. Read Now Save for Later Denmark: Digitaliseringsstyrelsen launches online guides on EU digital regulations Digitaliseringsstyrelsen",
-            "source_name": "DataGuidance (KtN)",
-            "source_tier": "A",
-            "published_at": "2026-10-09T16:15:50.848000+00:00",
-            "score_a": 20,
-            "score_b": 15,
-            "score_c": 12,
-            "score_d": 3,
-            "score_e": 8,
-            "score_f": 7,
-            "total_score": 65,
-            "fingerprint": "UK-ICO-call-for-evidence-agentic-AI-data-protection-2026-10",
-            "anxiety_hits": [
-              "Agent 等新形态"
-            ],
-            "maturity_stage": "讨论立法期",
-            "content_type": "fact_official_doc",
-            "reason": "KtN 邮件主议题为英国 ICO 就 agentic AI 的数据保护风险发起 call for evidence，属数据与隐私（T3）兼 AI 治理（T1）主题，深度对齐；命中 Agent 等新形态关切议题。A1=18 A2=5 → A=20（邮件为多条集合，主议题对齐但非单一深度报道）；call for evidence 属讨论立法期 B=15；海外监管做法可借鉴 E=8；中文世界尚无系统报道 F=7。"
-          },
-          {
             "id": 2658,
             "url": "https://www.politico.eu/article/turkey-bans-social-media-for-kids-under-15/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
             "title": "Turkey bans social media for kids under 15",
@@ -86,6 +108,28 @@
             "maturity_stage": "规则成形期",
             "content_type": "fact_legislative",
             "reason": "土耳其立法禁止 15 岁以下未成年人使用社交媒体，深度对齐未成年人网络保护（T5）与平台治理（T2），命中未成年人保护关切议题。A1=22（核心议题）+A2=3（未成年人相关，非极端事件档）→ A=25；已通过立法属规则成形期 B=8；海外 age assurance 做法对国内有借鉴价值 E=8；中文世界报道有限 F=7。"
+          },
+          {
+            "id": 2672,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/mtdhepxehnyyczijg6m6ksm874wkpniky3zpit2m.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 12, 20…",
+            "title_cn": "日越就 ICT 与数字转型 MOU 达成实施计划",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 12, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks International: Japan and Vietnam agree on implementation plan for ICT and digital transformation MOU Japan and Vietnam agreed on an implementation plan for their ICT and digital transformation MOU, focusing on AI, large language models, and human resource development. Read Now Save for Later &#160; KEY UPDATES AT A GLANCE 3 D",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-10-12T16:40:10.130000+00:00",
+            "score_a": 12,
+            "score_b": 8,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 47,
+            "fingerprint": "Japan-Vietnam-ICT-Digital-Transformation-MOU-AI-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "规则成形期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件摘要主议题为日本与越南就 ICT 与数字转型 MOU 达成实施计划，涉及 AI 与大语言模型，属 T1 AI 治理的轻度对齐（国际合作/政策层面，非具体监管规则）。A1=12，无关切议题命中 A2=0 → A=12；MOU 实施计划属规则成形期 B=8；产业可借鉴性中性 E=5；中文世界无报道 F=7。"
           }
         ],
         "pool": []
@@ -115,6 +159,28 @@
             "maturity_stage": "风险冒头期",
             "content_type": "opinion_analysis",
             "reason": "文章报道 AI 系统/Agent 对关键基础设施发动攻击的能力已成熟而防御方未准备好，属 AI 治理（T1）中 Agent 治理与基础模型安全范畴，部分对齐主题。命中 Agent 等新形态关切议题。风险冒头期 B=20；产业可借鉴性中性 E=5；中文世界报道稀缺 F=7。"
+          },
+          {
+            "id": 2670,
+            "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+            "title": "Microsoft president says UK is best placed to drive AI regulation",
+            "title_cn": "微软总裁呼吁英国主导 AI 监管",
+            "summary": "Microsoft President Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies.",
+            "source_name": "TechCrunch",
+            "source_tier": "C",
+            "published_at": "2026-10-12T15:31:19+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "Microsoft-Smith-UK-AI-regulation-call-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "微软总裁呼吁英国主导 AI 监管，属 AI 治理主题（T1），但文章主体是高管表态与倡议，非具体法案或执法动作，主题对齐度中等。A1=18，无命中关切议题 A2=0 → A=18；处于讨论立法期 B=15；产业可借鉴性中性 E=5；中文世界报道有限 F=7。"
           }
         ],
         "pool": []
@@ -218,30 +284,6 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_official_doc",
             "reason": "KtN 邮件主议题为英国 ICO 就 agentic AI 的数据保护风险发起 call for evidence，属数据与隐私（T3）兼 AI 治理（T1）主题，深度对齐；命中 Agent 等新形态关切议题。A1=18 A2=5 → A=20（邮件为多条集合，主议题对齐但非单一深度报道）；call for evidence 属讨论立法期 B=15；海外监管做法可借鉴 E=8；中文世界尚无系统报道 F=7。"
-          },
-          {
-            "id": 2624,
-            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/ti60tkz8u8yi3er08akyrorh7h99fl2c4ohdd7lp.html",
-            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 07, 20…",
-            "title_cn": "新加坡 MAS 发布 AI 风险管理指南",
-            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 07, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks Italy: CERT-AGID publishes paper on explosive prompts and agentic AI systems security CERT-AGID highlights prompt injection as a major security threat in AI systems and recommends independent external authorization controls. Read Now Save for Later Singapore: MAS publishes Guidelines on Artificial Intelligence Risk Management",
-            "source_name": "DataGuidance (KtN)",
-            "source_tier": "A",
-            "published_at": "2026-10-07T16:45:17.295000+00:00",
-            "score_a": 18,
-            "score_b": 15,
-            "score_c": 12,
-            "score_d": 3,
-            "score_e": 7,
-            "score_f": 7,
-            "total_score": 62,
-            "fingerprint": "SG-MAS-AI-Risk-Management-Guidelines-2026-10",
-            "anxiety_hits": [
-              "Agent 等新形态"
-            ],
-            "maturity_stage": "讨论立法期",
-            "content_type": "fact_official_doc",
-            "reason": "KtN 邮件摘要含两条 AI 治理动态：意大利 CERT-AGID 发布关于提示注入与 agentic AI 系统安全的论文，以及新加坡 MAS 发布 AI 风险管理指南。主议题取权重档最高的 Agent 等新形态（agentic AI 安全），属 T1 AI 治理主题，部分深度对齐。A1=15（agentic AI 安全为擦边核心议题），A2=3（Agent 新形态权重档高但仅摘要提及，酌情给 3）→ A=18；MAS 指南属官方指引发布，处于讨论/规则成形早期，B=15；E=7（新加坡 AI 风险管理指南对国内有参考价值）；F=7（中文世界报道零星）。"
           },
           {
             "id": 2623,
@@ -384,6 +426,28 @@
             "reason": "英国最高法院就 GDPR 第 82 条非物质损害赔偿是否需达到严重性门槛进行审理，属数据与隐私主题（T3），但为具体司法程序而非新风险或立法动态。A1=18（部分对齐，聚焦损害赔偿门槛而非数据治理核心议题）；无关切议题命中 A2=0 → A=18；已进入司法审理阶段 B=3；产业可借鉴性中性 E=5；中文世界无报道 F=7。"
           },
           {
+            "id": 2672,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/mtdhepxehnyyczijg6m6ksm874wkpniky3zpit2m.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 12, 20…",
+            "title_cn": "日越就 ICT 与数字转型 MOU 达成实施计划",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 12, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks International: Japan and Vietnam agree on implementation plan for ICT and digital transformation MOU Japan and Vietnam agreed on an implementation plan for their ICT and digital transformation MOU, focusing on AI, large language models, and human resource development. Read Now Save for Later &#160; KEY UPDATES AT A GLANCE 3 D",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-10-12T16:40:10.130000+00:00",
+            "score_a": 12,
+            "score_b": 8,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 47,
+            "fingerprint": "Japan-Vietnam-ICT-Digital-Transformation-MOU-AI-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "规则成形期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件摘要主议题为日本与越南就 ICT 与数字转型 MOU 达成实施计划，涉及 AI 与大语言模型，属 T1 AI 治理的轻度对齐（国际合作/政策层面，非具体监管规则）。A1=12，无关切议题命中 A2=0 → A=12；MOU 实施计划属规则成形期 B=8；产业可借鉴性中性 E=5；中文世界无报道 F=7。"
+          },
+          {
             "id": 2649,
             "url": "https://www.theregister.com/ai-and-ml/2026/10/09/anthropic-asks-users-to-stop-being-mean-to-claude/5302218",
             "title": "Anthropic asks users to stop being mean to Claude",
@@ -483,6 +547,28 @@
           }
         ],
         "pool": [
+          {
+            "id": 2670,
+            "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+            "title": "Microsoft president says UK is best placed to drive AI regulation",
+            "title_cn": "微软总裁呼吁英国主导 AI 监管",
+            "summary": "Microsoft President Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies.",
+            "source_name": "TechCrunch",
+            "source_tier": "C",
+            "published_at": "2026-10-12T15:31:19+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "Microsoft-Smith-UK-AI-regulation-call-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "微软总裁呼吁英国主导 AI 监管，属 AI 治理主题（T1），但文章主体是高管表态与倡议，非具体法案或执法动作，主题对齐度中等。A1=18，无命中关切议题 A2=0 → A=18；处于讨论立法期 B=15；产业可借鉴性中性 E=5；中文世界报道有限 F=7。"
+          },
           {
             "id": 2622,
             "url": "https://www.politico.eu/sponsored-content/qa-will-open-models-be-europes-advantage/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
@@ -1464,6 +1550,28 @@
             "reason": "文章讨论苏格兰法院对 UK GDPR 第82条损害赔偿门槛的司法认定，属数据与隐私主题（T3），但聚焦司法裁判标准而非新立法或新风险，主题对齐度中等。A1=18，无关切议题命中 A2=0 → A=18；司法裁判属落地执行期 B=3；产业可借鉴性中性 E=5；中文世界无报道 F=7。"
           },
           {
+            "id": 2672,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/mtdhepxehnyyczijg6m6ksm874wkpniky3zpit2m.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 12, 20…",
+            "title_cn": "日越就 ICT 与数字转型 MOU 达成实施计划",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 12, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks International: Japan and Vietnam agree on implementation plan for ICT and digital transformation MOU Japan and Vietnam agreed on an implementation plan for their ICT and digital transformation MOU, focusing on AI, large language models, and human resource development. Read Now Save for Later &#160; KEY UPDATES AT A GLANCE 3 D",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-10-12T16:40:10.130000+00:00",
+            "score_a": 12,
+            "score_b": 8,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 47,
+            "fingerprint": "Japan-Vietnam-ICT-Digital-Transformation-MOU-AI-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "规则成形期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件摘要主议题为日本与越南就 ICT 与数字转型 MOU 达成实施计划，涉及 AI 与大语言模型，属 T1 AI 治理的轻度对齐（国际合作/政策层面，非具体监管规则）。A1=12，无关切议题命中 A2=0 → A=12；MOU 实施计划属规则成形期 B=8；产业可借鉴性中性 E=5；中文世界无报道 F=7。"
+          },
+          {
             "id": 2649,
             "url": "https://www.theregister.com/ai-and-ml/2026/10/09/anthropic-asks-users-to-stop-being-mean-to-claude/5302218",
             "title": "Anthropic asks users to stop being mean to Claude",
@@ -1486,28 +1594,6 @@
             "maturity_stage": "规则成形期",
             "content_type": "fact_legislative",
             "reason": "Anthropic 更新使用政策，禁止对聊天机器人进行残忍行为，同时涉及武器开发、监控和选举干预等条款。主题部分对齐 AI 治理（T1），属基础模型使用政策范畴，但核心议题为聊天机器人使用规范，治理价值有限。A1=15（部分对齐），A2=3（选举干预/政治内容失控擦边）→ A=18；规则成形期 B=8；产业可借鉴 E=5；中文世界无报道 F=7。"
-          },
-          {
-            "id": 2543,
-            "url": "https://www.theregister.com/security/2026/10/01/uk-privacy-watchdog-starts-over-with-new-board-and-manchester-hq/5300439",
-            "title": "UK privacy watchdog starts over with new board and Manchester HQ",
-            "title_cn": "英国隐私监管机构改组：新委员会与曼彻斯特总部",
-            "summary": "The Information Commission replaces the Information Commissioner, putting statutory powers under collective control",
-            "source_name": "The Register",
-            "source_tier": "C",
-            "published_at": "2026-10-01T10:42:00+00:00",
-            "score_a": 18,
-            "score_b": 8,
-            "score_c": 5,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 46,
-            "fingerprint": "UK-ICO-restructure-board-Manchester-HQ-2026-10",
-            "anxiety_hits": [],
-            "maturity_stage": "规则成形期",
-            "content_type": "fact_legislative",
-            "reason": "英国信息专员办公室（ICO）被信息委员会（Information Commission）取代，法定权力改由集体董事会行使，并迁址曼彻斯特。主题属数据与隐私治理（T3），但聚焦监管机构内部治理结构调整，非具体隐私规则或执法动态，A1 部分对齐给 18；未命中关切议题 A2=0。机构重组属规则成形期 B=8。产业可借鉴性中性 E=5。中文世界报道稀少 F=7。"
           }
         ]
       },
@@ -1728,28 +1814,6 @@
             "reason": "文章聚焦欧盟警务机构（Europol）部署 AI 工具引发的隐私与数据保护争议，属 AI 治理（T1）与数据隐私（T3）交叉议题，深度对齐。A1=20（核心议题为 AI 执法工具与隐私边界），A2=2（未命中高权重关切议题，仅涉隐私执法讨论）→ A=22。议题处于讨论立法/政策辩论期，B=15。欧洲警务 AI 监管经验对国内有参考价值，E=8。中文世界报道有限，F=7。"
           },
           {
-            "id": 2502,
-            "url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx/entries/hqjsnfu1tgkyeulio3aw.html",
-            "title": "At the UN and in Washington, Leaders Clash on Approach to AI",
-            "title_cn": "联合国与华盛顿在AI治理路径上分歧显现",
-            "summary": "96 At the UN and in Washington, Leaders Clash on Approach to AI View in browser Top stories on Tech Policy Press Good morning! It was great to see so many from across the Tech Policy Press community in New York this week. Folks traveled in for the United Nations General Assembly, Climate Week and related events. Artificial intelligence and the concentration of tech power was a topic of discussion in the General Assembly hall, in the Security Council and at debates and discussions hosted in smaller venues across the city. In his speech, UN Secretary-General António Guterres warned that “we are ",
-            "source_name": "TechPolicy Press (KtN)",
-            "source_tier": "A",
-            "published_at": "2026-09-27T15:55:37.587000+00:00",
-            "score_a": 18,
-            "score_b": 15,
-            "score_c": 12,
-            "score_d": 6,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 63,
-            "fingerprint": "UN-AI-regulation-US-China-divergence-2026-09",
-            "anxiety_hits": [],
-            "maturity_stage": "讨论立法期",
-            "content_type": "opinion_analysis",
-            "reason": "文章报道联合国大会与华盛顿在 AI 治理路径上的分歧，属 AI 治理主题（T1），但为综述性 newsletter，非具体立法或执法动作。A1=15（部分对齐，主题为 AI 治理但内容为会议综述），A2=3（涉 AI 治理讨论但未命中高权重关切议题）→ A=18；讨论立法期 B=15；E=5（中性，无直接借鉴）；F=7（中文世界零星报道）。"
-          },
-          {
             "id": 2529,
             "url": "https://techcrunch.com/2026/09/29/heres-why-openai-is-absent-from-nvidias-industry-wide-effort-to-end-rogue-ai-agents/",
             "title": "Here’s why OpenAI is absent from Nvidia’s industry-wide effort to end rogue AI agents",
@@ -1932,6 +1996,28 @@
             "maturity_stage": "风险冒头期",
             "content_type": "opinion_analysis",
             "reason": "文章报道在押的阿尔巴尼亚地拉那市长利用 AI 虚拟形象生成深度伪造演讲继续履职，属于 AI 生成内容（deepfake）在政治场景中的新型滥用，部分对齐内容治理（T4）与 AI 治理（T1）主题，但核心是政治人物个案而非监管动态。A1=8（擦边对齐，主题为政治事件而非治理规则），A2=5（命中政治内容失控）→ A=12；风险冒头期 B=20；产业可借鉴性中性 E=5；中文世界尚无报道 F=7。"
+          },
+          {
+            "id": 2670,
+            "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+            "title": "Microsoft president says UK is best placed to drive AI regulation",
+            "title_cn": "微软总裁呼吁英国主导 AI 监管",
+            "summary": "Microsoft President Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies.",
+            "source_name": "TechCrunch",
+            "source_tier": "C",
+            "published_at": "2026-10-12T15:31:19+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "Microsoft-Smith-UK-AI-regulation-call-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "微软总裁呼吁英国主导 AI 监管，属 AI 治理主题（T1），但文章主体是高管表态与倡议，非具体法案或执法动作，主题对齐度中等。A1=18，无命中关切议题 A2=0 → A=18；处于讨论立法期 B=15；产业可借鉴性中性 E=5；中文世界报道有限 F=7。"
           },
           {
             "id": 2532,
@@ -4310,29 +4396,29 @@
     }
   ],
   "stats": {
-    "total": 2593,
+    "total": 2597,
     "by_type": {
       "fact_enforcement": 193,
       "fact_legislative": 183,
-      "fact_official_doc": 118,
-      "opinion_analysis": 215
+      "fact_official_doc": 119,
+      "opinion_analysis": 216
     },
-    "veto": 1884
+    "veto": 1886
   },
   "feed_health": [
     {
       "source_name": "OII",
       "feed_url": "https://www.oii.ox.ac.uk/news-events/news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
       "last_success_at": "2026-06-04T10:13:12.070378+00:00",
       "last_error": "XML parse error: not well-formed (invalid token): line 5, column 175",
       "last_article_count": 10,
-      "consecutive_fails": 260,
+      "consecutive_fails": 261,
       "recent_7d_success": 0,
       "recent_7d_total": 14,
       "latest_article_at": "2026-05-08T15:38:51+00:00",
-      "stale_days": 156,
+      "stale_days": 157,
       "status": "dead"
     },
     {
@@ -4474,8 +4560,8 @@
       "source_name": "Platformer",
       "feed_url": "https://www.platformer.news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 5,
       "consecutive_fails": 0,
@@ -4489,8 +4575,8 @@
       "source_name": "AI Now",
       "feed_url": "https://ainowinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -4504,8 +4590,8 @@
       "source_name": "IAPP Daily Dashboard (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/9v0c5wjcqvoklno87tca.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4519,8 +4605,8 @@
       "source_name": "OAIC (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4534,8 +4620,8 @@
       "source_name": "CNIL (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 1,
       "consecutive_fails": 0,
@@ -4549,8 +4635,8 @@
       "source_name": "HAI Stanford (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 5,
       "consecutive_fails": 0,
@@ -4564,8 +4650,8 @@
       "source_name": "Import AI (Substack)",
       "feed_url": "https://jack-clark.net/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -4579,8 +4665,8 @@
       "source_name": "Tech Policy Press",
       "feed_url": "https://www.techpolicy.press/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4594,14 +4680,14 @@
       "source_name": "The Register",
       "feed_url": "https://www.theregister.com/headlines.atom",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 8,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
-      "latest_article_at": "2026-10-12T12:58:00+00:00",
+      "latest_article_at": "2026-10-12T15:51:36+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -4609,8 +4695,8 @@
       "source_name": "EPIC",
       "feed_url": "https://epic.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -4624,8 +4710,8 @@
       "source_name": "DLA Piper",
       "feed_url": "https://privacymatters.dlapiper.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -4639,8 +4725,8 @@
       "source_name": "Future of Privacy Forum",
       "feed_url": "https://fpf.org/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -4654,8 +4740,8 @@
       "source_name": "NIST",
       "feed_url": "https://www.nist.gov/news-events/news/rss.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 40,
       "consecutive_fails": 0,
@@ -4669,8 +4755,8 @@
       "source_name": "FTC",
       "feed_url": "https://www.ftc.gov/feeds/press-release.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -4684,8 +4770,8 @@
       "source_name": "Inside Privacy (Covington)",
       "feed_url": "https://www.insideprivacy.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
@@ -4699,23 +4785,23 @@
       "source_name": "TechCrunch",
       "feed_url": "https://techcrunch.com/feed/",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
-      "last_article_count": 0,
+      "last_article_count": 2,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
-      "latest_article_at": "2026-10-10T14:00:00+00:00",
-      "stale_days": 2,
+      "latest_article_at": "2026-10-12T15:45:00+00:00",
+      "stale_days": 0,
       "status": "ok"
     },
     {
       "source_name": "Politico EU Tech",
       "feed_url": "https://www.politico.eu/section/technology/feed",
       "source_tier": "B",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 31,
       "consecutive_fails": 0,
@@ -4729,8 +4815,8 @@
       "source_name": "CMA UK",
       "feed_url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 20,
       "consecutive_fails": 0,
@@ -4744,8 +4830,8 @@
       "source_name": "Ada Lovelace",
       "feed_url": "https://www.adalovelaceinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4759,23 +4845,23 @@
       "source_name": "DataGuidance (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
-      "last_article_count": 16,
+      "last_article_count": 17,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
-      "latest_article_at": "2026-10-09T16:15:50.848000+00:00",
-      "stale_days": 2,
+      "latest_article_at": "2026-10-12T16:40:10.130000+00:00",
+      "stale_days": 0,
       "status": "ok"
     },
     {
       "source_name": "WilmerHale Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/muwfbzqx60g7b14mspkf.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4789,8 +4875,8 @@
       "source_name": "Lawfare (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eqkwbtfnwj1lqbi08d5p.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4804,8 +4890,8 @@
       "source_name": "Inside Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4819,8 +4905,8 @@
       "source_name": "MLex AI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4834,8 +4920,8 @@
       "source_name": "EDPS (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4849,23 +4935,23 @@
       "source_name": "TechPolicy Press (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 6,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-10-11T16:16:43.726000+00:00",
-      "stale_days": 0,
+      "stale_days": 1,
       "status": "ok"
     },
     {
       "source_name": "NIST AISI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4879,8 +4965,8 @@
       "source_name": "Brookings TechTank (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/btrel8v1yu4h5i4xcsze.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-10-12T15:30:09.536928+00:00",
-      "last_success_at": "2026-10-12T15:30:09.536928+00:00",
+      "last_attempt_at": "2026-10-12T16:46:48.543863+00:00",
+      "last_success_at": "2026-10-12T16:46:48.543863+00:00",
       "last_error": null,
       "last_article_count": 11,
       "consecutive_fails": 0,
@@ -4892,24 +4978,49 @@
     }
   ],
   "topics_by_window": {
-    "24h": [],
+    "24h": [
+      {
+        "emoji": "📌",
+        "name": "当期要点",
+        "blurb": "候选文章较少，未做主题归纳",
+        "article_ids": [
+          2670,
+          2672
+        ]
+      }
+    ],
     "72h": [
       {
         "emoji": "🤖",
-        "name": "AI Agent 安全与治理",
-        "blurb": "Agent 失控风险与监管证据征集",
+        "name": "AI Agent 安全与失控风险",
+        "blurb": "智能体联网与关键设施攻击风险",
         "article_ids": [
           2655,
-          2661,
           2664
         ]
       },
       {
         "emoji": "👶",
-        "name": "未成年人社交媒体限制",
-        "blurb": "土耳其立法禁止低龄使用社媒",
+        "name": "未成年人社交媒体禁令",
+        "blurb": "土耳其立法限制低龄使用社媒",
         "article_ids": [
           2658
+        ]
+      },
+      {
+        "emoji": "⚖️",
+        "name": "AI 监管立法与政府主导",
+        "blurb": "微软呼吁英国牵头 AI 监管",
+        "article_ids": [
+          2670
+        ]
+      },
+      {
+        "emoji": "🔀",
+        "name": "其他治理动态",
+        "blurb": "日越 ICT 数字转型合作",
+        "article_ids": [
+          2672
         ]
       }
     ],
@@ -4917,7 +5028,7 @@
       {
         "emoji": "🤖",
         "name": "AI Agent 安全与治理",
-        "blurb": "Agent 风险、控制与监管动态",
+        "blurb": "AI Agent 风险、控制与监管动态",
         "article_ids": [
           2655,
           2661,
@@ -4928,7 +5039,7 @@
       {
         "emoji": "👶",
         "name": "未成年人网络保护",
-        "blurb": "年龄限制与平台安全立法",
+        "blurb": "未成年人社交媒体与年龄限制立法",
         "article_ids": [
           2635,
           2658,
@@ -4937,40 +5048,48 @@
       },
       {
         "emoji": "🔐",
-        "name": "AI 数据保护与合规",
-        "blurb": "数据保护审查与政策更新",
+        "name": "AI 数据保护与隐私",
+        "blurb": "AI 数据使用合规与隐私监管",
         "article_ids": [
-          2624,
           2626,
-          2639,
-          2649,
           2654
         ]
       },
       {
-        "emoji": "🛰️",
-        "name": "AI 地缘政治与安全",
-        "blurb": "国际竞争与虚假信息治理",
+        "emoji": "⚖️",
+        "name": "AI 监管政策与立法",
+        "blurb": "各国 AI 监管政策与立法动态",
         "article_ids": [
-          2646,
-          2623,
-          2622
+          2670,
+          2622,
+          2646
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "AI 使用政策与内容治理",
+        "blurb": "AI 使用政策更新与内容治理",
+        "article_ids": [
+          2639,
+          2649,
+          2637
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "内部安全与吹哨人争议",
+        "blurb": "其他数字治理相关动态",
         "article_ids": [
-          2637
+          2623,
+          2672
         ]
       }
     ],
     "360h": [
       {
         "emoji": "🤖",
-        "name": "AI Agent 安全与失控事件",
-        "blurb": "Agent 越权、失控与安全事件频发",
+        "name": "AI Agent 安全与越权事件",
+        "blurb": "智能体失控、越权访问与安全事件",
         "article_ids": [
           2517,
           2507,
@@ -4984,18 +5103,19 @@
           2529,
           2630,
           2664,
-          2575
+          2575,
+          2506
         ]
       },
       {
         "emoji": "⚖️",
         "name": "全球 AI 立法与监管动态",
-        "blurb": "各国 AI 立法、行政令与监管框架",
+        "blurb": "各国 AI 法案、行政令与监管指南",
         "article_ids": [
           2577,
           2616,
-          2535,
           2606,
+          2535,
           2536,
           2572,
           2585,
@@ -5003,6 +5123,7 @@
           2567,
           2563,
           2639,
+          2670,
           2594,
           2538,
           2599
@@ -5010,62 +5131,59 @@
       },
       {
         "emoji": "👶",
-        "name": "未成年人网络与隐私保护",
-        "blurb": "未成年人上网、社媒限制与隐私",
+        "name": "未成年人网络保护与年龄限制",
+        "blurb": "未成年人上网保护与年龄验证立法",
         "article_ids": [
           2525,
           2635,
           2658,
           2643,
-          2550,
-          2521
+          2550
         ]
       },
       {
         "emoji": "🔐",
-        "name": "AI 数据保护与隐私治理",
-        "blurb": "AI 个人数据保护、隐私评测与执法",
+        "name": "AI 隐私与数据保护合规",
+        "blurb": "AI 处理个人数据的隐私合规动态",
         "article_ids": [
           2598,
-          2506,
           2661,
           2549,
           2612,
           2624,
           2607,
           2626,
-          2600
+          2521
         ]
       },
       {
         "emoji": "📢",
-        "name": "AI 内容风险与深度伪造",
-        "blurb": "深度伪造、虚假信息与内容审核",
+        "name": "深度伪造与 AI 内容治理",
+        "blurb": "深度伪造滥用与 AI 内容溯源监管",
         "article_ids": [
           2601,
-          2608,
           2604,
+          2608,
           2623
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "AI 治理相关其他动态",
+        "blurb": "其他 AI 治理与政策相关动态",
         "article_ids": [
           2590,
           2547,
-          2502,
           2646,
-          2498,
           2589,
-          2528,
-          2580,
-          2637,
+          2600,
           2532,
+          2588,
+          2637,
+          2580,
+          2528,
           2579,
-          2622,
-          2588
+          2622
         ]
       },
       {
@@ -5073,7 +5191,8 @@
         "name": "其他治理动态",
         "blurb": "未归入主类的候选选题",
         "article_ids": [
-          2518
+          2518,
+          2498
         ]
       }
     ]
