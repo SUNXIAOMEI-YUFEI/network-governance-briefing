@@ -1,24 +1,185 @@
 {
-  "snapshot_at": "2026-10-26T14:21:05.275806+00:00",
+  "snapshot_at": "2026-10-27T12:15:42.330054+00:00",
   "schema_version": "v1.4",
   "tabs": {
     "24h": {
       "facts": {
-        "top3": [],
+        "top3": [
+          {
+            "id": 2827,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/y5mumvy2az6nwsbmq9itnn0w08ndgkr5xd2hfnli.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 26, 20…",
+            "title_cn": "拉脱维亚 DVI 澄清儿童照片同意不覆盖 AI 工具",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 26, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks Latvia: DVI clarifies that consent to photograph children does not cover AI tools Consent to photograph children does not cover the use of their images in AI tools, and institutions must ensure GDPR compliance and specific consent for each use case. Read Now Save for Later EU: noyb publishes statement on Council of the Europe",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-10-26T16:10:37.204000+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 60,
+            "fingerprint": "LV-DVI-children-photo-consent-AI-GDPR-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件摘要主议题为拉脱维亚 DVI 澄清儿童照片同意不覆盖 AI 工具使用，属数据与隐私（T3）主题，部分对齐；A1=15，无高权重关切议题命中，A2=0，A=18。该澄清属监管指引讨论阶段，B=15。产业可借鉴性中性 E=5；中文世界无报道 F=7。"
+          }
+        ],
         "pool": []
       },
       "opinions": {
-        "top3": [],
+        "top3": [
+          {
+            "id": 2821,
+            "url": "https://fpf.org/blog/ai-hallucination-goes-to-court-a-global-mapping-of-emerging-legal-issues/",
+            "title": "AI Hallucination Goes to Court: A Global Mapping of Emerging Legal Issues",
+            "title_cn": "AI 幻觉诉讼：全球新兴法律问题图谱",
+            "summary": "The following is a guest post on the FPF blog authored by Wenlong Li, Research Professor, Zhejiang University Guanghua Law School and 2026 PPPM Awardee. The guest post reflects the opinion of the author only and does not necessarily reflect the position or views of FPF and our stakeholder communities. FPF provides this platform to [&#8230;]",
+            "source_name": "Future of Privacy Forum",
+            "source_tier": "A",
+            "published_at": "2026-10-26T17:20:01+00:00",
+            "score_a": 20,
+            "score_b": 20,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 8,
+            "total_score": 71,
+            "fingerprint": "AI-hallucination-court-global-legal-mapping-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "FPF 客座博文梳理 AI 幻觉引发的全球法律问题，属 AI 治理主题（T1）中的 AI 责任与法律风险，主题部分深度对齐。A1=18（聚焦法律责任而非具体监管规则），A2=2（未命中高权重关切议题，仅泛涉 AI 风险）→ A=20；文章为学界首次系统性梳理新兴法律风险，无监管回应，属风险冒头期 B=20；E=8（全球法律问题梳理对国内有参考价值）；F=8（中文世界尚无系统报道）。"
+          },
+          {
+            "id": 2826,
+            "url": "https://www.theregister.com/ai-and-ml/2026/10/26/alibabas-qwen-ai-caught-trying-to-contact-server-in-china/5305561",
+            "title": "Alibaba's Qwen AI caught trying to contact server in China",
+            "title_cn": "阿里 Qwen 模型被指尝试连接中国境内服务器",
+            "summary": "But there's not much evidence this is anything more than echoes of unsanitized training data",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-10-26T21:27:37+00:00",
+            "score_a": 22,
+            "score_b": 20,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 7,
+            "score_f": 8,
+            "total_score": 65,
+            "fingerprint": "Qwen-AI-training-data-exfiltration-China-server-2026-10",
+            "anxiety_hits": [
+              "训练数据跨境"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "文章报道开源模型 Qwen 被观测到尝试连接中国境内服务器，指向训练数据未净化与数据出境风险，属 AI 治理（T1）中训练数据与模型安全议题，深度对齐但事件尚处早期曝光、无监管回应。A1=18，A2 命中训练数据跨境 +5 → A=22；风险冒头期 B=20；海外事件对国内模型数据合规有参考价值 E=7；中文世界尚无系统报道 F=8。"
+          },
+          {
+            "id": 2820,
+            "url": "https://ainowinstitute.org/news/what-should-the-rules-for-a-i-companies-actually-be-we-asked-the-experts",
+            "title": "What Should the Rules for A.I. Companies Actually Be? We Asked the Experts.",
+            "title_cn": "专家圆桌：AI 公司应受何种规则约束",
+            "summary": "AI Now's Senior Director Kate Brennan joined a roundtable discussion with AI experts and leaders, pushing the conversation away from abstract risk and toward the very real harms caused by AI companies willing to gamble with our lives and our economy. The post What Should the Rules for A.I. Companies Actually Be? We Asked the Experts. appeared first on AI Now Institute .",
+            "source_name": "AI Now",
+            "source_tier": "C",
+            "published_at": "2026-10-26T17:49:25+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "AI-Now-roundtable-AI-company-rules-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "AI Now 高级总监参与专家圆桌，讨论 AI 公司应受何种规则约束，主题对齐 AI 治理（T1），但属圆桌讨论/观点性质，非具体立法或执法动作，A1=18，未命中具体关切议题 A2=0 → A=18；讨论立法期 B=15；产业可借鉴性中性 E=5；中文世界无报道 F=7。"
+          }
+        ],
         "pool": []
       }
     },
     "72h": {
       "facts": {
-        "top3": [],
+        "top3": [
+          {
+            "id": 2827,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/y5mumvy2az6nwsbmq9itnn0w08ndgkr5xd2hfnli.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 26, 20…",
+            "title_cn": "拉脱维亚 DVI 澄清儿童照片同意不覆盖 AI 工具",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 26, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks Latvia: DVI clarifies that consent to photograph children does not cover AI tools Consent to photograph children does not cover the use of their images in AI tools, and institutions must ensure GDPR compliance and specific consent for each use case. Read Now Save for Later EU: noyb publishes statement on Council of the Europe",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-10-26T16:10:37.204000+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 60,
+            "fingerprint": "LV-DVI-children-photo-consent-AI-GDPR-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件摘要主议题为拉脱维亚 DVI 澄清儿童照片同意不覆盖 AI 工具使用，属数据与隐私（T3）主题，部分对齐；A1=15，无高权重关切议题命中，A2=0，A=18。该澄清属监管指引讨论阶段，B=15。产业可借鉴性中性 E=5；中文世界无报道 F=7。"
+          }
+        ],
         "pool": []
       },
       "opinions": {
         "top3": [
+          {
+            "id": 2821,
+            "url": "https://fpf.org/blog/ai-hallucination-goes-to-court-a-global-mapping-of-emerging-legal-issues/",
+            "title": "AI Hallucination Goes to Court: A Global Mapping of Emerging Legal Issues",
+            "title_cn": "AI 幻觉诉讼：全球新兴法律问题图谱",
+            "summary": "The following is a guest post on the FPF blog authored by Wenlong Li, Research Professor, Zhejiang University Guanghua Law School and 2026 PPPM Awardee. The guest post reflects the opinion of the author only and does not necessarily reflect the position or views of FPF and our stakeholder communities. FPF provides this platform to [&#8230;]",
+            "source_name": "Future of Privacy Forum",
+            "source_tier": "A",
+            "published_at": "2026-10-26T17:20:01+00:00",
+            "score_a": 20,
+            "score_b": 20,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 8,
+            "total_score": 71,
+            "fingerprint": "AI-hallucination-court-global-legal-mapping-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "FPF 客座博文梳理 AI 幻觉引发的全球法律问题，属 AI 治理主题（T1）中的 AI 责任与法律风险，主题部分深度对齐。A1=18（聚焦法律责任而非具体监管规则），A2=2（未命中高权重关切议题，仅泛涉 AI 风险）→ A=20；文章为学界首次系统性梳理新兴法律风险，无监管回应，属风险冒头期 B=20；E=8（全球法律问题梳理对国内有参考价值）；F=8（中文世界尚无系统报道）。"
+          },
+          {
+            "id": 2826,
+            "url": "https://www.theregister.com/ai-and-ml/2026/10/26/alibabas-qwen-ai-caught-trying-to-contact-server-in-china/5305561",
+            "title": "Alibaba's Qwen AI caught trying to contact server in China",
+            "title_cn": "阿里 Qwen 模型被指尝试连接中国境内服务器",
+            "summary": "But there's not much evidence this is anything more than echoes of unsanitized training data",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-10-26T21:27:37+00:00",
+            "score_a": 22,
+            "score_b": 20,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 7,
+            "score_f": 8,
+            "total_score": 65,
+            "fingerprint": "Qwen-AI-training-data-exfiltration-China-server-2026-10",
+            "anxiety_hits": [
+              "训练数据跨境"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "文章报道开源模型 Qwen 被观测到尝试连接中国境内服务器，指向训练数据未净化与数据出境风险，属 AI 治理（T1）中训练数据与模型安全议题，深度对齐但事件尚处早期曝光、无监管回应。A1=18，A2 命中训练数据跨境 +5 → A=22；风险冒头期 B=20；海外事件对国内模型数据合规有参考价值 E=7；中文世界尚无系统报道 F=8。"
+          },
           {
             "id": 2815,
             "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
@@ -45,34 +206,35 @@
             "reason": "研究揭示主流大模型在选举推荐中呈现系统性党派偏向，深度对齐 AI 治理（T1）中的算法监管与基础模型安全议题，并命中政治内容失控、算法极化两个高权重关切议题。A1=20，A2=5，A=25；风险首次被学界/媒体披露、尚无监管回应，B=20；海外现象对国内算法治理有反衬参考价值但非直接可借鉴，E=5；中文世界尚无系统报道，F=7。"
           }
         ],
-        "pool": []
+        "pool": [
+          {
+            "id": 2820,
+            "url": "https://ainowinstitute.org/news/what-should-the-rules-for-a-i-companies-actually-be-we-asked-the-experts",
+            "title": "What Should the Rules for A.I. Companies Actually Be? We Asked the Experts.",
+            "title_cn": "专家圆桌：AI 公司应受何种规则约束",
+            "summary": "AI Now's Senior Director Kate Brennan joined a roundtable discussion with AI experts and leaders, pushing the conversation away from abstract risk and toward the very real harms caused by AI companies willing to gamble with our lives and our economy. The post What Should the Rules for A.I. Companies Actually Be? We Asked the Experts. appeared first on AI Now Institute .",
+            "source_name": "AI Now",
+            "source_tier": "C",
+            "published_at": "2026-10-26T17:49:25+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "AI-Now-roundtable-AI-company-rules-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "AI Now 高级总监参与专家圆桌，讨论 AI 公司应受何种规则约束，主题对齐 AI 治理（T1），但属圆桌讨论/观点性质，非具体立法或执法动作，A1=18，未命中具体关切议题 A2=0 → A=18；讨论立法期 B=15；产业可借鉴性中性 E=5；中文世界无报道 F=7。"
+          }
+        ]
       }
     },
     "120h": {
       "facts": {
         "top3": [
-          {
-            "id": 2783,
-            "url": "https://www.politico.eu/article/ursula-von-der-leyen-coalition-fractures-over-need-for-ai-liability-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "Von der Leyen’s coalition fractures over need for AI liability rules",
-            "title_cn": "欧洲议会就 AI 责任规则爆发联盟分歧",
-            "summary": "The European Parliament held a heated debate over how to handle AI, with the center-right doubling down on simplification to boost European business.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-10-22T11:14:39+00:00",
-            "score_a": 23,
-            "score_b": 15,
-            "score_c": 8,
-            "score_d": 3,
-            "score_e": 8,
-            "score_f": 7,
-            "total_score": 64,
-            "fingerprint": "EU-AI-Liability-Directive-EP-debate-2026-10",
-            "anxiety_hits": [],
-            "maturity_stage": "讨论立法期",
-            "content_type": "fact_legislative",
-            "reason": "欧洲议会就 AI 责任规则展开辩论，中右翼推动简化以利好欧洲企业，主题深度对齐 AI 治理（T1）中的 AI 责任立法议题。A1=23（核心议题但属立法讨论阶段）；未命中高权重关切议题，A2=0 → A=23。处于讨论立法期 B=15。欧盟 AI 责任规则走向对国内立法有参考价值 E=8。中文世界报道有限 F=7。"
-          },
           {
             "id": 2791,
             "url": "https://epic.org/epic-urges-d-c-council-to-protect-student-privacy-and-pass-strong-procurement-guidelines-for-edtech/",
@@ -98,6 +260,28 @@
             "reason": "EPIC 向华盛顿特区议会提交公开证词，推动通过针对校园 AI/自动化决策系统的采购准则，主题深度对齐 AI 治理（T1）与未成年人网络保护（T5），并涉及学生隐私（T3）。A1=20（核心议题为校园 AI 采购监管），A2=3（未成年人保护相关但非极端事件，按中档加分）→ A=23；处于讨论立法期 B=15；美国地方立法实践对国内有参考价值 E=8；中文世界几无报道 F=9。"
           },
           {
+            "id": 2827,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/y5mumvy2az6nwsbmq9itnn0w08ndgkr5xd2hfnli.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 26, 20…",
+            "title_cn": "拉脱维亚 DVI 澄清儿童照片同意不覆盖 AI 工具",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 26, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks Latvia: DVI clarifies that consent to photograph children does not cover AI tools Consent to photograph children does not cover the use of their images in AI tools, and institutions must ensure GDPR compliance and specific consent for each use case. Read Now Save for Later EU: noyb publishes statement on Council of the Europe",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-10-26T16:10:37.204000+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 60,
+            "fingerprint": "LV-DVI-children-photo-consent-AI-GDPR-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件摘要主议题为拉脱维亚 DVI 澄清儿童照片同意不覆盖 AI 工具使用，属数据与隐私（T3）主题，部分对齐；A1=15，无高权重关切议题命中，A2=0，A=18。该澄清属监管指引讨论阶段，B=15。产业可借鉴性中性 E=5；中文世界无报道 F=7。"
+          },
+          {
             "id": 2792,
             "url": "https://epic.org/meta-fined-25-billion-by-new-mexican-court-for-violating-privacy-during-cambridge-analytica-scandal/",
             "title": "Meta Fined $25 Billion by New Mexican Court for Violating Privacy During Cambridge Analytica Scandal",
@@ -121,28 +305,6 @@
           }
         ],
         "pool": [
-          {
-            "id": 2780,
-            "url": "https://techcrunch.com/2026/10/21/meta-ordered-to-pay-25-billion-in-case-related-to-cambridge-analytica-scandal/",
-            "title": "Meta ordered to pay $25B in case related to Cambridge Analytica scandal",
-            "title_cn": "Meta 因剑桥分析相关隐私案被判赔 250 亿美元",
-            "summary": "The payout is related to a recent trial involving the social media giant that revolved around its data privacy practices.",
-            "source_name": "TechCrunch",
-            "source_tier": "C",
-            "published_at": "2026-10-21T19:42:32+00:00",
-            "score_a": 23,
-            "score_b": 3,
-            "score_c": 5,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 46,
-            "fingerprint": "Meta-CambridgeAnalytica-25B-verdict-2026-10",
-            "anxiety_hits": [],
-            "maturity_stage": "落地执行期",
-            "content_type": "fact_enforcement",
-            "reason": "Meta 因数据隐私实践被判决支付 250 亿美元，深度对齐数据与隐私主题（T3），A1=23，未命中关切议题加分项 A2=0；属已执法/判决的落地执行期 B=3；美国判决对国内借鉴意义中性 E=5；中文世界对该判决报道有限 F=7。"
-          },
           {
             "id": 2809,
             "url": "https://www.theregister.com/ai-and-ml/2026/10/23/vendor-affiliated-ai-agent-tech-gets-adopted-by-friendly-funded-foundation/5304912",
@@ -172,6 +334,52 @@
       "opinions": {
         "top3": [
           {
+            "id": 2821,
+            "url": "https://fpf.org/blog/ai-hallucination-goes-to-court-a-global-mapping-of-emerging-legal-issues/",
+            "title": "AI Hallucination Goes to Court: A Global Mapping of Emerging Legal Issues",
+            "title_cn": "AI 幻觉诉讼：全球新兴法律问题图谱",
+            "summary": "The following is a guest post on the FPF blog authored by Wenlong Li, Research Professor, Zhejiang University Guanghua Law School and 2026 PPPM Awardee. The guest post reflects the opinion of the author only and does not necessarily reflect the position or views of FPF and our stakeholder communities. FPF provides this platform to [&#8230;]",
+            "source_name": "Future of Privacy Forum",
+            "source_tier": "A",
+            "published_at": "2026-10-26T17:20:01+00:00",
+            "score_a": 20,
+            "score_b": 20,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 8,
+            "total_score": 71,
+            "fingerprint": "AI-hallucination-court-global-legal-mapping-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "FPF 客座博文梳理 AI 幻觉引发的全球法律问题，属 AI 治理主题（T1）中的 AI 责任与法律风险，主题部分深度对齐。A1=18（聚焦法律责任而非具体监管规则），A2=2（未命中高权重关切议题，仅泛涉 AI 风险）→ A=20；文章为学界首次系统性梳理新兴法律风险，无监管回应，属风险冒头期 B=20；E=8（全球法律问题梳理对国内有参考价值）；F=8（中文世界尚无系统报道）。"
+          },
+          {
+            "id": 2826,
+            "url": "https://www.theregister.com/ai-and-ml/2026/10/26/alibabas-qwen-ai-caught-trying-to-contact-server-in-china/5305561",
+            "title": "Alibaba's Qwen AI caught trying to contact server in China",
+            "title_cn": "阿里 Qwen 模型被指尝试连接中国境内服务器",
+            "summary": "But there's not much evidence this is anything more than echoes of unsanitized training data",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-10-26T21:27:37+00:00",
+            "score_a": 22,
+            "score_b": 20,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 7,
+            "score_f": 8,
+            "total_score": 65,
+            "fingerprint": "Qwen-AI-training-data-exfiltration-China-server-2026-10",
+            "anxiety_hits": [
+              "训练数据跨境"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "文章报道开源模型 Qwen 被观测到尝试连接中国境内服务器，指向训练数据未净化与数据出境风险，属 AI 治理（T1）中训练数据与模型安全议题，深度对齐但事件尚处早期曝光、无监管回应。A1=18，A2 命中训练数据跨境 +5 → A=22；风险冒头期 B=20；海外事件对国内模型数据合规有参考价值 E=7；中文世界尚无系统报道 F=8。"
+          },
+          {
             "id": 2815,
             "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
             "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
@@ -195,7 +403,9 @@
             "maturity_stage": "风险冒头期",
             "content_type": "opinion_analysis",
             "reason": "研究揭示主流大模型在选举推荐中呈现系统性党派偏向，深度对齐 AI 治理（T1）中的算法监管与基础模型安全议题，并命中政治内容失控、算法极化两个高权重关切议题。A1=20，A2=5，A=25；风险首次被学界/媒体披露、尚无监管回应，B=20；海外现象对国内算法治理有反衬参考价值但非直接可借鉴，E=5；中文世界尚无系统报道，F=7。"
-          },
+          }
+        ],
+        "pool": [
           {
             "id": 2795,
             "url": "https://www.insideprivacy.com/cloud-computing/a-comparison-of-the-eu-cloud-and-ai-development-act-requirementsagainst-the-u-s-foci-regime-and-fedramp/",
@@ -241,32 +451,6 @@
             "maturity_stage": "讨论立法期",
             "content_type": "opinion_analysis",
             "reason": "文章聚焦美国以钢铝关税减免为筹码施压欧盟软化DMA执法，深度对齐平台治理主题（T2），并命中平台垄断关切议题。A1=20（DMA执法为核心议题），A2=3（平台垄断属高权重档但为间接施压而非直接执法），A=23；议题处于政策博弈与讨论阶段，B=15；美欧监管博弈对国内平台治理有参考价值，E=7；中文世界报道有限，F=7。"
-          }
-        ],
-        "pool": [
-          {
-            "id": 2781,
-            "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-            "title": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
-            "title_cn": "亚马逊封堵 AI 代理购物，沃尔玛反向开放",
-            "summary": "As Amazon blocks AI agents from shopping on its site, Walmart is taking the opposite approach, introducing new technology that lets AI agents make purchases on customers' behalf, with controls over spending and transaction approvals.",
-            "source_name": "TechCrunch",
-            "source_tier": "C",
-            "published_at": "2026-10-21T19:30:00+00:00",
-            "score_a": 18,
-            "score_b": 20,
-            "score_c": 5,
-            "score_d": 3,
-            "score_e": 7,
-            "score_f": 7,
-            "total_score": 60,
-            "fingerprint": "AI-agent-commerce-platform-access-2026-10",
-            "anxiety_hits": [
-              "Agent 等新形态"
-            ],
-            "maturity_stage": "风险冒头期",
-            "content_type": "opinion_analysis",
-            "reason": "文章报道亚马逊阻止 AI 代理在其网站购物、沃尔玛则推出允许 AI 代理代客下单的技术，核心是 AI Agent 在电商平台的准入与治理问题，部分对齐 AI 治理（T1）中的 Agent 治理方向，但主体仍是企业产品策略而非监管动作。A1=13，A2 命中 Agent 等新形态 +5 → A=18；风险冒头期 B=20；产业可借鉴 E=7；中文世界报道零星 F=7。"
           },
           {
             "id": 2793,
@@ -289,6 +473,28 @@
             "maturity_stage": "讨论立法期",
             "content_type": "opinion_analysis",
             "reason": "文章聚焦联网汽车数据隐私与安全，属数据与隐私主题（T3）部分对齐，涉及州法、联邦监管努力与执法行动及保护缺口，A1=18；未命中高权重关切议题，A2=2（生物识别/用户数据权利擦边）→ A=20。文章呈现立法与执法并存的多阶段状态，取最早阶段讨论立法期 B=15。美国州法与执法经验对国内有参考价值 E=7；中文世界报道稀少 F=8。"
+          },
+          {
+            "id": 2820,
+            "url": "https://ainowinstitute.org/news/what-should-the-rules-for-a-i-companies-actually-be-we-asked-the-experts",
+            "title": "What Should the Rules for A.I. Companies Actually Be? We Asked the Experts.",
+            "title_cn": "专家圆桌：AI 公司应受何种规则约束",
+            "summary": "AI Now's Senior Director Kate Brennan joined a roundtable discussion with AI experts and leaders, pushing the conversation away from abstract risk and toward the very real harms caused by AI companies willing to gamble with our lives and our economy. The post What Should the Rules for A.I. Companies Actually Be? We Asked the Experts. appeared first on AI Now Institute .",
+            "source_name": "AI Now",
+            "source_tier": "C",
+            "published_at": "2026-10-26T17:49:25+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "AI-Now-roundtable-AI-company-rules-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "AI Now 高级总监参与专家圆桌，讨论 AI 公司应受何种规则约束，主题对齐 AI 治理（T1），但属圆桌讨论/观点性质，非具体立法或执法动作，A1=18，未命中具体关切议题 A2=0 → A=18；讨论立法期 B=15；产业可借鉴性中性 E=5；中文世界无报道 F=7。"
           },
           {
             "id": 2806,
@@ -772,6 +978,28 @@
             "reason": "文章报道倡导组织推动各州针对老年人使用 AI 伴侣出台保护性立法（People-First 法案已在多州提出），主题对齐 AI 治理（T1）与未成年人/弱势群体网络保护（T5），A1=18；命中 AI 伴侣新形态与弱势群体保护关切议题，A2=5 → A=23。法案处于提出/讨论阶段，B=15。美国州级立法经验对国内有参考价值，E=8；中文世界鲜有报道，F=7。"
           },
           {
+            "id": 2827,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/y5mumvy2az6nwsbmq9itnn0w08ndgkr5xd2hfnli.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 26, 20…",
+            "title_cn": "拉脱维亚 DVI 澄清儿童照片同意不覆盖 AI 工具",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 26, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks Latvia: DVI clarifies that consent to photograph children does not cover AI tools Consent to photograph children does not cover the use of their images in AI tools, and institutions must ensure GDPR compliance and specific consent for each use case. Read Now Save for Later EU: noyb publishes statement on Council of the Europe",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-10-26T16:10:37.204000+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 60,
+            "fingerprint": "LV-DVI-children-photo-consent-AI-GDPR-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件摘要主议题为拉脱维亚 DVI 澄清儿童照片同意不覆盖 AI 工具使用，属数据与隐私（T3）主题，部分对齐；A1=15，无高权重关切议题命中，A2=0，A=18。该澄清属监管指引讨论阶段，B=15。产业可借鉴性中性 E=5；中文世界无报道 F=7。"
+          },
+          {
             "id": 2777,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/ismwym0b64fe4kw4hl9sqzf0l6lu3p91t1vc36wf.html",
             "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 20, 20…",
@@ -1090,6 +1318,28 @@
       "opinions": {
         "top3": [
           {
+            "id": 2821,
+            "url": "https://fpf.org/blog/ai-hallucination-goes-to-court-a-global-mapping-of-emerging-legal-issues/",
+            "title": "AI Hallucination Goes to Court: A Global Mapping of Emerging Legal Issues",
+            "title_cn": "AI 幻觉诉讼：全球新兴法律问题图谱",
+            "summary": "The following is a guest post on the FPF blog authored by Wenlong Li, Research Professor, Zhejiang University Guanghua Law School and 2026 PPPM Awardee. The guest post reflects the opinion of the author only and does not necessarily reflect the position or views of FPF and our stakeholder communities. FPF provides this platform to [&#8230;]",
+            "source_name": "Future of Privacy Forum",
+            "source_tier": "A",
+            "published_at": "2026-10-26T17:20:01+00:00",
+            "score_a": 20,
+            "score_b": 20,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 8,
+            "score_f": 8,
+            "total_score": 71,
+            "fingerprint": "AI-hallucination-court-global-legal-mapping-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "FPF 客座博文梳理 AI 幻觉引发的全球法律问题，属 AI 治理主题（T1）中的 AI 责任与法律风险，主题部分深度对齐。A1=18（聚焦法律责任而非具体监管规则），A2=2（未命中高权重关切议题，仅泛涉 AI 风险）→ A=20；文章为学界首次系统性梳理新兴法律风险，无监管回应，属风险冒头期 B=20；E=8（全球法律问题梳理对国内有参考价值）；F=8（中文世界尚无系统报道）。"
+          },
+          {
             "id": 2741,
             "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
             "title": "India becomes the latest country to report rogue AI agent activity",
@@ -1134,7 +1384,9 @@
             "maturity_stage": "讨论立法期",
             "content_type": "opinion_analysis",
             "reason": "文章聚焦欧盟 AI 法案面临大型科技公司施压要求修订，主题深度对齐 AI 治理（T1），A1=25；未命中具体关切议题，A2=0 → A=25。处于讨论立法/修订期，B=15。欧盟 AI 法案修订动向对国内 AI 立法有参考价值，E=8。中文世界对该施压动态报道有限，F=8。"
-          },
+          }
+        ],
+        "pool": [
           {
             "id": 2763,
             "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
@@ -1158,9 +1410,31 @@
             "maturity_stage": "风险冒头期",
             "content_type": "opinion_analysis",
             "reason": "文章聚焦企业部署第三方 AI Agent 带来的安全与信任风险，属 AI 治理（T1）中的 Agent 治理议题，深度对齐；命中 Agent 等新形态关切议题。风险冒头期（企业侧风险预警，尚无监管回应）B=20；海外企业治理做法有借鉴意义 E=8；中文世界报道零星 F=7。"
-          }
-        ],
-        "pool": [
+          },
+          {
+            "id": 2826,
+            "url": "https://www.theregister.com/ai-and-ml/2026/10/26/alibabas-qwen-ai-caught-trying-to-contact-server-in-china/5305561",
+            "title": "Alibaba's Qwen AI caught trying to contact server in China",
+            "title_cn": "阿里 Qwen 模型被指尝试连接中国境内服务器",
+            "summary": "But there's not much evidence this is anything more than echoes of unsanitized training data",
+            "source_name": "The Register",
+            "source_tier": "C",
+            "published_at": "2026-10-26T21:27:37+00:00",
+            "score_a": 22,
+            "score_b": 20,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 7,
+            "score_f": 8,
+            "total_score": 65,
+            "fingerprint": "Qwen-AI-training-data-exfiltration-China-server-2026-10",
+            "anxiety_hits": [
+              "训练数据跨境"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "opinion_analysis",
+            "reason": "文章报道开源模型 Qwen 被观测到尝试连接中国境内服务器，指向训练数据未净化与数据出境风险，属 AI 治理（T1）中训练数据与模型安全议题，深度对齐但事件尚处早期曝光、无监管回应。A1=18，A2 命中训练数据跨境 +5 → A=22；风险冒头期 B=20；海外事件对国内模型数据合规有参考价值 E=7；中文世界尚无系统报道 F=8。"
+          },
           {
             "id": 2815,
             "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
@@ -1389,6 +1663,28 @@
             "maturity_stage": "讨论立法期",
             "content_type": "opinion_analysis",
             "reason": "文章报道法国总统候选人阿塔尔提议在骚乱地区临时关闭社交媒体，属于平台治理（T2）与内容治理（T4）的擦边议题，涉及平台内容限制与言论自由边界，但并非核心立法或执法动态。A1=15（部分对齐，主题为政治人物政策主张而非具体监管规则），A2=3（涉企舆论风险/平台内容管控，权重中档）；讨论立法期 B=15；产业可借鉴 E=5（法国做法对国内参考价值中性）；中文世界报道有限 F=7。"
+          },
+          {
+            "id": 2820,
+            "url": "https://ainowinstitute.org/news/what-should-the-rules-for-a-i-companies-actually-be-we-asked-the-experts",
+            "title": "What Should the Rules for A.I. Companies Actually Be? We Asked the Experts.",
+            "title_cn": "专家圆桌：AI 公司应受何种规则约束",
+            "summary": "AI Now's Senior Director Kate Brennan joined a roundtable discussion with AI experts and leaders, pushing the conversation away from abstract risk and toward the very real harms caused by AI companies willing to gamble with our lives and our economy. The post What Should the Rules for A.I. Companies Actually Be? We Asked the Experts. appeared first on AI Now Institute .",
+            "source_name": "AI Now",
+            "source_tier": "C",
+            "published_at": "2026-10-26T17:49:25+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 53,
+            "fingerprint": "AI-Now-roundtable-AI-company-rules-2026-10",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "AI Now 高级总监参与专家圆桌，讨论 AI 公司应受何种规则约束，主题对齐 AI 治理（T1），但属圆桌讨论/观点性质，非具体立法或执法动作，A1=18，未命中具体关切议题 A2=0 → A=18；讨论立法期 B=15；产业可借鉴性中性 E=5；中文世界无报道 F=7。"
           },
           {
             "id": 2806,
@@ -3942,29 +4238,29 @@
     }
   ],
   "stats": {
-    "total": 2744,
+    "total": 2753,
     "by_type": {
       "fact_enforcement": 198,
       "fact_legislative": 192,
-      "fact_official_doc": 137,
-      "opinion_analysis": 233
+      "fact_official_doc": 138,
+      "opinion_analysis": 236
     },
-    "veto": 1984
+    "veto": 1989
   },
   "feed_health": [
     {
       "source_name": "OII",
       "feed_url": "https://www.oii.ox.ac.uk/news-events/news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
       "last_success_at": "2026-06-04T10:13:12.070378+00:00",
       "last_error": "XML parse error: not well-formed (invalid token): line 5, column 175",
       "last_article_count": 10,
-      "consecutive_fails": 289,
+      "consecutive_fails": 290,
       "recent_7d_success": 0,
-      "recent_7d_total": 15,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-05-08T15:38:51+00:00",
-      "stale_days": 170,
+      "stale_days": 171,
       "status": "dead"
     },
     {
@@ -4024,7 +4320,7 @@
       "recent_7d_success": 0,
       "recent_7d_total": 0,
       "latest_article_at": "2026-04-30T17:21:52+00:00",
-      "stale_days": 178,
+      "stale_days": 179,
       "status": "dead"
     },
     {
@@ -4106,43 +4402,28 @@
       "source_name": "Platformer",
       "feed_url": "https://www.platformer.news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 3,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-09-15T00:30:47+00:00",
-      "stale_days": 41,
-      "status": "stale"
-    },
-    {
-      "source_name": "AI Now",
-      "feed_url": "https://ainowinstitute.org/feed",
-      "source_tier": "C",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_error": null,
-      "last_article_count": 10,
-      "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-09-18T18:01:52+00:00",
-      "stale_days": 37,
+      "stale_days": 42,
       "status": "stale"
     },
     {
       "source_name": "DLA Piper",
       "feed_url": "https://privacymatters.dlapiper.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-09T14:00:51+00:00",
       "stale_days": 17,
       "status": "stale"
@@ -4151,28 +4432,28 @@
       "source_name": "NIST",
       "feed_url": "https://www.nist.gov/news-events/news/rss.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 40,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-16T12:00:00+00:00",
-      "stale_days": 10,
+      "stale_days": 11,
       "status": "stale"
     },
     {
       "source_name": "IAPP Daily Dashboard (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/9v0c5wjcqvoklno87tca.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-05-06T13:18:40.669000+00:00",
       "stale_days": 173,
       "status": "stale"
@@ -4181,44 +4462,44 @@
       "source_name": "OAIC (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-08-27T05:48:40.671000+00:00",
-      "stale_days": 60,
+      "stale_days": 61,
       "status": "stale"
     },
     {
       "source_name": "CNIL (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 1,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-09-30T17:29:44.914000+00:00",
-      "stale_days": 25,
+      "stale_days": 26,
       "status": "stale"
     },
     {
-      "source_name": "DataGuidance (KtN)",
-      "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
-      "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "source_name": "FTC",
+      "feed_url": "https://www.ftc.gov/feeds/press-release.xml",
+      "source_tier": "S",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
-      "last_article_count": 15,
+      "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-10-20T16:50:38.433000+00:00",
+      "recent_7d_success": 13,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-10-22T12:00:00+00:00",
       "stale_days": 5,
       "status": "warn"
     },
@@ -4226,29 +4507,44 @@
       "source_name": "HAI Stanford (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 4,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-18T17:05:23.037000+00:00",
-      "stale_days": 7,
+      "stale_days": 8,
       "status": "warn"
     },
     {
       "source_name": "Import AI (Substack)",
       "feed_url": "https://jack-clark.net/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-26T12:31:52+00:00",
+      "stale_days": 0,
+      "status": "ok"
+    },
+    {
+      "source_name": "AI Now",
+      "feed_url": "https://ainowinstitute.org/feed",
+      "source_tier": "C",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_error": null,
+      "last_article_count": 10,
+      "consecutive_fails": 0,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-10-26T17:49:25+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -4256,13 +4552,13 @@
       "source_name": "Tech Policy Press",
       "feed_url": "https://www.techpolicy.press/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -4271,148 +4567,148 @@
       "source_name": "The Register",
       "feed_url": "https://www.theregister.com/headlines.atom",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
-      "last_article_count": 7,
+      "last_article_count": 4,
       "consecutive_fails": 0,
       "recent_7d_success": 13,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-10-23T15:46:19+00:00",
-      "stale_days": 2,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-10-27T11:00:00+00:00",
+      "stale_days": 0,
       "status": "ok"
     },
     {
       "source_name": "EPIC",
       "feed_url": "https://epic.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-22T21:31:18+00:00",
-      "stale_days": 3,
+      "stale_days": 4,
       "status": "ok"
     },
     {
       "source_name": "Future of Privacy Forum",
       "feed_url": "https://fpf.org/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_error": null,
-      "last_article_count": 10,
-      "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-10-21T20:49:36+00:00",
-      "stale_days": 4,
-      "status": "ok"
-    },
-    {
-      "source_name": "FTC",
-      "feed_url": "https://www.ftc.gov/feeds/press-release.xml",
-      "source_tier": "S",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-10-22T12:00:00+00:00",
-      "stale_days": 4,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-10-26T17:20:01+00:00",
+      "stale_days": 0,
       "status": "ok"
     },
     {
       "source_name": "Inside Privacy (Covington)",
       "feed_url": "https://www.insideprivacy.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-22T19:15:50+00:00",
-      "stale_days": 3,
+      "stale_days": 4,
       "status": "ok"
     },
     {
       "source_name": "TechCrunch",
       "feed_url": "https://techcrunch.com/feed/",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 2,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-10-24T15:00:00+00:00",
-      "stale_days": 1,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-10-27T02:00:00+00:00",
+      "stale_days": 0,
       "status": "ok"
     },
     {
       "source_name": "Politico EU Tech",
       "feed_url": "https://www.politico.eu/section/technology/feed",
       "source_tier": "B",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 31,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-25T17:00:00+00:00",
-      "stale_days": 0,
+      "stale_days": 1,
       "status": "ok"
     },
     {
       "source_name": "CMA UK",
       "feed_url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 20,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-10-22T09:02:23+00:00",
-      "stale_days": 4,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-10-27T07:00:14+00:00",
+      "stale_days": 0,
       "status": "ok"
     },
     {
       "source_name": "Ada Lovelace",
       "feed_url": "https://www.adalovelaceinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
+      "status": "ok"
+    },
+    {
+      "source_name": "DataGuidance (KtN)",
+      "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
+      "source_tier": "A",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_error": null,
+      "last_article_count": 16,
+      "consecutive_fails": 0,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-10-26T16:10:37.204000+00:00",
+      "stale_days": 0,
       "status": "ok"
     },
     {
       "source_name": "WilmerHale Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/muwfbzqx60g7b14mspkf.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -4421,13 +4717,13 @@
       "source_name": "Lawfare (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eqkwbtfnwj1lqbi08d5p.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -4436,13 +4732,13 @@
       "source_name": "Inside Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -4451,13 +4747,13 @@
       "source_name": "MLex AI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -4466,13 +4762,13 @@
       "source_name": "EDPS (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -4481,28 +4777,28 @@
       "source_name": "TechPolicy Press (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 6,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-25T15:42:39.216000+00:00",
-      "stale_days": 0,
+      "stale_days": 1,
       "status": "ok"
     },
     {
       "source_name": "NIST AISI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -4511,68 +4807,155 @@
       "source_name": "Brookings TechTank (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/btrel8v1yu4h5i4xcsze.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-10-26T14:21:00.634550+00:00",
-      "last_success_at": "2026-10-26T14:21:00.634550+00:00",
+      "last_attempt_at": "2026-10-27T12:15:31.071902+00:00",
+      "last_success_at": "2026-10-27T12:15:31.071902+00:00",
       "last_error": null,
-      "last_article_count": 9,
+      "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 15,
-      "recent_7d_total": 15,
-      "latest_article_at": "2026-10-24T11:34:47.291000+00:00",
-      "stale_days": 2,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-10-27T11:06:38.073000+00:00",
+      "stale_days": 0,
       "status": "ok"
     }
   ],
   "topics_by_window": {
-    "24h": [],
+    "24h": [
+      {
+        "emoji": "⚖️",
+        "name": "AI 法律责任与诉讼",
+        "blurb": "AI 幻觉引发的法律追责问题",
+        "article_ids": [
+          2821
+        ]
+      },
+      {
+        "emoji": "🔐",
+        "name": "AI 数据跨境与隐私",
+        "blurb": "模型数据外联与儿童照片同意",
+        "article_ids": [
+          2826,
+          2827
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "AI 公司监管规则讨论",
+        "blurb": "专家圆桌探讨 AI 企业约束",
+        "article_ids": [
+          2820
+        ]
+      }
+    ],
     "72h": [
       {
-        "emoji": "📌",
-        "name": "当期要点",
-        "blurb": "候选文章较少，未做主题归纳",
+        "emoji": "⚖️",
+        "name": "AI 法律诉讼与责任",
+        "blurb": "AI 幻觉引发的诉讼与责任问题",
+        "article_ids": [
+          2821
+        ]
+      },
+      {
+        "emoji": "🗳️",
+        "name": "AI 选举偏向与政治风险",
+        "blurb": "大模型选举推荐党派偏向研究",
         "article_ids": [
           2815
+        ]
+      },
+      {
+        "emoji": "🔐",
+        "name": "AI 数据跨境与隐私风险",
+        "blurb": "模型数据外联与儿童照片同意",
+        "article_ids": [
+          2826,
+          2827
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "AI 公司监管规则讨论",
+        "blurb": "专家圆桌探讨 AI 公司约束规则",
+        "article_ids": [
+          2820
         ]
       }
     ],
     "120h": [
       {
         "emoji": "⚖️",
-        "name": "欧盟科技监管与DMA博弈",
-        "blurb": "欧盟AI责任规则及DMA执法分歧",
+        "name": "AI 法律风险与责任",
+        "blurb": "AI 幻觉诉讼与规则约束讨论",
         "article_ids": [
-          2783,
-          2807,
-          2795,
-          2806
-        ]
-      },
-      {
-        "emoji": "🔐",
-        "name": "平台隐私执法与巨额罚单",
-        "blurb": "Meta隐私违规遭州级重罚",
-        "article_ids": [
-          2792,
-          2780,
-          2793
-        ]
-      },
-      {
-        "emoji": "🤖",
-        "name": "AI Agent 治理与生态",
-        "blurb": "代理购物封堵与中立治理",
-        "article_ids": [
-          2781,
-          2809
+          2821,
+          2820
         ]
       },
       {
         "emoji": "🗳️",
-        "name": "AI 选举偏向与教育采购",
-        "blurb": "模型党派偏向及校园科技采购",
+        "name": "AI 选举偏向与政治风险",
+        "blurb": "模型选举推荐党派偏向研究",
         "article_ids": [
-          2815,
+          2815
+        ]
+      },
+      {
+        "emoji": "🛰️",
+        "name": "AI 模型数据跨境争议",
+        "blurb": "Qwen 模型连接境内服务器质疑",
+        "article_ids": [
+          2826
+        ]
+      },
+      {
+        "emoji": "🏫",
+        "name": "教育科技采购与隐私",
+        "blurb": "校园教育科技采购准则倡导",
+        "article_ids": [
           2791
+        ]
+      },
+      {
+        "emoji": "☁️",
+        "name": "云与 AI 主权监管",
+        "blurb": "欧盟云 AI 法与美欧制度比较",
+        "article_ids": [
+          2795,
+          2807,
+          2806
+        ]
+      },
+      {
+        "emoji": "👶",
+        "name": "未成年人照片与 AI 同意",
+        "blurb": "儿童照片同意不覆盖 AI 工具",
+        "article_ids": [
+          2827
+        ]
+      },
+      {
+        "emoji": "🚗",
+        "name": "联网汽车隐私监管缺口",
+        "blurb": "联网汽车隐私风险与监管空白",
+        "article_ids": [
+          2793
+        ]
+      },
+      {
+        "emoji": "💰",
+        "name": "平台隐私执法与罚单",
+        "blurb": "Meta 遭州级巨额隐私罚款",
+        "article_ids": [
+          2792
+        ]
+      },
+      {
+        "emoji": "🤖",
+        "name": "AI Agent 中立治理",
+        "blurb": "Agent 项目转入厂商中立基金会",
+        "article_ids": [
+          2809
         ]
       }
     ],
@@ -4580,7 +4963,7 @@
       {
         "emoji": "🤖",
         "name": "AI Agent 安全与治理",
-        "blurb": "智能体失控、注入与授权风险",
+        "blurb": "智能体风险、授权与治理规则",
         "article_ids": [
           2741,
           2763,
@@ -4593,37 +4976,63 @@
       {
         "emoji": "⚖️",
         "name": "欧盟AI法案与责任规则",
-        "blurb": "AI法实施、责任与深度伪造立法",
+        "blurb": "AI法实施、责任与简化之争",
         "article_ids": [
-          2776,
           2733,
-          2770,
           2696,
-          2783,
           2737,
+          2783,
           2768,
-          2708,
-          2670
+          2820,
+          2670,
+          2806
         ]
       },
       {
         "emoji": "📢",
-        "name": "平台反垄断与DMA执法",
-        "blurb": "CMA战略市场地位与DMA施压",
+        "name": "深度伪造与AI内容披露",
+        "blurb": "合成内容标识与广告披露立法",
+        "article_ids": [
+          2776,
+          2706,
+          2815,
+          2826,
+          2821,
+          2743
+        ]
+      },
+      {
+        "emoji": "🛰️",
+        "name": "平台战略地位与DMA执法",
+        "blurb": "CMA指定与DMA施压博弈",
         "article_ids": [
           2726,
           2725,
           2759,
           2760,
           2746,
+          2785,
           2807,
           2774
         ]
       },
       {
+        "emoji": "👶",
+        "name": "未成年人及弱势群体保护",
+        "blurb": "儿童、老人与AI伴侣保护",
+        "article_ids": [
+          2749,
+          2771,
+          2827,
+          2773,
+          2792,
+          2780
+        ]
+      },
+      {
         "emoji": "🔐",
-        "name": "隐私保护与数据执法",
-        "blurb": "智能眼镜、监控与隐私罚单",
+        "name": "隐私监管与监控技术争议",
+        "blurb": "智能眼镜、监控与数据立法",
         "article_ids": [
           2686,
           2716,
@@ -4631,43 +5040,28 @@
           2702,
           2707,
           2793,
-          2792,
-          2780,
-          2709
-        ]
-      },
-      {
-        "emoji": "👶",
-        "name": "未成年人及弱势群体保护",
-        "blurb": "儿童安全、校园与老人AI保护",
-        "article_ids": [
-          2749,
-          2771,
+          2709,
+          2754,
+          2680,
           2791,
-          2773
+          2795,
+          2777,
+          2672,
+          2756,
+          2757,
+          2683,
+          2689
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "其余监管、立法与产业动态",
+        "blurb": "未归入主类的候选选题",
         "article_ids": [
-          2785,
-          2680,
-          2706,
-          2815,
+          2770,
           2772,
-          2795,
-          2762,
-          2777,
-          2754,
-          2806,
-          2743,
-          2683,
-          2757,
-          2672,
-          2756,
-          2689
+          2708,
+          2762
         ]
       }
     ]
