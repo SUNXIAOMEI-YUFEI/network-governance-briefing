@@ -1,91 +1,159 @@
 {
-  "snapshot_at": "2026-11-12T16:00:58.416531+00:00",
+  "snapshot_at": "2026-11-13T14:37:59.158974+00:00",
   "schema_version": "v1.4",
   "tabs": {
     "24h": {
       "facts": {
         "top3": [
           {
-            "id": 3005,
-            "url": "https://www.politico.eu/article/eu-needs-a-system-to-respond-to-ai-incidents-finland-and-estonia-say/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "EU needs a system to respond to AI incidents, Finland and Estonia say",
-            "title_cn": "芬兰与爱沙尼亚呼吁建立欧盟 AI 事件响应机制",
-            "summary": "In a letter seen by POLITICO, Finland and Estonia call for \"EU-level arrangements for responding to serious AI incidents.\" This comes as European leaders are set to meet Friday to debate AI for the first time.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-11-11T16:19:06+00:00",
+            "id": 3013,
+            "url": "https://fpf.org/blog/fpf-launches-roundtable-series-on-agentic-ai-privacy-and-pets/",
+            "title": "FPF Launches Roundtable Series on Agentic AI, Privacy, and PETs",
+            "title_cn": "FPF 启动 Agentic AI 隐私与 PETs 圆桌系列",
+            "summary": "On October 19, 2026, the FPF Center for Artificial Intelligence launched a four-part virtual roundtable series on Agentic AI. In the first roundtable, Agentic Data Flows: Privacy, Data Minimization, and PETs in Agentic Deployment, guest experts explored a taxonomy of agentic AI privacy harms, and discussed implementation challenges and enterprise risks across the AI value [&#8230;]",
+            "source_name": "Future of Privacy Forum",
+            "source_tier": "A",
+            "published_at": "2026-11-12T20:02:55+00:00",
             "score_a": 23,
             "score_b": 20,
-            "score_c": 8,
-            "score_d": 3,
+            "score_c": 12,
+            "score_d": 6,
             "score_e": 8,
             "score_f": 9,
-            "total_score": 71,
-            "fingerprint": "EU-AI-incident-response-system-Finland-Estonia-2026-11",
+            "total_score": 78,
+            "fingerprint": "FPF-Agentic-AI-Privacy-PETs-Roundtable-2026-10",
             "anxiety_hits": [
               "Agent 等新形态"
             ],
             "maturity_stage": "风险冒头期",
             "content_type": "fact_official_doc",
-            "reason": "芬兰与爱沙尼亚联名致信呼吁建立欧盟层面严重 AI 事件响应机制，深度对齐 AI 治理主题（T1），属 AI 事故响应与基础模型安全范畴。A1=20（核心议题但为倡议阶段），A2=3（涉及新型 AI 风险形态，未直接命中高权重关键词）→ A=23；风险冒头期、尚无监管回应 B=20；欧盟层面机制建设具借鉴意义 E=8；中文世界尚无报道 F=9。"
+            "reason": "FPF 启动 Agentic AI 隐私与 PETs 圆桌系列，探讨 agentic AI 隐私危害分类学与企业风险，主题深度对齐 AI 治理（T1）并涉及数据与隐私（T3），命中 Agent 等新形态关切议题。A1=20 A2=3 → A=23；属学界/智库首次系统梳理新风险、无监管回应，B=20；海外智库做法值得借鉴 E=8；中文世界几无报道 F=9。"
           },
           {
-            "id": 3008,
-            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/t8qm7uj3aumqe47eia1cgdfob0yjkei793hakh24.html",
-            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 11, 2…",
-            "title_cn": "澳大利亚政府宣布AI安全立法与监管机构计划",
-            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 11, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks Australia: Government announces plans for AI safety law and regulator Australia plans legislation requiring frontier AI developers to meet safety and security standards, enforced by a proposed targeted regulator. Read Now Save for Later Czechia: Government approves AI Council and AI Act implementation bill The Czech Governme",
+            "id": 3023,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/nif28rkq248eoopu81tqfhil6148zbszt9gwrh23.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 12, 2…",
+            "title_cn": "EDPB 宣布第六次协调执法行动聚焦招聘自动化决策",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 12, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks EU: EDPB announces topic for sixth CEF The EDPB selected automated decision-making in recruitment as the topic for its sixth coordinated enforcement action, launching during 2027. Read Now Save for Later Accounting records (public company) of Accounting records of Company & Financial for Hawaii Read Now Register of members/r",
             "source_name": "DataGuidance (KtN)",
             "source_tier": "A",
-            "published_at": "2026-11-11T16:15:19.155000+00:00",
-            "score_a": 23,
+            "published_at": "2026-11-12T16:35:56.389000+00:00",
+            "score_a": 18,
             "score_b": 15,
             "score_c": 12,
             "score_d": 3,
-            "score_e": 8,
+            "score_e": 5,
             "score_f": 7,
-            "total_score": 68,
-            "fingerprint": "AU-AI-safety-law-regulator-2026-11",
+            "total_score": 60,
+            "fingerprint": "EDPB-CEF-automated-decision-making-recruitment-2027",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件主议题为 EDPB 宣布第六次协调执法行动（CEF）主题为招聘中的自动化决策，属数据与隐私主题（T3），部分对齐 A1=15；未命中关切议题加分 A2=0 → A=18。CEF 主题已宣布、2027 年启动，处于讨论/筹备阶段 B=15。产业可借鉴中性 E=5；中文世界报道稀少 F=7。"
+          },
+          {
+            "id": 3012,
+            "url": "https://epic.org/epic-testifies-in-new-york-state-and-the-city-of-boston-urging-for-alpr-guardrails-and-greater-transparency/",
+            "title": "EPIC Testifies in New York State and the City of Boston Urging for ALPR Guardrails and Greater Transparency",
+            "title_cn": "EPIC就车牌识别隐私护栏在纽约与波士顿作证",
+            "summary": "New York’s proposed AB10808 and its companion, Senate Bill S.9890, and Boston's proposed amended ordinance addresses residents' privacy rights as ALPR technology becomes more widespread.",
+            "source_name": "EPIC",
+            "source_tier": "C",
+            "published_at": "2026-11-12T16:02:28+00:00",
+            "score_a": 22,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 7,
+            "score_f": 8,
+            "total_score": 60,
+            "fingerprint": "US-ALPR-NY-Boston-Privacy-Ordinance-2026-11",
             "anxiety_hits": [],
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
-            "reason": "KtN 邮件主议题为澳大利亚政府宣布计划制定 AI 安全法与设立监管机构，要求前沿 AI 开发者满足安全标准，属 T1 AI 治理核心议题，A1=20；未命中具体关切议题加分项，A2=3（前沿模型安全监管属基础模型安全范畴，酌情给低档加分）→ A=23。处于计划/立法讨论阶段 B=15。海外立法路径对国内有参考价值 E=8。中文世界报道稀少 F=7。"
-          },
+            "reason": "文章围绕纽约州 AB10808/S.9890 法案与波士顿修订条例中自动车牌识别（ALPR）技术的隐私保护与透明度要求，深度对齐数据与隐私主题（T3），属生物识别/监控数据治理范畴。A1=22（核心议题为隐私立法，但非最主流隐私议题），A2=0（未命中关切议题清单）；处于讨论立法期 B=15；美国地方立法实践对国内有一定参考价值 E=7；中文世界鲜有报道 F=8。"
+          }
+        ],
+        "pool": [
           {
-            "id": 3004,
-            "url": "https://www.politico.eu/article/ahead-of-spanish-election-pedro-sanchez-takes-aim-at-tiktok/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "Ahead of Spanish election, Sánchez takes aim at TikTok",
-            "title_cn": "西班牙大选前政府推动封禁TikTok",
-            "summary": "The Spanish government pursued a ban on TikTok after a report alleged the social media is lax about child sexual abuse material.",
+            "id": 3019,
+            "url": "https://www.politico.eu/article/tinder-owner-hit-with-e11m-privacy-fine/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Tinder owner hit with €11M privacy fine",
+            "title_cn": "爱尔兰监管机构对 Tinder 开出 1100 万欧元隐私罚单",
+            "summary": "The Irish Data Protection Commission ruled that Tinder's \"Download My Data\" tool is not complaint with GDPR. The company plans to appeal.",
             "source_name": "Politico EU Tech",
             "source_tier": "B",
-            "published_at": "2026-11-11T20:47:01+00:00",
-            "score_a": 23,
+            "published_at": "2026-11-13T11:01:01+00:00",
+            "score_a": 20,
+            "score_b": 3,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 46,
+            "fingerprint": "Irish-DPC-Tinder-GDPR-data-access-fine-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_enforcement",
+            "reason": "爱尔兰数据保护委员会对 Tinder 母公司作出 GDPR 罚款，属数据与隐私主题（T3）的执法动态，主题对齐但为常规数据访问权执法，未命中高权重关切议题。A1=20，A2=0 → A=20；已进入执法处罚阶段 B=3；此类 GDPR 罚款海外常见，借鉴意义中性 E=5；中文世界报道有限 F=7。"
+          }
+        ]
+      },
+      "opinions": {
+        "top3": [
+          {
+            "id": 3020,
+            "url": "https://www.politico.eu/article/jensen-huang-fall-exposes-eu-leaders-ai-nvidia-european-council/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Jensen Huang’s fall further exposes EU leaders on AI",
+            "title_cn": "黄仁勋事件凸显欧盟领导人AI议题困境",
+            "summary": "European leaders are meeting for their first conversation on AI with the tech world in tumult.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-11-12T22:53:46+00:00",
+            "score_a": 18,
             "score_b": 15,
             "score_c": 8,
             "score_d": 3,
-            "score_e": 8,
+            "score_e": 5,
             "score_f": 7,
-            "total_score": 64,
-            "fingerprint": "Spain-TikTok-ban-CSAM-child-safety-2026-11",
-            "anxiety_hits": [
-              "未成年人极端事件"
-            ],
+            "total_score": 56,
+            "fingerprint": "EU-AI-Council-Jensen-Huang-Nvidia-2026-11",
+            "anxiety_hits": [],
             "maturity_stage": "讨论立法期",
-            "content_type": "fact_legislative",
-            "reason": "西班牙政府在大选前推动封禁 TikTok，起因是有关其儿童性虐待材料管控不力的报告，主题深度对齐平台治理（T2）与未成年人网络保护（T5），命中未成年人内容保护关切议题。A1=20，A2=3，合计 A=23；处于讨论立法期 B=15；欧洲平台未成年人保护做法具借鉴意义 E=8；中文世界报道有限 F=7。"
+            "content_type": "opinion_analysis",
+            "reason": "文章围绕欧洲理事会首次就 AI 议题展开讨论，背景是英伟达 CEO 黄仁勋相关事件引发的科技界动荡，主题部分对齐 AI 治理（T1），但主体是政治人物与科技领袖的会面叙事，而非具体立法或监管动作，A1=18；未命中高权重关切议题，A2=0。处于讨论立法期 B=15。产业可借鉴性中性 E=5；中文世界报道有限 F=7。"
           }
         ],
-        "pool": []
-      },
-      "opinions": {
-        "top3": [],
         "pool": []
       }
     },
     "72h": {
       "facts": {
         "top3": [
+          {
+            "id": 3013,
+            "url": "https://fpf.org/blog/fpf-launches-roundtable-series-on-agentic-ai-privacy-and-pets/",
+            "title": "FPF Launches Roundtable Series on Agentic AI, Privacy, and PETs",
+            "title_cn": "FPF 启动 Agentic AI 隐私与 PETs 圆桌系列",
+            "summary": "On October 19, 2026, the FPF Center for Artificial Intelligence launched a four-part virtual roundtable series on Agentic AI. In the first roundtable, Agentic Data Flows: Privacy, Data Minimization, and PETs in Agentic Deployment, guest experts explored a taxonomy of agentic AI privacy harms, and discussed implementation challenges and enterprise risks across the AI value [&#8230;]",
+            "source_name": "Future of Privacy Forum",
+            "source_tier": "A",
+            "published_at": "2026-11-12T20:02:55+00:00",
+            "score_a": 23,
+            "score_b": 20,
+            "score_c": 12,
+            "score_d": 6,
+            "score_e": 8,
+            "score_f": 9,
+            "total_score": 78,
+            "fingerprint": "FPF-Agentic-AI-Privacy-PETs-Roundtable-2026-10",
+            "anxiety_hits": [
+              "Agent 等新形态"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_official_doc",
+            "reason": "FPF 启动 Agentic AI 隐私与 PETs 圆桌系列，探讨 agentic AI 隐私危害分类学与企业风险，主题深度对齐 AI 治理（T1）并涉及数据与隐私（T3），命中 Agent 等新形态关切议题。A1=20 A2=3 → A=23；属学界/智库首次系统梳理新风险、无监管回应，B=20；海外智库做法值得借鉴 E=8；中文世界几无报道 F=9。"
+          },
           {
             "id": 2998,
             "url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6/entries/rnztmzs4ir9oerc3o1yk78a14cqwpwld14abqt22.html",
@@ -133,7 +201,9 @@
             "maturity_stage": "风险冒头期",
             "content_type": "fact_official_doc",
             "reason": "芬兰与爱沙尼亚联名致信呼吁建立欧盟层面严重 AI 事件响应机制，深度对齐 AI 治理主题（T1），属 AI 事故响应与基础模型安全范畴。A1=20（核心议题但为倡议阶段），A2=3（涉及新型 AI 风险形态，未直接命中高权重关键词）→ A=23；风险冒头期、尚无监管回应 B=20；欧盟层面机制建设具借鉴意义 E=8；中文世界尚无报道 F=9。"
-          },
+          }
+        ],
+        "pool": [
           {
             "id": 3008,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/t8qm7uj3aumqe47eia1cgdfob0yjkei793hakh24.html",
@@ -155,32 +225,6 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
             "reason": "KtN 邮件主议题为澳大利亚政府宣布计划制定 AI 安全法与设立监管机构，要求前沿 AI 开发者满足安全标准，属 T1 AI 治理核心议题，A1=20；未命中具体关切议题加分项，A2=3（前沿模型安全监管属基础模型安全范畴，酌情给低档加分）→ A=23。处于计划/立法讨论阶段 B=15。海外立法路径对国内有参考价值 E=8。中文世界报道稀少 F=7。"
-          }
-        ],
-        "pool": [
-          {
-            "id": 2974,
-            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/dk7gxb5o7lnebzj0eo7o9s5cck2pxr42i7m7f3gb.html",
-            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 09, 2…",
-            "title_cn": "新加坡发布个人 AI Agent 安全使用建议",
-            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 09, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks Singapore: CSA, GovTech, and IMDA release advisory on safe and secure use of personal AI agents Singapore’s CSA, GovTech, and IMDA advise consumers to limit personal AI agents’ access, retain control over actions, and protect privacy. Read Now Save for Later India: CERT-In releases AI Security Auditing Guidelines CERT-In’s A",
-            "source_name": "DataGuidance (KtN)",
-            "source_tier": "A",
-            "published_at": "2026-11-09T16:35:12.534000+00:00",
-            "score_a": 20,
-            "score_b": 15,
-            "score_c": 12,
-            "score_d": 3,
-            "score_e": 8,
-            "score_f": 7,
-            "total_score": 65,
-            "fingerprint": "SG-CSA-GovTech-IMDA-AI-Agent-Advisory-2026-11",
-            "anxiety_hits": [
-              "Agent 等新形态"
-            ],
-            "maturity_stage": "讨论立法期",
-            "content_type": "fact_official_doc",
-            "reason": "KtN 邮件主议题为新加坡 CSA/GovTech/IMDA 发布个人 AI Agent 安全使用建议，深度对齐 AI 治理（T1），命中 Agent 等新形态关切议题。A1=18 A2=5 → A=20（邮件为合集摘要，非单一深度报道）；监管建议/指引属讨论立法期 B=15；新加坡做法具借鉴意义 E=8；中文世界报道稀少 F=7。"
           },
           {
             "id": 3004,
@@ -251,6 +295,50 @@
             "reason": "文章报道欧盟监察机构对欧委会AI特使任命利益冲突问题启动调查，属AI治理（T1）人事与伦理监督范畴，但非核心监管规则议题，A1=18，未命中关切议题加分。调查刚启动、风险冒头期B=20。海外人事争议对国内借鉴意义中性E=5。中文世界鲜有报道F=7。"
           },
           {
+            "id": 3023,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/nif28rkq248eoopu81tqfhil6148zbszt9gwrh23.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 12, 2…",
+            "title_cn": "EDPB 宣布第六次协调执法行动聚焦招聘自动化决策",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 12, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks EU: EDPB announces topic for sixth CEF The EDPB selected automated decision-making in recruitment as the topic for its sixth coordinated enforcement action, launching during 2027. Read Now Save for Later Accounting records (public company) of Accounting records of Company & Financial for Hawaii Read Now Register of members/r",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-11-12T16:35:56.389000+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 60,
+            "fingerprint": "EDPB-CEF-automated-decision-making-recruitment-2027",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件主议题为 EDPB 宣布第六次协调执法行动（CEF）主题为招聘中的自动化决策，属数据与隐私主题（T3），部分对齐 A1=15；未命中关切议题加分 A2=0 → A=18。CEF 主题已宣布、2027 年启动，处于讨论/筹备阶段 B=15。产业可借鉴中性 E=5；中文世界报道稀少 F=7。"
+          },
+          {
+            "id": 3012,
+            "url": "https://epic.org/epic-testifies-in-new-york-state-and-the-city-of-boston-urging-for-alpr-guardrails-and-greater-transparency/",
+            "title": "EPIC Testifies in New York State and the City of Boston Urging for ALPR Guardrails and Greater Transparency",
+            "title_cn": "EPIC就车牌识别隐私护栏在纽约与波士顿作证",
+            "summary": "New York’s proposed AB10808 and its companion, Senate Bill S.9890, and Boston's proposed amended ordinance addresses residents' privacy rights as ALPR technology becomes more widespread.",
+            "source_name": "EPIC",
+            "source_tier": "C",
+            "published_at": "2026-11-12T16:02:28+00:00",
+            "score_a": 22,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 7,
+            "score_f": 8,
+            "total_score": 60,
+            "fingerprint": "US-ALPR-NY-Boston-Privacy-Ordinance-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "文章围绕纽约州 AB10808/S.9890 法案与波士顿修订条例中自动车牌识别（ALPR）技术的隐私保护与透明度要求，深度对齐数据与隐私主题（T3），属生物识别/监控数据治理范畴。A1=22（核心议题为隐私立法，但非最主流隐私议题），A2=0（未命中关切议题清单）；处于讨论立法期 B=15；美国地方立法实践对国内有一定参考价值 E=7；中文世界鲜有报道 F=8。"
+          },
+          {
             "id": 2993,
             "url": "https://www.politico.eu/article/brussels-takes-on-the-evils-of-online-commerce-digital-fairness-act-commission/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
             "title": "Brussels takes on the evils of online commerce",
@@ -273,30 +361,6 @@
             "reason": "欧盟拟议新规，针对动态定价、成瘾性设计等操纵性在线商业手法设定罚款，属于数字平台消费者保护与平台责任范畴，与平台治理（T2）部分对齐，但核心是商业手法监管而非平台竞争或内容治理，A1=18；未命中高权重关切议题，A2=0。处于立法提案阶段，B=15。欧盟做法对国内平台治理有参考价值，E=8。中文世界报道有限，F=7。"
           },
           {
-            "id": 2979,
-            "url": "https://www.insideprivacy.com/artificial-intelligence/pennsylvania-enacts-artificial-intelligence-deceptive-advertising-act/",
-            "title": "Pennsylvania Enacts Artificial Intelligence Deceptive Advertising Act",
-            "title_cn": "宾夕法尼亚州颁布AI欺骗性广告法",
-            "summary": "On October 22, 2026, the Governor of Pennsylvania signed the Artificial Intelligence Deceptive Advertising Act (Senate Bill 806) (“Act”) into law. The Act joins a growing number of state laws focused on the use of AI in advertising. However, unlike the laws in New York and California, Pennsylvania’s disclosure requirement is not limited to AI-generated... Continue Reading…",
-            "source_name": "Inside Privacy (Covington)",
-            "source_tier": "A",
-            "published_at": "2026-11-09T21:22:07+00:00",
-            "score_a": 21,
-            "score_b": 8,
-            "score_c": 12,
-            "score_d": 3,
-            "score_e": 7,
-            "score_f": 7,
-            "total_score": 58,
-            "fingerprint": "US-PA-AI-Deceptive-Advertising-Act-2026-10",
-            "anxiety_hits": [
-              "标识失效"
-            ],
-            "maturity_stage": "规则成形期",
-            "content_type": "fact_legislative",
-            "reason": "宾州签署 AI 欺骗性广告法，要求 AI 生成广告内容披露，深度对齐 AI 治理（T1）中的 AI 标识/披露议题。A1=18（州级立法，主题对齐但非核心联邦/国际议题），A2=3（标识失效中档加分）→ A=21；已签署颁布未生效，规则成形期 B=8；州级立法对国内有参考价值 E=7；中文世界报道稀少 F=7。"
-          },
-          {
             "id": 2990,
             "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
             "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
@@ -317,35 +381,33 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "纽约州 AI 安全法进入执法阶段，要求 OpenAI、Anthropic 等大型开发者注册、披露安全实践并报告重大事件，深度对齐 AI 治理主题（T1）。A1=25（核心议题），无高权重关切议题命中，A2=0 → A=25；已生效执法属落地执行期 B=3；州级 AI 安全执法模式对国内有参考价值 E=8；中文世界报道有限 F=7。"
+          },
+          {
+            "id": 3019,
+            "url": "https://www.politico.eu/article/tinder-owner-hit-with-e11m-privacy-fine/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Tinder owner hit with €11M privacy fine",
+            "title_cn": "爱尔兰监管机构对 Tinder 开出 1100 万欧元隐私罚单",
+            "summary": "The Irish Data Protection Commission ruled that Tinder's \"Download My Data\" tool is not complaint with GDPR. The company plans to appeal.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-11-13T11:01:01+00:00",
+            "score_a": 20,
+            "score_b": 3,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 46,
+            "fingerprint": "Irish-DPC-Tinder-GDPR-data-access-fine-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_enforcement",
+            "reason": "爱尔兰数据保护委员会对 Tinder 母公司作出 GDPR 罚款，属数据与隐私主题（T3）的执法动态，主题对齐但为常规数据访问权执法，未命中高权重关切议题。A1=20，A2=0 → A=20；已进入执法处罚阶段 B=3；此类 GDPR 罚款海外常见，借鉴意义中性 E=5；中文世界报道有限 F=7。"
           }
         ]
       },
       "opinions": {
         "top3": [
-          {
-            "id": 2980,
-            "url": "https://www.politico.eu/article/prince-harry-doesnt-want-a-social-media-world/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "Prince Harry slams ‘lawless’ social media’s impact on children",
-            "title_cn": "哈里王子批评社交媒体对儿童的影响",
-            "summary": "Duke and Duchess of Sussex visit the European Parliament.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-11-10T11:44:24+00:00",
-            "score_a": 18,
-            "score_b": 20,
-            "score_c": 8,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 61,
-            "fingerprint": "UK-Prince-Harry-social-media-child-safety-2026-11",
-            "anxiety_hits": [
-              "未成年人极端事件"
-            ],
-            "maturity_stage": "风险冒头期",
-            "content_type": "opinion_analysis",
-            "reason": "文章报道哈里王子在欧洲议会批评社交媒体对儿童的影响，主题对齐未成年人网络保护（T5），属风险冒头期的公共倡导，尚无具体立法动作。A1=15（部分对齐，主体为名人活动而非监管动态），A2=3（未成年人内容保护相关但非极端事件直接命中）→ A=18；风险冒头期 B=20；E=5（无直接制度借鉴意义）；F=7（中文世界报道有限）。"
-          },
           {
             "id": 2996,
             "url": "https://www.theregister.com/ai-and-ml/2026/11/10/14-year-old-creates-tool-for-ai-agents-to-band-together-like-a-team/5308841",
@@ -369,6 +431,28 @@
             "maturity_stage": "风险冒头期",
             "content_type": "opinion_analysis",
             "reason": "文章报道一名14岁开发者发布可让多个AI Agent协同行动的工具，并指出其安全边界需用户自行承担，属于AI Agent治理这一新兴形态的风险冒头期议题，深度对齐T1主题但偏产品报道而非监管动态。A1=15（部分对齐，主体是产品而非治理规则），A2=5（命中Agent等新形态）→A=18；风险冒头期B=20；产业可借鉴性中性E=5；中文世界尚无报道F=7。"
+          },
+          {
+            "id": 3020,
+            "url": "https://www.politico.eu/article/jensen-huang-fall-exposes-eu-leaders-ai-nvidia-european-council/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Jensen Huang’s fall further exposes EU leaders on AI",
+            "title_cn": "黄仁勋事件凸显欧盟领导人AI议题困境",
+            "summary": "European leaders are meeting for their first conversation on AI with the tech world in tumult.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-11-12T22:53:46+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 56,
+            "fingerprint": "EU-AI-Council-Jensen-Huang-Nvidia-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "文章围绕欧洲理事会首次就 AI 议题展开讨论，背景是英伟达 CEO 黄仁勋相关事件引发的科技界动荡，主题部分对齐 AI 治理（T1），但主体是政治人物与科技领袖的会面叙事，而非具体立法或监管动作，A1=18；未命中高权重关切议题，A2=0。处于讨论立法期 B=15。产业可借鉴性中性 E=5；中文世界报道有限 F=7。"
           }
         ],
         "pool": []
@@ -378,6 +462,30 @@
       "facts": {
         "top3": [
           {
+            "id": 3013,
+            "url": "https://fpf.org/blog/fpf-launches-roundtable-series-on-agentic-ai-privacy-and-pets/",
+            "title": "FPF Launches Roundtable Series on Agentic AI, Privacy, and PETs",
+            "title_cn": "FPF 启动 Agentic AI 隐私与 PETs 圆桌系列",
+            "summary": "On October 19, 2026, the FPF Center for Artificial Intelligence launched a four-part virtual roundtable series on Agentic AI. In the first roundtable, Agentic Data Flows: Privacy, Data Minimization, and PETs in Agentic Deployment, guest experts explored a taxonomy of agentic AI privacy harms, and discussed implementation challenges and enterprise risks across the AI value [&#8230;]",
+            "source_name": "Future of Privacy Forum",
+            "source_tier": "A",
+            "published_at": "2026-11-12T20:02:55+00:00",
+            "score_a": 23,
+            "score_b": 20,
+            "score_c": 12,
+            "score_d": 6,
+            "score_e": 8,
+            "score_f": 9,
+            "total_score": 78,
+            "fingerprint": "FPF-Agentic-AI-Privacy-PETs-Roundtable-2026-10",
+            "anxiety_hits": [
+              "Agent 等新形态"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_official_doc",
+            "reason": "FPF 启动 Agentic AI 隐私与 PETs 圆桌系列，探讨 agentic AI 隐私危害分类学与企业风险，主题深度对齐 AI 治理（T1）并涉及数据与隐私（T3），命中 Agent 等新形态关切议题。A1=20 A2=3 → A=23；属学界/智库首次系统梳理新风险、无监管回应，B=20；海外智库做法值得借鉴 E=8；中文世界几无报道 F=9。"
+          },
+          {
             "id": 2998,
             "url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6/entries/rnztmzs4ir9oerc3o1yk78a14cqwpwld14abqt22.html",
             "title": "A Blueprint for Evaluating AI in Public Administration",
@@ -424,7 +532,9 @@
             "maturity_stage": "风险冒头期",
             "content_type": "fact_official_doc",
             "reason": "芬兰与爱沙尼亚联名致信呼吁建立欧盟层面严重 AI 事件响应机制，深度对齐 AI 治理主题（T1），属 AI 事故响应与基础模型安全范畴。A1=20（核心议题但为倡议阶段），A2=3（涉及新型 AI 风险形态，未直接命中高权重关键词）→ A=23；风险冒头期、尚无监管回应 B=20；欧盟层面机制建设具借鉴意义 E=8；中文世界尚无报道 F=9。"
-          },
+          }
+        ],
+        "pool": [
           {
             "id": 3008,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/t8qm7uj3aumqe47eia1cgdfob0yjkei793hakh24.html",
@@ -446,9 +556,7 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
             "reason": "KtN 邮件主议题为澳大利亚政府宣布计划制定 AI 安全法与设立监管机构，要求前沿 AI 开发者满足安全标准，属 T1 AI 治理核心议题，A1=20；未命中具体关切议题加分项，A2=3（前沿模型安全监管属基础模型安全范畴，酌情给低档加分）→ A=23。处于计划/立法讨论阶段 B=15。海外立法路径对国内有参考价值 E=8。中文世界报道稀少 F=7。"
-          }
-        ],
-        "pool": [
+          },
           {
             "id": 2974,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/dk7gxb5o7lnebzj0eo7o9s5cck2pxr42i7m7f3gb.html",
@@ -542,6 +650,50 @@
             "reason": "文章报道欧盟监察机构对欧委会AI特使任命利益冲突问题启动调查，属AI治理（T1）人事与伦理监督范畴，但非核心监管规则议题，A1=18，未命中关切议题加分。调查刚启动、风险冒头期B=20。海外人事争议对国内借鉴意义中性E=5。中文世界鲜有报道F=7。"
           },
           {
+            "id": 3023,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/nif28rkq248eoopu81tqfhil6148zbszt9gwrh23.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 12, 2…",
+            "title_cn": "EDPB 宣布第六次协调执法行动聚焦招聘自动化决策",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 12, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks EU: EDPB announces topic for sixth CEF The EDPB selected automated decision-making in recruitment as the topic for its sixth coordinated enforcement action, launching during 2027. Read Now Save for Later Accounting records (public company) of Accounting records of Company & Financial for Hawaii Read Now Register of members/r",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-11-12T16:35:56.389000+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 60,
+            "fingerprint": "EDPB-CEF-automated-decision-making-recruitment-2027",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件主议题为 EDPB 宣布第六次协调执法行动（CEF）主题为招聘中的自动化决策，属数据与隐私主题（T3），部分对齐 A1=15；未命中关切议题加分 A2=0 → A=18。CEF 主题已宣布、2027 年启动，处于讨论/筹备阶段 B=15。产业可借鉴中性 E=5；中文世界报道稀少 F=7。"
+          },
+          {
+            "id": 3012,
+            "url": "https://epic.org/epic-testifies-in-new-york-state-and-the-city-of-boston-urging-for-alpr-guardrails-and-greater-transparency/",
+            "title": "EPIC Testifies in New York State and the City of Boston Urging for ALPR Guardrails and Greater Transparency",
+            "title_cn": "EPIC就车牌识别隐私护栏在纽约与波士顿作证",
+            "summary": "New York’s proposed AB10808 and its companion, Senate Bill S.9890, and Boston's proposed amended ordinance addresses residents' privacy rights as ALPR technology becomes more widespread.",
+            "source_name": "EPIC",
+            "source_tier": "C",
+            "published_at": "2026-11-12T16:02:28+00:00",
+            "score_a": 22,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 7,
+            "score_f": 8,
+            "total_score": 60,
+            "fingerprint": "US-ALPR-NY-Boston-Privacy-Ordinance-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "文章围绕纽约州 AB10808/S.9890 法案与波士顿修订条例中自动车牌识别（ALPR）技术的隐私保护与透明度要求，深度对齐数据与隐私主题（T3），属生物识别/监控数据治理范畴。A1=22（核心议题为隐私立法，但非最主流隐私议题），A2=0（未命中关切议题清单）；处于讨论立法期 B=15；美国地方立法实践对国内有一定参考价值 E=7；中文世界鲜有报道 F=8。"
+          },
+          {
             "id": 2993,
             "url": "https://www.politico.eu/article/brussels-takes-on-the-evils-of-online-commerce-digital-fairness-act-commission/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
             "title": "Brussels takes on the evils of online commerce",
@@ -608,6 +760,28 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "纽约州 AI 安全法进入执法阶段，要求 OpenAI、Anthropic 等大型开发者注册、披露安全实践并报告重大事件，深度对齐 AI 治理主题（T1）。A1=25（核心议题），无高权重关切议题命中，A2=0 → A=25；已生效执法属落地执行期 B=3；州级 AI 安全执法模式对国内有参考价值 E=8；中文世界报道有限 F=7。"
+          },
+          {
+            "id": 3019,
+            "url": "https://www.politico.eu/article/tinder-owner-hit-with-e11m-privacy-fine/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Tinder owner hit with €11M privacy fine",
+            "title_cn": "爱尔兰监管机构对 Tinder 开出 1100 万欧元隐私罚单",
+            "summary": "The Irish Data Protection Commission ruled that Tinder's \"Download My Data\" tool is not complaint with GDPR. The company plans to appeal.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-11-13T11:01:01+00:00",
+            "score_a": 20,
+            "score_b": 3,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 46,
+            "fingerprint": "Irish-DPC-Tinder-GDPR-data-access-fine-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_enforcement",
+            "reason": "爱尔兰数据保护委员会对 Tinder 母公司作出 GDPR 罚款，属数据与隐私主题（T3）的执法动态，主题对齐但为常规数据访问权执法，未命中高权重关切议题。A1=20，A2=0 → A=20；已进入执法处罚阶段 B=3；此类 GDPR 罚款海外常见，借鉴意义中性 E=5；中文世界报道有限 F=7。"
           }
         ]
       },
@@ -660,6 +834,28 @@
             "maturity_stage": "风险冒头期",
             "content_type": "opinion_analysis",
             "reason": "文章报道一名14岁开发者发布可让多个AI Agent协同行动的工具，并指出其安全边界需用户自行承担，属于AI Agent治理这一新兴形态的风险冒头期议题，深度对齐T1主题但偏产品报道而非监管动态。A1=15（部分对齐，主体是产品而非治理规则），A2=5（命中Agent等新形态）→A=18；风险冒头期B=20；产业可借鉴性中性E=5；中文世界尚无报道F=7。"
+          },
+          {
+            "id": 3020,
+            "url": "https://www.politico.eu/article/jensen-huang-fall-exposes-eu-leaders-ai-nvidia-european-council/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Jensen Huang’s fall further exposes EU leaders on AI",
+            "title_cn": "黄仁勋事件凸显欧盟领导人AI议题困境",
+            "summary": "European leaders are meeting for their first conversation on AI with the tech world in tumult.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-11-12T22:53:46+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 56,
+            "fingerprint": "EU-AI-Council-Jensen-Huang-Nvidia-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "文章围绕欧洲理事会首次就 AI 议题展开讨论，背景是英伟达 CEO 黄仁勋相关事件引发的科技界动荡，主题部分对齐 AI 治理（T1），但主体是政治人物与科技领袖的会面叙事，而非具体立法或监管动作，A1=18；未命中高权重关切议题，A2=0。处于讨论立法期 B=15。产业可借鉴性中性 E=5；中文世界报道有限 F=7。"
           }
         ],
         "pool": []
@@ -693,6 +889,30 @@
             "reason": "英国竞争与市场管理局（CMA）发布关于 Agentic AI 对消费者影响的阶段性研究成果，主题深度对齐 AI 治理（T1），并命中 Agent 等新形态这一高权重关切议题。A1=23（核心议题，但属研究性成果而非规则制定），A2=5 → A=28；风险冒头期 B=20；海外监管机构前沿研究对国内有借鉴价值 E=9；中文世界尚无系统报道 F=9。"
           },
           {
+            "id": 3013,
+            "url": "https://fpf.org/blog/fpf-launches-roundtable-series-on-agentic-ai-privacy-and-pets/",
+            "title": "FPF Launches Roundtable Series on Agentic AI, Privacy, and PETs",
+            "title_cn": "FPF 启动 Agentic AI 隐私与 PETs 圆桌系列",
+            "summary": "On October 19, 2026, the FPF Center for Artificial Intelligence launched a four-part virtual roundtable series on Agentic AI. In the first roundtable, Agentic Data Flows: Privacy, Data Minimization, and PETs in Agentic Deployment, guest experts explored a taxonomy of agentic AI privacy harms, and discussed implementation challenges and enterprise risks across the AI value [&#8230;]",
+            "source_name": "Future of Privacy Forum",
+            "source_tier": "A",
+            "published_at": "2026-11-12T20:02:55+00:00",
+            "score_a": 23,
+            "score_b": 20,
+            "score_c": 12,
+            "score_d": 6,
+            "score_e": 8,
+            "score_f": 9,
+            "total_score": 78,
+            "fingerprint": "FPF-Agentic-AI-Privacy-PETs-Roundtable-2026-10",
+            "anxiety_hits": [
+              "Agent 等新形态"
+            ],
+            "maturity_stage": "风险冒头期",
+            "content_type": "fact_official_doc",
+            "reason": "FPF 启动 Agentic AI 隐私与 PETs 圆桌系列，探讨 agentic AI 隐私危害分类学与企业风险，主题深度对齐 AI 治理（T1）并涉及数据与隐私（T3），命中 Agent 等新形态关切议题。A1=20 A2=3 → A=23；属学界/智库首次系统梳理新风险、无监管回应，B=20；海外智库做法值得借鉴 E=8；中文世界几无报道 F=9。"
+          },
+          {
             "id": 2856,
             "url": "https://www.gov.uk/cma-cases/suspected-abuse-of-a-dominant-position-in-relation-to-metas-commercial-terms",
             "title": "Suspected abuse of a dominant position in relation to Meta’s commercial terms",
@@ -715,7 +935,9 @@
             "maturity_stage": "风险冒头期",
             "content_type": "fact_enforcement",
             "reason": "CMA 对 Meta 商业条款是否滥用市场支配地位启动调查，属数字平台反垄断（T2），深度对齐平台治理主题；命中平台垄断关切议题。A1=18（调查启动、条款范围尚待界定，对齐但非核心立法议题）+A2=5 → A=22；调查启动属风险冒头期 B=20；数字平台反垄断调查具借鉴意义 E=8；中文世界报道稀少 F=7。"
-          },
+          }
+        ],
+        "pool": [
           {
             "id": 2998,
             "url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6/entries/rnztmzs4ir9oerc3o1yk78a14cqwpwld14abqt22.html",
@@ -739,9 +961,7 @@
             "maturity_stage": "风险冒头期",
             "content_type": "fact_official_doc",
             "reason": "斯坦福 HAI 发布关于公共部门 AI 评估方法的议题简报，主题深度对齐 AI 治理（T1），以澳大利亚医保统计门户遭自主 AI Agent 未授权访问事件为引，聚焦 Agent 治理与评估缺失风险，命中 Agent 等新形态关切议题。A1=18（评估方法属 AI 治理核心但偏方法论），A2=5 → A=22；风险冒头期 B=20；海外评估框架具借鉴价值 E=8；中文世界少见同类报道 F=8。"
-          }
-        ],
-        "pool": [
+          },
           {
             "id": 2853,
             "url": "https://fpf.org/blog/fpf-submits-comments-to-inform-colorado-automated-decision-making-adm-act-rulemaking/",
@@ -1002,30 +1222,6 @@
             "reason": "西班牙政府在大选前推动封禁 TikTok，起因是有关其儿童性虐待材料管控不力的报告，主题深度对齐平台治理（T2）与未成年人网络保护（T5），命中未成年人内容保护关切议题。A1=20，A2=3，合计 A=23；处于讨论立法期 B=15；欧洲平台未成年人保护做法具借鉴意义 E=8；中文世界报道有限 F=7。"
           },
           {
-            "id": 2849,
-            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/xbivzshfxbp7e7sa6in78ckp77166ohhaqpgogat.html",
-            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 28, 20…",
-            "title_cn": "西班牙 AEPD 发布 AI 助手与 Agent 个人数据保护建议",
-            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | October 28, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks Spain: AEPD publishes guidance on protecting personal data when using AI assistants and agents The AEPD published recommendations for using AI assistants while protecting personal data, limiting delegated actions, and maintaining control. Read Now Save for Later British Columbia: OpenAI challenges OIPC document production ord",
-            "source_name": "DataGuidance (KtN)",
-            "source_tier": "A",
-            "published_at": "2026-10-28T16:50:19.098000+00:00",
-            "score_a": 20,
-            "score_b": 15,
-            "score_c": 12,
-            "score_d": 3,
-            "score_e": 7,
-            "score_f": 7,
-            "total_score": 64,
-            "fingerprint": "Spain-AEPD-AI-assistants-agents-data-protection-guidance-2026-10",
-            "anxiety_hits": [
-              "Agent 等新形态"
-            ],
-            "maturity_stage": "讨论立法期",
-            "content_type": "fact_official_doc",
-            "reason": "KtN 邮件主议题为西班牙 AEPD 发布 AI 助手与 Agent 使用中的个人数据保护建议，属数据与隐私（T3）与 AI 治理（T1）交叉，深度对齐但为指引性建议而非强制规则，A1=18，命中 Agent 等新形态 A2=5 → A=20；指引/建议阶段 B=15；海外监管做法有借鉴意义 E=7；中文世界报道稀少 F=7。"
-          },
-          {
             "id": 2995,
             "url": "https://www.theregister.com/public-sector/2026/11/11/australia-may-make-knowingly-selling-unsafe-ai-a-crime/5308999",
             "title": "Australia may make knowingly selling unsafe AI a crime",
@@ -1185,6 +1381,50 @@
             "reason": "文章报道美国多地地方政府因隐私、数据共享与采购问题撤除 Flock 监控摄像头，涉及公共监控数据与隐私治理，部分对齐数据与隐私主题（T1-T5 中的 T3），A1=18，未命中明确关切议题加分项 A2=0。风险冒头期 B=20；海外地方实践借鉴意义中性 E=5；中文世界报道稀少 F=7。"
           },
           {
+            "id": 3023,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/nif28rkq248eoopu81tqfhil6148zbszt9gwrh23.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 12, 2…",
+            "title_cn": "EDPB 宣布第六次协调执法行动聚焦招聘自动化决策",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 12, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks EU: EDPB announces topic for sixth CEF The EDPB selected automated decision-making in recruitment as the topic for its sixth coordinated enforcement action, launching during 2027. Read Now Save for Later Accounting records (public company) of Accounting records of Company & Financial for Hawaii Read Now Register of members/r",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-11-12T16:35:56.389000+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 12,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 60,
+            "fingerprint": "EDPB-CEF-automated-decision-making-recruitment-2027",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件主议题为 EDPB 宣布第六次协调执法行动（CEF）主题为招聘中的自动化决策，属数据与隐私主题（T3），部分对齐 A1=15；未命中关切议题加分 A2=0 → A=18。CEF 主题已宣布、2027 年启动，处于讨论/筹备阶段 B=15。产业可借鉴中性 E=5；中文世界报道稀少 F=7。"
+          },
+          {
+            "id": 3012,
+            "url": "https://epic.org/epic-testifies-in-new-york-state-and-the-city-of-boston-urging-for-alpr-guardrails-and-greater-transparency/",
+            "title": "EPIC Testifies in New York State and the City of Boston Urging for ALPR Guardrails and Greater Transparency",
+            "title_cn": "EPIC就车牌识别隐私护栏在纽约与波士顿作证",
+            "summary": "New York’s proposed AB10808 and its companion, Senate Bill S.9890, and Boston's proposed amended ordinance addresses residents' privacy rights as ALPR technology becomes more widespread.",
+            "source_name": "EPIC",
+            "source_tier": "C",
+            "published_at": "2026-11-12T16:02:28+00:00",
+            "score_a": 22,
+            "score_b": 15,
+            "score_c": 5,
+            "score_d": 3,
+            "score_e": 7,
+            "score_f": 8,
+            "total_score": 60,
+            "fingerprint": "US-ALPR-NY-Boston-Privacy-Ordinance-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "fact_legislative",
+            "reason": "文章围绕纽约州 AB10808/S.9890 法案与波士顿修订条例中自动车牌识别（ALPR）技术的隐私保护与透明度要求，深度对齐数据与隐私主题（T3），属生物识别/监控数据治理范畴。A1=22（核心议题为隐私立法，但非最主流隐私议题），A2=0（未命中关切议题清单）；处于讨论立法期 B=15；美国地方立法实践对国内有一定参考价值 E=7；中文世界鲜有报道 F=8。"
+          },
+          {
             "id": 2993,
             "url": "https://www.politico.eu/article/brussels-takes-on-the-evils-of-online-commerce-digital-fairness-act-commission/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
             "title": "Brussels takes on the evils of online commerce",
@@ -1249,28 +1489,6 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_official_doc",
             "reason": "德国政府发布2030年成为主权AI国家的战略蓝图，属AI治理主题（T1），但更偏产业战略与能力建设，监管法律角度较弱，A1=15；未命中具体关切议题，A2=3（主权AI/基础模型能力建设擦边基础模型安全）；A=18。战略蓝图处于讨论/规划阶段，B=15。欧洲AI主权战略对国内有参考价值，E=8。中文世界报道有限，F=7。"
-          },
-          {
-            "id": 2847,
-            "url": "https://www.politico.eu/article/eu-lawmakers-slam-new-border-force-powers-to-surveil-social-media-frontex/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-            "title": "EU lawmakers slam new border force powers to surveil social media",
-            "title_cn": "欧洲议员批评边境局获社交媒体监控权",
-            "summary": "The EU border agency is getting a broad mandate to monitor social media for illegal content.",
-            "source_name": "Politico EU Tech",
-            "source_tier": "B",
-            "published_at": "2026-10-28T20:24:30+00:00",
-            "score_a": 18,
-            "score_b": 15,
-            "score_c": 8,
-            "score_d": 3,
-            "score_e": 7,
-            "score_f": 8,
-            "total_score": 59,
-            "fingerprint": "EU-Frontex-social-media-surveillance-mandate-2026-10",
-            "anxiety_hits": [],
-            "maturity_stage": "讨论立法期",
-            "content_type": "fact_legislative",
-            "reason": "文章报道欧洲议会议员批评欧盟边境局（Frontex）获得监控社交媒体非法内容的广泛授权，涉及平台内容监控与在线内容治理（T4），属部分对齐主题（A1=18），未命中具体关切议题加分（A2=0）。议题处于立法讨论/授权争议阶段，B=15。欧盟对边境机构内容监控权限的争论对国内有参考价值，E=7。中文世界报道稀少，F=8。"
           },
           {
             "id": 2979,
@@ -1341,28 +1559,6 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "通用汽车因出售车主驾驶与位置数据达成2.2亿美元和解，并须在收集或共享数据前取得明确同意，深度对齐数据与隐私主题（T3），A1=24；未命中高权重关切议题，A2=0。属执法和解落地阶段，B=3。美国隐私执法和解对企业数据合规有借鉴意义，E=8；中文世界报道有限，F=7。"
-          },
-          {
-            "id": 2851,
-            "url": "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4/entries/v3ur2b7t67j3bwwcjukxda9zite95kjh4i0i2g9o.html",
-            "title": "Information Matters: Latest news from the OAIC",
-            "title_cn": "澳大利亚 OAIC 发布十月信息专员通讯",
-            "summary": "Having trouble viewing this email?&#160; View Online From the desk of the Information Commissioner Welcome to the October 2026 edition of Information Matters.&#160;&#160; With the release of our 2025-2026 Annual Report and our appearance before the Senate Estimates earlier this week, it is an opportune time to reflect on the achievements of the Office of the Australian Information&#160;Commissioner (OAIC)&#160;this past year.&#160;&#160; Our priorities during the year were:&#160; rebalance power and information asymmetries&#160; rights preservation in new and emerging technologies&#160; streng",
-            "source_name": "OAIC (KtN)",
-            "source_tier": "S",
-            "published_at": "2026-10-29T01:21:10.812000+00:00",
-            "score_a": 18,
-            "score_b": 8,
-            "score_c": 15,
-            "score_d": 3,
-            "score_e": 5,
-            "score_f": 7,
-            "total_score": 56,
-            "fingerprint": "OAIC-Information-Matters-Annual-Report-2026-10",
-            "anxiety_hits": [],
-            "maturity_stage": "规则成形期",
-            "content_type": "fact_official_doc",
-            "reason": "澳大利亚信息专员办公室（OAIC）月度通讯，主体为年度报告回顾与参议院预算委员会听证，涉及隐私与新兴技术中的权利保护，部分对齐数据与隐私主题（T1-T3 中的 T3），但属机构自身工作总结而非具体监管动作。A1=15，A2 无命中 → A=18；规则成形期 B=8；产业可借鉴中性 E=5；中文世界无报道 F=7。"
           },
           {
             "id": 2949,
@@ -1500,6 +1696,28 @@
             "maturity_stage": "落地执行期",
             "content_type": "fact_enforcement",
             "reason": "KtN 邮件主议题为 FTC 要求九家公司说明个人数据如何影响消费者定价与员工薪酬，属数据与隐私主题（T3）的执法调查动态，部分对齐。A1=18，无高权重关切议题命中 A2=0 → A=18；已进入调查执行阶段 B=3；产业可借鉴中性 E=5；中文世界报道稀少 F=7。"
+          },
+          {
+            "id": 3019,
+            "url": "https://www.politico.eu/article/tinder-owner-hit-with-e11m-privacy-fine/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Tinder owner hit with €11M privacy fine",
+            "title_cn": "爱尔兰监管机构对 Tinder 开出 1100 万欧元隐私罚单",
+            "summary": "The Irish Data Protection Commission ruled that Tinder's \"Download My Data\" tool is not complaint with GDPR. The company plans to appeal.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-11-13T11:01:01+00:00",
+            "score_a": 20,
+            "score_b": 3,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 46,
+            "fingerprint": "Irish-DPC-Tinder-GDPR-data-access-fine-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_enforcement",
+            "reason": "爱尔兰数据保护委员会对 Tinder 母公司作出 GDPR 罚款，属数据与隐私主题（T3）的执法动态，主题对齐但为常规数据访问权执法，未命中高权重关切议题。A1=20，A2=0 → A=20；已进入执法处罚阶段 B=3；此类 GDPR 罚款海外常见，借鉴意义中性 E=5；中文世界报道有限 F=7。"
           },
           {
             "id": 2899,
@@ -1740,6 +1958,28 @@
             "maturity_stage": "风险冒头期",
             "content_type": "opinion_analysis",
             "reason": "文章讨论 AI 发现法律体系隐藏漏洞、可能冲击法律系统，属于 AI 治理（T1）中 AI 对法律与监管体系影响的新兴风险议题，主题部分对齐（A1=18），未命中具体关切议题（A2=0）。风险冒头期 B=20；海外讨论对国内有中性参考价值 E=5；中文世界尚无系统报道 F=7。"
+          },
+          {
+            "id": 3020,
+            "url": "https://www.politico.eu/article/jensen-huang-fall-exposes-eu-leaders-ai-nvidia-european-council/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+            "title": "Jensen Huang’s fall further exposes EU leaders on AI",
+            "title_cn": "黄仁勋事件凸显欧盟领导人AI议题困境",
+            "summary": "European leaders are meeting for their first conversation on AI with the tech world in tumult.",
+            "source_name": "Politico EU Tech",
+            "source_tier": "B",
+            "published_at": "2026-11-12T22:53:46+00:00",
+            "score_a": 18,
+            "score_b": 15,
+            "score_c": 8,
+            "score_d": 3,
+            "score_e": 5,
+            "score_f": 7,
+            "total_score": 56,
+            "fingerprint": "EU-AI-Council-Jensen-Huang-Nvidia-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "讨论立法期",
+            "content_type": "opinion_analysis",
+            "reason": "文章围绕欧洲理事会首次就 AI 议题展开讨论，背景是英伟达 CEO 黄仁勋相关事件引发的科技界动荡，主题部分对齐 AI 治理（T1），但主体是政治人物与科技领袖的会面叙事，而非具体立法或监管动作，A1=18；未命中高权重关切议题，A2=0。处于讨论立法期 B=15。产业可借鉴性中性 E=5；中文世界报道有限 F=7。"
           },
           {
             "id": 2946,
@@ -3514,6 +3754,42 @@
       "related_opinions": []
     },
     {
+      "fingerprint": "FPF-Agentic-AI-Privacy-PETs-Roundtable-2026-10",
+      "article_count": 2,
+      "main_is_fact": true,
+      "main": {
+        "id": 3013,
+        "url": "https://fpf.org/blog/fpf-launches-roundtable-series-on-agentic-ai-privacy-and-pets/",
+        "title": "FPF Launches Roundtable Series on Agentic AI, Privacy, and PETs",
+        "title_cn": "FPF 启动 Agentic AI 隐私与 PETs 圆桌系列",
+        "summary": "On October 19, 2026, the FPF Center for Artificial Intelligence launched a four-part virtual roundtable series on Agentic AI. In the first roundtable, Agentic Data Flows: Privacy, Data Minimization, and PETs in Agentic Deployment, guest experts explored a taxonomy of agentic AI privacy harms, and discussed implementation challenges and enterprise risks across the AI value [&#8230;]",
+        "source_name": "Future of Privacy Forum",
+        "source_tier": "A",
+        "published_at": "2026-11-12T20:02:55+00:00",
+        "total_score": 78,
+        "anxiety_hits": [
+          "Agent 等新形态"
+        ],
+        "maturity_stage": "风险冒头期",
+        "content_type": "fact_official_doc",
+        "reason": "FPF 启动 Agentic AI 隐私与 PETs 圆桌系列，探讨 agentic AI 隐私危害分类学与企业风险，主题深度对齐 AI 治理（T1）并涉及数据与隐私（T3），命中 Agent 等新形态关切议题。A1=20 A2=3 → A=23；属学界/智库首次系统梳理新风险、无监管回应，B=20；海外智库做法值得借鉴 E=8；中文世界几无报道 F=9。"
+      },
+      "related_facts": [],
+      "related_opinions": [
+        {
+          "id": 1654,
+          "url": "https://fpf.org/blog/fpf-hosts-frontiers-workshop-on-privacy-ai-and-emerging-infrastructure/",
+          "title": "FPF Hosts Frontiers Workshop on Privacy, AI, and Emerging Infrastructure",
+          "title_cn": "FPF举办隐私与AI前沿基础设施研讨会",
+          "source_name": "Future of Privacy Forum",
+          "source_tier": "A",
+          "published_at": "2026-07-09T13:46:00+00:00",
+          "total_score": 65,
+          "content_type": "opinion_analysis"
+        }
+      ]
+    },
+    {
       "fingerprint": "EU-Meta-addictive-design-DSA-2026-07",
       "article_count": 2,
       "main_is_fact": true,
@@ -4506,25 +4782,25 @@
     }
   ],
   "stats": {
-    "total": 2935,
+    "total": 2948,
     "by_type": {
-      "fact_enforcement": 211,
-      "fact_legislative": 201,
-      "fact_official_doc": 156,
-      "opinion_analysis": 256
+      "fact_enforcement": 212,
+      "fact_legislative": 202,
+      "fact_official_doc": 158,
+      "opinion_analysis": 257
     },
-    "veto": 2111
+    "veto": 2119
   },
   "feed_health": [
     {
       "source_name": "OII",
       "feed_url": "https://www.oii.ox.ac.uk/news-events/news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
       "last_success_at": "2026-06-04T10:13:12.070378+00:00",
       "last_error": "XML parse error: not well-formed (invalid token): line 5, column 175",
       "last_article_count": 10,
-      "consecutive_fails": 323,
+      "consecutive_fails": 324,
       "recent_7d_success": 0,
       "recent_7d_total": 14,
       "latest_article_at": "2026-05-08T15:38:51+00:00",
@@ -4588,7 +4864,7 @@
       "recent_7d_success": 0,
       "recent_7d_total": 0,
       "latest_article_at": "2026-04-30T17:21:52+00:00",
-      "stale_days": 195,
+      "stale_days": 196,
       "status": "dead"
     },
     {
@@ -4670,173 +4946,143 @@
       "source_name": "DLA Piper",
       "feed_url": "https://privacymatters.dlapiper.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-10-09T14:00:51+00:00",
-      "stale_days": 34,
+      "stale_days": 35,
       "status": "stale"
     },
     {
       "source_name": "NIST",
       "feed_url": "https://www.nist.gov/news-events/news/rss.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 40,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-11-02T12:00:00+00:00",
-      "stale_days": 10,
+      "stale_days": 11,
       "status": "stale"
     },
     {
       "source_name": "FTC",
       "feed_url": "https://www.ftc.gov/feeds/press-release.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-10-22T12:00:00+00:00",
-      "stale_days": 21,
+      "stale_days": 22,
       "status": "stale"
     },
     {
       "source_name": "IAPP Daily Dashboard (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/9v0c5wjcqvoklno87tca.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-05-06T13:18:40.669000+00:00",
-      "stale_days": 190,
+      "stale_days": 191,
       "status": "stale"
     },
     {
       "source_name": "OAIC (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 1,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-10-29T01:21:10.812000+00:00",
-      "stale_days": 14,
+      "stale_days": 15,
       "status": "stale"
     },
     {
       "source_name": "CNIL (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 1,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-10-30T18:17:53.660000+00:00",
-      "stale_days": 12,
+      "stale_days": 13,
       "status": "stale"
     },
     {
       "source_name": "Platformer",
       "feed_url": "https://www.platformer.news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 2,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-11-04T01:34:20+00:00",
-      "stale_days": 8,
+      "stale_days": 9,
       "status": "warn"
     },
     {
       "source_name": "AI Now",
       "feed_url": "https://ainowinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-11-06T18:48:53+00:00",
-      "stale_days": 5,
-      "status": "warn"
-    },
-    {
-      "source_name": "EPIC",
-      "feed_url": "https://epic.org/feed",
-      "source_tier": "C",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_error": null,
-      "last_article_count": 10,
-      "consecutive_fails": 0,
-      "recent_7d_success": 14,
-      "recent_7d_total": 14,
-      "latest_article_at": "2026-11-05T18:41:22+00:00",
       "stale_days": 6,
-      "status": "warn"
-    },
-    {
-      "source_name": "Future of Privacy Forum",
-      "feed_url": "https://fpf.org/feed",
-      "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_error": null,
-      "last_article_count": 10,
-      "consecutive_fails": 0,
-      "recent_7d_success": 14,
-      "recent_7d_total": 14,
-      "latest_article_at": "2026-11-05T15:24:16+00:00",
-      "stale_days": 7,
       "status": "warn"
     },
     {
       "source_name": "Import AI (Substack)",
       "feed_url": "https://jack-clark.net/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-11-09T13:31:34+00:00",
-      "stale_days": 3,
+      "stale_days": 4,
       "status": "ok"
     },
     {
       "source_name": "Tech Policy Press",
       "feed_url": "https://www.techpolicy.press/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4850,14 +5096,44 @@
       "source_name": "The Register",
       "feed_url": "https://www.theregister.com/headlines.atom",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 6,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
-      "latest_article_at": "2026-11-12T15:37:00+00:00",
+      "latest_article_at": "2026-11-13T06:40:06+00:00",
+      "stale_days": 0,
+      "status": "ok"
+    },
+    {
+      "source_name": "EPIC",
+      "feed_url": "https://epic.org/feed",
+      "source_tier": "C",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_error": null,
+      "last_article_count": 10,
+      "consecutive_fails": 0,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-11-12T20:57:18+00:00",
+      "stale_days": 0,
+      "status": "ok"
+    },
+    {
+      "source_name": "Future of Privacy Forum",
+      "feed_url": "https://fpf.org/feed",
+      "source_tier": "A",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_error": null,
+      "last_article_count": 10,
+      "consecutive_fails": 0,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-11-12T20:02:55+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -4865,44 +5141,44 @@
       "source_name": "Inside Privacy (Covington)",
       "feed_url": "https://www.insideprivacy.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-11-09T21:22:07+00:00",
-      "stale_days": 2,
+      "stale_days": 3,
       "status": "ok"
     },
     {
       "source_name": "TechCrunch",
       "feed_url": "https://techcrunch.com/feed/",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
-      "last_article_count": 2,
+      "last_article_count": 4,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
-      "latest_article_at": "2026-11-11T15:00:00+00:00",
-      "stale_days": 1,
+      "latest_article_at": "2026-11-12T22:42:51+00:00",
+      "stale_days": 0,
       "status": "ok"
     },
     {
       "source_name": "Politico EU Tech",
       "feed_url": "https://www.politico.eu/section/technology/feed",
       "source_tier": "B",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 31,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
-      "latest_article_at": "2026-11-12T13:26:43+00:00",
+      "latest_article_at": "2026-11-13T13:36:35+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -4910,23 +5186,23 @@
       "source_name": "CMA UK",
       "feed_url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 20,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-11-11T12:01:14+00:00",
-      "stale_days": 1,
+      "stale_days": 2,
       "status": "ok"
     },
     {
       "source_name": "Ada Lovelace",
       "feed_url": "https://www.adalovelaceinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4940,14 +5216,14 @@
       "source_name": "DataGuidance (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 17,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
-      "latest_article_at": "2026-11-11T16:15:19.155000+00:00",
+      "latest_article_at": "2026-11-12T16:35:56.389000+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -4955,8 +5231,8 @@
       "source_name": "WilmerHale Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/muwfbzqx60g7b14mspkf.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4970,8 +5246,8 @@
       "source_name": "Lawfare (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eqkwbtfnwj1lqbi08d5p.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -4985,8 +5261,8 @@
       "source_name": "Inside Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -5000,23 +5276,23 @@
       "source_name": "HAI Stanford (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 3,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-11-11T14:04:08.321000+00:00",
-      "stale_days": 1,
+      "stale_days": 2,
       "status": "ok"
     },
     {
       "source_name": "MLex AI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -5030,8 +5306,8 @@
       "source_name": "EDPS (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -5045,23 +5321,23 @@
       "source_name": "TechPolicy Press (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 6,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-11-08T17:00:55.717000+00:00",
-      "stale_days": 3,
+      "stale_days": 4,
       "status": "ok"
     },
     {
       "source_name": "NIST AISI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
@@ -5075,92 +5351,127 @@
       "source_name": "Brookings TechTank (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/btrel8v1yu4h5i4xcsze.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-11-12T16:00:53.445250+00:00",
-      "last_success_at": "2026-11-12T16:00:53.445250+00:00",
+      "last_attempt_at": "2026-11-13T14:37:42.217201+00:00",
+      "last_success_at": "2026-11-13T14:37:42.217201+00:00",
       "last_error": null,
       "last_article_count": 11,
       "consecutive_fails": 0,
       "recent_7d_success": 14,
       "recent_7d_total": 14,
       "latest_article_at": "2026-11-12T12:06:45.482000+00:00",
-      "stale_days": 0,
+      "stale_days": 1,
       "status": "ok"
     }
   ],
   "topics_by_window": {
     "24h": [
       {
-        "emoji": "📌",
-        "name": "当期要点",
-        "blurb": "候选文章较少，未做主题归纳",
+        "emoji": "🤖",
+        "name": "Agent 智能体隐私治理",
+        "blurb": "FPF 启动 Agentic AI 隐私圆桌",
         "article_ids": [
-          3005,
-          3008,
-          3004
+          3013
+        ]
+      },
+      {
+        "emoji": "⚖️",
+        "name": "自动化决策与执法行动",
+        "blurb": "EDPB 聚焦招聘自动化决策",
+        "article_ids": [
+          3023
+        ]
+      },
+      {
+        "emoji": "🔐",
+        "name": "生物识别与隐私立法",
+        "blurb": "车牌识别隐私护栏立法听证",
+        "article_ids": [
+          3012
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "欧盟 AI 政治议题博弈",
+        "blurb": "欧盟领导人 AI 议题困境",
+        "article_ids": [
+          3020
+        ]
+      },
+      {
+        "emoji": "⚖️",
+        "name": "GDPR 数据权利执法",
+        "blurb": "Tinder 数据下载工具被罚",
+        "article_ids": [
+          3019
         ]
       }
     ],
     "72h": [
       {
-        "emoji": "⚖️",
-        "name": "各国AI安全立法与监管",
-        "blurb": "多国推进AI安全立法与执法",
+        "emoji": "🤖",
+        "name": "AI 安全立法与监管架构",
+        "blurb": "各国推进 AI 安全立法与监管机构建设",
         "article_ids": [
           3008,
           2995,
           2990,
-          2979
+          2998
         ]
       },
       {
-        "emoji": "🤖",
-        "name": "AI Agent 安全与治理",
-        "blurb": "Agent 使用建议与协同工具安全",
-        "article_ids": [
-          2974,
-          2996
-        ]
-      },
-      {
-        "emoji": "👶",
-        "name": "未成年人网络与社媒保护",
-        "blurb": "社媒对儿童影响及封禁动向",
-        "article_ids": [
-          3004,
-          2980
-        ]
-      },
-      {
-        "emoji": "🛰️",
-        "name": "欧盟AI治理机制建设",
-        "blurb": "欧盟AI事件响应与人事监督",
+        "emoji": "⚖️",
+        "name": "欧盟 AI 治理与执法动态",
+        "blurb": "欧盟 AI 事件响应、任命争议与领导人议题",
         "article_ids": [
           3005,
-          2994
+          2994,
+          3020
+        ]
+      },
+      {
+        "emoji": "🔐",
+        "name": "数据隐私与自动化决策执法",
+        "blurb": "隐私监管、招聘算法与罚单执法",
+        "article_ids": [
+          3023,
+          3012,
+          3019
         ]
       },
       {
         "emoji": "📢",
-        "name": "在线操纵手法与平台监管",
-        "blurb": "打击动态定价等操纵设计",
+        "name": "平台内容与在线操纵治理",
+        "blurb": "封禁平台与打击动态定价等操纵手法",
         "article_ids": [
+          3004,
           2993
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "公共部门AI评估蓝图",
+        "blurb": "Agent 隐私圆桌与 Agent 工具安全",
         "article_ids": [
-          2998
+          3013,
+          2996
         ]
       }
     ],
     "120h": [
       {
+        "emoji": "🤖",
+        "name": "AI Agent 安全与治理",
+        "blurb": "Agent 新形态的隐私、安全与使用规范",
+        "article_ids": [
+          3013,
+          2974,
+          2996
+        ]
+      },
+      {
         "emoji": "⚖️",
-        "name": "各国AI安全立法与监管",
-        "blurb": "多国推进AI安全立法与执法",
+        "name": "AI 立法与监管机构建设",
+        "blurb": "各国推进 AI 安全立法与执法机构",
         "article_ids": [
           3008,
           2995,
@@ -5169,36 +5480,29 @@
         ]
       },
       {
-        "emoji": "🤖",
-        "name": "AI Agent 安全与治理",
-        "blurb": "Agent 安全使用建议与工具动态",
+        "emoji": "🇪🇺",
+        "name": "欧盟 AI 治理与执法动态",
+        "blurb": "欧盟层面 AI 事件响应与任命争议",
         "article_ids": [
-          2974,
-          2996
+          3005,
+          2994,
+          3020,
+          3023
         ]
       },
       {
         "emoji": "👶",
         "name": "未成年人网络与社媒保护",
-        "blurb": "社媒对儿童影响及封禁动向",
+        "blurb": "社媒对儿童影响及封禁立法动向",
         "article_ids": [
           3004,
           2980
         ]
       },
       {
-        "emoji": "🛰️",
-        "name": "欧盟AI治理机制建设",
-        "blurb": "欧盟AI事件响应与人事监督",
-        "article_ids": [
-          3005,
-          2994
-        ]
-      },
-      {
         "emoji": "📢",
         "name": "在线操纵与平台行为规制",
-        "blurb": "打击动态定价等操纵手法",
+        "blurb": "打击动态定价等操纵性设计",
         "article_ids": [
           2993
         ]
@@ -5206,33 +5510,49 @@
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "公共部门AI评估等零散动态",
+        "blurb": "公共部门评估与生物识别隐私",
         "article_ids": [
-          2998
+          2998,
+          3012,
+          3019
         ]
       }
     ],
     "360h": [
       {
         "emoji": "🤖",
-        "name": "AI Agent 安全与治理",
-        "blurb": "监管者针对 AI Agent 新形态的规则动态",
+        "name": "Agent 智能体治理规则",
+        "blurb": "各国针对 AI Agent 的监管与合规指引",
         "article_ids": [
           2863,
+          3013,
           2862,
           2927,
           2958,
           2974,
-          2849,
           2959,
           2996,
           2871
         ]
       },
       {
+        "emoji": "⚖️",
+        "name": "平台竞争与内容监管",
+        "blurb": "平台反垄断、算法与在线操纵执法",
+        "article_ids": [
+          2856,
+          2857,
+          2964,
+          2993,
+          2868,
+          3019,
+          2899
+        ]
+      },
+      {
         "emoji": "👶",
         "name": "未成年人网络保护",
-        "blurb": "针对未成年人接触 AI/网络内容的立法",
+        "blurb": "社媒限制、成瘾设计与儿童保护诉讼",
         "article_ids": [
           2854,
           2952,
@@ -5243,67 +5563,55 @@
         ]
       },
       {
-        "emoji": "⚖️",
-        "name": "平台竞争与反垄断",
-        "blurb": "平台商业条款与支配地位调查",
+        "emoji": "🛰️",
+        "name": "AI 安全立法与国家战略",
+        "blurb": "各国 AI 安全立法、监管机构与主权战略",
         "article_ids": [
-          2856,
-          2857,
-          2964,
-          2993,
-          2868,
-          2899
+          3005,
+          3008,
+          2995,
+          2937,
+          2893,
+          2990,
+          2942,
+          2905,
+          2894
         ]
       },
       {
         "emoji": "🔐",
-        "name": "AI 数据隐私与合规",
-        "blurb": "AI 应用中的个人数据保护与合规",
+        "name": "隐私与自动化决策合规",
+        "blurb": "隐私监管、自动化决策与数据执法",
         "article_ids": [
           2853,
           2930,
           2897,
           2882,
           2925,
-          2967,
-          2942,
-          2855
-        ]
-      },
-      {
-        "emoji": "🛰️",
-        "name": "AI 安全立法与监管",
-        "blurb": "各国 AI 安全立法与监管机构建设",
-        "article_ids": [
-          3005,
-          3008,
-          2937,
-          2995,
-          2990,
-          2994,
-          2931,
-          2979
+          2950,
+          3012,
+          3023,
+          2855,
+          2967
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "未归入上述主题的治理相关动态",
+        "blurb": "选举、AI 伦理与治理杂项",
         "article_ids": [
           2998,
           2907,
           2941,
-          2847,
-          2893,
+          2931,
           2903,
           2934,
           2935,
-          2851,
-          2905,
+          2979,
+          3020,
           2946,
           2885,
-          2886,
-          2894
+          2886
         ]
       },
       {
@@ -5311,7 +5619,7 @@
         "name": "其他治理动态",
         "blurb": "未归入主类的候选选题",
         "article_ids": [
-          2950
+          2994
         ]
       }
     ]
