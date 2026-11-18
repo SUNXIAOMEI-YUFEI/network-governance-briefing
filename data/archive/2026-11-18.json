@@ -1,5 +1,5 @@
 {
-  "snapshot_at": "2026-11-18T15:42:14.053120+00:00",
+  "snapshot_at": "2026-11-18T16:30:07.447452+00:00",
   "schema_version": "v1.4",
   "tabs": {
     "24h": {
@@ -77,6 +77,28 @@
           }
         ],
         "pool": [
+          {
+            "id": 3081,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/viw5d0dofvtyry9v45wz5dho4t76v16jgokr4u5d.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 18, 2…",
+            "title_cn": "纽约州总检察长设立 ASSET 单元执行 AI 安全法",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 18, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks New York: AG announces creation of ASSET Unit to enforce AI safety laws New York’s Attorney General created the ASSET Unit to oversee AI laws, support investigations, and address technology-related harms. Read Now Save for Later Spain: CCN publishes guides on offensive AI and quantum threats under ENS Spain’s CCN published t",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-11-18T16:10:54.539000+00:00",
+            "score_a": 22,
+            "score_b": 8,
+            "score_c": 12,
+            "score_d": 6,
+            "score_e": 7,
+            "score_f": 7,
+            "total_score": 62,
+            "fingerprint": "US-NY-AG-ASSET-Unit-AI-safety-enforcement-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "规则成形期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件主议题为纽约州总检察长设立 ASSET 单元以执行 AI 安全法，属 AI 治理（T1）主题，深度对齐但为执法机构组建而非新风险或立法讨论。A1=20，无高权重关切议题命中，A2=0 → A=22；机构设立属规则成形期 B=8；美国州级 AI 执法架构对国内有参考价值 E=7；中文世界报道稀少 F=7。"
+          },
           {
             "id": 3063,
             "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/6l6xtloj9d0ok59n0eln1d6hweetr4pzuvo6t4yp.html",
@@ -299,6 +321,28 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
             "reason": "欧委会发布数字公平法案等三项消费者法修订提案，涉及数字时代消费者保护与平台行为规范，与平台治理（T2）部分对齐，但核心是消费者合同法而非平台责任/反垄断主线，A1=18；未命中高权重关切议题，A2=0。提案阶段属讨论立法期 B=15。欧盟数字消费者规则更新对国内有参考价值 E=8；中文世界报道有限 F=7。"
+          },
+          {
+            "id": 3081,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/viw5d0dofvtyry9v45wz5dho4t76v16jgokr4u5d.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 18, 2…",
+            "title_cn": "纽约州总检察长设立 ASSET 单元执行 AI 安全法",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 18, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks New York: AG announces creation of ASSET Unit to enforce AI safety laws New York’s Attorney General created the ASSET Unit to oversee AI laws, support investigations, and address technology-related harms. Read Now Save for Later Spain: CCN publishes guides on offensive AI and quantum threats under ENS Spain’s CCN published t",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-11-18T16:10:54.539000+00:00",
+            "score_a": 22,
+            "score_b": 8,
+            "score_c": 12,
+            "score_d": 6,
+            "score_e": 7,
+            "score_f": 7,
+            "total_score": 62,
+            "fingerprint": "US-NY-AG-ASSET-Unit-AI-safety-enforcement-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "规则成形期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件主议题为纽约州总检察长设立 ASSET 单元以执行 AI 安全法，属 AI 治理（T1）主题，深度对齐但为执法机构组建而非新风险或立法讨论。A1=20，无高权重关切议题命中，A2=0 → A=22；机构设立属规则成形期 B=8；美国州级 AI 执法架构对国内有参考价值 E=7；中文世界报道稀少 F=7。"
           },
           {
             "id": 3056,
@@ -802,6 +846,28 @@
             "maturity_stage": "讨论立法期",
             "content_type": "fact_legislative",
             "reason": "欧委会发布数字公平法案等三项消费者法修订提案，涉及数字时代消费者保护与平台行为规范，与平台治理（T2）部分对齐，但核心是消费者合同法而非平台责任/反垄断主线，A1=18；未命中高权重关切议题，A2=0。提案阶段属讨论立法期 B=15。欧盟数字消费者规则更新对国内有参考价值 E=8；中文世界报道有限 F=7。"
+          },
+          {
+            "id": 3081,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/viw5d0dofvtyry9v45wz5dho4t76v16jgokr4u5d.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 18, 2…",
+            "title_cn": "纽约州总检察长设立 ASSET 单元执行 AI 安全法",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 18, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks New York: AG announces creation of ASSET Unit to enforce AI safety laws New York’s Attorney General created the ASSET Unit to oversee AI laws, support investigations, and address technology-related harms. Read Now Save for Later Spain: CCN publishes guides on offensive AI and quantum threats under ENS Spain’s CCN published t",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-11-18T16:10:54.539000+00:00",
+            "score_a": 22,
+            "score_b": 8,
+            "score_c": 12,
+            "score_d": 6,
+            "score_e": 7,
+            "score_f": 7,
+            "total_score": 62,
+            "fingerprint": "US-NY-AG-ASSET-Unit-AI-safety-enforcement-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "规则成形期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件主议题为纽约州总检察长设立 ASSET 单元以执行 AI 安全法，属 AI 治理（T1）主题，深度对齐但为执法机构组建而非新风险或立法讨论。A1=20，无高权重关切议题命中，A2=0 → A=22；机构设立属规则成形期 B=8；美国州级 AI 执法架构对国内有参考价值 E=7；中文世界报道稀少 F=7。"
           },
           {
             "id": 3056,
@@ -1629,6 +1695,28 @@
             "reason": "文章报道澳大利亚拟将明知销售不安全 AI 定为犯罪，并设立新监管机构要求模型开发者测试与接受检查，主题深度对齐 AI 治理（T1）。A1=20（核心议题但报道较简略），A2=3（涉及 AI 安全责任但未命中高权重关切议题）；处于讨论立法期 B=15；监管思路具借鉴意义 E=8；中文世界报道稀少 F=9。"
           },
           {
+            "id": 3081,
+            "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/viw5d0dofvtyry9v45wz5dho4t76v16jgokr4u5d.html",
+            "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 18, 2…",
+            "title_cn": "纽约州总检察长设立 ASSET 单元执行 AI 安全法",
+            "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 18, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks New York: AG announces creation of ASSET Unit to enforce AI safety laws New York’s Attorney General created the ASSET Unit to oversee AI laws, support investigations, and address technology-related harms. Read Now Save for Later Spain: CCN publishes guides on offensive AI and quantum threats under ENS Spain’s CCN published t",
+            "source_name": "DataGuidance (KtN)",
+            "source_tier": "A",
+            "published_at": "2026-11-18T16:10:54.539000+00:00",
+            "score_a": 22,
+            "score_b": 8,
+            "score_c": 12,
+            "score_d": 6,
+            "score_e": 7,
+            "score_f": 7,
+            "total_score": 62,
+            "fingerprint": "US-NY-AG-ASSET-Unit-AI-safety-enforcement-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "规则成形期",
+            "content_type": "fact_official_doc",
+            "reason": "KtN 邮件主议题为纽约州总检察长设立 ASSET 单元以执行 AI 安全法，属 AI 治理（T1）主题，深度对齐但为执法机构组建而非新风险或立法讨论。A1=20，无高权重关切议题命中，A2=0 → A=22；机构设立属规则成形期 B=8；美国州级 AI 执法架构对国内有参考价值 E=7；中文世界报道稀少 F=7。"
+          },
+          {
             "id": 3056,
             "url": "https://www.theregister.com/ai-and-ml/2026/11/16/california-sues-openai-for-misleading-public-about-ai-safety/5310297",
             "title": "California sues OpenAI for misleading public about AI safety",
@@ -1951,6 +2039,28 @@
             "reason": "宾州签署 AI 欺骗性广告法，要求 AI 生成广告内容披露，深度对齐 AI 治理（T1）中的 AI 标识/披露议题。A1=18（州级立法，主题对齐但非核心联邦/国际议题），A2=3（标识失效中档加分）→ A=21；已签署颁布未生效，规则成形期 B=8；州级立法对国内有参考价值 E=7；中文世界报道稀少 F=7。"
           },
           {
+            "id": 2990,
+            "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+            "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+            "title_cn": "纽约州 AI 安全法生效，OpenAI 等面临新监管",
+            "summary": "New York is preparing to enforce its sweeping AI safety law, requiring major developers like OpenAI and Anthropic to register, disclose safety practices, and report critical incidents or face fines.",
+            "source_name": "TechCrunch",
+            "source_tier": "C",
+            "published_at": "2026-11-10T20:52:13+00:00",
+            "score_a": 25,
+            "score_b": 3,
+            "score_c": 5,
+            "score_d": 6,
+            "score_e": 8,
+            "score_f": 7,
+            "total_score": 54,
+            "fingerprint": "US-NY-AG-ASSET-Unit-AI-safety-enforcement-2026-11",
+            "anxiety_hits": [],
+            "maturity_stage": "落地执行期",
+            "content_type": "fact_enforcement",
+            "reason": "纽约州 AI 安全法进入执法阶段，要求 OpenAI、Anthropic 等大型开发者注册、披露安全实践并报告重大事件，深度对齐 AI 治理主题（T1）。A1=25（核心议题），无高权重关切议题命中，A2=0 → A=25；已生效执法属落地执行期 B=3；州级 AI 安全执法模式对国内有参考价值 E=8；中文世界报道有限 F=7。"
+          },
+          {
             "id": 2949,
             "url": "https://epic.org/big-tech-companies-repeat-same-losing-arguments-in-new-challenge-to-californias-ab-1709/",
             "title": "Big Tech Companies Repeat Same Losing Arguments in New Challenge to California’s AB 1709",
@@ -2042,28 +2152,6 @@
             "maturity_stage": "规则成形期",
             "content_type": "fact_official_doc",
             "reason": "KtN 邮件主议题为汉堡数据保护专员发布 LLM 行政聊天机器人合规使用案例研究，属数据与隐私主题（T3），部分对齐 AI 治理（T1），A1=15；无高权重关切议题命中，A2=3（标识/合规指引类弱加分）→ A=18。案例研究属规则成形期指引，B=8。海外 DPA 操作指引对国内有中等参考价值，E=5。中文世界无相关报道，F=7。"
-          },
-          {
-            "id": 2990,
-            "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
-            "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
-            "title_cn": "纽约州 AI 安全法生效，OpenAI 等面临新监管",
-            "summary": "New York is preparing to enforce its sweeping AI safety law, requiring major developers like OpenAI and Anthropic to register, disclose safety practices, and report critical incidents or face fines.",
-            "source_name": "TechCrunch",
-            "source_tier": "C",
-            "published_at": "2026-11-10T20:52:13+00:00",
-            "score_a": 25,
-            "score_b": 3,
-            "score_c": 5,
-            "score_d": 3,
-            "score_e": 8,
-            "score_f": 7,
-            "total_score": 51,
-            "fingerprint": "US-NY-AI-Safety-Law-Enforcement-2026-11",
-            "anxiety_hits": [],
-            "maturity_stage": "落地执行期",
-            "content_type": "fact_enforcement",
-            "reason": "纽约州 AI 安全法进入执法阶段，要求 OpenAI、Anthropic 等大型开发者注册、披露安全实践并报告重大事件，深度对齐 AI 治理主题（T1）。A1=25（核心议题），无高权重关切议题命中，A2=0 → A=25；已生效执法属落地执行期 B=3；州级 AI 安全执法模式对国内有参考价值 E=8；中文世界报道有限 F=7。"
           },
           {
             "id": 3078,
@@ -5366,6 +5454,40 @@
       "related_opinions": []
     },
     {
+      "fingerprint": "US-NY-AG-ASSET-Unit-AI-safety-enforcement-2026-11",
+      "article_count": 2,
+      "main_is_fact": true,
+      "main": {
+        "id": 3081,
+        "url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov/entries/viw5d0dofvtyry9v45wz5dho4t76v16jgokr4u5d.html",
+        "title": "New from DataGuidance collections | Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 18, 2…",
+        "title_cn": "纽约州总检察长设立 ASSET 单元执行 AI 安全法",
+        "summary": "Updates on your personalised collections! 96 Updates on your personalised collections from DataGuidance ​﻿ Updates on your personalised collections! DG Collections | November 18, 2026 Hi sun, Here are the most recent additions to your collections: COLLECTION 1 My Bookmarks New York: AG announces creation of ASSET Unit to enforce AI safety laws New York’s Attorney General created the ASSET Unit to oversee AI laws, support investigations, and address technology-related harms. Read Now Save for Later Spain: CCN publishes guides on offensive AI and quantum threats under ENS Spain’s CCN published t",
+        "source_name": "DataGuidance (KtN)",
+        "source_tier": "A",
+        "published_at": "2026-11-18T16:10:54.539000+00:00",
+        "total_score": 62,
+        "anxiety_hits": [],
+        "maturity_stage": "规则成形期",
+        "content_type": "fact_official_doc",
+        "reason": "KtN 邮件主议题为纽约州总检察长设立 ASSET 单元以执行 AI 安全法，属 AI 治理（T1）主题，深度对齐但为执法机构组建而非新风险或立法讨论。A1=20，无高权重关切议题命中，A2=0 → A=22；机构设立属规则成形期 B=8；美国州级 AI 执法架构对国内有参考价值 E=7；中文世界报道稀少 F=7。"
+      },
+      "related_facts": [
+        {
+          "id": 2990,
+          "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+          "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+          "title_cn": "纽约州 AI 安全法生效，OpenAI 等面临新监管",
+          "source_name": "TechCrunch",
+          "source_tier": "C",
+          "published_at": "2026-11-10T20:52:13+00:00",
+          "total_score": 54,
+          "content_type": "fact_enforcement"
+        }
+      ],
+      "related_opinions": []
+    },
+    {
       "fingerprint": "AI-Nursing-Labor-Transparency-2026-11",
       "article_count": 2,
       "main_is_fact": false,
@@ -5401,27 +5523,27 @@
     }
   ],
   "stats": {
-    "total": 3004,
+    "total": 3006,
     "by_type": {
       "fact_enforcement": 218,
       "fact_legislative": 204,
-      "fact_official_doc": 165,
+      "fact_official_doc": 166,
       "opinion_analysis": 266
     },
-    "veto": 2151
+    "veto": 2152
   },
   "feed_health": [
     {
       "source_name": "OII",
       "feed_url": "https://www.oii.ox.ac.uk/news-events/news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
       "last_success_at": "2026-06-04T10:13:12.070378+00:00",
       "last_error": "XML parse error: not well-formed (invalid token): line 5, column 175",
       "last_article_count": 10,
-      "consecutive_fails": 334,
+      "consecutive_fails": 335,
       "recent_7d_success": 0,
-      "recent_7d_total": 13,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-05-08T15:38:51+00:00",
       "stale_days": 194,
       "status": "dead"
@@ -5565,13 +5687,13 @@
       "source_name": "Platformer",
       "feed_url": "https://www.platformer.news/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 2,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-04T01:34:20+00:00",
       "stale_days": 14,
       "status": "stale"
@@ -5580,43 +5702,28 @@
       "source_name": "DLA Piper",
       "feed_url": "https://privacymatters.dlapiper.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-09T14:00:51+00:00",
       "stale_days": 40,
-      "status": "stale"
-    },
-    {
-      "source_name": "NIST",
-      "feed_url": "https://www.nist.gov/news-events/news/rss.xml",
-      "source_tier": "S",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_error": null,
-      "last_article_count": 40,
-      "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
-      "latest_article_at": "2026-11-02T12:00:00+00:00",
-      "stale_days": 16,
       "status": "stale"
     },
     {
       "source_name": "IAPP Daily Dashboard (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/9v0c5wjcqvoklno87tca.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-05-06T13:18:40.669000+00:00",
       "stale_days": 196,
       "status": "stale"
@@ -5625,13 +5732,13 @@
       "source_name": "OAIC (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/4n2ehrjdddcz86rcari4.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 1,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-29T01:21:10.812000+00:00",
       "stale_days": 20,
       "status": "stale"
@@ -5640,13 +5747,13 @@
       "source_name": "CNIL (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/jh7gg5otvnfka6k2pfcp.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 1,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-10-30T18:17:53.660000+00:00",
       "stale_days": 18,
       "status": "stale"
@@ -5655,13 +5762,13 @@
       "source_name": "EPIC",
       "feed_url": "https://epic.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-12T20:57:18+00:00",
       "stale_days": 5,
       "status": "warn"
@@ -5670,13 +5777,13 @@
       "source_name": "Future of Privacy Forum",
       "feed_url": "https://fpf.org/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-12T20:02:55+00:00",
       "stale_days": 5,
       "status": "warn"
@@ -5685,13 +5792,13 @@
       "source_name": "FTC",
       "feed_url": "https://www.ftc.gov/feeds/press-release.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-13T12:00:00+00:00",
       "stale_days": 5,
       "status": "warn"
@@ -5700,13 +5807,13 @@
       "source_name": "HAI Stanford (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/n4hhyacgt1an1008eea6.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 2,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-11T14:04:08.321000+00:00",
       "stale_days": 7,
       "status": "warn"
@@ -5715,13 +5822,13 @@
       "source_name": "Import AI (Substack)",
       "feed_url": "https://jack-clark.net/feed",
       "source_tier": "D",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-16T14:01:15+00:00",
       "stale_days": 2,
       "status": "ok"
@@ -5730,13 +5837,13 @@
       "source_name": "AI Now",
       "feed_url": "https://ainowinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-18T15:25:56+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -5745,13 +5852,13 @@
       "source_name": "Tech Policy Press",
       "feed_url": "https://www.techpolicy.press/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -5760,14 +5867,29 @@
       "source_name": "The Register",
       "feed_url": "https://www.theregister.com/headlines.atom",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 8,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-18T12:27:00+00:00",
+      "stale_days": 0,
+      "status": "ok"
+    },
+    {
+      "source_name": "NIST",
+      "feed_url": "https://www.nist.gov/news-events/news/rss.xml",
+      "source_tier": "S",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_error": null,
+      "last_article_count": 40,
+      "consecutive_fails": 0,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-11-18T12:00:00+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -5775,13 +5897,13 @@
       "source_name": "Inside Privacy (Covington)",
       "feed_url": "https://www.insideprivacy.com/feed",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 10,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-18T10:04:30+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -5790,13 +5912,13 @@
       "source_name": "TechCrunch",
       "feed_url": "https://techcrunch.com/feed/",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 4,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-18T12:00:00+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -5805,13 +5927,13 @@
       "source_name": "Politico EU Tech",
       "feed_url": "https://www.politico.eu/section/technology/feed",
       "source_tier": "B",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 31,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-18T12:27:16+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -5820,13 +5942,13 @@
       "source_name": "CMA UK",
       "feed_url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 20,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-18T11:00:21+00:00",
       "stale_days": 0,
       "status": "ok"
@@ -5835,13 +5957,13 @@
       "source_name": "Ada Lovelace",
       "feed_url": "https://www.adalovelaceinstitute.org/feed",
       "source_tier": "C",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -5850,14 +5972,14 @@
       "source_name": "DataGuidance (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0t72e882tjox9e1mztov.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
-      "last_article_count": 17,
+      "last_article_count": 18,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
-      "latest_article_at": "2026-11-17T16:35:23.271000+00:00",
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
+      "latest_article_at": "2026-11-18T16:10:54.539000+00:00",
       "stale_days": 0,
       "status": "ok"
     },
@@ -5865,13 +5987,13 @@
       "source_name": "WilmerHale Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/muwfbzqx60g7b14mspkf.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -5880,13 +6002,13 @@
       "source_name": "Lawfare (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eqkwbtfnwj1lqbi08d5p.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -5895,13 +6017,13 @@
       "source_name": "Inside Privacy (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/eyvqcb5thrgv7pt4umj2.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -5910,13 +6032,13 @@
       "source_name": "MLex AI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/0ir80wigiatnud8bexc0.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -5925,13 +6047,13 @@
       "source_name": "EDPS (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/57vrbnl13yfzqwv3teb0.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -5940,28 +6062,28 @@
       "source_name": "TechPolicy Press (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/3yjfc4v17nj9t1yrkhnx.xml",
       "source_tier": "A",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 5,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-15T15:55:50.169000+00:00",
-      "stale_days": 2,
+      "stale_days": 3,
       "status": "ok"
     },
     {
       "source_name": "NIST AISI (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/h7ma698632mz98ydqg93.xml",
       "source_tier": "S",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 0,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": null,
       "stale_days": null,
       "status": "ok"
@@ -5970,13 +6092,13 @@
       "source_name": "Brookings TechTank (KtN)",
       "feed_url": "https://kill-the-newsletter.com/feeds/btrel8v1yu4h5i4xcsze.xml",
       "source_tier": "B",
-      "last_attempt_at": "2026-11-18T15:41:58.038849+00:00",
-      "last_success_at": "2026-11-18T15:41:58.038849+00:00",
+      "last_attempt_at": "2026-11-18T16:30:03.374713+00:00",
+      "last_success_at": "2026-11-18T16:30:03.374713+00:00",
       "last_error": null,
       "last_article_count": 12,
       "consecutive_fails": 0,
-      "recent_7d_success": 13,
-      "recent_7d_total": 13,
+      "recent_7d_success": 14,
+      "recent_7d_total": 14,
       "latest_article_at": "2026-11-17T12:03:13.724000+00:00",
       "stale_days": 1,
       "status": "ok"
@@ -5986,8 +6108,8 @@
     "24h": [
       {
         "emoji": "⚖️",
-        "name": "欧盟平台监管与执法",
-        "blurb": "针对大型平台的合规与执法动作",
+        "name": "平台监管与 DSA 执法",
+        "blurb": "针对大型平台的合规与强制措施",
         "article_ids": [
           3074,
           3078
@@ -5995,34 +6117,28 @@
       },
       {
         "emoji": "🤖",
-        "name": "AI 安全监管与风险",
-        "blurb": "AI 监管机构与失准智能体风险",
+        "name": "AI 安全监管机构建设",
+        "blurb": "设立机构与执法单元保障 AI 安全",
         "article_ids": [
           3077,
-          3079
-        ]
-      },
-      {
-        "emoji": "📢",
-        "name": "消费者与数字公平立法",
-        "blurb": "欧盟消费者法修订提案",
-        "article_ids": [
-          3072
+          3081
         ]
       },
       {
         "emoji": "🔐",
-        "name": "智能设备隐私合规",
-        "blurb": "智能眼镜 GDPR 合规指引",
+        "name": "AI 与数据隐私合规",
+        "blurb": "智能眼镜 GDPR 及消费者法修订",
         "article_ids": [
+          3072,
           3063
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "AI 应用对劳动者影响",
+        "blurb": "智能体风险与 AI 劳动影响",
         "article_ids": [
+          3079,
           3073
         ]
       }
@@ -6030,23 +6146,36 @@
     "72h": [
       {
         "emoji": "🤖",
-        "name": "AI Agent 安全与问责",
-        "blurb": "失控智能体引发的诉讼与安全警示",
+        "name": "AI Agent 安全与失控风险",
+        "blurb": "智能体自主行为引发安全与执法关注",
         "article_ids": [
           3052,
           3057,
           3042,
           3051,
           3079,
-          3045
+          3045,
+          3058
         ]
       },
       {
         "emoji": "⚖️",
-        "name": "欧盟 AI 与平台监管",
-        "blurb": "欧盟 AI 治理僵局及平台执法动向",
+        "name": "AI 监管机构与执法行动",
+        "blurb": "各国监管机构设立与执法新动向",
         "article_ids": [
+          3077,
+          3056,
+          3081,
           3040,
+          3060
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "平台合规与数字服务执法",
+        "blurb": "平台出售、DSA 执法与消费者保护",
+        "article_ids": [
+          3074,
           3072,
           3078,
           3059
@@ -6054,48 +6183,22 @@
       },
       {
         "emoji": "🔐",
-        "name": "数据隐私与合规执法",
-        "blurb": "隐私规则执行与数据泄露调查",
+        "name": "数据隐私与深度伪造治理",
+        "blurb": "GDPR 合规、数据泄露与深度伪造",
         "article_ids": [
+          3050,
           3063,
           3054,
-          3058,
-          3060,
           3041
         ]
       },
       {
-        "emoji": "📢",
-        "name": "平台内容与深度伪造治理",
-        "blurb": "深度伪造与平台内容归属治理",
-        "article_ids": [
-          3074,
-          3050
-        ]
-      },
-      {
         "emoji": "👶",
-        "name": "AI 冲击劳动与公共服务",
-        "blurb": "护士等岗位受 AI 工具影响",
+        "name": "AI 对劳动者与护理行业冲击",
+        "blurb": "护士等一线劳动者受 AI 工具影响",
         "article_ids": [
           3047,
           3073
-        ]
-      },
-      {
-        "emoji": "🛰️",
-        "name": "AI 安全监管机构建设",
-        "blurb": "英国议员呼吁设立关停权机构",
-        "article_ids": [
-          3077
-        ]
-      },
-      {
-        "emoji": "🔀",
-        "name": "其他治理动态",
-        "blurb": "未归入主类的候选选题",
-        "article_ids": [
-          3056
         ]
       }
     ],
@@ -6103,63 +6206,57 @@
       {
         "emoji": "🤖",
         "name": "AI Agent 安全与问责",
-        "blurb": "失控智能体风险、执法与平台管控",
+        "blurb": "失控智能体风险与执法追责",
         "article_ids": [
           3052,
+          3056,
           3057,
           3042,
+          3079,
           3051,
           3058,
-          3079,
           3045
         ]
       },
       {
         "emoji": "⚖️",
-        "name": "欧盟 AI 与平台监管",
-        "blurb": "欧盟AI治理僵局及平台合规执法",
-        "article_ids": [
-          3074,
-          3040,
-          3072,
-          3078,
-          3059
-        ]
-      },
-      {
-        "emoji": "🔐",
-        "name": "数据隐私与合规执法",
-        "blurb": "GDPR执法、罚款与监管指南",
-        "article_ids": [
-          3063,
-          3054,
-          3030,
-          3060,
-          3033,
-          3041
-        ]
-      },
-      {
-        "emoji": "🏛️",
-        "name": "AI 立法与监管机构建设",
-        "blurb": "各国推动AI监管机构与立法",
+        "name": "AI 监管机构与立法",
+        "blurb": "各国设立 AI 监管与规则推进",
         "article_ids": [
           3077,
+          3040,
+          3081,
+          3030,
+          3060,
           3032
         ]
       },
       {
-        "emoji": "🎨",
-        "name": "深度伪造与内容归属",
-        "blurb": "平台应对深度伪造歌曲冒名",
+        "emoji": "🔐",
+        "name": "平台隐私与数据执法",
+        "blurb": "GDPR 罚款、泄露与合规调查",
         "article_ids": [
+          3063,
+          3054,
+          3033,
+          3041,
+          3072
+        ]
+      },
+      {
+        "emoji": "📢",
+        "name": "平台内容与竞争治理",
+        "blurb": "TikTok 出售、DSA 执法与深度伪造",
+        "article_ids": [
+          3074,
+          3078,
           3050
         ]
       },
       {
-        "emoji": "🔀",
-        "name": "其他治理动态",
-        "blurb": "AI对劳动力与行业影响",
+        "emoji": "🩺",
+        "name": "AI 对劳工影响",
+        "blurb": "护士等岗位受 AI 冲击",
         "article_ids": [
           3047,
           3073
@@ -6168,9 +6265,9 @@
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "未归入主类的候选选题",
+        "blurb": "数字主权等兜底议题",
         "article_ids": [
-          3056
+          3059
         ]
       }
     ],
@@ -6178,7 +6275,7 @@
       {
         "emoji": "🤖",
         "name": "AI Agent 安全与失控风险",
-        "blurb": "Agent 失控、网络攻击与监管应对",
+        "blurb": "智能体失控、网络攻击与监管应对",
         "article_ids": [
           3013,
           2927,
@@ -6189,90 +6286,90 @@
           3051,
           2959,
           2996,
-          3058,
-          3079,
-          3045,
-          3056
+          3079
         ]
       },
       {
         "emoji": "⚖️",
-        "name": "全球 AI 立法与监管架构",
-        "blurb": "各国 AI 安全立法与监管机构建设",
+        "name": "各国 AI 立法与监管机构建设",
+        "blurb": "澳英纽约等地AI安全立法与执法",
         "article_ids": [
-          2998,
-          3005,
           3008,
           3077,
-          2937,
           2995,
-          3040,
+          3081,
           2990,
-          2930,
-          2942,
-          3030,
-          3060,
-          2967,
-          3023,
-          3063
+          2998,
+          3005,
+          2937,
+          3040,
+          2931
         ]
       },
       {
-        "emoji": "👶",
-        "name": "未成年人网络与社媒保护",
-        "blurb": "未成年人社交媒体限制与平台诉讼",
+        "emoji": "🔐",
+        "name": "AI 隐私与数据保护执法",
+        "blurb": "监管机构针对AI数据处理的合规行动",
         "article_ids": [
-          2952,
-          2949,
-          3004,
-          2980,
-          2907,
-          2934
+          2930,
+          2925,
+          3023,
+          3063,
+          2967,
+          3030,
+          3060,
+          3058,
+          3054,
+          3033
         ]
       },
       {
         "emoji": "📢",
         "name": "平台内容治理与 DSA 执法",
-        "blurb": "TikTok、Temu 等平台的内容与算法监管",
+        "blurb": "TikTok、Temu等平台的内容与算法监管",
         "article_ids": [
           3074,
           2964,
-          3078,
+          3004,
           3072,
           2993,
-          2979,
-          3050,
-          2935
+          3078,
+          2941,
+          2994,
+          3059,
+          3032
         ]
       },
       {
-        "emoji": "🔐",
-        "name": "数据隐私与 AI 合规执法",
-        "blurb": "隐私监管、罚款与 AI 数据使用规则",
+        "emoji": "👶",
+        "name": "未成年人网络与社媒保护",
+        "blurb": "社媒成瘾、儿童保护相关立法诉讼",
         "article_ids": [
-          2925,
-          2950,
-          3012,
-          3054,
-          3033,
-          3019,
-          3041,
-          2994,
-          2941,
-          2931
+          2952,
+          2949,
+          2980
         ]
       },
       {
         "emoji": "🔀",
         "name": "其他治理动态",
-        "blurb": "AI 劳动力影响、企业问责等杂项",
+        "blurb": "深度伪造、监控、医疗AI等分散议题",
         "article_ids": [
+          2907,
+          2950,
+          3012,
+          3050,
+          2934,
+          2935,
+          2979,
           3047,
           3073,
-          2946,
-          3032,
           3020,
-          3059
+          2946,
+          3045,
+          2942,
+          3019,
+          3041
         ]
       },
       {
@@ -6280,7 +6377,8 @@
         "name": "其他治理动态",
         "blurb": "未归入主类的候选选题",
         "article_ids": [
-          2974
+          2974,
+          3056
         ]
       }
     ]
